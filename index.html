@@ -1,13 +1,605 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> لینوم </title>
+</head>
+
+<body>
+
+  <section id="section-home">
+    <div class="container">
+      <header id="topHeader">
+        <i class="icon-header icon-menu" id="hambergerMuno"></i>
+
+        <nav id="top-menu">
+          <ul>
+            <li id="item-manuCategories">
+              <a href="#" class="text-menu"> دسته بندی محصولات
+                <i class="icon-Arrow-Down"></i>
+              </a>
+
+              <div id="box-manuCategories">
+                <ul class="manuCategories">
+                  <li class="menuItem">
+                    <a href="#">کابینت روشویی</a>
+                  </li>
+                  <li class="menuItem">
+                    <a href="#">توالت فرنگی</a>
+                  </li>
+                  <li class="menuItem">
+                    <a href="#">توالت ایرانی</a>
+                  </li>
+                  <li class="menuItem">
+                    <a href="#">دوش حمام</a>
+                  </li>
+                  <li class="menuItem">
+                    <a href="#">وان حمام</a>
+                  </li>
+                </ul>
+              </div>
+
+            </li>
+            <li>
+              <a href="./list-blog.html" class="text-menu linkBlog"> اخبار و مقالات </a>
+            </li>
+            <li>
+              <a href="./about-us.html" class="text-menu linkAboutUs"> درباره ما </a>
+            </li>
+          </ul>
+
+          <div id="boxIcon">
+            <a href="./contact-us.html"><i class="icon-header icon-Calling" id="call"></i></a>
+            <a href=""><i class="icon-header icon-Buy" id="buy"></i></a>
+            <a href="./error.html"><i class="icon-header icon-Profile" id="user"></i></a>
+          </div>
+
+        </nav>
+      </header>
+      <div class="boxContent">
+
+        <div id="imageSlider">
+          <div>
+            <img class="boxImage" src="./public/img/main-page/slider-home/1.jpg" id="slideHome1">
+          </div>
+          <div>
+            <img class="boxImage" src="./public/img/main-page/slider-home/2.jpg" id="slideHome2">
+          </div>
+          <div>
+            <img class="boxImage" src="./public/img/main-page/slider-home/3.jpg" id="slideHome3">
+          </div>
+
+        </div>
+
+
+        </img>
+        <div id="boxImageIcones">
+          <i class="boxImageIcone icon-Arrow-Left-2"></i>
+          <i class="boxImageIcone icon-Arrow-Right-2"></i>
+        </div>
+
+        <img src="./public/img/main-page/other/img1.png" id="image1" alt="">
+        <i class="icon-Arrow-Down-2"></i>
+        <div class="image2">
+          <a href="#"><i class="box-arrow icon-Arrow-Right-2"></i></a>
+          <div class="text-arrow">
+            <h4>زیبایی در سادگیست</h4>
+            <p>توضیحاتی در مورد اسلایدر و لینک ورود به الایدر در این مکان قرار میگیرد</p>
+          </div>
+        </div>
+
+
+        <div class="boxText">
+          <div class="content">
+
+            <img src="./public/img/main-page/logo/logo.png" id="logo1" alt="">
+
+            <h1 id="titrHome"> لینوم فروشگاه تخصصی لوازم بهداشتی خانه و آشپرخانه</h1>
+
+            <p id="textHome">چند خط توضیحات کوتاه در مورد برند لینوم و راهکاری هایی که لینوم بهعنوان یک برند
+              معتبر در دنیای فروشگاه های اینترنتی ارائه میدهد همچنین وجه تمایز برند لینوم با دیگر فروشگاه
+              های
+              لوازم بهداشتی </p>
+
+
+            <div id="boxCategories">
+              <a href="#" class="categories">
+                <i class="icon-categories icon-Dresser"></i>
+                <p>کابینت روشویی</p>
+              </a>
+              <a href="#" class="categories">
+                <i class="icon-categories icon-Toilet-2"></i>
+                <p>توالت ایرانی</p>
+              </a>
+              <a href="#" class="categories">
+                <i class="icon-categories icon-Toilet-1"></i>
+                <p>توالت فرنگی</p>
+              </a>
+              <a href="#" class="categories">
+                <i class="icon-categories icon-Shower"></i>
+                <p>دوش حمام</p>
+              </a>
+              <a href="#" class="categories">
+                <i class="icon-categories icon-Bath"></i>
+                <p>وان حمام</p>
+              </a>
+            </div>
+
+            <a href="#" id="allCategories">
+              <p>مشاهده تمامی دسته بندی ها</p>
+              <i class="icon-all icon-Arrow-Left-2"></i>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="section-pageOne">
+    <div class="container">
+      <div class="tapContent">
+
+        <div id="boxTabContent">
+          <button class="tablinks" onclick="openItem(event, 'irani')" id="defaultOpen">توالت ایرانی</button>
+          <button class="tablinks" onclick="openItem(event, 'farangi')">توالت فرنگی</button>
+          <button class="tablinks" onclick="openItem(event, 'cabinets')">کابینت روشویی</button>
+          <button class="tablinks" onclick="openItem(event, 'vanBath')"> وان حمام</button>
+          <button class="tablinks" onclick="openItem(event, 'doshBath')">دوش حمام </button>
+        </div>
+
+        <span class="seeAll">
+          <a href="#">مشاهده همه
+            <i class="icon-Arrow-Left-2"></i>
+          </a>
+        </span>
+      </div>
+
+      <div scroll_container class="box-slider slider1 tabcontent" id="irani">
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/1.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/2.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/3.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/4.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/5.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+      </div>
+
+
+      <div scroll_container class="box-slider slider1 tabcontent" id="farangi">
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/5.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/4.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/3.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/2.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/1.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+      </div>
+
+      <div scroll_container class="tabcontent" id="cabinets">
+        <i class="icon-close"></i>
+        <p>محصولی موجود نیست!</p>
+      </div>
+
+      <img src="./public/img/main-page/other/img3.png" alt="">
+      <div class="boxTwo">
+        <p>چند خط توضیحات کوتاه در مورد برند لینوم و راهکاری هایی که لینوم بهعنوان یک برند
+          معتبر در دنیای
+          فروشگاه های اینترنتی ارائه میدهد همچنین وجه تمایز برند لینوم با دیگر فروشگاه های لوازم بهداشتی
+          ساختمانی و همچنین غیره</p>
+        <div>
+          <i class="boxImageIcone icon-Arrow-Left-2" onclick="scrollSlider(300)"></i>
+          <i class="boxImageIcone icon-Arrow-Right-2" onclick="scrollSlider(-300)"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-pageTwo">
+    <div class="container">
+      <div class="boxContent">
+
+        <div class="boxText">
+          <div class="content">
+            <div>
+              <span>
+                <img src="./public/img/main-page/logo/logoMain.png" id="logo2" alt="">
+                <h2 id="titrPage">درباره لینوم</h2>
+              </span>
+              <a href="./about-us.html"><i class="icon-Arrow-Left-2" id="arrowPage"></i></a>
+            </div>
+            <p id="text-sectionTwo">این مجموعه بر اساس پیشرفت زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی
+              بیش از
+              نیم قرن ایجاد شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های
+              دست ساز و با به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت
+              اقتصادی خود را شروع نمود این مجموعه بر اساس پیشرفت زمان </p>
+          </div>
+        </div>
+
+        <div class="image2">
+          <a href="#"><i class="box-arrow icon-Arrow-Right-2"></i></a>
+          <div class="text-arrow">
+            <h4>اصالت شعار نیست</h4>
+            <p>توضیحاتی در مورد اسلایدر و لینک ورود به الایدر در این مکان قرار میگیرذد</p>
+          </div>
+        </div>
+        <div class="image3">
+          <a href="#"><i class="box-arrow icon-Arrow-Right-2"></i></a>
+          <div class="text-arrow">
+            <h4>زیبایی در سادگیست</h4>
+            <p>توضیحاتی در مورد اسلایدر و لینک ورود به الایدر در این مکان قرار میگیرذد</p>
+          </div>
+        </div>
+
+        <div class="image4">
+          <div id="textsVoice">
+            <span id="textAudio">لینوم را صوتی بشنوید</span>
+            <span id="timeAudio">01:37</span>
+          </div>
+          <div class="audio">
+            <div audio_wave audio_src="./public/audios/1.mp3" btn_id="#playBtn" id="playsBtn"></div>
+            <i id="playBtn" class="icon-Play" onclick="lampOnOff()"></i>
+          </div>
+        </div>
+
+        <a href="./about-us.html" id="about">
+          <p>درباره لینوم</p>
+          <i class="icon-Arrow-Left"></i>
+        </a>
+        <a href="./contact-us.html" id="contactUs">
+          <i class="icon-Arrow-Right"></i>
+          <p>تماس با ما</p>
+        </a>
+
+        <img class="boxImage" src="./public/img/main-page/section-two/1.jpg" id="img2" alt="">
+
+        <div class="iconHeart">
+          <i class="icon-Heart"></i>
+        </div>
+        <div class="iconHeart" id="heart2">
+          <i class="icon-Heart"></i>
+        </div>
+
+        <img src="./public/img/main-page/other/img4.png" id="imgCover">
+      </div>
+    </div>
+  </section>
+
+  <section id="section-pageThree">
+    <div class="container">
+      <img src="./public/img/main-page/other/img3.png" id="imgCover2">
+      <div id="topTitr">
+        <span>
+          <img src="./public/img/main-page/logo/logoMain.png" id="logo2" alt="">
+          <h2 id="titrPage">تازه ترین محصولات</h2>
+        </span>
+        <a href="#"><i class="icon-Arrow-Left-2" id="arrowPage"></i></a>
+      </div>
+
+      <div scroll_container class="box-slider slider2">
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/1.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/2.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/3.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/4.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+
+        <div class="slider">
+          <a href="#"><i class="icon-Arrow-Left-2"></i></a>
+          <img src="./public/img/main-page/slider-products/5.png" alt="">
+          <p>شیر روشویی پایه بلند راسان مدل فلورا</p>
+        </div>
+      </div>
+
+      <div id="iconSlider">
+        <i class="boxImageIcone icon-Arrow-Left-2" onclick="scrollSlider(290)"></i>
+        <i class="boxImageIcone icon-Arrow-Right-2" onclick="scrollSlider(-290)"></i>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-pageFour">
+    <div class="container">
+      <div id="topTitr">
+        <span>
+          <img src="./public/img/main-page/logo/logoMain.png" id="logo2" alt="">
+          <h2 id="titrPage">آخرین اخبار و مقالات</h2>
+        </span>
+        <a href="./list-blog.html"><i class="icon-Arrow-Left-2" id="arrowPage"></i></a>
+      </div>
+      <div id="boxWeblog">
+        <div class="weblog">
+          <img src="./public/img/blogs/list-blog/1.png" alt="">
+          <span class="textWeblog">
+            <h5><a href="./show-blog.html">شیر روشویی پایه بلند راسان مدل فلورا</a></h5>
+            <p>ین مجموعه بر اساس پیشرفت زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
+              شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
+              به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را
+              شروع نمود و با ورود به سرزمین پر برکت خراسان در شهر نیشابور و کاشمر وروستاهای اطراف </p>
+            <span class="linkWeblog">
+              <a href="">اخبار</a>
+              <a href="">آموزشی</a>
+            </span>
+          </span>
+        </div>
+        <div class="weblog">
+          <img src="./public/img/blogs/list-blog/2.png" alt="">
+          <span class="textWeblog">
+            <h5><a href="./show-blog.html">شیر روشویی پایه بلند راسان مدل فلورا</a></h5>
+            <p>ین مجموعه بر اساس پیشرفت زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
+              شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
+              به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را
+              شروع نمود و با ورود به سرزمین پر برکت خراسان در شهر نیشابور و کاشمر وروستاهای اطراف </p>
+            <span class="linkWeblog">
+              <a href="">اخبار</a>
+              <a href="">آموزشی</a>
+            </span>
+          </span>
+        </div>
+        <div class="weblog">
+          <img src="./public/img/blogs/list-blog/3.png" alt="">
+          <span class="textWeblog">
+            <h5><a href="./show-blog.html">شیر روشویی پایه بلند راسان مدل فلورا</a></h5>
+            <p>ین مجموعه بر اساس پیشرفت زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
+              شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
+              به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را
+              شروع نمود و با ورود به سرزمین پر برکت خراسان در شهر نیشابور و کاشمر وروستاهای اطراف </p>
+            <span class="linkWeblog">
+              <a href="">اخبار</a>
+              <a href="">آموزشی</a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div id="columns-box">
+      <div id="social-network">
+        <!-- <a href="#">
+          <i class="icon-telegram"></i>
+        </a> -->
+        <a href="#">
+          <i class="icon-Whatsapp"></i>
+        </a>
+        <a href="#">
+          <i class="icon-Instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="icon-Twitter"></i>
+        </a>
+
+        <a href="#">
+          <i class="icon-Facebook"></i>
+        </a>
+      </div>
+      <div id="columns">
+        <div class="column">
+          <p>خدمات الکترونیکی</p>
+
+          <div class="footer-list">
+            <a href="#">خرید آنلاین</a>
+
+            <a href="#">پرداخت آنلاین اقساط</a>
+
+            <a href="#">پیگیری خرید</a>
+          </div>
+        </div>
+        <div class="column">
+          <p>چند رسانه ای</p>
+
+          <div class="footer-list">
+            <a href="#">مجله لینوم</a>
+
+            <a href="#">ویدئو های لینوم</a>
+
+            <a href="#">گالری تصاویر لینوم</a>
+          </div>
+        </div>
+        <div class="column">
+          <p>شعب و نمایندگی</p>
+
+          <div class="footer-list">
+            <a href="#">مستندات نمایندگان</a>
+
+            <a href="#">شعب ، باجه و مراکز</a>
+
+            <a href="#">اتوماسیون اداری</a>
+          </div>
+        </div>
+        <div class="column">
+          <a href="#"><img src="./public/img/footer/1.png" alt=""></a>
+          <a href="#"><img src="./public/img/footer/2.png" alt=""></a>
+        </div>
+      </div>
+      <p>تمامی حقوق محفوض و متعلق به وبسایت لینوم میباشد</p>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <script>
+
+    /*---------Tab Content-----------*/
+
+    function openItem(evt, itemName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(itemName).style.display = "flex";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+
+
+    /*---------audio-----------*/
+
+
+    let number = 0;
+
+    function lampOnOff() {
+      number++
+      let playBtn = document.getElementById('playBtn');
+
+      if (number % 2 === 0) {
+        playBtn.classList = 'icon-Play'
+      } else {
+        playBtn.classList = 'icon-Pause'
+      }
+
+    }
+    /*-----------------Scrool Slider------------------*/
+    function scrollSlider(distance) {
+      let slider1 = document.querySelector('.slider1');
+      slider1.scrollLeft += distance;
+
+      let slider2 = document.querySelector('.slider2');
+      slider2.scrollLeft += distance;
+    }
+
+    /*-----------------Scrool Slider Home------------------*/
+
+    document.querySelector('.icon-Arrow-Left-2').addEventListener('click', function () {
+      document.querySelector('.slick-prev').click();
+    });
+
+    document.querySelector('.icon-Arrow-Right-2').addEventListener('click', function () {
+      document.querySelector('.slick-next').click();
+    });
+
+    /*-----------------Timer------------------*/
+
+    var timerInterval;
+    var seconds = 0;
+    var isPlaying = false;
+
+    function updateTimer() {
+      var minutes = Math.floor(seconds / 60);
+      var remainingSeconds = seconds % 60;
+      $("#timeAudio").text(("0" + minutes).slice(-2) + ":" + ("0" + remainingSeconds).slice(-2));
+
+      if (minutes === 1 && remainingSeconds === 37) {
+        stopTimer();
+        seconds = 0;
+        updateTimer();
+        $("#playBtn").removeClass("icon-Pause").addClass("icon-Play");
+      }
+    }
+
+    function lampOnOff() {
+      if (!isPlaying) {
+        startTimer();
+        $("#playBtn").removeClass("icon-Play").addClass("icon-Pause");
+      } else {
+        stopTimer();
+        $("#playBtn").removeClass("icon-Pause").addClass("icon-Play");
+      }
+      isPlaying = !isPlaying;
+    }
+
+    function startTimer() {
+      timerInterval = setInterval(function () {
+        seconds++;
+        updateTimer();
+        if (seconds >= 97) {
+          stopTimer();
+        }
+      }, 1000);
+    }
+
+    function stopTimer() {
+      clearInterval(timerInterval);
+      seconds = seconds
+      updateTimer();
+    }
+
+
+  </script>
+
+
+
+
+  <script src="./main.js"></script>
+  <script type="module" src="/src/js/pages/home/home.js"></script>
+
+
+</body>
+
 </html>

@@ -1,1 +1,1 @@
-import "/src/sass/components/Layers/blog/index.scss";
+import "../../../sass/components/pages/list-blog/index.scss";

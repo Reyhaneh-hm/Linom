@@ -1,0 +1,1 @@
+import "../../../sass/components/pages/error404/index.scss";

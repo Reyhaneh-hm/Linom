@@ -1,0 +1,734 @@
+@media screen and (max-width: 2560px) {}
+
+@media screen and (max-width: 1440px) {
+    #section-home>.container>.boxContent>#imageSlider .boxImage {
+        height: 555px;
+    }
+
+    .boxImageIcone {
+        padding: 13px;
+        margin: 0 5px;
+    }
+
+    #boxImageIcones {
+        right: -5px;
+        top: 585px;
+    }
+
+    .icon-Arrow-Down-2 {
+        padding: 10px;
+        top: 110px;
+        right: 455px;
+    }
+
+    .content {
+        width: 570px;
+        position: relative;
+        top: 35px;
+        margin-right: 75px;
+    }
+
+    .content>#textHome {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 48px;
+    }
+
+    .content>#titrHome {
+        font-size: 25px;
+    }
+
+    #image1 {
+        width: 290px;
+        left: 445px;
+    }
+
+    #section-pageOne .box-slider {
+        right: -763px;
+    }
+
+    .boxTwo {
+        bottom: 330px;
+        left: -4px;
+        font-size: 17px;
+    }
+
+    #section-pageOne .box-slider>.slider {
+        left: -620px;
+    }
+
+    .image2 {
+        bottom: 275px;
+        right: 415px;
+    }
+
+    .boxContent {
+        margin-top: 90px;
+    }
+
+    #section-pageTwo>.container>.boxContent>.boxText>.content {
+        width: 500px;
+        margin: 0;
+        top: 0;
+    }
+
+    #section-pageTwo #about {
+        left: 100px;
+    }
+
+    #section-pageTwo .image2 {
+        right: 330px;
+    }
+
+    #section-pageTwo .boxContent>img#imgCover {
+        left: -450px;
+    }
+
+    .iconHeart {
+        left: 610px;
+    }
+
+    #section-pageTwo .image3 {
+        left: -90px;
+    }
+
+    .iconHeart#heart2 {
+        left: 60px;
+    }
+
+    .image4 {
+        left: -110px;
+    }
+
+    #section-pageTwo #contactUs {
+        left: 560px;
+    }
+
+
+    #section-home>.container>.boxContent>#imageSlider {
+        max-width: 507px;
+    }
+
+    #boxCategories {
+        column-gap: 0;
+        flex-wrap: wrap;
+    }
+
+    #allCategories {
+        justify-content: center;
+    }
+
+    .imgAboutUs {
+        background-size: 575px;
+        min-height: 575px;
+    }
+
+    .textAboutUs>p {
+        font-size: 19px;
+        height: 410px;
+    }
+
+    .textAboutUs {
+        padding: 82px 55px;
+    }
+
+    .imgError {
+        background-size: 1420px;
+        left: 225px;
+    }
+
+    .imgError>p {
+        bottom: 280px;
+    }
+
+    #page-weblogs #Weblog .blog img {
+        max-width: 777px;
+        max-height: 750px;
+    }
+
+    .blog h1 {
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    #section-home>.container>.boxContent>#imageSlider {
+        max-width: 390px;
+        max-height: 427px;
+    }
+
+    .content {
+        width: 410px;
+        top: 55px;
+        margin: 0;
+    }
+
+    .content>#titrHome {
+        font-size: 18px;
+    }
+
+    .categories {
+        max-width: 115px;
+        height: 105px;
+    }
+
+    .text-arrow>h4 {
+        font-size: 14px;
+    }
+
+    .image2 {
+        bottom: 300px;
+        right: 224px;
+        background-size: 96%;
+    }
+
+    .box-arrow {
+        padding: 3px;
+        margin: 0 20px 6px 5px;
+    }
+
+    .icon-Arrow-Down-2 {
+        padding: 8px;
+        top: 118px;
+        right: 352px;
+    }
+
+    #boxImageIcones {
+        right: -20px;
+        top: 492px;
+    }
+
+    .boxImageIcone {
+        padding: 11px;
+    }
+
+    #top-menu>ul>li>a {
+        font-size: 18px;
+    }
+
+    #topHeader .icon-header {
+        font-size: 27px;
+    }
+
+    #section-pageOne {
+        margin-top: -110px;
+    }
+
+    .tapContent>#boxTabContent {
+        width: 430px;
+    }
+
+    #section-pageOne .box-slider {
+        right: -410px;
+        width: 920px;
+    }
+
+    .boxTwo {
+        width: 290px;
+        font-size: 16px;
+    }
+
+    #section-pageTwo,
+    #section-pageFour {
+        margin-top: -250px;
+    }
+
+    #section-pageTwo p#text-sectionTwo {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 220px;
+    }
+
+    #section-pageTwo>.container>.boxContent>.boxText>.content {
+        width: 306px;
+    }
+
+    #arrowPage {
+        padding: 11px;
+    }
+
+    #section-pageTwo .boxImage {
+        min-width: 515.5px;
+        max-width: 542px;
+        height: 646px;
+        top: -10px;
+        left: 25px;
+    }
+
+    #section-pageTwo #about {
+        top: 50px;
+        left: 57px;
+    }
+
+    .iconHeart {
+        top: 55px;
+        left: 473px;
+    }
+
+    #section-pageTwo .boxContent>img#imgCover {
+        width: 479px;
+    }
+
+    #section-pageTwo .image3 {
+        background-size: 250px;
+        top: 160px;
+    }
+
+    #section-pageTwo .image2 {
+        background-size: 250px;
+        bottom: 308px;
+        right: 150px;
+    }
+
+    .iconHeart#heart2 {
+        left: 44px;
+        bottom: 380px;
+    }
+
+    .image4 {
+        background-size: 260px;
+        bottom: 267px;
+        left: -100px;
+    }
+
+    .image4>div#textsVoice {
+        top: 15px;
+        right: 34px;
+    }
+
+    #section-pageThree .box-slider {
+        left: -59px;
+        width: 718px;
+    }
+
+    #section-pageThree .box-slider>.slider {
+        position: relative;
+        left: -428px;
+    }
+
+
+    .image4>.audio {
+        margin-top: 10px;
+    }
+
+    .image4>.audio>i#playBtn {
+        top: 30px;
+    }
+
+    #section-pageTwo #contactUs {
+
+        bottom: 258px;
+        left: 378px;
+    }
+
+    #section-home>.container>.boxContent>#imageSlider {
+        max-width: 390px;
+        max-height: 427px;
+    }
+
+    #image1 {
+        width: 200px;
+        left: 297px;
+    }
+
+    #boxWeblog {
+        column-gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .weblog {
+        flex-basis: 49%;
+        height: 570px;
+        margin: 15px 0;
+    }
+
+    .weblog img {
+
+        margin-top: -7px;
+    }
+
+    #boxWeblog>.weblog:nth-child(3) {
+        margin: 0 auto;
+    }
+
+    #section-pageFour {
+        margin-top: -52px;
+        height: 1400px;
+    }
+
+    .imgAboutUs {
+        background-size: 500px;
+        min-height: 490px;
+        min-width: 410px;
+    }
+
+    .textAboutUs {
+        padding: 80px 55px 80px 0;
+    }
+
+    .textAboutUs>p {
+        font-size: 18px;
+        height: 400px;
+    }
+
+    .imgError {
+        background-size: 1130px;
+        left: 5px;
+    }
+
+    .imgError>p {
+        bottom: 305px;
+        padding: 15px 10px;
+    }
+
+    #callBox>.itemCall>.icon-Call>i {
+        font-size: 50px;
+    }
+
+    h3.title {
+        font-size: 35px;
+    }
+
+    #form-information {
+        margin-top: -35px;
+    }
+
+    #section-blog #boxWeblog {
+        margin-bottom: 100px;
+    }
+
+    #page-weblogs #Weblog .blog img {
+        max-width: 490px;
+        max-height: 490px;
+        margin-bottom: 35px;
+    }
+
+    .blog p {
+        line-height: 2.3;
+        font-size: 16px;
+    }
+
+    #page-weblogs #Weblog .itemBlog .item img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    #page-weblogs #Weblog .itemBlog {
+        padding-right: 15px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #topHeader .icon-header {
+        padding-right: 10px;
+        font-size: 23px;
+    }
+
+    #hambergerMuno {
+        padding: 0;
+    }
+
+    #top-menu>ul>li>a {
+        font-size: 16px;
+    }
+
+    #top-menu>ul>li {
+        padding: 15px 10px;
+    }
+
+    .boxContent {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    #section-home>.container>.boxContent>#imageSlider .boxImage {
+        width: 510px;
+    }
+
+    #section-home>.container>.boxContent>#imageSlider {
+        display: block;
+        mask-size: 100%;
+        max-width: 510px;
+        max-height: 690px;
+        margin: 90px 0 0 5px;
+    }
+
+    .icon-Arrow-Down-2 {
+        top: 108px;
+        left: 50px;
+        right: inherit;
+    }
+
+    #boxImageIcones {
+        right: 40px;
+        top: 590px;
+    }
+
+    .image2 {
+        bottom: inherit;
+        right: inherit;
+        left: 0;
+        top: 520px;
+        background-size: 92%;
+    }
+
+    .container {
+        height: 1400px;
+    }
+
+    #image1 {
+        left: inherit;
+        top: 590px;
+        right: -60px;
+    }
+
+    .content {
+        width: 605px;
+    }
+
+    .content>#titrHome {
+        font-size: 25px;
+    }
+
+    .tapContent>#boxTabContent>button,
+    .seeAll>button {
+        font-size: 15px;
+        min-width: 120px;
+    }
+
+    .tapContent>#boxTabContent {
+        width: 373px;
+    }
+
+    #section-pageOne .box-slider {
+        width: 955px;
+        right: -264px;
+    }
+
+    #section-pageOne .box-slider>.slider {
+        left: -477px;
+    }
+
+    .boxTwo {
+        width: 320px;
+        font-size: 18px;
+        left: 160px;
+        bottom: 405px;
+    }
+
+    #section-pageTwo>.container>.boxContent>.boxText>.content {
+        width: 510px;
+    }
+
+    #section-pageTwo .boxContent>img#imgCover {
+        left: -430px;
+        top: inherit;
+        bottom: 210px;
+        width: 480px;
+    }
+
+    #section-pageTwo .boxImage {
+        max-width: 600px;
+        height: 715px;
+        left: 10px;
+    }
+
+    #section-pageTwo #about {
+        left: 95px;
+        top: 405px;
+    }
+
+    .iconHeart {
+        left: inherit;
+        right: 25px;
+        top: 420px;
+    }
+
+    #section-pageTwo .image2 {
+        right: 0;
+        background-size: 255px;
+        bottom: inherit;
+        top: 850px;
+    }
+
+    #section-pageTwo .image3 {
+        left: -45px;
+        top: 513px;
+        background-size: 265px;
+    }
+
+    .iconHeart#heart2 {
+        left: 70px;
+        bottom: 470px;
+    }
+
+    .image4 {
+        left: -45px;
+        bottom: 365px;
+        background-size: 260px;
+    }
+
+    .image4>div#textsVoice {
+        top: 15px;
+    }
+
+    .image4>.audio {
+        margin-top: 10px;
+    }
+
+    .image4>.audio>i#playBtn {
+        top: 30px;
+    }
+
+    #section-pageTwo #contactUs {
+        left: inherit;
+        right: 20px;
+        bottom: 380px;
+    }
+
+    #section-pageThree {
+        margin-top: -155px;
+    }
+
+    #section-pageThree #iconSlider {
+        top: inherit;
+        right: 222px;
+    }
+
+    #section-pageThree .box-slider {
+        width: 765px;
+        right: -220px;
+    }
+
+    #section-pageThree .box-slider>.slider {
+        left: -403px;
+    }
+
+    #section-pageFour {
+        margin-top: -440px;
+        height: 2080px;
+    }
+
+    #boxWeblog {
+        height: 127%;
+        margin-top: 55px;
+        flex-direction: column;
+    }
+
+    #social-network>a {
+        font-size: 30px;
+        margin: 0 18px;
+    }
+
+    .column {
+        flex: none;
+    }
+
+    #columns {
+        column-gap: 150px;
+        flex-wrap: wrap;
+    }
+
+    #columns>.column:nth-child(4) {
+        margin: 0 auto;
+    }
+
+    #columns-box>p {
+        font-size: 17px;
+    }
+
+    .boxAboutUs {
+        flex-direction: column;
+    }
+
+    .imgAboutUs {
+        background-size: 555px;
+        min-height: 430px;
+        background-position: center;
+        width: 90%;
+    }
+
+    .textAboutUs {
+        padding: 0;
+    }
+
+    .textAboutUs>p {
+        font-size: 17px;
+        height: 247px;
+    }
+
+    #page-aboutUs h2 {
+        font-size: 38px;
+    }
+
+    .imgError {
+        background-size: 875px;
+        left: -4px;
+    }
+
+    .imgError>p {
+        bottom: 325px;
+        padding: 11px 10px;
+        font-size: 16px;
+    }
+
+    .imgError>button {
+        padding: 14px;
+        bottom: 186px;
+        font-size: 14px;
+    }
+
+    .weblog {
+        flex-basis: 32%;
+    }
+
+    #section-blog #boxWeblog>.weblog {
+        flex-basis: 32%;
+    }
+
+    #section-blog #boxWeblog>.weblog>img {
+        margin-top: 10px;
+    }
+
+    #section-blog .container,
+    #page-aboutUs .container,
+    #relationship-port .container,
+    #page-weblogs .container {
+        height: 100%;
+        min-height: 880px;
+    }
+
+    #section-blog #footer .column>a>img,
+    #page-aboutUs #footer .column>a>img,
+    #page-weblogs #footer .column>a>img,
+    #footer .column>a>img {
+        width: 40%;
+        margin-top: 25px;
+    }
+
+    #page-weblogs #Weblog {
+        flex-direction: column;
+    }
+
+    #page-weblogs #Weblog .blog img {
+        max-width: 600px;
+        max-height: 555px;
+    }
+
+    #page-weblogs #Weblog .itemBlog>h3 {
+        font-size: 25px;
+    }
+
+    #page-weblogs #Weblog .itemBlog .item img {
+        min-height: 75px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 425px) {}

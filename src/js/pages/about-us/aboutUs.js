@@ -1,0 +1,1 @@
+import "../../../sass/components/pages/about-us/index.scss";
