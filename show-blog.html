@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="refresh">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="stylesheet" href="SWeblogs.scss"> -->
-    <!-- <link rel="stylesheet" href="../../../css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="../../../css/responsiv.css"> -->
-    <title> لینوم </title>
+    <title> وبلاگ </title>
 </head>
 
 <body>
@@ -16,14 +13,29 @@
     <section id="page-weblogs">
 
         <header id="topHeader">
-            <i class="icon-header icon-menu" id="hambergerMuno"></i>
+            <i class="icon-header icon-menu" id="hambergerMuno">
+                <div class="show-manuCategories">
+                    <ul class="manuCategories">
+                        <li class="menuItem">
+                            <a href="#">دسته بندی محصولات</a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="./list-blog.html">اخبار و مقالات</a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="./about-us.html">درباره ما</a>
+                        </li>
+                        <li class="menuItem">
+                            <a href="./index.html">صفحه اصلی</a>
+                        </li>
+                    </ul>
+                </div>
+            </i>
 
             <nav id="top-menu">
                 <ul>
                     <li id="item-manuCategories">
-                        <a href="#" class="text-menu"> دسته بندی محصولات
-                            <i class="icon-Arrow-Down"></i>
-                        </a>
+                        <a href="#" class="text-menu"> دسته بندی محصولات</a>
 
                         <div id="box-manuCategories">
                             <ul class="manuCategories">
@@ -246,7 +258,7 @@
 
     </script>
 
-    <script src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
     <script type="module" src="/src/js/pages/show-blog/showBlog.js"></script>
 
 </body>

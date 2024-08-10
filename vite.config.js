@@ -1,24 +1,10 @@
 import Inspect from "vite-plugin-inspect";
 import { resolve } from "path";
 
-// export default defineConfig({
-//   build: {
-//     outDir: OUT_DIR,
-//   },
-//   css: {
-//     postcss: './postcss.config.js'
-//   },
-//   plugins: [
-//     viteStaticCopy({
-//       targets: entries,
-
-//     }),
-//   ],
-// });
 
 export default {
   plugins: [Inspect()],
-  // base: "/tooscarpet/v2",
+  // base: "/linom/v2",
   css: {
     devSourcemap: true,
     postcss: "./postcss.config.js",

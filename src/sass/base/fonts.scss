@@ -1,20 +1,20 @@
 @font-face {
     font-family: dana;
     font-weight: 600;
-    src: url("../../../public/fonts/woff/Dana-Regular.woff") format('woff'), url("../../../public/fonts/woff2/Dana-Medium.woff2") format('woff2');
+    src: url("/fonts/woff/Dana-Regular.woff") format('woff'), url("/fonts/woff2/Dana-Medium.woff2") format('woff2');
     font-family: dana;
     font-weight: 900;
-    src: url("../../../public/fonts/woff/Dana-Medium.woff") format('woff'), url("../../../public/fonts/woff2/Dana-Medium.woff2") format('woff2');
+    src: url("/fonts/woff/Dana-Medium.woff") format('woff'), url("/fonts/woff2/Dana-Medium.woff2") format('woff2');
 }
 
 /*---------------Icomoon----------------*/
 @font-face {
     font-family: 'icomoon';
-    src: url('fonts/icomoon.eot?89b8fp');
-    src: url('fonts/icomoon.eot?89b8fp#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?89b8fp') format('truetype'),
-        url('fonts/icomoon.woff?89b8fp') format('woff'),
-        url('fonts/icomoon.svg?89b8fp#icomoon') format('svg');
+    src: url('/fonts/icons/icomoon.eot?89b8fp');
+    src: url('/fonts/icons/icomoon.eot?89b8fp#iefix') format('embedded-opentype'),
+        url('/fonts/icons/icomoon.ttf?89b8fp') format('truetype'),
+        url('/fonts/icons/icomoon.woff?89b8fp') format('woff'),
+        url('/fonts/icons/icomoon.svg?89b8fp#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;

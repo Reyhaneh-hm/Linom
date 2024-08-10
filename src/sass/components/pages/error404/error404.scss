@@ -1,27 +1,4 @@
-// @import '../../icon/styleIcon.css';
-
-// @font-face {
-//     font-family: dana;
-//     font-weight: 600;
-//     src: url("../../fonts/Webfonts/woff/Dana-Regular.woff") format('woff'), url("../../fonts/Webfonts/woff2/Dana-Regular.woff2") format('woff2');
-//     font-family: dana;
-//     font-weight: 900;
-//     src: url("../../fonts/Webfonts/woff/Dana-Medium.woff") format('woff'), url("../../fonts/Webfonts/woff2/Dana-Medium.woff2") format('woff2');
-// }
-
-/*--------------------------------------*/
-* {
-    box-sizing: border-box;
-    direction: rtl;
-    font-family: dana, sans-serif;
-}
-
-.container {
-    width: 80%;
-    min-height: 880px;
-    margin: 0 auto;
-    position: relative;
-}
+@import "../../Public/index.scss";
 
 /*--------------------Error----------------*/
 
@@ -37,7 +14,7 @@
 }
 
 .imgError {
-    background-image: url("/public/image/error2.jpg");
+    background-image: url("../../../../../public/img/error404/1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1395px;
