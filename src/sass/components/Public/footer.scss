@@ -2,7 +2,7 @@
 #footer {
     height: 450px;
     background: #fff;
-    height: 450px;
+    height: 395px;
     background: #fff;
     max-width: 1910px;
     // min-width: 1515px;
@@ -37,12 +37,14 @@
         text-decoration: none;
 
         img {
-            width: 49%;
+            width: 150px;
+            margin: -15px 0;
         }
     }
 
     &>p {
         font-size: 20px;
+        margin-bottom: 25px;
     }
 
     &>.footer-list {

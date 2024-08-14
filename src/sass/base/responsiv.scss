@@ -1,3 +1,17 @@
+@media screen and (max-width: 2560px) {
+    #topHeader {
+        max-width: 100%;
+        padding: 15px 20.3%;
+    }
+
+}
+
+@media screen and (max-width: 1920px) {
+    #topHeader {
+        padding: 15px 191px;
+    }
+}
+
 @media screen and (max-width: 1440px) {
     .container {
         width: 80%;
@@ -97,7 +111,7 @@
     }
 
     .image2 {
-        bottom: 275px;
+        bottom: 250px;
         right: 415px;
     }
 
@@ -149,8 +163,8 @@
     }
 
     #boxCategories {
-        column-gap: 0;
-        flex-wrap: wrap;
+        // column-gap: 0;
+        // flex-wrap: wrap;
     }
 
     #allCategories {
@@ -190,19 +204,19 @@
     }
 
     #boxWeblog {
-        column-gap: 0;
-        flex-wrap: wrap;
+        // column-gap: 0;
+        // flex-wrap: wrap;
         justify-content: space-around;
+        width: 101%;
     }
 
     .weblog {
-        flex-basis: 30%;
-        height: 510px;
-        margin: 35px 0;
+        // flex-basis: 30%;
+        margin: 15px 0 15px 10px;
     }
 
     .weblog>.textWeblog>p {
-        font-size: 16px;
+        font-size: 15px;
         height: inherit;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -210,6 +224,16 @@
         text-overflow: ellipsis;
         -webkit-line-clamp: 5;
         margin-bottom: 20px;
+    }
+
+    .column>a img {
+        width: 125px;
+        margin: 10px 0;
+    }
+
+    #topHeader .top-menu2 {
+        min-width: 1435px;
+        padding: 15px 140px;
     }
 }
 
@@ -244,7 +268,8 @@
     }
 
     .column>a img {
-        margin-top: 45px;
+        margin-top: 30px;
+        width: 96px;
     }
 
     #boxImageIcones .boxImageIcone {
@@ -270,6 +295,7 @@
     .categories {
         max-width: 115px;
         height: 105px;
+        justify-content: space-around;
     }
 
     .text-arrow>h4 {
@@ -426,14 +452,14 @@
     }
 
     #boxWeblog {
-        column-gap: 0;
-        flex-wrap: wrap;
+        // column-gap: 0;
+        // flex-wrap: wrap;
+        width: 100%;
     }
 
     .weblog {
-        flex-basis: 49%;
-        height: 540px;
-        margin: 15px 0;
+        // flex-basis: 49%;
+        margin: 15px 0 15px 10px;
     }
 
     .weblog img {
@@ -446,7 +472,6 @@
 
     #section-pageFour {
         margin-top: -52px;
-        height: 1400px;
     }
 
     .imgAboutUs {
@@ -504,6 +529,23 @@
     #page-weblogs #Weblog .itemBlog {
         padding-right: 15px;
     }
+
+    #boxTabContent {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 10px;
+    }
+
+    #topHeader .top-menu2 {
+        min-width: 1025px;
+        padding: 15px 100px;
+    }
+
+    #topHeader .top-menu2 ul.menu2 li.itemMenu2 {
+        padding: 15px 0 15px 25px;
+    }
+
+
 }
 
 
@@ -522,13 +564,17 @@
         width: 100%;
     }
 
+    #section-pageOne .items-tabContent {
+        flex-direction: column;
+    }
+
     #topHeader .icon-header {
         padding-right: 10px;
         font-size: 23px;
     }
 
     #boxImageIcones .boxImageIcone {
-        padding: 15px;
+        padding: 12px;
         right: 0;
         position: relative;
     }
@@ -545,6 +591,19 @@
         padding: 15px 10px;
     }
 
+    .content>#textHome {
+        -webkit-line-clamp: 2;
+        height: inherit;
+    }
+
+    #topHeader #top-menu .icon-header {
+        font-size: 27px;
+    }
+
+    #topHeader #hambergerMuno {
+        font-size: 27px;
+    }
+
     .boxContent {
         margin-top: 30px;
         flex-direction: column;
@@ -557,38 +616,57 @@
     #section-home>.container>.boxContent>#imageSlider {
         display: block;
         mask-size: 100%;
-        max-width: 510px;
+        max-width: 345px;
         max-height: 690px;
-        margin: 90px 0 0 5px;
+        margin-top: 90px;
     }
 
-    .icon-Arrow-Down-2 {
-        top: 108px;
-        left: 50px;
-        right: inherit;
+    .seeAll {
+        padding-bottom: 10px;
     }
 
-    #boxImageIcones {
-        right: 40px;
-        top: 590px;
+    .seeAll>a {
+        font-size: 15px;
+        min-width: 120px;
+        height: 55px;
+        padding: 18px 10px;
+
     }
 
-    .image2 {
-        bottom: inherit;
-        right: inherit;
-        left: 0;
-        top: 520px;
-        background-size: 92%;
-    }
 
     .container {
         height: 1400px;
     }
 
+    .icon-Arrow-Down-2 {
+        top: 525px;
+        left: 170px;
+        right: inherit;
+        z-index: 10;
+    }
+
+    #boxImageIcones {
+        right: 145px;
+        top: 400px;
+    }
+
+    .image2 {
+        bottom: inherit;
+        right: inherit;
+        left: 15px;
+        top: 405px;
+        background-size: 92%;
+    }
+
+    #section-home .container {
+        height: 1140px;
+    }
+
     #image1 {
+        width: 230px;
         left: inherit;
-        top: 590px;
-        right: -60px;
+        top: 430px;
+        right: 20px;
     }
 
     .content {
@@ -597,6 +675,8 @@
 
     .content>#titrHome {
         font-size: 25px;
+        -webkit-line-clamp: 1;
+        height: inherit;
     }
 
     .tapContent>#boxTabContent>button,
@@ -610,12 +690,12 @@
     }
 
     #section-pageOne .box-slider {
-        width: 660px;
+        width: 770px;
         right: 0;
     }
 
     #section-pageOne .box-slider>.slider {
-        left: -477px;
+        left: -390px;
     }
 
 
@@ -623,8 +703,9 @@
         width: 330px;
         font-size: 18px;
         left: 150px;
-        bottom: 405px;
+        bottom: 420px;
     }
+
 
     #section-pageTwo>.container>.boxContent>.boxText>.content {
         width: 510px;
@@ -635,6 +716,10 @@
         top: inherit;
         bottom: 210px;
         width: 480px;
+    }
+
+    .tapContent {
+        margin-top: 120px;
     }
 
     #section-pageTwo .boxImage {
@@ -712,19 +797,15 @@
     }
 
     #section-pageThree .box-slider>.slider {
-        left: -403px;
+        left: -390px;
     }
 
     #section-pageFour {
-        margin-top: -440px;
-        height: 2080px;
+        margin-top: -500px;
+        height: 945px;
     }
 
-    #boxWeblog {
-        height: 127%;
-        margin-top: 55px;
-        flex-direction: column;
-    }
+
 
     #social-network>a {
         font-size: 30px;
@@ -792,8 +873,8 @@
         font-size: 14px;
     }
 
-    .weblog {
-        flex-basis: 32%;
+    #boxWeblog {
+        height: 46%;
     }
 
     #section-blog #boxWeblog>.weblog {
@@ -845,6 +926,22 @@
         min-width: 666px;
         padding: 15px 70px;
     }
+
+    #footer {
+        display: none;
+    }
+
+    #section-home .boxContent #imageSlider {
+        mask-image: none;
+    }
+
+    #section-home>.container>.boxContent>#imageSlider .boxImage {
+        width: 340px;
+        height: 370px;
+        border-radius: 50px;
+        // padding: 0 2px;
+        margin: 0 auto;
+    }
 }
 
 
@@ -891,9 +988,9 @@
         padding: 0 2px;
     }
 
-    #section-home .boxContent #imageSlider {
-        mask-image: none;
-    }
+    // #section-home .boxContent #imageSlider {
+    //     mask-image: none;
+    // }
 
 
     .image2 {

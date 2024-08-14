@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="refresh">
+    <link rel="icon" type="image/x-icon" href="./public/img/main-page/logo/logoMain.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title> لیست بلاگ </title>
 </head>
@@ -11,64 +12,719 @@
 <body>
     <section id="section-blog">
 
-
+        <div class="overlay"></div>
         <header id="topHeader">
-            <i class="icon-header icon-menu" id="hambergerMuno">
-                <div class="show-manuCategories">
-                    <ul class="manuCategories">
-                        <li class="menuItem">
-                            <a href="#">دسته بندی محصولات</a>
-                        </li>
-                        <li class="menuItem">
-                            <a href="./list-blog.html">اخبار و مقالات</a>
-                        </li>
-                        <li class="menuItem">
-                            <a href="./about-us.html">درباره ما</a>
-                        </li>
-                        <li class="menuItem">
-                            <a href="./index.html">صفحه اصلی</a>
-                        </li>
-                    </ul>
-                </div>
-            </i>
-
-
-
 
             <nav id="top-menu">
-                <ul>
-                    <li id="item-manuCategories">
-                        <a href="#" class="text-menu"> دسته بندی محصولات</a>
+                <a href="./index.html" class="logo">
+                    <img src="./public/img/main-page/logo/logoMain.png" alt="">
+                </a>
+                <ul class="menu">
+                    <li class="itemMenu" id="item-manuCategories">
+                        <a class="text-menu">
+                            <i class="icon-header icon-menu" id="hambergerMuno"></i>
+                            دسته بندی محصولات
+                        </a>
 
-                        <div id="box-manuCategories">
-                            <ul class="manuCategories">
-                                <li class="menuItem">
-                                    <a href="#">کابینت روشویی</a>
-                                </li>
-                                <li class="menuItem">
-                                    <a href="#">توالت فرنگی</a>
-                                </li>
-                                <li class="menuItem">
-                                    <a href="#">توالت ایرانی</a>
-                                </li>
-                                <li class="menuItem">
-                                    <a href="#">دوش حمام</a>
-                                </li>
-                                <li class="menuItem">
-                                    <a href="#">وان حمام</a>
-                                </li>
-                            </ul>
+                        <div class="product_menu">
+                            <div class="sidebar">
+                                <ul class="box">
+                                    <li tab_content_title="item1" class="active">
+                                        <span class="title">کابینت روشویی</span>
+                                        <span class="icon icon-Arrow-Left"></span>
+                                    </li>
+                                    <li tab_content_title="item2">
+                                        <span class="title">توالت فرنگی</span>
+                                        <span class="icon icon-Arrow-Left"></span>
+                                    </li>
+                                    <li tab_content_title="item3">
+                                        <span class="title">توالت ایرانی</span>
+                                        <span class="icon icon-Arrow-Left"></span>
+                                    </li>
+                                    <li tab_content_title="item4">
+                                        <span class="title">وان حمام</span>
+                                        <span class="icon icon-Arrow-Left"></span>
+                                    </li>
+                                    <li tab_content_title="item5">
+                                        <span class="title">دوش حمام</span>
+                                        <span class="icon icon-Arrow-Left"></span>
+                                    </li>
+                                    <li tab_content_title="item6">
+                                        <span class="title">کابینت روشویی</span>
+                                        <span class="icon icon-Arrow-Left"></span>
+                                    </li>
+                                    <li tab_content_title="item7">
+                                        <span class="title">توالت فرنگی</span>
+                                        <span class="icon icon-Arrow-Left"></span>
+                                    </li>
+                                    <li tab_content_title="item8">
+                                        <span class="title">توالت ایرانی</span>
+                                        <span class="icon icon-Arrow-Left"></span>
+                                    </li>
+                                    <li tab_content_title="item9">
+                                        <span class="title">وان حمام</span>
+                                        <span class="icon icon-Arrow-Left"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content_elem">
+                                <div tab_content_item="item1" class="main_elem active">
+                                    <span id="backPageBtn" class="back">بازگشت</span>
+                                    <div class="products">
+                                        <div class="top_title">
+                                            <span class="title">کابینت روشویی</span>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div scroll_container class="items">
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/3.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/3.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/3.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/3.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/3.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <a href="#" class="all_products">نمایش همه محصولات
+                                            <span class="arrow icon-Arrow-Left"></span></a>
+                                        <div class="selected_products_top_title">
+                                            <span class="top_icon icon-arrow-rotary2"></span>
+                                            <span class="title">محصولات پرفروش این دسته</span>
+                                        </div>
+                                    </div>
+                                    <div scroll_container class="selected_products">
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/3.jpg" class="product_image"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح گلاسه</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح گلاسه یکی از طرح های وینتیج شرکت لینوم می باشد که دارای اصالت و
+                                                    رنگ های مناسب بافت
+                                                    زیادی میباشد
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/3.jpg" class="product_image"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح گلاسه</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح گلاسه یکی از طرح های وینتیج شرکت لینوم می باشد که دارای اصالت و
+                                                    رنگ های مناسب بافت
+                                                    زیادی میباشد
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/3.jpg" class="product_image"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح گلاسه</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح گلاسه یکی از طرح های وینتیج شرکت لینوم می باشد که دارای اصالت و
+                                                    رنگ های مناسب بافت
+                                                    زیادی میباشد
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/3.jpg" class="product_image"
+                                                    alt="image" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح گلاسه</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح گلاسه یکی از طرح های وینتیج شرکت لینوم می باشد که دارای اصالت و
+                                                    رنگ های مناسب بافت
+                                                    زیادی میباشد
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div tab_content_item="item2" class="main_elem">
+                                    <span id="backPageBtn" class="back">بازگشت</span>
+                                    <div class="products">
+                                        <div class="top_title">
+                                            <span class="title">توالت فرنگی</span>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div scroll_container class="items">
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/2.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/2.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/2.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/2.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/2.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <a href="#" class="all_products">نمایش همه محصولات
+                                            <span class="arrow icon-Arrow-Left"></span></a>
+                                        <div class="selected_products_top_title">
+                                            <span class="top_icon icon-arrow-rotary2"></span>
+                                            <span class="title">محصولات پرفروش این دسته</span>
+                                        </div>
+                                    </div>
+                                    <div scroll_container class="selected_products">
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/2.jpg" class="product_image"
+                                                    alt="image" />
+
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح لوتوس</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح کبریا یکی از طرح های وینتیج شرکت فرش فرین
+                                                    بافت می باشد که دارای اصالت و رنگ های مناسب بافت
+                                                    زیادی می
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/2.jpg" class="product_image"
+                                                    alt="image" />
+
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح لوتوس</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح کبریا یکی از طرح های وینتیج شرکت فرش فرین
+                                                    بافت می باشد که دارای اصالت و رنگ های مناسب بافت
+                                                    زیادی می
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/2.jpg" class="product_image"
+                                                    alt="image" />
+
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح لوتوس</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح کبریا یکی از طرح های وینتیج شرکت فرش فرین
+                                                    بافت می باشد که دارای اصالت و رنگ های مناسب بافت
+                                                    زیادی می
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/2.jpg" class="product_image"
+                                                    alt="image" />
+
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح لوتوس</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح کبریا یکی از طرح های وینتیج شرکت فرش فرین
+                                                    بافت می باشد که دارای اصالت و رنگ های مناسب بافت
+                                                    زیادی می
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div tab_content_item="item3" class="main_elem">
+                                    <span id="backPageBtn" class="back">بازگشت</span>
+                                    <div class="products">
+                                        <div class="top_title">
+                                            <span class="title">توالت ایرانی</span>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div scroll_container class="items">
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/1.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/1.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/1.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/1.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="item">
+                                                <div class="main_image">
+                                                    <img src="./public/img/product-menu/1.jpg" alt="image" />
+                                                </div>
+                                                <div class="main_info">
+                                                    <div class="top">
+                                                        <h3 class="name">طرح گلاسه</h3>
+                                                    </div>
+                                                    <p class="main_desc">
+                                                        طرح گلاسه یکی از طرح های وینتیج شرکت لینوم
+                                                        می باشد که دارای اصالت و رنگ های مناسب
+                                                        زیادی می باشد که قابل سفار می باشدطرح
+                                                        گلاسه یکی از طرح
+                                                    </p>
+
+                                                    <div class="bottom">
+                                                        <div class="right">
+                                                            <p class="title">شروع قیمت از</p>
+                                                            <p class="price">
+                                                                2,500,000 <span>تومان</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <a href="#" class="all_products">نمایش همه محصولات
+                                            <span class="arrow icon-Arrow-Left"></span></a>
+                                        <div class="selected_products_top_title">
+                                            <span class="top_icon icon-arrow-rotary2"></span>
+                                            <span class="title">محصولات پرفروش این دسته</span>
+                                        </div>
+                                    </div>
+                                    <div scroll_container class="selected_products">
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/1.jpg" class="product_image"
+                                                    alt="image" />
+
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح لوتوس</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح کبریا یکی از طرح های وینتیج شرکت فرش فرین
+                                                    بافت می باشد که دارای اصالت و رنگ های مناسب بافت
+                                                    زیادی می
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/1.jpg" class="product_image"
+                                                    alt="image" />
+
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح لوتوس</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح کبریا یکی از طرح های وینتیج شرکت فرش فرین
+                                                    بافت می باشد که دارای اصالت و رنگ های مناسب بافت
+                                                    زیادی می
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/1.jpg" class="product_image"
+                                                    alt="image" />
+
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح لوتوس</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح کبریا یکی از طرح های وینتیج شرکت فرش فرین
+                                                    بافت می باشد که دارای اصالت و رنگ های مناسب بافت
+                                                    زیادی می
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="image">
+                                                <img src="./public/img/product-menu/1.jpg" class="product_image"
+                                                    alt="image" />
+
+                                            </div>
+                                            <div class="info">
+                                                <div class="top">
+                                                    <h3 class="title">طرح لوتوس</h3>
+                                                    <span class="tag">دارای تخفیف</span>
+                                                </div>
+                                                <p class="desc">
+                                                    طرح کبریا یکی از طرح های وینتیج شرکت فرش فرین
+                                                    بافت می باشد که دارای اصالت و رنگ های مناسب بافت
+                                                    زیادی می
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </li>
-                    <li>
-                        <a href="./list-blog.html" class="text-menu linkBlog"> اخبار و مقالات </a>
+                    <li class="itemMenu">
+                        <a href="./list-blog.html" class="text-menu linkBlog active"> اخبار و مقالات </a>
                     </li>
-                    <li>
+                    <li class="itemMenu">
                         <a href="./about-us.html" class="text-menu linkAboutUs"> درباره ما </a>
                     </li>
-                    <li>
-                        <a href="./index.html" class="text-menu linkAboutUs"> صفحه اصلی </a>
+                    <li class="itemMenu">
+                        <a href="./index.html" class="text-menu"> صفحه اصلی</a>
                     </li>
                 </ul>
 
@@ -76,80 +732,89 @@
                     <a href="./contact-us.html"><i class="icon-header icon-Calling" id="call"></i></a>
                     <a href=""><i class="icon-header icon-Buy" id="buy"></i></a>
                     <a href="./error.html"><i class="icon-header icon-Profile" id="user"></i></a>
+                    <div class="burgger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
-
             </nav>
         </header>
 
 
-        <div class="container">
-            <h2> لیست وبلاگ ها</h2>
-            <div id="boxWeblog">
-                <div class="weblog">
-                    <img src="/public/img/blogs/list-blog/1.png" alt="">
-                    <span class="textWeblog">
-                        <h5><a href="./show-blog.html">شیر روشویی پایه بلند راسان مدل فلورا</a></h5>
-                        <p>ین مجموعه بر اساس پیشرفت زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
-                            شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
-                            به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را
-                            شروع نمود و با ورود به سرزمین پر برکت خراسان در شهر نیشابور و کاشمر وروستاهای اطراف میباشند
-                            زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
-                            شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
-                            به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را.
-                        </p>
-                        <span class="linkWeblog">
-                            <a href="">اخبار</a>
-                            <a href="">آموزشی</a>
-                        </span>
-                    </span>
-                </div>
-                <div class="weblog">
-                    <img src="/public/img/blogs/list-blog/2.png" alt="">
-                    <span class="textWeblog">
-                        <h5><a href="./show-blog.html">شیر روشویی پایه بلند راسان مدل فلورا</a></h5>
-                        <p>ین مجموعه بر اساس پیشرفت زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
-                            شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
-                            به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را
-                            شروع نمود و با ورود به سرزمین پر برکت خراسان در شهر نیشابور و کاشمر وروستاهای اطراف میباشند
-                            زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
-                            شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
-                            به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را.
-                        </p>
-                        <span class="linkWeblog">
-                            <a href="">اخبار</a>
-                            <a href="">آموزشی</a>
-                        </span>
-                    </span>
-                </div>
-                <div class="weblog">
-                    <img src="/public/img/blogs/list-blog/3.png" alt="">
-                    <span class="textWeblog">
-                        <h5><a href="./show-blog.html">شیر روشویی پایه بلند راسان مدل فلورا</a></h5>
-                        <p>ین مجموعه بر اساس پیشرفت زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
-                            شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
-                            به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را
-                            شروع نمود و با ورود به سرزمین پر برکت خراسان در شهر نیشابور و کاشمر وروستاهای اطراف میباشند
-                            زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
-                            شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
-                            به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را.
-                        </p>
-                        <span class="linkWeblog">
-                            <a href="">اخبار</a>
-                            <a href="">آموزشی</a>
-                        </span>
-                    </span>
-                </div>
-            </div>
 
+        <div class="container">
+            <h2>اخبار و مقالات لینوم</h2>
+            <div id="boxWeblog">
+                <a href="./show-blog.html" class="weblog">
+                    <img src="./public/img/blogs/list-blog/1.png" alt="">
+                    <span class="textWeblog">
+                        <h5><span>شیر روشویی پایه بلند راسان مدل فلورا</span></h5>
+                        <p>ین مجموعه بر اساس پیشرفت زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
+                            شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
+                            به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را
+                            شروع نمود و با ورود به سرزمین پر برکت خراسان در شهر نیشابور و کاشمر وروستاهای اطراف </p>
+                        <span class="linkWeblog">
+                            <span>اخبار</span>
+                            <span>آموزشی</span>
+                        </span>
+                    </span>
+                </a>
+                <a href="./show-blog.html" class="weblog">
+                    <img src="./public/img/blogs/list-blog/2.png" alt="">
+                    <span class="textWeblog">
+                        <h5><span>شیر روشویی پایه بلند راسان مدل فلورا</span></h5>
+                        <p>ین مجموعه بر اساس پیشرفت زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
+                            شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
+                            به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را
+                            شروع نمود و با ورود به سرزمین پر برکت خراسان در شهر نیشابور و کاشمر وروستاهای اطراف </p>
+                        <span class="linkWeblog">
+                            <span>اخبار</span>
+                            <span>آموزشی</span>
+                        </span>
+                    </span>
+                </a>
+                <a href="./show-blog.html" class="weblog">
+                    <img src="./public/img/blogs/list-blog/3.png" alt="">
+                    <span class="textWeblog">
+                        <h5><span>شیر روشویی پایه بلند راسان مدل فلورا</span></h5>
+                        <p>ین مجموعه بر اساس پیشرفت زمان و نیاز اجتماعی و اقتصادی و فرهنگی در طی بیش از نیم قرن ایجاد
+                            شده است، درقدیم الایام با نبودن سیستم مکانیکی، فرش با سنت دیرینه با دستگاه های دست ساز و با
+                            به کار رفتن هنر دست بافته میشد و بنیانگذار این مجموعه از سال 1329شمسی فعالیت اقتصادی خود را
+                            شروع نمود و با ورود به سرزمین پر برکت خراسان در شهر نیشابور و کاشمر وروستاهای اطراف </p>
+                        <span class="linkWeblog">
+                            <span>اخبار</span>
+                            <span>آموزشی</span>
+                        </span>
+                    </span>
+                </a>
+            </div>
         </div>
+
+
+        <ul class="pagination sec">
+            <li>
+                <a href="#" class="link arrow prev">قبلی <i class="icon icon-Arrow-Right"></i></a>
+            </li>
+            <li><a href="#" class="link">2</a></li>
+            <li class="active"><a href="#" class="link">3</a></li>
+            <li><a href="#" class="link">4</a></li>
+            <li><a href="#" class="link">5</a></li>
+            <li><a href="#" class="link">...</a></li>
+            <li><a href="#" class="link">15</a></li>
+            <li>
+                <a href="#" class="link arrow next"><i class="icon icon-Arrow-Left"></i> بعدی</a>
+            </li>
+        </ul>
+
 
 
         <footer id="footer">
             <div id="columns-box">
                 <div id="social-network">
-                    <!-- <a href="#">
-          <i class="icon-telegram"></i>
-        </a> -->
+                    <a href="#">
+                        <i class="icon-Telegram"></i>
+                    </a>
                     <a href="#">
                         <i class="icon-Whatsapp"></i>
                     </a>

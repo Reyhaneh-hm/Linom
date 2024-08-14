@@ -1,7 +1,4 @@
 import "../../../sass/components/pages/home/index.scss";
-
-
-/*------------------------------------------*/
 import WaveSurfer from "wavesurfer.js";
 
 /*--------------slick slider---------------*/
@@ -20,34 +17,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         // dots: true,
         arrows: true,
-        prevArrow: $(".icon-Arrow-Left-2"),
-        nextArrow: $(".icon-Arrow-Right-2"),
-        // responsive: [
-        //     {
-        //         breakpoint: 1024,
-        //         settings: {
-        //             slidesToShow: 3,
-        //             slidesToScroll: 3,
-        //             infinite: true,
-        //             dots: true
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 2
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 576,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1,
-        //             dots: false
-        //         }
-        //     }
-        // ]
+        prevArrow: $("#prevArrowHome"),
+        nextArrow: $("#nextArrowHome"),
     });
 });
 
@@ -58,13 +29,9 @@ window.addEventListener("load", () => {
 
     const audioTags = document.querySelectorAll("[audio_wave]");
 
-
-
     audioTags.forEach((item) => {
 
         if (!item) return;
-
-
 
         const wavesurfer = WaveSurfer.create({
 
@@ -90,8 +57,6 @@ window.addEventListener("load", () => {
 
         });
 
-
-
         wavesurfer.on("finish", function () {
 
             playBtn.classList.remove("active");
@@ -115,36 +80,61 @@ window.addEventListener("load", () => {
 /*--------------slider---------------*/
 
 window.addEventListener("load", () => {
-    const containers = document.querySelectorAll("[scroll_container]");
+
+    const containers = document.querySelectorAll("[scroll_container2]");
+
     containers.forEach((item) => {
+
         let isMouseDown = false;
+
         let startX, scrollLeft;
+
         item.addEventListener("mousedown", (e) => {
+
             isMouseDown = true;
+
             startX = e.pageX - item.offsetLeft;
+
             scrollLeft = item.scrollLeft;
+
         });
+
         item.addEventListener("mouseleave", () => {
+
             isMouseDown = false;
+
             item.classList.remove("active");
+
         });
+
         item.addEventListener("mouseup", () => {
+
             isMouseDown = false;
+
             item.classList.remove("active");
+
         });
+
         item.addEventListener("mousemove", (e) => {
+
             if (!isMouseDown) return;
+
             e.preventDefault();
+
             const x = e.pageX - item.offsetLeft;
+
             const walk = (x - startX) * 1;
+
             item.scrollLeft = scrollLeft - walk;
+
             item.classList.add("active");
+
         });
     });
 
 
-    const prevButtons = document.querySelectorAll(".icon-Arrow-Left-2");
-    const nextButtons = document.querySelectorAll(".icon-Arrow-Right-2");
+    //const prevButtons = document.querySelectorAll(".icon-Arrow-Left-2");
+    //const nextButtons = document.querySelectorAll(".icon-Arrow-Right-2");
 
     // prevButtons.forEach((button) => {
     //     button.addEventListener("click", () => {
@@ -232,8 +222,8 @@ $(document).ready(function () {
 // }
 
 window.addEventListener("load", () => {
-    const tabs = document.querySelectorAll("[tab_content_title]");
-    const content = document.querySelectorAll("[tab_content_item]");
+    const tabs = document.querySelectorAll("[tab_content_title2]");
+    const content = document.querySelectorAll("[tab_content_item2]");
 
     if (tabs && content) {
         // if (tabs.length > 0 && content.length > 0) {
@@ -251,7 +241,7 @@ window.addEventListener("load", () => {
                 });
                 tabs[i].classList.add("show");
 
-                const contentId = tabs[i].getAttribute("tab_content_title");
+                const contentId = tabs[i].getAttribute("tab_content_title2");
 
                 content.forEach((item) => {
                     item.classList.remove("show");
@@ -259,7 +249,7 @@ window.addEventListener("load", () => {
                 });
 
                 const element = document.querySelector(
-                    `[tab_content_item="${contentId}"]`
+                    `[tab_content_item2="${contentId}"]`
                 );
                 element.classList.add("show");
                 // element.style.display = "flex";
@@ -372,3 +362,5 @@ function stopTimer() {
     seconds = 0; // بازنشانی مقدار ثانیه‌ها
     updateTimer();
 }
+
+/*---------------------------------*/
