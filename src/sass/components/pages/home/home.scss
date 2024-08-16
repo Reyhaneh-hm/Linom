@@ -91,8 +91,6 @@ img {
     }
 }
 
-/*----------------section pageTwo------------------*/
-
 #section-pageTwo {
     .boxImage {
         -webkit-mask-image: url("../../../../../public/img/main-page/section-two/hero2.svg");
@@ -910,7 +908,7 @@ a>#arrowPage:hover {
 .slider {
     transition: all 0.3s;
 
-    &>a {
+    &>.icon-slider {
         text-decoration: none;
 
         &>i {
@@ -939,14 +937,12 @@ a>#arrowPage:hover {
                 justify-content: space-around;
                 align-items: center;
                 background: #283347;
-
-
             }
         }
     }
 
     &:hover {
-        a {
+        .icon-slider {
             i {
                 margin-left: 55px;
                 width: 90px;

@@ -18,21 +18,26 @@
         margin: 150px 0 80px;
     }
 
-    #boxWeblog {
+    .boxWeblog {
         margin-top: 50px;
     }
 }
 
 /*-----------------boxWeblog----------------*/
-#boxWeblog {
-    width: 100%;
+.boxWeblog {
+    width: 80%;
     height: 75%;
-    display: flex;
+    margin-right: 40px;
+    display: none;
     justify-content: space-between;
     align-items: center;
     overflow-x: auto;
     // white-space: nowrap;
     padding-bottom: 10px;
+
+    &.active {
+        display: flex;
+    }
 
     &::-webkit-scrollbar-track {
         padding: 2px 0;
@@ -52,11 +57,12 @@
 
 .weblog {
     position: relative;
-    width: 465px;
+    width: 375px;
     min-height: 430px;
     padding: 0 5px;
     border-radius: 30px;
     background: #fff;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +80,7 @@
     }
 
     img {
-        width: 445px;
+        width: 355px;
         margin-top: 10px;
         border-radius: 20px 20px 0 0;
     }
@@ -196,7 +202,7 @@
             &.arrow {
                 width: 130px;
                 border-radius: 41px;
-                color: #000;
+                color: #283347;
                 justify-content: end;
                 justify-content: center;
                 display: flex;
@@ -238,5 +244,101 @@
                 }
             }
         }
+    }
+}
+
+/*------------------sidebar---------------------*/
+
+#categories-weblog {
+    display: flex;
+
+
+    .sidebar {
+        // background-color: #fbfbfb;
+        width: 330px;
+        border-radius: 15px;
+        position: relative;
+        z-index: 2;
+        margin-top: 65px;
+
+        .box {
+            height: 290px;
+            overflow-y: auto;
+            direction: ltr;
+
+            &::-webkit-scrollbar-track {
+                padding: 2px 0;
+                background-color: #e2e1e1;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar {
+                width: 4px;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #283347;
+                border-radius: 5px;
+            }
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                padding-block: 23px;
+                align-items: center;
+                border-bottom: 1px solid #e9eef6;
+                margin-inline: 18px;
+                direction: rtl;
+                background-color: #fbfbfb;
+                // background-color: #f6f8fc;
+                cursor: pointer;
+
+                &:last-child {
+                    border-bottom: unset;
+                }
+
+                &:hover {
+                    span {
+                        color: #283347;
+                    }
+                }
+
+                &.active {
+                    position: sticky;
+                    top: 0;
+                    border-color: #27246a;
+
+                    span {
+                        color: #27246a;
+                    }
+                }
+
+                span {
+                    color: #abb5c6;
+                    transition: all 0.3s;
+
+                    &.title {
+                        font-size: 15px;
+                    }
+
+                    &.icon {
+                        width: 20px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .advertising{
+        background-image: url(/public/img/blogs/list-blog/4.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 185px;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-top: 10px;
+        display: block;
     }
 }
