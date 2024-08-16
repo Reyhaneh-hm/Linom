@@ -547,7 +547,20 @@ a>#arrowPage:hover {
             border: 2px solid #53535a;
             background: #53535a;
         }
+
+
     }
+
+    .boxImageIcone.disabled {
+        background-color: #ff0000;
+        cursor: not-allowed;
+    }
+
+    .boxImageIcone.disabled:hover {
+        background-color: #ff0000;
+        /* هاور غیرفعال */
+    }
+
 }
 
 
@@ -732,14 +745,15 @@ a>#arrowPage:hover {
 
 #section-pageThree {
     .box-slider {
-        left: -145px;
+        padding-right: 200px;
+        left: -49px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 80px 0;
         position: relative;
         z-index: 50;
-        width: 1424px;
+        width: 100%;
         margin-right: 145px;
         // overflow: hidden;
         overflow-x: hidden;
@@ -747,7 +761,6 @@ a>#arrowPage:hover {
 
         &>.slider {
             position: relative;
-            left: -180px;
             flex-shrink: 0;
         }
     }
@@ -1241,20 +1254,3 @@ a {
         }
     }
 }
-
-/*-------------sub manuCategories-------------*/
-// #sub-manuCategories {
-//     width: 300px;
-//     right: 248px;
-//     display: block;
-//     min-width: 320px;
-//     min-height: 10px;
-//     background: #fff;
-//     position: absolute;
-//     top: 70px;
-//     border-radius: 10px;
-//     border: 1px solid rgba(0, 0, 0, 0.0745098039);
-//     overflow: initial;
-//     visibility: visible;
-//     transition: all 0.3s;
-// }

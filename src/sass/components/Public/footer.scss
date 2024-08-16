@@ -84,3 +84,33 @@
         }
     }
 }
+
+/*-----------------------------------*/
+
+.mobile_footer {
+    justify-content: space-around;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-block: 13px;
+    z-index: 60;
+    display: none;
+    box-shadow: 0 -4px 20px #00000026;
+
+    .link {
+        text-align: center;
+        width: 130px;
+
+        .icon {
+            font-size: 25px;
+        }
+
+        .title {
+            display: block;
+            color: #abb5c6;
+            font-size: 13px;
+            margin-top: 3px;
+        }
+    }
+}

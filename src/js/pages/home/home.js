@@ -59,10 +59,20 @@ window.addEventListener("load", () => {
 
         wavesurfer.on("finish", function () {
 
-            playBtn.classList.remove("active");
+            playBtn.classList.toggle("active");
+            playBtn.classList.toggle("icon-Pause")
+            playBtn.classList.toggle("icon-Play")
 
         });
+        wavesurfer.on("audioprocess", function () {
+            if (wavesurfer.isPlaying()) {
 
+                var totalTime = wavesurfer.getDuration(),
+                    currentTime = wavesurfer.getCurrentTime(),
+                    remainingTime = totalTime - currentTime;
+                document.getElementById("timeAudio").innerText = remainingTime.toFixed(1)
+            }
+        })
         const playBtn = document.querySelector(item.getAttribute("btn_id"));
 
         playBtn.addEventListener("click", () => {
@@ -70,8 +80,19 @@ window.addEventListener("load", () => {
             wavesurfer.playPause();
 
             playBtn.classList.toggle("active");
+            playBtn.classList.toggle("icon-Pause")
+            playBtn.classList.toggle("icon-Play")
 
         });
+
+
+
+        // WaveSurfer.on("finish", function () {
+        //     playBtn.classList.remove("active");
+        // })
+
+
+
 
     });
 
@@ -157,23 +178,6 @@ window.addEventListener("load", () => {
 
 /*-------------Time Audio--------------*/
 
-
-var audio = document.getElementById("playsBtn");
-
-// Countdown
-audio.addEventListener("timeupdate", function () {
-    var timeAudio = document.getElementById('timeAudio');
-    var ml = parseInt((audio.duration / 60 - audio.currentTime / 60) % 60);
-    var sl = parseInt(audio.duration % 60 - audio.currentTime);
-
-    if (sl < 10) {
-        timeAudio.innerHTML = ml + ':0' + sl;
-    }
-    else {
-        timeAudio.innerHTML = '-' + ml + ':' + sl;
-    }
-}, false);
-
 /*-----------------Scrool bottom----------------*/
 
 $(document).ready(function () {
@@ -186,51 +190,13 @@ $(document).ready(function () {
 
 
 /*---------Tab Content-----------*/
-// document.getElementById("defaultOpen").click();
-
-// let defaultOpen = document.getElementById("defaultOpen");
-// defaultOpen.onclick = function (event) { openItem(event, 'irani'); };
-
-// let farangi = document.getElementById("farangi");
-// farangi.onclick = function (event) { openItem(event, 'farangi'); };
-
-// let cabinets = document.getElementById("cabinets");
-// cabinets.onclick = function (event) { openItem(event, 'cabinets'); };
-
-// let vanBath = document.getElementById("vanBath");
-// vanBath.onclick = function (event) { openItem(event, 'vanBath'); };
-
-// let doshBath = document.getElementById("doshBath");
-// doshBath.onclick = function (event) { openItem(event, 'doshBath'); };
-
-
-// function openItem(evt, itemName) {
-//     var i, tabcontent, tablinks;
-
-//     tabcontent = document.getElementsByClassName("tabcontent");
-//     for (i = 0; i < tabcontent.length; i++) {
-//         tabcontent[i].style.display = "none";
-//     }
-
-//     tablinks = document.getElementsByClassName("tablinks");
-//     for (i = 0; i < tablinks.length; i++) {
-//         tablinks[i].className = tablinks[i].className.replace(" active", "");
-//     }
-
-//     document.getElementById(itemName).style.display = "flex";
-//     evt.currentTarget.className += " active";
-// }
 
 window.addEventListener("load", () => {
     const tabs = document.querySelectorAll("[tab_content_title2]");
     const content = document.querySelectorAll("[tab_content_item2]");
 
     if (tabs && content) {
-        // if (tabs.length > 0 && content.length > 0) {
-        //     tabs[0].classList.add("active");
-        //     content[0].classList.add("active");
-        //     content[0].style.display = "flex";
-        // }
+
         for (let i = 0; i < tabs.length; i++) {
             tabs[0].click()
             tabs[0].classList.add('show')
@@ -245,34 +211,16 @@ window.addEventListener("load", () => {
 
                 content.forEach((item) => {
                     item.classList.remove("show");
-                    // item.style.display = "none";
                 });
 
                 const element = document.querySelector(
                     `[tab_content_item2="${contentId}"]`
                 );
                 element.classList.add("show");
-                // element.style.display = "flex";
             });
         }
     }
 });
-
-/*---------audio-----------*/
-
-// let number = 0;
-
-// function voiceOnOff() {
-//     number++
-//     let playBtn = document.getElementById('playBtn');
-
-//     if (number % 2 === 0) {
-//         playBtn.classList = 'icon-Play'
-//     } else {
-//         playBtn.classList = 'icon-Pause'
-//     }
-
-// }
 
 /*-----------------Scrool Slider------------------*/
 document.addEventListener("DOMContentLoaded", () => {
@@ -306,61 +254,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let slider2 = document.querySelector('.slider2');
         if (slider2) slider2.scrollLeft += distance;
+
+        let slider3 = document.querySelector('.slider3');
+        if (slider3) slider3.scrollLeft += distance;
     }
+
+
+    /*------------------Stop Btn Slider-------------------*/
+    let currentSlide = 0;
+    const slider = document.querySelectorAll('.slider');
+    const totalslider = slider.length;
+
+    function updateNavButtons() {
+        const ArrowLeft = document.querySelector('.ArrowLeft');
+        const ArrowRight = document.querySelector('.ArrowRight');
+
+        ArrowLeft.classList.remove('disabled');
+        ArrowRight.classList.remove('disabled');
+
+        if (currentSlide === 0) {
+            ArrowLeft.classList.add('disabled');
+        }
+
+        if (currentSlide === totalslider - 1) {
+            ArrowRight.classList.add('disabled');
+        }
+    }
+
+    function prevSlide() {
+        if (currentSlide > 0) {
+            currentSlide--;
+        }
+        updateNavButtons();
+    }
+
+    function nextSlide() {
+        if (currentSlide < totalslider - 1) {
+            currentSlide++;
+        }
+        updateNavButtons();
+    }
+
+    updateNavButtons();
+
+
+
 });
-/*-----------------Scrool Slider Home------------------*/
 
-// document.querySelector('.icon-Arrow-Left-2').addEventListener('click', function () {
-//     document.querySelector('.slick-prev').click();
-// });
 
-// document.querySelector('.icon-Arrow-Right-2').addEventListener('click', function () {
-//     document.querySelector('.slick-next').click();
-// });
 
-/*-----------------Timer------------------*/
-var timerInterval;
-var seconds = 0;
-var isPlaying = false;
-
-function updateTimer() {
-    var minutes = Math.floor(seconds / 60);
-    var remainingSeconds = seconds % 60;
-    $("#timeAudio").text(("0" + minutes).slice(-2) + ":" + ("0" + remainingSeconds).slice(-2));
-
-    // اگر زمان به 1 دقیقه و 37 ثانیه برسد، تایمر متوقف و بازنشانی می‌شود
-    if (minutes === 1 && remainingSeconds === 37) {
-        stopTimer();
-        seconds = 0;
-        updateTimer();
-        $("#playBtn").removeClass("icon-Pause").addClass("icon-Play");
-    }
-}
-
-function voiceOnOff() {
-    if (!isPlaying) {
-        startTimer();
-        $("#playBtn").removeClass("icon-Play").addClass("icon-Pause");
-    } else {
-        stopTimer();
-        $("#playBtn").removeClass("icon-Pause").addClass("icon-Play");
-    }
-    isPlaying = !isPlaying;
-}
-
-document.getElementById("playBtn").onclick = voiceOnOff;
-
-function startTimer() {
-    timerInterval = setInterval(function () {
-        seconds++;
-        updateTimer();
-    }, 1000);
-}
-
-function stopTimer() {
-    clearInterval(timerInterval);
-    seconds = 0; // بازنشانی مقدار ثانیه‌ها
-    updateTimer();
-}
 
 /*---------------------------------*/

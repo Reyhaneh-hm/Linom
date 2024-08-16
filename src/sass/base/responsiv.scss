@@ -122,7 +122,7 @@
     #section-pageTwo>.container>.boxContent>.boxText>.content {
         width: 500px;
         margin: 0;
-        top: 0;
+        top: -50px;
     }
 
     #section-pageTwo #about {
@@ -597,7 +597,28 @@
     }
 
     #topHeader #top-menu .icon-header {
-        font-size: 27px;
+        font-size: 25px;
+    }
+
+    #topHeader #top-menu ul.menu li.itemMenu a.text-menu #hambergerMuno {
+        font-size: 26px;
+    }
+
+    #topHeader #top-menu #boxIcon {
+        width: 115px;
+    }
+
+    #topHeader #top-menu ul.menu {
+        display: none;
+    }
+
+    #topHeader #top-menu .logo {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    #topHeader #top-menu .logo img {
+        width: 30px;
     }
 
     #topHeader #hambergerMuno {
@@ -622,7 +643,7 @@
     }
 
     .seeAll {
-        padding-bottom: 10px;
+        padding-bottom: 13px;
     }
 
     .seeAll>a {
@@ -924,7 +945,7 @@
 
     #topHeader {
         min-width: 666px;
-        padding: 15px 70px;
+        padding: 15px 80px;
     }
 
     #footer {
@@ -941,6 +962,14 @@
         border-radius: 50px;
         // padding: 0 2px;
         margin: 0 auto;
+    }
+
+    #topHeader #top-menu ul.menu li.itemMenu a.text-menu {
+        font-size: 16px;
+    }
+
+    .mobile_footer {
+        display: flex;
     }
 }
 
@@ -960,8 +989,8 @@
         display: none;
     }
 
-    #topHeader #top-menu {
-        justify-content: flex-end;
+    .container {
+        width: 90%;
     }
 
     #columns>.column:nth-child(4) {
@@ -981,6 +1010,10 @@
         }
     }
 
+    #image1 {
+        right: -60px;
+    }
+
     #section-home>.container>.boxContent>#imageSlider .boxImage {
         width: 340px;
         height: 370px;
@@ -988,17 +1021,22 @@
         padding: 0 2px;
     }
 
-    // #section-home .boxContent #imageSlider {
-    //     mask-image: none;
-    // }
+    .tapContent>#boxTabContent {
+        width: 250px;
+    }
 
 
     .image2 {
 
-        left: -55px;
-        top: 400px;
+        left: -40px;
+        top: 405px;
         background-size: 85%;
     }
+
+    .content {
+        width: 425px;
+    }
+
 
     .text-arrow>p {
 
@@ -1007,11 +1045,11 @@
 
     a .box-arrow {
         padding: 2px;
-        margin: 0 30px 10px 5px;
+        margin: 0 30px 0 5px;
     }
 
     #boxImageIcones {
-        right: 15px;
+        right: 35px;
         top: 405px;
     }
 
@@ -1048,34 +1086,15 @@
     }
 
     #boxCategories {
-        width: 70%;
+        width: 90%;
     }
 
     #section-home>.container {
-        height: 1230px;
+        height: 1160px;
     }
 
-    .tapContent>#boxTabContent {
-        flex-direction: column;
-        height: 310px;
-    }
 
-    .seeAll {
-        position: absolute;
-        bottom: -65px;
-        text-align: center;
-        width: 100%;
-        min-width: 335px;
-    }
 
-    .seeAll>a {
-        min-width: 335px;
-
-    }
-
-    .tapContent>#boxTabContent>button {
-        min-width: 335px;
-    }
 
     .tapContent {
         margin: 90px 0 50px;
@@ -1083,8 +1102,7 @@
     }
 
     .boxTwo {
-        left: 3px;
-        bottom: 170px;
+        left: 28px;
     }
 
     .boxTwo>p {
@@ -1116,7 +1134,7 @@
     }
 
     #section-pageOne .box-slider>.slider {
-        left: -603px;
+        left: -560px;
     }
 
     #section-pageTwo .boxImage {
@@ -1125,7 +1143,7 @@
     }
 
     #section-pageTwo {
-        margin-top: -130px;
+        margin-top: -280px;
     }
 
     #section-pageTwo .boxImage {
@@ -1139,34 +1157,37 @@
     }
 
     #section-pageTwo #about {
-        width: 110px;
-        height: 43px;
-        left: -20px;
+        width: 100px;
+        height: 39px;
+        left: -10px;
         top: 425px;
+        font-size: 15px;
     }
 
     #section-pageTwo .image3 {
-        left: -60px;
+        left: -42px;
         top: 460px;
         background-size: 85%;
+        height: 95px;
     }
 
     #section-pageTwo .image2 {
         background-size: 85%;
-        right: -60px;
-        top: 820px;
+        right: -42px;
+        top: 815px;
     }
 
     #section-pageTwo #contactUs {
-        width: 110px;
-        height: 43px;
+        width: 100px;
+        height: 40px;
         right: -20px;
         bottom: 440px;
+        font-size: 15px;
     }
 
     .image4 {
-        left: -60px;
-        bottom: 380px;
+        left: -40px;
+        bottom: 390px;
         background-size: 87%;
     }
 
@@ -1185,7 +1206,7 @@
     }
 
     #section-pageThree .box-slider {
-        right: -188px;
+        right: -170px;
         width: 720px;
     }
 
@@ -1206,6 +1227,7 @@
 
     #section-pageFour {
         margin-top: -500px;
+        height: 800px;
     }
 
     .weblog {
@@ -1217,7 +1239,7 @@
     }
 
     #boxWeblog {
-        height: 108%;
+        height: 550px;
     }
 
     .weblog>.textWeblog>p {
@@ -1359,16 +1381,17 @@
     }
 
     .iconHeart {
-        right: -35px;
+        right: -15px;
         top: 440px;
         z-index: 10;
         font-size: 25px;
     }
 
     .iconHeart#heart2 {
-        left: -35px;
-        bottom: 490px;
+        left: -15px;
+        bottom: 510px;
     }
+
 
 
 }
@@ -1408,7 +1431,7 @@
     }
 
     .content {
-        width: 509px;
+        width: 375px;
     }
 
     .content>#titrHome {
@@ -1437,7 +1460,32 @@
     }
 
     #section-home>.container {
-        height: 1365px;
+        height: 1160px;
+    }
+
+    .tapContent>#boxTabContent {
+        width: 160px;
+        right: 23px;
+        position: relative;
+    }
+
+    .tapContent>#boxTabContent>button {
+        font-size: 15px;
+        min-width: 155px;
+    }
+
+    #section-pageTwo>.container>.boxContent>.boxText>.content {
+
+        top: 35px;
+    }
+
+    #section-pageTwo {
+        margin-top: -365px;
+    }
+
+    #section-pageThree .box-slider {
+
+        margin: 40px 0;
     }
 
     #section-pageOne .box-slider>.slider {
@@ -1459,6 +1507,10 @@
         height: 43px;
         left: -7px;
         top: 410px;
+    }
+
+    #topTitr {
+        padding: 10px 26px;
     }
 
     #section-pageTwo .image3 {
@@ -1514,8 +1566,8 @@
     }
 
     .image4 {
-        left: -50px;
-        bottom: 445px;
+        left: -25px;
+        bottom: 455px;
         background-size: 80%;
     }
 
@@ -1542,11 +1594,16 @@
     }
 
     #section-pageThree .box-slider {
-        right: -208px;
+        right: -48px;
     }
 
     #section-pageThree .box-slider>.slider {
         left: -460px;
+    }
+
+    #section-pageFour {
+        margin-top: -605px;
+        height: 800px;
     }
 
     .weblog>.textWeblog>p {
@@ -1558,6 +1615,8 @@
         text-overflow: ellipsis;
         -webkit-line-clamp: 6;
     }
+
+
 
     .column>p {
         margin-top: 30px;
@@ -1581,9 +1640,6 @@
         width: 100%;
     }
 
-    #boxWeblog {
-        height: 109%;
-    }
 
     .form-control {
         width: 94%;
@@ -1609,7 +1665,7 @@
     #section-home>.container>.boxContent>#imageSlider .boxImage {
         width: 325px;
         height: 349px;
-        border-radius: 5px
+        border-radius: 50px;
     }
 
     #boxImageIcones {
@@ -1618,7 +1674,7 @@
 
     .image2 {
         top: 380px;
-        left: -33px;
+        left: -30px;
     }
 
     #logo1 {
@@ -1628,33 +1684,33 @@
     }
 
     .icon-Arrow-Down-2 {
-        left: 70px;
-        top: 508px;
-    }
-
-    .content>#titrHome {
-        width: 312px;
+        left: 100px;
+        top: 507px;
     }
 
     .content>#textHome {
-        width: 279px;
         -webkit-line-clamp: 4;
         height: inherit;
     }
 
-    .tapContent>#boxTabContent>button {
-        min-width: 270px;
+    #boxCategories>.categories {
+        font-size: 15px;
+    }
+
+    .icon-categories {
+        font-size: 33px;
     }
 
     .seeAll>a {
-        min-width: 270px;
-        right: -5px;
+        right: -30px;
         position: relative;
+        min-width: 155px;
     }
 
     #section-pageOne .box-slider {
-        width: 724px;
-        right: -3px;
+        margin: 35px 0;
+        width: 444px;
+        right: -35px;
     }
 
     #section-pageOne .box-slider>.slider {
@@ -1662,18 +1718,18 @@
     }
 
     .boxTwo {
-        left: 17px;
-        bottom: 170px;
-        width: 296px;
+        left: 28px;
+        bottom: 435px;
+        width: 325px;
     }
 
     #section-pageTwo>.container>.boxContent>.boxText>.content {
-        width: 267px;
+        width: 328px;
     }
 
     #section-pageTwo .boxImage {
-        height: 500px;
-        min-width: 415px;
+        height: 561px;
+        min-width: 465px;
         left: -9px;
     }
 
@@ -1682,19 +1738,19 @@
         width: 95px;
         height: 36px;
         left: 10px;
-        top: 395px;
+        top: 415px;
     }
 
     #section-pageTwo .image3 {
         left: -32px;
-        top: 423px;
+        top: 445px;
         background-size: 73%;
         width: 258px;
         height: 80px;
     }
 
     .iconHeart {
-        right: 3px;
+        right: 5px;
         top: 410px;
         font-size: 20px;
         padding: 7px;
@@ -1702,8 +1758,8 @@
 
     #section-pageTwo .image2 {
         background-size: 71%;
-        right: -41px;
-        top: 700px;
+        right: -38px;
+        top: 770px;
         width: 258px;
         height: 78px;
     }
@@ -1711,14 +1767,14 @@
     #section-pageTwo #contactUs {
         width: 100px;
         height: 38px;
-        right: 0px;
-        bottom: 587px;
+        right: 5px;
+        bottom: 515px;
         font-size: 13px;
     }
 
     .iconHeart#heart2 {
-        left: 5px;
-        bottom: 630px;
+        left: 8px;
+        bottom: 550px;
     }
 
     h4.sub-title {
@@ -1752,11 +1808,191 @@
     }
 
     .weblog {
-        width: 300px;
+        width: 340px;
     }
 
     #section-blog #boxWeblog>.weblog>img {
         margin-top: 0;
     }
 
+    #boxWeblog {
+        padding: 0 15px;
+    }
+
+    .mobile_footer .link .icon {
+        font-size: 23px;
+    }
+
+    .mobile_footer .link .title {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #topHeader {
+        min-width: 100px;
+        padding: 15px 10px;
+    }
+
+    #topHeader #top-menu .logo img {
+        width: 27px;
+    }
+
+    #topHeader #top-menu .logo.showLogo img {
+        width: 27px;
+    }
+
+    #topHeader #top-menu .logo.showLogo img {
+        width: 30px;
+    }
+
+    #section-home>.container>.boxContent>#imageSlider .boxImage {
+        position: relative;
+        right: -2px;
+        height: 325px;
+    }
+
+    #boxImageIcones {
+        top: 360px;
+        right: 13px;
+    }
+
+    #logo1 {
+        width: 127px;
+        margin-right: -55px;
+    }
+
+    .icon-Arrow-Down-2 {
+        left: 86px;
+        top: 483px;
+        padding: 7px;
+    }
+
+    .icon-Arrow-Down-2 {
+        left: 86px;
+        top: 483px;
+        padding: 7px;
+    }
+
+    .content>#titrHome {
+        width: 304px;
+        font-size: 19px;
+    }
+
+    .content>#textHome {
+        width: 305px;
+    }
+
+    #boxCategories {
+        width: 78%;
+    }
+
+    .tapContent>#boxTabContent {
+        right: 7px;
+
+    }
+
+    .seeAll>a {
+        right: -10px;
+        position: relative;
+        min-width: 140px;
+    }
+
+    .tapContent>#boxTabContent>button {
+        min-width: 150px;
+    }
+
+    .tapContent>#boxTabContent {
+        width: 155px;
+    }
+
+    #section-pageOne .box-slider {
+        margin: 20px 0;
+    }
+
+    #section-pageOne .box-slider>.slider {
+        left: -653px;
+    }
+
+    .boxTwo {
+        left: 16px;
+        width: 297px;
+        bottom: 470px;
+    }
+
+    .boxContent {
+        margin-top: -50px;
+    }
+
+    #section-pageTwo>.container>.boxContent>.boxText>.content {
+        width: 303px;
+    }
+
+    #section-pageTwo .boxImage {
+        height: 497px;
+        min-width: 415px;
+    }
+
+
+    .iconHeart {
+        right: 2px;
+    }
+
+    #section-pageTwo .image2 {
+        top: 705px;
+    }
+
+    #section-pageTwo #contactUs {
+        bottom: 580px;
+    }
+
+    .iconHeart#heart2 {
+        left: 7px;
+        bottom: 590px;
+    }
+
+    .image4 {
+        left: -32px;
+        bottom: 495px;
+        background-size: 78%;
+        height: 96px;
+        width: 296px;
+    }
+
+    #section-pageThree {
+        margin-top: -326px;
+    }
+
+    #section-pageThree .box-slider {
+        right: -40px;
+    }
+
+    #section-pageThree #iconSlider {
+        right: -5px;
+    }
+
+    #section-pageFour #titrPage {
+        font-size: 18px;
+    }
+
+    #topTitr {
+        font-size: 13px;
+    }
+
+    #section-home {
+        margin-top: 70px;
+    }
+
+    #boxWeblog {
+        padding: 0 5px;
+    }
+
+    .weblog {
+        width: 382px;
+    }
+
+    .weblog img {
+        width: 297px;
+    }
 }
