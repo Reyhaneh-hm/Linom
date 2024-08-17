@@ -364,7 +364,7 @@ img {
 }
 
 .categories {
-    border: 2px solid #abb5c6;
+    border: 2px solid #757a83;
     border-radius: 10px;
     padding: 5px;
     width: 100%;
@@ -407,7 +407,7 @@ img {
 #allCategories>p,
 i,
 .categories>p {
-    color: #abb5c6;
+    color: #757a83;
     transition: all 0.3s;
 }
 
@@ -465,7 +465,7 @@ a {
     text-decoration: none;
 
     .box-arrow {
-        border: 2px solid #abb5c6;
+        border: 2px solid #757a83;
         border-radius: 50%;
         padding: 5px;
         font-weight: bold;
@@ -492,7 +492,7 @@ a {
         margin: 10px 0;
         font-size: 13px;
         line-height: 1.5;
-        color: #abb5c6;
+        color: #757a83;
         overflow: hidden;
         text-overflow: ellipsis;
         width: 201px;
@@ -845,12 +845,16 @@ a>#arrowPage:hover {
     height: 360px;
     position: relative;
     top: -25px;
+    border-radius: 20px 20px 0 0;
 }
 
-#section-pageOne .box-slider>.slider>p,
-#section-pageThree .box-slider>.slider>p {
+#section-pageOne .box-slider>.slider>h3,
+#section-pageThree .box-slider>.slider>h3 {
     color: #283347;
     margin: -18px 0 12px;
+    padding-top: 5px;
+    font-size: 16px;
+
 }
 
 .boxTwo {
@@ -1175,7 +1179,7 @@ a {
 
     &:hover {
         .textWeblog {
-            h5 {
+            h4 {
                 span {
                     color: #cf5242;
                 }
@@ -1193,7 +1197,7 @@ a {
     &>.textWeblog {
         padding: 0 10px 10px;
 
-        &>h5 {
+        &>h4 {
             color: #27246a;
             font-size: 17px;
             margin: 20px 0 10px;
@@ -1216,7 +1220,7 @@ a {
             text-align: justify;
             font-size: 14px;
             line-height: 1.7;
-            color: #848484;
+            color: #757a83;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;

@@ -70,7 +70,7 @@
 
     &:hover {
         .textWeblog {
-            h5 {
+            h4 {
                 span {
                     color: #cf5242;
                 }
@@ -87,7 +87,7 @@
     &>.textWeblog {
         padding: 0 10px 10px;
 
-        &>h5 {
+        &>h4 {
             // color: #27246a;
             font-size: 17px;
             margin: 10px 0;
@@ -313,23 +313,31 @@
                     }
                 }
 
-                span {
-                    color: #abb5c6;
-                    transition: all 0.3s;
+                a {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
 
-                    &.title {
-                        font-size: 15px;
+                    span {
+                        color: #abb5c6;
+                        transition: all 0.3s;
+    
+                        &.title {
+                            font-size: 15px;
+                        }
+    
+                        &.icon {
+                            width: 20px;
+                            font-size: 25px;
+                        }
                     }
-
-                    &.icon {
-                        width: 20px;
-                        font-size: 25px;
-                    }
+    
                 }
             }
         }
     }
-    .advertising{
+
+    .advertising {
         background-image: url(/public/img/blogs/list-blog/4.jpg);
         background-position: center;
         background-size: cover;
