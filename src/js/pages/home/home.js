@@ -176,8 +176,6 @@ window.addEventListener("load", () => {
 
 
 
-/*-------------Time Audio--------------*/
-
 /*-----------------Scrool bottom----------------*/
 
 $(document).ready(function () {
@@ -189,7 +187,7 @@ $(document).ready(function () {
 });
 
 
-/*---------Tab Content-----------*/
+/*----------------Tab Content--------------------*/
 
 window.addEventListener("load", () => {
     const tabs = document.querySelectorAll("[tab_content_title2]");
@@ -243,10 +241,6 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
 
-    // if (left && right) {
-    //     left.onclick = function () { scrollSlider(-300); };
-    //     right.onclick = function () { scrollSlider(300); };
-    // }
 
     function scrollSlider(distance) {
         let slider1 = document.querySelector('.slider1');
@@ -300,8 +294,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
-
-
-
 
 /*---------------------------------*/

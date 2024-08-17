@@ -13,6 +13,56 @@
 }
 
 @media screen and (max-width: 1440px) {
+    #section-blog h2 {
+        margin: 150px 0 30px;
+    }
+    .payment_procedures .col-md-4 {
+        width: 33.3%;
+    }
+
+    .payment_procedures .col-md-4:nth-child(7) {
+        width: 100%;
+    }
+
+    .payment_procedures .input_box label {
+        font-size: 13px;
+    }
+
+    .payment_procedures .col-md-8 {
+        width: 66.6%;
+    }
+
+    .payment_procedures #filter-box>.box .input_box input::placeholder,
+    .payment_procedures #filter-box>.box .input_box select::placeholder,
+    .payment_procedures #filter-box>.box .input_box textarea::placeholder {
+        font-size: 13px;
+    }
+
+    .payment_procedures .cart-bill .box li.payment_methods label {
+        padding: 5px 38px;
+    }
+
+    #page-error .container {
+        min-height: 790px;
+    }
+
+    .post .content {
+        width: 960px;
+        text-align: justify;
+    }
+
+    .post .col-md-4 {
+        width: 40%;
+    }
+
+    .post .content img {
+        margin: 55px 0;
+    }
+
+    ul.breadcrumb {
+        right: 150px;
+    }
+
     .container {
         width: 80%;
     }
@@ -101,13 +151,10 @@
         left: -310px;
     }
 
-    #section-pageThree .box-slider>.slider {
-        left: -290px;
-    }
 
     #section-pageThree .box-slider {
-        left: -161px;
-        width: 990px;
+        padding-right: 395px;
+        left: -5px;
     }
 
     .image2 {
@@ -238,6 +285,48 @@
 }
 
 @media screen and (max-width: 1024px) {
+    #section-blog .weblog img {
+        width: 345px;
+    }
+    #section-blog h2 {
+        font-size: 35px;
+    }
+    #section-blog .container {
+        width: 91%;
+    }
+    
+    .payment_procedures .container {
+        width: 90%;
+    }
+
+    .payment_procedures .col-md-4:nth-child(10) {
+        width: 66.3%;
+    }
+
+    .payment_procedures .payment_methods {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment_procedures .cart-bill .box li.payment_methods label {
+        padding: 5px 70px;
+        margin-bottom: 10px;
+    }
+
+    #page-error .item {
+        margin-bottom: -70px;
+    }
+
+    .post .content {
+        width: 777px;
+    }
+
+    ul.breadcrumb {
+        right: 102px;
+    }
 
     .weblog>.textWeblog>p {
         font-size: 15px;
@@ -245,7 +334,28 @@
 
     #section-pageThree #iconSlider {
         top: 405px;
-        right: 35px;
+        right: -13px;
+    }
+
+    .post .content img {
+        margin-bottom: 20px;
+        height: 260px;
+    }
+
+    .comments .main_card .comment_item .main_desc {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 4;
+    }
+
+    .comments .col-xl-3 {
+        width: 35%;
+    }
+
+    .comments .col-xl-7 {
+        width: 65%;
     }
 
     .imgError>p {
@@ -259,7 +369,7 @@
     }
 
     #section-pageOne .box-slider>.slider {
-        left: -620+px;
+        left: -620px;
     }
 
     #section-home>.container>.boxContent>#imageSlider {
@@ -417,13 +527,9 @@
     }
 
     #section-pageThree .box-slider {
-        left: -59px;
-        width: 718px;
-    }
-
-    #section-pageThree .box-slider>.slider {
-        position: relative;
-        left: -428px;
+        padding-right: 775px;
+        left: -9px;
+        width: 93%;
     }
 
 
@@ -545,14 +651,122 @@
         padding: 15px 0 15px 25px;
     }
 
+    .post .head .image {
+        height: 385px;
+    }
 
 }
 
 
 
 @media screen and (max-width: 768px) {
+    .payment_procedures .container {
+        width: 95%;
+    }
+
+    .payment_procedures .payment_action .link {
+        border-radius: 7px;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .payment_procedures .col-md-8,
+    .payment_procedures .col-md-4 {
+        padding: 3px;
+    }
+
+    .payment_procedures .cart-bill .box li span {
+        font-size: 13px;
+    }
+
+    .input_box input,
+    .input_box select,
+    .input_box textarea {
+        font-size: 13px;
+    }
+
+    .payment_procedures .cart-bill .box li.discount .input_box .link {
+        font-size: 14px;
+    }
+
+    .payment_procedures .cart-bill .box li.bold span {
+        font-size: 13px;
+    }
+
+    .payment_procedures .payment-list{
+        margin-bottom: 140px;
+    }
+    .payment_procedures .cart-bill .submit {
+        margin-top: 0;
+    }
+
+    .contact_us .row {
+        display: flex;
+        margin-top: 250px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact_us .col-xl-3 {
+        width: 80%;
+    }
+
+    .contact_us .col-xl-7 {
+        width: 100%;
+    }
+
+    #page-error .container {
+        height: 300px;
+    }
+
+    .post .content {
+        width: 570px;
+    }
+
+    .post .head .image {
+        height: 320px;
+
+    }
+
+    .post .content img {
+        margin-bottom: 63px;
+        height: 200px;
+    }
+
+    .post .col-md-4 {
+        width: 50%;
+    }
+
+    .comments .justify-content-center {
+        /* justify-content: center !important; */
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .comments .col-xl-7 {
+        width: 100%;
+    }
+
+    .comments .main_card .comment_item.reply {
+        margin-right: 0;
+        margin: 0 40px;
+    }
+
+    .comments .comment_form {
+        margin-top: 25px;
+        width: 104%;
+    }
+
+    .comments .col-xl-3 {
+        width: 95%;
+        right: -5px;
+        position: relative;
+        margin-bottom: 110px;
+    }
+
     .weblog img {
-        width: 441px;
+        width: 340px;
         margin-top: 7px;
     }
 
@@ -711,14 +925,23 @@
     }
 
     #section-pageOne .box-slider {
-        width: 770px;
-        right: 0;
+        padding-right: 920px;
+        right: -72px;
     }
 
     #section-pageOne .box-slider>.slider {
-        left: -390px;
+        left: 0;
     }
 
+    #section-pageThree .box-slider {
+        padding-right: 830px;
+        left: 280px;
+        width: 135%;
+    }
+
+    .weblog {
+        width: 350px;
+    }
 
     .boxTwo {
         width: 330px;
@@ -812,18 +1035,11 @@
         right: 222px;
     }
 
-    #section-pageThree .box-slider {
-        width: 770px;
-        right: -224px;
-    }
 
-    #section-pageThree .box-slider>.slider {
-        left: -390px;
-    }
 
     #section-pageFour {
         margin-top: -500px;
-        height: 945px;
+        height: 885px;
     }
 
 
@@ -856,20 +1072,26 @@
     }
 
     .imgAboutUs {
-        background-size: 555px;
-        min-height: 430px;
+        background-size: 610px;
+        min-height: 480px;
         background-position: center;
-        width: 90%;
+        width: 99%;
     }
 
     .textAboutUs {
         padding: 0;
+        width: 99%;
     }
 
     .textAboutUs>p {
         font-size: 17px;
         height: inherit;
-        margin: 50px 0;
+        margin: 50px 0 120px;
+    }
+
+    ul.breadcrumb {
+        right: 80px;
+        top: 90px;
     }
 
     #page-aboutUs h2 {
@@ -895,7 +1117,7 @@
     }
 
     #boxWeblog {
-        height: 46%;
+        height: 40%;
     }
 
     #section-blog #boxWeblog>.weblog {
@@ -976,6 +1198,117 @@
 
 
 @media screen and (max-width: 425px) {
+
+    .pagination li:not(:last-child) {
+        margin-left: 4px;
+    }
+    .pagination li .link.arrow {
+        font-size: 15px;
+        width: 85px;
+    }
+    .pagination li .link.arrow.prev {
+        padding-left: 8px;
+    }
+    .pagination li .link.arrow .icon {
+        font-size: 19px;
+        height: 34px;
+        width: 34px;
+    }
+    .pagination li .link {
+        font-size: 18px;
+        height: 35px;
+        padding: 0;
+        width: 35px;
+    }
+    #categories-weblog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #section-blog .boxWeblog {
+        margin-top: 50px;
+        margin-right: 0;
+        width: 88%;
+        margin-bottom: 140px;
+    }
+    #section-blog .weblog img {
+        width: 320px;
+    }
+    #categories-weblog .advertising {
+        width: 320px;
+    }
+    .payment_procedures .col-lg-10 {
+        width: 100%;
+    }
+
+    .TableOrder > thead tr th h3 {
+        font-size: 14px;
+    }
+    .TableOrder > tbody tr td {
+        font-size: 14px;
+    }
+    .payment_procedures .payment_action .total_cart {
+        font-size: 14px;
+        margin-right: 14px;
+    }
+    .payment_procedures .col-md-4 {
+        width: 100%;
+    }
+    .payment_procedures .col-md-4:nth-child(10) {
+        width: 100%;
+    }
+    .payment-list .row {
+        flex-direction: column-reverse;
+        margin-left: -10px;
+    }
+    .payment_procedures .col-md-8 {
+        width: 100%;
+    }
+    .payment_procedures .col-md-8, .payment_procedures .col-md-4 {
+        padding: 0 11px;
+    }
+    .contact_us .col-xl-3 {
+        width: 100%;
+    }
+    
+
+    .post .content {
+        width: 340px;
+    }
+
+    .post h1 {
+        font-size: 19px;
+    }
+
+    .post .content p {
+        line-height: 3.2;
+        font-size: 14px;
+    }
+
+    .content .justify-content-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post .col-md-4 {
+        width: 100%;
+    }
+
+    .post .head .image {
+        height: 200px;
+    }
+
+    .post .content img {
+        margin-bottom: 65px;
+        margin-top: 0;
+        height: 220px;
+    }
+
+    #page-weblogs h2 {
+        margin: 0 0 45px;
+    }
+
     #send {
         margin-top: 105px;
     }
@@ -1008,6 +1341,11 @@
             }
 
         }
+    }
+
+    ul.breadcrumb {
+        right: 25px;
+        top: 85px;
     }
 
     #image1 {
@@ -1284,13 +1622,9 @@
         font-size: 15px;
     }
 
-    .textAboutUs {
-        width: 105%;
-    }
-
     .textAboutUs>p {
         margin-top: 30px;
-        margin-bottom: 420px;
+        margin-bottom: 70px;
         height: 615px;
     }
 
@@ -1299,7 +1633,7 @@
     }
 
     .imgAboutUs {
-        background-size: 370px;
+        background-size: 385px;
         min-height: 370px;
         min-width: 360px;
     }
@@ -1326,9 +1660,13 @@
         text-align: center;
     }
 
-    #page-weblogs h2 {
-        margin: 150px 0 45px;
+    .comments .main_card .comment_item.reply {
+        margin-right: 0;
+        margin: 0;
+    }
 
+    .comments .main_card .comment_item .main_desc {
+        font-size: 14px;
     }
 
     h3.title {
@@ -1397,8 +1735,55 @@
 }
 
 @media screen and (max-width: 375px) {
+    .pagination li .link {
+        font-size: 14px;
+        height: 28px;
+        width: 28px;
+    }
+    .pagination li .link.arrow {
+        font-size: 13px;
+    }
+    .pagination li .link.arrow.prev .icon {
+        margin-right: 10px;
+    }
+    .pagination li .link.arrow .icon {
+        font-size: 14px;
+        height: 28px;
+        width: 28px;
+    }
+    .pagination li .link.arrow.next .icon {
+        margin-left: 10px;
+    }
+    
+    #categories-weblog .sidebar {
+        width: 320px;
+    }
+    #section-blog .boxWeblog {
+        width: 97%;
+    }    
+    #relationship-port #topHeader {
+        right: -10px;
+    }
+
+    #relationship-port ul.breadcrumb {
+        right: 25px;
+    }
+
+    #page-aboutUs #topHeader {
+        right: -5px;
+        padding: 15px 6px;
+    }
+
     #columns>.column:nth-child(4) {
         width: 320px;
+    }
+
+    .contact_us .main_info {
+        margin-right: 0;
+    }
+
+    ul.breadcrumb {
+        right: 8px;
     }
 
     .container {
@@ -1651,9 +2036,8 @@
         right: 10px;
         width: 94%;
     }
-}
 
-@media screen and (max-width: 375px) {
+
     #columns>.column:nth-child(4) {
         width: 270px;
     }
@@ -1791,19 +2175,20 @@
     }
 
     .imgAboutUs {
-        background-size: 355px;
+        background-size: 371px;
         min-height: 350px;
-        min-width: 310px;
-        right: -3px;
-        position: relative;
+        width: 97%;
+        right: -1px;
     }
 
     .textAboutUs {
-        width: 92%;
+        width: 95%;
     }
 
     .textAboutUs>p {
         font-size: 16px;
+        height: 485px;
+        margin-bottom: 90px;
 
     }
 
@@ -1826,17 +2211,124 @@
     .mobile_footer .link .title {
         font-size: 12px;
     }
+
+    .comments .col-xl-7 {
+        margin-right: 0;
+        width: 95%;
+    }
+
+    .comments .col-xl-3 {
+        width: 90%;
+        right: -8px;
+    }
+
+    #page-weblogs #topHeader {
+        right: -5px;
+    }
+
+    #page-weblogs .mobile_footer {
+        display: flex;
+        right: -5px;
+    }
 }
 
 @media screen and (max-width: 320px) {
+    #categories-weblog .sidebar {
+        width: 300px;
+    }
+    #categories-weblog .advertising {
+        width: 300px;
+    }
+    #section-blog .boxWeblog {
+        width: 105%;
+    }
+    #section-blog .weblog img {
+        width: 297px;
+    }
+    #section-blog h2 {
+        font-size: 30px;
+    }
+    .pagination li:not(:last-child) {
+        margin-left: 0;
+    }
+    .pagination li .link.arrow.prev {
+        padding-left: 0;
+        font-size: 13px;
+    }
+
+    .pagination li .link {
+        font-size: 13px;
+        height: 25px;
+        width: 25px;
+    }
+    .pagination li .link.arrow.next {
+        padding-right: 0;
+        font-size: 13px;
+    }
+
+    .post .content {
+        right: -8px;
+        width: 297px;
+    }
+
+    .post .head .post-info span {
+        display: block;
+        margin: 13px 0;
+    }
+
+    .post .content {
+        margin-top: -30px;
+    }
+
+    .comments .main_card .comment_item {
+        padding: 10px 8px;
+    }
+
+    .comments .main_card .comment_item .head .name .title {
+        font-size: 17px;
+    }
+
+    .comments .main_card .comment_item .head .date {
+        font-size: 12px;
+    }
+
+    .input_box input::placeholder,
+    .input_box select::placeholder,
+    .input_box textarea::placeholder {
+        font-size: 12px;
+    }
+
+    #page-weblogs .row {
+        margin-top: 150px;
+    }
 
     #topHeader {
         min-width: 100px;
         padding: 15px 10px;
     }
 
+    #page-aboutUs #topHeader {
+        right: 0;
+        max-width: 100%;
+    }
+
+    .imgAboutUs {
+        background-size: 350px;
+        min-height: 355px;
+        width: 97%;
+        min-width: 100px;
+    }
+
     #topHeader #top-menu .logo img {
         width: 27px;
+    }
+
+    .textAboutUs>p {
+        font-size: 16px;
+        height: 485px;
+        margin-bottom: 90px;
+        right: 2px;
+        position: relative;
     }
 
     #topHeader #top-menu .logo.showLogo img {
@@ -1995,4 +2487,9 @@
     .weblog img {
         width: 297px;
     }
+
+    #section-blog h2 {
+        margin: 150px 0 40px;
+    }
+
 }
