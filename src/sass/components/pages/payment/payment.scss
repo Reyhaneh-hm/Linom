@@ -57,6 +57,7 @@
     position: relative;
     text-align: center;
     width: 100%;
+    color: #27246a;
 }
 
 .payment_procedures .step_lists li:first-child .icon,
@@ -115,7 +116,9 @@ span {
     transform: translate(50%, 50%);
     width: 85%;
 }
-
+.payment_procedures .step_lists:after:active{
+    background-color: #27246a;
+}
 .col-lg-10 {
     flex: 0 0 auto;
     width: 83.33333333%;
