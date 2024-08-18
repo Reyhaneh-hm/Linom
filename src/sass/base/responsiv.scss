@@ -13,9 +13,14 @@
 }
 
 @media screen and (max-width: 1440px) {
+    #categories-weblog .boxWeblog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     #section-blog h2 {
         margin: 150px 0 30px;
     }
+
     .payment_procedures .col-md-4 {
         width: 33.3%;
     }
@@ -285,16 +290,27 @@
 }
 
 @media screen and (max-width: 1024px) {
-    #section-blog .weblog img {
-        width: 345px;
+    #categories-weblog .boxWeblog {
+        margin-right: 10px;
+        grid-gap: 0px;
     }
+
+    #categories-weblog .weblog {
+        width: 310px;
+    }
+
+    #categories-weblog .weblog img {
+        width: 300px;
+    }
+
     #section-blog h2 {
         font-size: 35px;
     }
+
     #section-blog .container {
-        width: 91%;
+        width: 90%;
     }
-    
+
     .payment_procedures .container {
         width: 90%;
     }
@@ -660,6 +676,21 @@
 
 
 @media screen and (max-width: 768px) {
+    #categories-weblog .sidebar {
+        display: none;
+    }
+    #categories-weblog .weblog {
+        width: 330px;
+    }
+    #categories-weblog .weblog img {
+        width: 320px;
+    }
+    #categories-weblog {
+        display: inline-block;
+    }
+    #section-blog #filterBtn{
+        display: block;
+    }
     .payment_procedures .container {
         width: 95%;
     }
@@ -693,9 +724,10 @@
         font-size: 13px;
     }
 
-    .payment_procedures .payment-list{
+    .payment_procedures .payment-list {
         margin-bottom: 140px;
     }
+
     .payment_procedures .cart-bill .submit {
         margin-top: 0;
     }
@@ -1198,79 +1230,107 @@
 
 
 @media screen and (max-width: 425px) {
+    #categories-weblog .boxWeblog {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    #categories-weblog .weblog {
+        margin-left: 0;
+    }
 
     .pagination li:not(:last-child) {
         margin-left: 4px;
     }
+
     .pagination li .link.arrow {
         font-size: 15px;
         width: 85px;
     }
+
     .pagination li .link.arrow.prev {
         padding-left: 8px;
     }
+
     .pagination li .link.arrow .icon {
         font-size: 19px;
         height: 34px;
         width: 34px;
     }
+
     .pagination li .link {
         font-size: 18px;
         height: 35px;
         padding: 0;
         width: 35px;
     }
+
     #categories-weblog {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     #section-blog .boxWeblog {
         margin-top: 50px;
         margin-right: 0;
         width: 88%;
-        margin-bottom: 140px;
+        margin-bottom: 40px;
     }
+    #section-blog #filterBtn {
+        padding: 17px 25px;
+    }
+
     #section-blog .weblog img {
         width: 320px;
     }
+
     #categories-weblog .advertising {
         width: 320px;
     }
+
     .payment_procedures .col-lg-10 {
         width: 100%;
     }
 
-    .TableOrder > thead tr th h3 {
+    .TableOrder>thead tr th h3 {
         font-size: 14px;
     }
-    .TableOrder > tbody tr td {
+
+    .TableOrder>tbody tr td {
         font-size: 14px;
     }
+
     .payment_procedures .payment_action .total_cart {
         font-size: 14px;
         margin-right: 14px;
     }
+
     .payment_procedures .col-md-4 {
         width: 100%;
     }
+
     .payment_procedures .col-md-4:nth-child(10) {
         width: 100%;
     }
+
     .payment-list .row {
         flex-direction: column-reverse;
         margin-left: -10px;
     }
+
     .payment_procedures .col-md-8 {
         width: 100%;
     }
-    .payment_procedures .col-md-8, .payment_procedures .col-md-4 {
+
+    .payment_procedures .col-md-8,
+    .payment_procedures .col-md-4 {
         padding: 0 11px;
     }
+
     .contact_us .col-xl-3 {
         width: 100%;
     }
-    
+
 
     .post .content {
         width: 340px;
@@ -1740,27 +1800,33 @@
         height: 28px;
         width: 28px;
     }
+
     .pagination li .link.arrow {
         font-size: 13px;
     }
+
     .pagination li .link.arrow.prev .icon {
         margin-right: 10px;
     }
+
     .pagination li .link.arrow .icon {
         font-size: 14px;
         height: 28px;
         width: 28px;
     }
+
     .pagination li .link.arrow.next .icon {
         margin-left: 10px;
     }
-    
+
     #categories-weblog .sidebar {
         width: 320px;
     }
+
     #section-blog .boxWeblog {
         width: 97%;
-    }    
+    }
+
     #relationship-port #topHeader {
         right: -10px;
     }
@@ -1783,7 +1849,7 @@
     }
 
     ul.breadcrumb {
-        right: 8px;
+        right: 25px;
     }
 
     .container {
@@ -2236,21 +2302,30 @@
     #categories-weblog .sidebar {
         width: 300px;
     }
+
     #categories-weblog .advertising {
         width: 300px;
     }
+
     #section-blog .boxWeblog {
-        width: 105%;
+        width: 111%;
     }
+    #categories-weblog .weblog {
+        width: 300px;
+    }
+
     #section-blog .weblog img {
-        width: 297px;
+        width: 290px;
     }
+
     #section-blog h2 {
         font-size: 30px;
     }
+
     .pagination li:not(:last-child) {
         margin-left: 0;
     }
+
     .pagination li .link.arrow.prev {
         padding-left: 0;
         font-size: 13px;
@@ -2261,6 +2336,7 @@
         height: 25px;
         width: 25px;
     }
+
     .pagination li .link.arrow.next {
         padding-right: 0;
         font-size: 13px;
