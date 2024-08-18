@@ -676,21 +676,35 @@
 
 
 @media screen and (max-width: 768px) {
+
+    #topHeader #top-menu #hambergerMuno2 {
+        display: block;
+    }
+
+    #boxIcon #user {
+        display: none;
+    }
+
     #categories-weblog .sidebar {
         display: none;
     }
+
     #categories-weblog .weblog {
         width: 330px;
     }
+
     #categories-weblog .weblog img {
         width: 320px;
     }
+
     #categories-weblog {
         display: inline-block;
     }
-    #section-blog #filterBtn{
+
+    #section-blog #filterBtn {
         display: block;
     }
+
     .payment_procedures .container {
         width: 95%;
     }
@@ -1230,10 +1244,14 @@
 
 
 @media screen and (max-width: 425px) {
+    .mobile_footer .link .title {
+        display: none;
+    }
     #categories-weblog .boxWeblog {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
+
     #categories-weblog .weblog {
         margin-left: 0;
     }
@@ -1276,6 +1294,7 @@
         width: 88%;
         margin-bottom: 40px;
     }
+
     #section-blog #filterBtn {
         padding: 17px 25px;
     }
@@ -2310,6 +2329,7 @@
     #section-blog .boxWeblog {
         width: 111%;
     }
+
     #categories-weblog .weblog {
         width: 300px;
     }
