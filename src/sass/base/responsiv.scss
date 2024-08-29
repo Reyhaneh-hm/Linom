@@ -13,6 +13,10 @@
 }
 
 @media screen and (max-width: 1440px) {
+    #imageSlider {
+        display: flex;
+    }
+
     #categories-weblog .boxWeblog {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -158,8 +162,8 @@
 
 
     #section-pageThree .box-slider {
-        padding-right: 395px;
-        left: -5px;
+        padding-right: 422px;
+        left: -28px;
     }
 
     .image2 {
@@ -471,8 +475,10 @@
     }
 
     #section-pageOne .box-slider {
-        right: -365px;
+        right: -356px;
         width: 920px;
+        padding-left: 250px;
+        padding-right: 240px;
     }
 
     .boxTwo {
@@ -482,7 +488,7 @@
 
     #section-pageTwo,
     #section-pageFour {
-        margin-top: -250px;
+        margin-top: -130px;
     }
 
     #section-pageTwo>.container>.boxContent>.boxText>.content {
@@ -676,6 +682,50 @@
 
 
 @media screen and (max-width: 768px) {
+    #section-pageTwo > .container > .boxContent > .boxText {
+        width: 80%;
+    }
+    #imageSlider2 {
+        display: block;
+    }
+    #section-pageTwo, #section-pageFour {
+        margin-top: -475px;
+    }
+
+
+    #section-pageOne {
+        margin-top: -265px;
+    }
+
+    .payment_procedures .payment_action {
+        position: fixed;
+        bottom: 70px;
+        right: 0;
+        background: #fff;
+        height: 70px;
+        width: 100%;
+        padding: 0 77px;
+    }
+
+    .stepContent .payment_action {
+        z-index: 2;
+    }
+
+    .filter-box .payment_action {
+        z-index: 3;
+    }
+
+    #top-menu .filterProduct {
+        display: block;
+    }
+
+    #section-pageOne .items-tabContent .boxTwo>p {
+        display: none;
+    }
+
+    #section-pageOne .items-tabContent .boxTwo {
+        bottom: 620px;
+    }
 
     #topHeader #top-menu #hambergerMuno2 {
         display: block;
@@ -887,7 +937,7 @@
     }
 
     .boxContent {
-        margin-top: 30px;
+        margin-top: 55px;
         flex-direction: column;
     }
 
@@ -896,7 +946,7 @@
     }
 
     #section-home>.container>.boxContent>#imageSlider {
-        display: block;
+        display: none;
         mask-size: 100%;
         max-width: 345px;
         max-height: 690px;
@@ -921,34 +971,34 @@
     }
 
     .icon-Arrow-Down-2 {
-        top: 525px;
+        top: 63px;
         left: 170px;
         right: inherit;
         z-index: 10;
     }
 
     #boxImageIcones {
-        right: 145px;
-        top: 400px;
+        right: 0;
+        top: -50px;
     }
 
     .image2 {
         bottom: inherit;
         right: inherit;
-        left: 15px;
-        top: 405px;
+        left: 0;
+        top: -90px;
         background-size: 92%;
     }
 
     #section-home .container {
-        height: 1140px;
+        height: 600px;
     }
 
     #image1 {
         width: 230px;
         left: inherit;
-        top: 430px;
-        right: 20px;
+        top: -25px;
+        right: 0;
     }
 
     .content {
@@ -973,7 +1023,8 @@
 
     #section-pageOne .box-slider {
         padding-right: 920px;
-        right: -72px;
+        right: 58px;
+        padding-left: 262px;
     }
 
     #section-pageOne .box-slider>.slider {
@@ -1167,6 +1218,9 @@
 
     #boxWeblog {
         height: 40%;
+        width: 125%;
+        position: relative;
+        right: -77px;
     }
 
     #section-blog #boxWeblog>.weblog {
@@ -1247,10 +1301,35 @@
 
 
 @media screen and (max-width: 425px) {
+
+    #top-menu .filterProduct.active {
+        transform: translateX(-165px);
+    }
+
+    #top-menu .filterProduct {
+        transform: translateX(-435px);
+    }
+
+    #imageSlider2 .boxImage {
+        width: 345px;
+        right: 111px;
+    }
+
+    .payment_procedures .payment_action {
+        right: -1px;
+        padding: 0 5px;
+    }
+
     #section-pageOne .box-slider {
         padding-right: 485px;
         right: -245px;
+        padding-left: 0;
+        margin: 0;
     }
+    #section-pageOne .items-tabContent .boxTwo {
+        bottom: 650px;
+    }
+
 
     .mobile_footer .link .title {
         display: none;
@@ -1453,10 +1532,7 @@
 
 
     .image2 {
-
-        left: -40px;
-        top: 405px;
-        background-size: 85%;
+        display: none;
     }
 
     .content {
@@ -1475,8 +1551,8 @@
     }
 
     #boxImageIcones {
-        right: 35px;
-        top: 405px;
+        right: 40px;
+        top: -35px;
     }
 
     #boxImageIcones .boxImageIcone {
@@ -1486,9 +1562,9 @@
     }
 
     .icon-Arrow-Down-2 {
-        top: 530px;
-        left: 45px;
-        padding: 8px;
+        top: 67px;
+        left: 60px;
+        padding: 10px;
         font-size: 16px;
         font-weight: bold;
         z-index: 10;
@@ -1514,13 +1590,6 @@
     #boxCategories {
         width: 90%;
     }
-
-    #section-home>.container {
-        height: 1160px;
-    }
-
-
-
 
     .tapContent {
         margin: 90px 0 50px;
@@ -1569,7 +1638,7 @@
     }
 
     #section-pageTwo {
-        margin-top: -280px;
+        margin-top: -570px;
     }
 
     #section-pageTwo .boxImage {
@@ -1670,6 +1739,9 @@
 
     #boxWeblog {
         height: 550px;
+        right: -74px;
+        padding-right: 57px;
+        padding-left: 8px;
     }
 
     .weblog>.textWeblog>p {
@@ -1827,6 +1899,30 @@
 }
 
 @media screen and (max-width: 375px) {
+    #top-menu .filterProduct.active {
+        transform: translateX(-115px);
+    }
+    #top-menu .filterProduct {
+        transform: translateX(-390px);
+    }
+    #section-pageOne .container {
+        height: 1225px;
+    }
+
+    #boxCategories {
+        width: 100%;
+    }
+
+    #imageSlider2 .boxImage {
+        width: 305px;
+        right: 100px;
+        height: 260px;
+    }
+
+    .payment_procedures .payment_action {
+        right: -4px;
+    }
+
     .pagination li .link {
         font-size: 14px;
         height: 28px;
@@ -1938,13 +2034,6 @@
         margin-right: -15px;
     }
 
-    .icon-Arrow-Down-2 {
-        left: 55px;
-    }
-
-    #section-home>.container {
-        height: 1160px;
-    }
 
     .tapContent>#boxTabContent {
         width: 160px;
@@ -1985,6 +2074,7 @@
     }
 
     #section-pageTwo #about {
+        display: none;
         font-size: 14px;
         width: 105px;
         height: 43px;
@@ -1997,6 +2087,7 @@
     }
 
     #section-pageTwo .image3 {
+        display: none;
         left: -55px;
         top: 445px;
         background-size: 74%;
@@ -2025,6 +2116,7 @@
     }
 
     #section-pageTwo #contactUs {
+        display: none;
         width: 102px;
         height: 43px;
         right: -16px;
@@ -2151,9 +2243,7 @@
         border-radius: 50px;
     }
 
-    #boxImageIcones {
-        top: 385px;
-    }
+
 
     .image2 {
         top: 380px;
@@ -2168,7 +2258,6 @@
 
     .icon-Arrow-Down-2 {
         left: 100px;
-        top: 507px;
     }
 
     .content>#textHome {
@@ -2201,10 +2290,8 @@
         left: -619px;
     }
 
-    .boxTwo {
-        left: 28px;
-        bottom: 470px;
-        width: 325px;
+    #section-pageOne .items-tabContent .boxTwo {
+        bottom: 468px;
     }
 
     #section-pageTwo>.container>.boxContent>.boxText>.content {
@@ -2241,19 +2328,12 @@
     }
 
     #section-pageTwo .image2 {
+        display: none;
         background-size: 71%;
         right: -38px;
         top: 770px;
         width: 258px;
         height: 78px;
-    }
-
-    #section-pageTwo #contactUs {
-        width: 100px;
-        height: 38px;
-        right: 5px;
-        bottom: 515px;
-        font-size: 13px;
     }
 
     .iconHeart#heart2 {
@@ -2301,7 +2381,8 @@
     }
 
     #boxWeblog {
-        padding: 0 15px;
+        padding-right: 80px;
+        padding-left: 33px;
     }
 
     .mobile_footer .link .icon {
@@ -2333,6 +2414,25 @@
 }
 
 @media screen and (max-width: 320px) {
+    #top-menu .filterProduct.active {
+        transform: translateX(-60px);
+    }
+    #top-menu .filterProduct {
+        transform: translateX(-325px);
+    }
+    #imageSlider2 .boxImage {
+        width: 260px;
+        right: 85px;
+        height: 210px;
+    }
+    #imageSlider2 {
+        margin-top: 45px;
+        margin-bottom: 65px;
+    }
+    .payment_procedures .payment_action {
+        padding: 0 2px;
+    }
+
     #categories-weblog .sidebar {
         width: 300px;
     }
@@ -2457,8 +2557,8 @@
     }
 
     #boxImageIcones {
-        top: 360px;
-        right: 13px;
+        top: 0;
+        right: 30px;
     }
 
     #logo1 {
@@ -2467,16 +2567,11 @@
     }
 
     .icon-Arrow-Down-2 {
-        left: 86px;
-        top: 483px;
+        left: 77px;
+        top: 67px;
         padding: 7px;
     }
 
-    .icon-Arrow-Down-2 {
-        left: 86px;
-        top: 483px;
-        padding: 7px;
-    }
 
     .content>#titrHome {
         width: 304px;
@@ -2488,7 +2583,7 @@
     }
 
     #boxCategories {
-        width: 78%;
+        width: 86%;
     }
 
     .tapContent>#boxTabContent {
@@ -2559,11 +2654,11 @@
     }
 
     .image4 {
-        left: -32px;
+        left: 10px;
         bottom: 495px;
-        background-size: 78%;
-        height: 96px;
-        width: 296px;
+        background-size: 81%;
+        height: 98px;
+        width: 300px;
     }
 
     #section-pageThree {
@@ -2592,7 +2687,8 @@
     }
 
     #boxWeblog {
-        padding: 0 5px;
+        padding-right: 80px;
+        padding-left: 17px;
     }
 
     .weblog {

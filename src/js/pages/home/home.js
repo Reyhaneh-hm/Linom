@@ -23,6 +23,21 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function () {
+    $('#imageSlider2').slick({
+        rtl: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        slidesToShow: 1.2,
+        slidesToScroll: 1,
+        // dots: true,
+        arrows: true,
+        prevArrow: $("#prevArrowHome"),
+        nextArrow: $("#nextArrowHome"),
+    });
+});
+
+
 /*--------------audio---------------*/
 
 window.addEventListener("load", () => {
@@ -57,22 +72,42 @@ window.addEventListener("load", () => {
 
         });
 
+        // تابع کمکی برای تبدیل ثانیه به فرمت ساعت، دقیقه، ثانیه (در صورت وجود ساعت)
+        function formatTime(seconds) {
+            const h = Math.floor(seconds / 3600);
+            const m = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
+            const s = Math.floor(seconds % 60).toString().padStart(2, '0');
+            if (h > 0) {
+                return `${h}:${m}:${s}`;  // نمایش ساعت، دقیقه و ثانیه
+            } else {
+                return `${m}:${s}`;  // نمایش فقط دقیقه و ثانیه
+            }
+        }
+
         wavesurfer.on("finish", function () {
 
             playBtn.classList.toggle("active");
-            playBtn.classList.toggle("icon-Pause")
-            playBtn.classList.toggle("icon-Play")
+            playBtn.classList.toggle("icon-Pause");
+            playBtn.classList.toggle("icon-Play");
 
         });
+
         wavesurfer.on("audioprocess", function () {
             if (wavesurfer.isPlaying()) {
 
                 var totalTime = wavesurfer.getDuration(),
                     currentTime = wavesurfer.getCurrentTime(),
                     remainingTime = totalTime - currentTime;
-                document.getElementById("timeAudio").innerText = remainingTime.toFixed(1)
+                
+                // تبدیل زمان باقی‌مانده به فرمت مناسب
+                const formattedRemainingTime = formatTime(remainingTime);
+                
+                // نمایش زمان باقی‌مانده در عنصر HTML با ID "timeAudio"
+                document.getElementById("timeAudio").innerText = formattedRemainingTime;
+
             }
-        })
+        });
+
         const playBtn = document.querySelector(item.getAttribute("btn_id"));
 
         playBtn.addEventListener("click", () => {
@@ -80,99 +115,107 @@ window.addEventListener("load", () => {
             wavesurfer.playPause();
 
             playBtn.classList.toggle("active");
-            playBtn.classList.toggle("icon-Pause")
-            playBtn.classList.toggle("icon-Play")
+            playBtn.classList.toggle("icon-Pause");
+            playBtn.classList.toggle("icon-Play");
 
         });
-
-
-
-        // WaveSurfer.on("finish", function () {
-        //     playBtn.classList.remove("active");
-        // })
-
-
-
-
     });
 
 });
+
 
 /*--------------slider---------------*/
 
 window.addEventListener("load", () => {
-
-    const containers = document.querySelectorAll("[scroll_container2]");
+    const containers = document.querySelectorAll("[scroll_container]");
 
     containers.forEach((item) => {
-
         let isMouseDown = false;
-
         let startX, scrollLeft;
 
         item.addEventListener("mousedown", (e) => {
-
             isMouseDown = true;
-
             startX = e.pageX - item.offsetLeft;
-
             scrollLeft = item.scrollLeft;
-
         });
 
         item.addEventListener("mouseleave", () => {
-
             isMouseDown = false;
-
             item.classList.remove("active");
-
         });
 
         item.addEventListener("mouseup", () => {
-
             isMouseDown = false;
-
             item.classList.remove("active");
-
         });
 
         item.addEventListener("mousemove", (e) => {
-
             if (!isMouseDown) return;
-
             e.preventDefault();
-
             const x = e.pageX - item.offsetLeft;
-
-            const walk = (x - startX) * 1;
-
+            const walk = (x - startX) * 1; // سرعت اسکرول
             item.scrollLeft = scrollLeft - walk;
 
             item.classList.add("active");
-
         });
     });
-
-
-    //const prevButtons = document.querySelectorAll(".icon-Arrow-Left-2");
-    //const nextButtons = document.querySelectorAll(".icon-Arrow-Right-2");
-
-    // prevButtons.forEach((button) => {
-    //     button.addEventListener("click", () => {
-    //         const container = button.closest("[scroll_container]");
-    //         console.log(container);
-    //         container.scrollLeft -= container.offsetWidth;
-    //     });
-    // });
-
-    // nextButtons.forEach((button) => {
-    //     button.addEventListener("click", () => {
-    //         const container = button.closest("[scroll_container]");
-    //         container.scrollLeft += container.offsetWidth;
-    //     });
-    // });
-
 });
+
+
+window.addEventListener("load", () => {
+    const containers = document.querySelectorAll("[scroll_container2]");
+
+    containers.forEach((item) => {
+        let isMouseDown = false;
+        let startX, scrollLeft;
+
+        item.addEventListener("mousedown", (e) => {
+            isMouseDown = true;
+            startX = e.pageX - item.offsetLeft;
+            scrollLeft = item.scrollLeft;
+        });
+
+        item.addEventListener("mouseleave", () => {
+            isMouseDown = false;
+            item.classList.remove("active");
+        });
+
+        item.addEventListener("mouseup", () => {
+            isMouseDown = false;
+            item.classList.remove("active");
+        });
+
+        item.addEventListener("mousemove", (e) => {
+            if (!isMouseDown) return;
+            e.preventDefault();
+            const x = e.pageX - item.offsetLeft;
+            const walk = (x - startX) * 1; // سرعت اسکرول
+            item.scrollLeft = scrollLeft - walk;
+
+            item.classList.add("active");
+        });
+    });
+});
+
+//     const prevButtons = document.querySelectorAll(".icon-Arrow-Left-2");
+//     const nextButtons = document.querySelectorAll(".icon-Arrow-Right-2");
+
+//     prevButtons.forEach((button) => {
+//         button.addEventListener("click", () => {
+//             const container = button.closest("[scroll_container]");
+//             console.log(container);
+//             container.scrollLeft -= container.offsetWidth;
+//         });
+//     });
+
+//     nextButtons.forEach((button) => {
+//         button.addEventListener("click", () => {
+//             const container = button.closest("[scroll_container]");
+//             container.scrollLeft += container.offsetWidth;
+//         });
+//     });
+
+// });
 
 
 
@@ -252,47 +295,4 @@ document.addEventListener("DOMContentLoaded", () => {
         let slider3 = document.querySelector('.slider3');
         if (slider3) slider3.scrollLeft += distance;
     }
-
-
-    /*------------------Stop Btn Slider-------------------*/
-    let currentSlide = 0;
-    const slider = document.querySelectorAll('.slider');
-    const totalslider = slider.length;
-
-    function updateNavButtons() {
-        const ArrowLeft = document.querySelector('.ArrowLeft');
-        const ArrowRight = document.querySelector('.ArrowRight');
-
-        ArrowLeft.classList.remove('disabled');
-        ArrowRight.classList.remove('disabled');
-
-        if (currentSlide === 0) {
-            ArrowLeft.classList.add('disabled');
-        }
-
-        if (currentSlide === totalslider - 1) {
-            ArrowRight.classList.add('disabled');
-        }
-    }
-
-    function prevSlide() {
-        if (currentSlide > 0) {
-            currentSlide--;
-        }
-        updateNavButtons();
-    }
-
-    function nextSlide() {
-        if (currentSlide < totalslider - 1) {
-            currentSlide++;
-        }
-        updateNavButtons();
-    }
-
-    updateNavButtons();
-
-
-
-});
-
-/*---------------------------------*/
+})

@@ -14,6 +14,7 @@
     right: 0;
     left: 0;
     width: 100%;
+    height: 70px;
     z-index: 80;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
 
@@ -106,7 +107,7 @@
         }
 
         #boxIcon {
-            width: 120px;
+            width: 190px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -117,6 +118,7 @@
         #hambergerMuno2 {
             display: none;
         }
+
         .icon-header {
             font-size: 29px;
             transition: all 0.3s;
@@ -184,6 +186,7 @@
     padding-left: 0;
     opacity: 0;
     visibility: hidden;
+    margin-top: 10px;
 
     &.active {
         opacity: 1;
@@ -424,6 +427,7 @@
                         }
                     }
                 }
+
                 .all_products {
                     color: #757a83;
                     font-weight: 100;
@@ -449,7 +453,7 @@
 
                     .top_icon {
                         display: inline-block;
-                        color: #757a83;
+                        color: #cf5241;
                         margin-bottom: 0;
                         font-size: 22px;
                         transform: rotateY(180deg);
@@ -621,6 +625,133 @@
     opacity: 0;
     visibility: hidden;
     z-index: 30;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/*-----------------------------------------*/
+
+#top-menu .filterProduct {
+    background-color: #f8fafe;
+    height: 82.8%;
+    width: 260px;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    transform: translateX(-775px);
+    transition: all .3s;
+    z-index: 50;
+    display: none;
+    // z-index: -50;
+    // opacity: 0;
+
+    .box {
+        height: 800px;
+        overflow-y: auto;
+        direction: rtl;
+
+        &::-webkit-scrollbar-track {
+            padding: 2px 0;
+            background-color: #e2e1e1;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #283347;
+            border-radius: 5px;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding-block: 23px;
+            align-items: center;
+            border-bottom: 1px solid #e9eef6;
+            margin-inline: 18px;
+            direction: rtl;
+            background-color: #fbfbfb;
+            // background-color: #f6f8fc;
+            cursor: pointer;
+
+            &:last-child {
+                border-bottom: unset;
+            }
+
+            &:hover {
+                span {
+                    color: #283347;
+                }
+            }
+
+            &.active {
+                position: sticky;
+                top: 0;
+                border-color: #27246a;
+
+                span {
+                    color: #27246a;
+                }
+            }
+
+            a {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    color: #abb5c6;
+                    transition: all 0.3s;
+
+                    &.title {
+                        font-size: 15px;
+                    }
+
+                    &.icon {
+                        width: 20px;
+                        font-size: 25px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &.active {
+        // opacity: 1;
+        // z-index: 50;
+        transform: translateX(-508px);
+    }
+}
+
+.overlay {
+    background: rgba(0, 0, 0, .55);
+    inset: 0;
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    z-index: 60;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.overlay2 {
+    inset: 0;
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    z-index: 60;
 
     &.active {
         opacity: 1;

@@ -8,7 +8,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: #8b8b8b08;
+    background: #fff;
     transition: all 0.5s;
 }
 
@@ -43,14 +43,6 @@
 //     }
 // }
 
-.contact_us .comment_form {
-    position: sticky;
-    top: 120px;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 15px;
-}
-
 .input_box {
     position: relative;
     margin-bottom: 15px;
@@ -58,7 +50,7 @@
 
 .contact_us .comment_form .input_box input,
 .contact_us .comment_form .input_box textarea {
-    background-color: #8b8b8b08;
+    background-color: #fff;
 }
 
 .input_box textarea {
@@ -125,7 +117,7 @@
 // }
 
 .contact_us .main_info {
-    background-color: #fff;
+    background-color: #fbfbfb;
     border-radius: 15px;
     padding: 20px;
     margin-right: 10px;
@@ -244,63 +236,57 @@ a {
     .comment_form {
         position: sticky;
         top: 120px;
-        background-color: #fff;
+        background-color: #f5f7fa;
         padding: 15px;
         border-radius: 15px;
     }
 
-    .main_info {
-        background-color: #fff;
-        border-radius: 15px;
-        padding: 20px;
+    .box {
+        li {
+            color: #052964;
+            font-size: 17px;
+            margin-bottom: 20px;
 
-        .box {
-            li {
-                color: #052964;
-                font-size: 17px;
-                margin-bottom: 20px;
-
-                span {
-                    color: #676767;
-                    font-size: 16px;
-                    font-weight: 200;
-                }
+            span {
+                color: #676767;
+                font-size: 16px;
+                font-weight: 200;
             }
         }
+    }
 
-        .social_media {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            margin-top: 30px;
+    .social_media {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 30px;
 
-            .title {
-                color: #052964;
-                font-size: 17px;
-            }
-
-            .link {
-                font-size: 21px;
-                margin-inline: 10px;
-                transition: all 0.3s;
-
-                &:hover {
-                    color: #cf5241;
-                }
-            }
+        .title {
+            color: #052964;
+            font-size: 17px;
         }
 
-        .location {
-            margin-top: 35px;
+        .link {
+            font-size: 21px;
+            margin-inline: 10px;
+            transition: all 0.3s;
 
-            iframe {
-                border: 0;
-                width: 80%;
-                margin-inline: auto;
-                display: block;
-                border-radius: 15px;
-                height: 250px;
+            &:hover {
+                color: #cf5241;
             }
+        }
+    }
+
+    .location {
+        margin-top: 35px;
+
+        iframe {
+            border: 0;
+            width: 80%;
+            margin-inline: auto;
+            display: block;
+            border-radius: 15px;
+            height: 250px;
         }
     }
 

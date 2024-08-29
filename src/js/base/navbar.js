@@ -25,12 +25,17 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 /*--------------------------------------------*/
-// const filterBtn = document.querySelector("#filterBtn");
-// const modalFilter = document.querySelector(".modalFilter");
-// const overlay = document.querySelector(".overlay");
-// filterBtn.addEventListener("click", () => {
-//     [overlay, modalFilter].forEach((item) => item.classList.add("active"));
-// });
-// overlay.addEventListener("click", () => {
-//     [overlay, modalFilter].forEach((item) => item.classList.remove("active"));
-// });
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    const hambergerMuno2 = document.querySelector("#hambergerMuno2");
+    const filterProduct = document.querySelector(".filterProduct");
+    const overlay = document.querySelector(".overlay");
+    hambergerMuno2.addEventListener("click", () => {
+        [overlay, filterProduct].forEach((item) => item.classList.toggle("active"));
+    });
+    overlay.addEventListener("click", () => {
+        [overlay, filterProduct].forEach((item) => item.classList.remove("active"));
+    });
+
+})

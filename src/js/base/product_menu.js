@@ -3,30 +3,19 @@ import "../../sass/components/Public/navbar.scss";
 /*--------------------------------------------*/
 
 window.addEventListener("load", () => {
-    // active product menu
+    const burgger = document.querySelector(".burgger");
+    const topHeader = document.querySelector("#topHeader");
     const itemManuCategories = document.querySelector(".text-menu");
     const productMenu = document.querySelector(".product_menu");
-    const backPageBtn = document.querySelectorAll("#backPageBtn");
-    const burgger = document.querySelector(".burgger");
-    const overlay = document.querySelector(".overlay");
-    const topHeader = document.querySelector("#topHeader");
+    const overlay2 = document.querySelector(".overlay2");
 
-    itemManuCategories.addEventListener("click", (e) => {
-        // if (e.target.className === "category_link") {
-        productMenu.classList.toggle("active");
-        document.body.classList.add("active");
-        // }
-    }
-    );
 
-    backPageBtn.forEach((item) => {
-        item.addEventListener("click", (e) => {
-            e.target.parentElement.classList.remove("active");
-            console.log(e.target);
-        }
-        );
-    }
-    );
+    itemManuCategories.addEventListener("click", () => {
+        [overlay2, productMenu].forEach((item) => item.classList.toggle("active"));
+    });
+    overlay2.addEventListener("click", () => {
+        [overlay2, productMenu].forEach((item) => item.classList.remove("active"));
+    });
 
     if (window.innerWidth <= 991) {
         const productMenuSibeBarElement = document.querySelectorAll(".product_menu .sidebar .box li");
@@ -36,16 +25,14 @@ window.addEventListener("load", () => {
         productMenuSibeBarElement.forEach((item) => item.classList.remove("active"));
 
         burgger.addEventListener("click", () => {
-            [overlay, productMenu, burgger].forEach((item) => item.classList.add("active"));
+            [overlay2, productMenu, burgger].forEach((item) => item.classList.add("active"));
             topHeader.classList.add("hide");
-        }
-        );
+        });
 
-        overlay.addEventListener("click", () => {
-            [overlay, productMenu, burgger].forEach((item) => item.classList.remove("active"));
+        overlay2.addEventListener("click", () => {
+            [overlay2, productMenu, burgger].forEach((item) => item.classList.remove("active"));
             topHeader.classList.remove("hide");
-        }
-        );
+        });
     }
 
     document.addEventListener("click", (e) => {
@@ -53,10 +40,8 @@ window.addEventListener("load", () => {
             productMenu.classList.remove("active");
             document.body.classList.remove("active");
         }
-    }
-    );
-}
-);
+    });
+});
 
 /*-------------------------------------------------*/
 
@@ -64,26 +49,31 @@ window.addEventListener("load", () => {
 window.addEventListener("load", () => {
     const tabs = document.querySelectorAll("[tab_content_title]");
     const content = document.querySelectorAll("[tab_content_item]");
+    const overlay22 = document.querySelector(".overlay22");
 
     if (tabs && content) {
         for (let tab of tabs) {
             tab.addEventListener("click", () => {
                 tabs.forEach((item) => {
                     item.classList.remove("active");
+                    overlay22.classList.remove("active");
                 });
 
                 tab.classList.add("active");
+                overlay22.classList.add("active");
 
                 const contentId = tab.getAttribute("tab_content_title");
 
                 content.forEach((item) => {
                     item.classList.remove("active");
+                    overlay22.classList.remove("active");
                 });
 
                 const element = document.querySelector(
                     `[tab_content_item="${contentId}"]`
                 );
                 element.classList.add("active");
+                overlay22.classList.remove("active");
             });
         }
     }

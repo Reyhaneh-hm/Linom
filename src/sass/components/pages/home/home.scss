@@ -157,7 +157,7 @@ img {
                 width: 80%;
 
                 &>.content {
-                    width: 500px;
+                    width: 605px;
 
                     &>div {
                         display: flex;
@@ -666,17 +666,20 @@ a>#arrowPage:hover {
 }
 
 #section-pageOne {
-    &>.container {
-        &>img {
-            display: block;
-            position: absolute;
-            top: -75px;
-            left: -430px;
-            width: 970px;
-            height: 1100px;
-            z-index: -10;
-        }
+    .container::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -75px;
+        left: -430px;
+        width: 970px;
+        height: 900px;
+        z-index: 0;
+        border-radius: 20px 70px 0 0;
+        background: rgb(237, 240, 245);
+        background: linear-gradient(180deg, rgba(237, 240, 245, 1) 35%, rgba(248, 250, 253, 1) 100%);
     }
+
 
     .box-slider {
         right: -480px;
@@ -687,9 +690,13 @@ a>#arrowPage:hover {
         position: relative;
         z-index: 50;
         width: 1607px;
-        // overflow: hidden;
-        overflow-x: hidden;
         scroll-behavior: smooth;
+        overflow-x: scroll;
+        padding-block: 10px;
+        padding-left: 25px;
+        padding-right: 16px;
+        /* position: absolute; */
+        /* white-space: normal;*/
 
         &.show {
             display: flex;
@@ -753,9 +760,13 @@ a>#arrowPage:hover {
         z-index: 50;
         width: 100%;
         margin-right: 145px;
-        // overflow: hidden;
-        overflow-x: hidden;
         scroll-behavior: smooth;
+        overflow-x: scroll;
+        padding-block: 10px;
+        padding-left: 25px;
+        padding-right: 16px;
+        /* position: absolute; */
+        /* white-space: normal;*/
 
         &>.slider {
             position: relative;
@@ -866,6 +877,7 @@ a>#arrowPage:hover {
     line-height: 1.8;
     font-size: 20px;
     color: #707070;
+    z-index: 1;
 
     &>p {
         display: -webkit-box;
@@ -1252,5 +1264,21 @@ a {
                 }
             }
         }
+    }
+}
+
+/*---------------------------------------*/
+#imageSlider2 {
+    display: none;
+    flex-shrink: 0;
+    margin-top: 150px;
+
+    .boxImage {
+        width: 630px;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 17px;
+        position: relative;
+        right: 199px;
     }
 }
