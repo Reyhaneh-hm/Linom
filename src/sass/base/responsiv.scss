@@ -682,13 +682,16 @@
 
 
 @media screen and (max-width: 768px) {
-    #section-pageTwo > .container > .boxContent > .boxText {
+    #section-pageTwo>.container>.boxContent>.boxText {
         width: 80%;
     }
+
     #imageSlider2 {
         display: block;
     }
-    #section-pageTwo, #section-pageFour {
+
+    #section-pageTwo,
+    #section-pageFour {
         margin-top: -475px;
     }
 
@@ -1326,6 +1329,7 @@
         padding-left: 0;
         margin: 0;
     }
+
     #section-pageOne .items-tabContent .boxTwo {
         bottom: 650px;
     }
@@ -1902,9 +1906,11 @@
     #top-menu .filterProduct.active {
         transform: translateX(-115px);
     }
+
     #top-menu .filterProduct {
         transform: translateX(-390px);
     }
+
     #section-pageOne .container {
         height: 1225px;
     }
@@ -2417,18 +2423,22 @@
     #top-menu .filterProduct.active {
         transform: translateX(-60px);
     }
+
     #top-menu .filterProduct {
         transform: translateX(-325px);
     }
+
     #imageSlider2 .boxImage {
         width: 260px;
         right: 85px;
         height: 210px;
     }
+
     #imageSlider2 {
         margin-top: 45px;
         margin-bottom: 65px;
     }
+
     .payment_procedures .payment_action {
         padding: 0 2px;
     }
@@ -2687,8 +2697,8 @@
     }
 
     #boxWeblog {
-        padding-right: 80px;
         padding-left: 17px;
+        padding-right: 80px;
     }
 
     .weblog {
