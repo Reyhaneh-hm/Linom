@@ -19,7 +19,7 @@ export default {
         index: resolve(__dirname, "./index.html"),
         listBlog: resolve(__dirname, "./list-blog.html"),
         showBlog: resolve(__dirname, "./show-blog.html"),
-        showBlog: resolve(__dirname, "./payment.html"),
+        payment: resolve(__dirname, "./payment.html"),
       },
       output: {
         assetFileNames: (assetInfo) => {
