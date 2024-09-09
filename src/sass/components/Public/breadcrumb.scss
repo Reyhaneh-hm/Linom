@@ -1,9 +1,11 @@
 ul.breadcrumb {
-  width: 270px;
-  position: absolute;
+  width: 59%;
+  position: relative;
   top: 115px;
-  right: 198px;
-  z-index: 50;
+  right: 0;
+  // z-index: 50;
+  padding-right: 0;
+  padding-left: 0;
   overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 10px;
@@ -37,10 +39,90 @@ ul.breadcrumb {
     a {
       color: #283347;
       text-decoration: none;
+      transition: all 0.3s;
 
       &:hover {
-        color: #01447e;
+        color: #5a6d90;
       }
+    }
+  }
+}
+
+/*---------------Responsive--------------*/
+
+@media screen and (max-width: 2560px) {
+  ul.breadcrumb {
+    right: 525px !important;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  ul.breadcrumb {
+    right: 195px !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  ul.breadcrumb {
+    right: 150px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  ul.breadcrumb {
+    right: 102px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ul.breadcrumb {
+    right: 80px !important;
+    top: 90px !important;
+  }
+
+  #section-blog {
+    ul.breadcrumb {
+      right: 57px !important;
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  ul.breadcrumb {
+    right: 25px !important;
+    top: 85px !important;
+    width: 88% !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  ul.breadcrumb {
+    right: 7px !important;
+  }
+
+  #page-weblogs {
+    ul.breadcrumb {
+      right: 25px !important;
+    }
+  }
+
+  #section-blog {
+    ul.breadcrumb {
+      right: 24px !important;
+      width: 86% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  ul.breadcrumb {
+    right: 11px !important;
+  }
+
+  #page-weblogs {
+    ul.breadcrumb {
+      right: 13px !important;
     }
   }
 }

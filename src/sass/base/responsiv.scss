@@ -756,6 +756,7 @@
 
     #section-blog #filterBtn {
         display: block;
+        margin: 40px 15px -25px;
     }
 
     .payment_procedures .container {
@@ -1275,6 +1276,13 @@
         min-width: 666px;
         padding: 15px 80px;
     }
+
+    #section-blog {
+        #topHeader {
+            padding: 15px 53px;
+        }
+    }
+
 
     #footer {
         display: none;
@@ -1983,7 +1991,7 @@
     }
 
     ul.breadcrumb {
-        right: 25px;
+        right: 7px;
     }
 
     .container {
@@ -2529,7 +2537,7 @@
     }
 
     #page-aboutUs #topHeader {
-        right: 0;
+        right: -3px;
         max-width: 100%;
     }
 

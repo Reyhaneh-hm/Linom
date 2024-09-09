@@ -697,6 +697,7 @@ a>#arrowPage:hover {
         padding-right: 16px;
         /* position: absolute; */
         /* white-space: normal;*/
+        scrollbar-width: none;
 
         &.show {
             display: flex;
@@ -767,6 +768,7 @@ a>#arrowPage:hover {
         padding-right: 16px;
         /* position: absolute; */
         /* white-space: normal;*/
+        scrollbar-width: none;
 
         &>.slider {
             position: relative;
