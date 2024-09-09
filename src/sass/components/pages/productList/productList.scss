@@ -77,7 +77,7 @@
                         &.active {
                             .head {
                                 .icon {
-                                    transform: rotate(-90deg);
+                                    transform: rotate(180deg);
                                 }
                             }
                         }
@@ -400,7 +400,7 @@
 
         .modalFilter {
             background: #fff;
-            height: 91.5%;
+            height: 83%;
             width: 290px;
             position: fixed;
             right: 0;
@@ -420,9 +420,9 @@
                     color: #3d3c45;
                     font-size: 23px;
                     font-weight: 300;
-                    text-align: center;
+                    text-align: right;
                     border-bottom: 2px solid #fff;
-                    padding-block: 22px;
+                    padding: 10px 12px 22px;
                 }
 
                 .items {
@@ -434,7 +434,7 @@
                         &.active {
                             .head {
                                 .icon {
-                                    transform: rotate(-90deg);
+                                    transform: rotate(180deg);
                                 }
                             }
                         }
@@ -584,14 +584,53 @@
                         }
                     }
                 }
+
+                .chooseItemFilter {
+                    margin-block: 20px;
+                    padding-inline: 13px;
+                    padding-bottom: 20px;
+                    flex-direction: column;
+                    border-bottom: 2px dashed #cbcbcb;
+
+                    h6 {
+                        font-size: 17px;
+                        margin-bottom: 20px;
+                    }
+
+                    .boxItemChoose {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        justify-items: start;
+
+                        .itemChoose {
+                            border: 1.9px dashed #cf5241;
+                            border-radius: 10px;
+                            margin-bottom: 10px;
+                            padding: 5px 10px;
+                            background: #eaedf252;
+                            display: flex;
+
+                            .icon-remove {
+                                margin-left: 5px;
+                                color: #cf5241;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background: #eaedf252;
+                                }
+                            }
+                        }
+                    }
+                }
+
             }
 
             &.active {
                 transform: translateX(0);
             }
         }
-     
-        .showColor{
+
+        .showColor {
             position: relative;
             right: -10px;
             width: 20px;
@@ -599,6 +638,64 @@
             border-radius: 50%;
             margin-bottom: 2px;
             border: 1px solid #eaeaea;
+        }
+
+    }
+
+    &>.chooseItemFilter {
+        width: 78%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 405px;
+        margin: 0 0 20px;
+
+        h6 {
+            font-size: 17px;
+            margin-left: 10px;
+        }
+
+        .boxItemChoose {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-block: 10px;
+            width: 92%;
+
+            &::-webkit-scrollbar-track {
+                padding: 2px 0;
+                background-color: #f6f6f6;
+            }
+
+            &::-webkit-scrollbar {
+                width: 1px;
+                height: 3px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                background-color: #c1c8d5;
+            }
+
+            .itemChoose {
+                border: 1.9px dashed #cf5241;
+                border-radius: 10px;
+                margin-left: 10px;
+                padding: 5px 10px;
+                background: #eaedf252;
+                display: flex;
+
+
+                .icon-remove {
+                    margin-left: 5px;
+                    color: #cf5241;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #eaedf252;
+                    }
+                }
+            }
         }
     }
 }
@@ -629,7 +726,6 @@
             right: 525px;
             top: -50px;
         }
-
     }
 }
 
@@ -641,6 +737,7 @@
 
         ul.breadcrumb {
             right: 195px;
+            width: 80%;
         }
     }
 }
@@ -663,6 +760,15 @@
 
         ul.breadcrumb {
             right: 145px;
+        }
+
+        &>.chooseItemFilter {
+            width: 75.5%;
+            right: 340px;
+
+            .boxItemChoose {
+                width: 89%;
+            }
         }
     }
 
@@ -717,6 +823,15 @@
                 }
             }
         }
+
+        &>.chooseItemFilter {
+            width: 70%;
+            right: 295px;
+
+            .boxItemChoose {
+                width: 84%;
+            }
+        }
     }
 
     #footer {
@@ -758,12 +873,27 @@
         .main_card {
             flex-direction: column;
 
-            .filterBtn {
-                display: block;
+            
+        .filterBtn {
+            display: block;
+            .shape {
+                stroke-dasharray: 66 142;
+                stroke-dashoffset: 80;
+                width: 100%;
             }
-
+        }
             .filter_card {
                 display: none;
+            }
+        }
+
+        &>.chooseItemFilter {
+            display: none;
+        }
+
+        .modalFilter {
+            .chooseItemFilter {
+                display: flex !important;
             }
         }
     }
@@ -798,8 +928,19 @@
             }
 
             .filterBtn {
-                right: 26px;
-                width: 87%;
+                right: 40px;
+                width: 81%;
+                transform: none;
+
+                svg {
+                    width: 100%;
+
+                    .shape {
+                        width: 100%;
+                        stroke-dasharray: 100 300;
+                        stroke-dashoffset: -297;
+                    }
+                }
             }
         }
     }
@@ -845,6 +986,11 @@
                     }
                 }
             }
+
+            .filterBtn {
+                right: 14px;
+                width: 92%;
+            }
         }
     }
 }
@@ -863,10 +1009,17 @@
         .main_card {
 
             .filterBtn {
-                right: 5px;
+                right: 6px;
                 width: 97%;
+
+                svg{
+                    .shape {
+                        stroke-dasharray: 102 261;
+                        stroke-dashoffset: -260;
+                    }
+                }
             }
-            
+
 
             .products {
                 .items {
