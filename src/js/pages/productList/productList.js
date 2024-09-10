@@ -1,4 +1,38 @@
 import "../../../sass/components/pages/productList/productList.scss";
+import '@fancyapps/ui/dist/fancybox/fancybox.css';
+import { Fancybox } from '@fancyapps/ui';
+
+
+/*-----------------Fancybox--------------------*/
+
+    //FancyBox
+    Fancybox.bind('[data-fancybox]', {
+        infinite: true,
+        keyboard: true,
+        loop: true,
+
+        buttons: [
+            'zoom',
+            'slideShow',
+            'fullScreen',
+            'download',
+            'thumbs',
+            'close'
+        ],
+        animationEffect: "zoom",
+        transitionEffect: "slide",
+        thumbs: {
+            autoStart: true
+        },
+        keyboard: true,
+        touch: true,
+        protect: true,
+        idleTime: false,
+        smallBtn: true,
+        toolbar: true,
+        animationDuration: 500,
+        transitionDuration: 600,
+    });
 /*-----------------accordion menu--------------------*/
 window.addEventListener("load", () => {
     const filterItem = document.querySelectorAll("[filte_item]");

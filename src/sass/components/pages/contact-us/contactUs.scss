@@ -62,7 +62,7 @@
 .input_box select,
 .input_box textarea {
     width: 100%;
-    color: #052964;
+    color: #3d3c45;
     font-family: "dana";
     font-weight: 200;
     font-size: 15px;
@@ -81,7 +81,7 @@
 .submit {
     font-family: "dana";
     cursor: pointer;
-    background-color: #283347;
+    background-color: #3d3c45;
     border: 1px solid #e9eef6;
     color: #fff;
     font-weight: 200;
@@ -124,7 +124,7 @@
 }
 
 .contact_us .main_info .box li {
-    color: #283347;
+    color: #3d3c45;
     font-size: 17px;
     margin-bottom: 25px;
 }
@@ -143,7 +143,7 @@
 }
 
 .contact_us .main_info .social_media .title {
-    color: #052964;
+    color: #3d3c45;
     font-size: 17px;
 }
 
@@ -190,8 +190,9 @@ a {
     border-left: 1px dashed #000;
 }
 
-.contact_us .comment_form .input_box input:focus-visible {
-    border: 2px solid #052964;
+.contact_us .comment_form .input_box input:focus-visible,
+.contact_us .comment_form .input_box textarea:focus-visible {
+    border: 2px solid #3d3c45;
 }
 
 .contact_us .comment_form .input_box.bottom input {
@@ -211,7 +212,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #283347;
+    color: #3d3c45;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -243,7 +244,7 @@ a {
 
     .box {
         li {
-            color: #052964;
+            color: #3d3c45;
             font-size: 17px;
             margin-bottom: 20px;
 
@@ -262,7 +263,7 @@ a {
         margin-top: 30px;
 
         .title {
-            color: #052964;
+            color: #3d3c45;
             font-size: 17px;
         }
 

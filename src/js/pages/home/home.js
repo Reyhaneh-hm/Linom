@@ -32,8 +32,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         // dots: true,
         arrows: true,
-        prevArrow: $("#prevArrowHome"),
-        nextArrow: $("#nextArrowHome"),
+        prevArrow: $("#prevArrowHome2"),
+        nextArrow: $("#nextArrowHome2"),
     });
 });
 

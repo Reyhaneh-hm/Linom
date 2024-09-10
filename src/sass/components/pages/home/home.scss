@@ -336,6 +336,7 @@ img {
 #logo1 {
     width: 160px;
     margin-bottom: 40px;
+    margin-right: -40px;
 }
 
 #boxCategories {
@@ -548,17 +549,37 @@ a>#arrowPage:hover {
 
 
     }
+}
 
-    .boxImageIcone.disabled {
-        background-color: #ff0000;
-        cursor: not-allowed;
+
+#boxImageIcones2 {
+    display: none;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 710px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    .boxImageIcone {
+        border: 2px solid #3d3c45;
+        padding: 15px;
+        display: block;
+        border-radius: 50%;
+        font-weight: bold;
+        color: #fff;
+        background: #3d3c45;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: all 0.3s;
+
+        &:hover {
+            border: 2px solid #53535a;
+            background: #53535a;
+        }
+
+
     }
-
-    .boxImageIcone.disabled:hover {
-        background-color: #ff0000;
-        /* هاور غیرفعال */
-    }
-
 }
 
 
@@ -1273,7 +1294,7 @@ a {
 #imageSlider2 {
     display: none;
     flex-shrink: 0;
-    margin-top: 150px;
+    margin-top: 110px;
 
     .boxImage {
         width: 630px;

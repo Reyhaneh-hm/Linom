@@ -1,5 +1,5 @@
 .payment_procedures {
-    margin-block: 200px;
+    margin-block: 160px;
 }
 
 .container {
@@ -57,12 +57,12 @@
     position: relative;
     text-align: center;
     width: 100%;
-    color: #27246a;
+    color: #3d3c45;
 }
 
 .payment_procedures .step_lists li:first-child .icon,
 .payment_procedures .step_lists li:first-child .title {
-    color: #27246a;
+    color: #3d3c45;
 }
 
 .payment_procedures .step_lists li .icon {
@@ -96,7 +96,7 @@ span {
 }
 
 .payment_procedures .step_lists li .dot:after {
-    background-color: #27246a;
+    background-color: #3d3c45;
     border-radius: 50%;
     bottom: 3px;
     content: "";
@@ -117,8 +117,9 @@ span {
     width: 85%;
 }
 .payment_procedures .step_lists:after:active{
-    background-color: #27246a;
+    background-color: #3d3c45;
 }
+
 .col-lg-10 {
     flex: 0 0 auto;
     width: 83.33333333%;
@@ -129,7 +130,7 @@ span {
 }
 
 .payment_procedures .sec-head {
-    color: #27246a;
+    color: #3d3c45;
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 10px;
@@ -240,7 +241,7 @@ a {
 }
 
 .payment_procedures .payment_action .link.abb_product {
-    background-color: #27246a;
+    background-color: #3d3c45;
 }
 
 .payment_procedures .payment_action .link.submit {
@@ -256,7 +257,7 @@ a {
 }
 
 .submit {
-    background-color: #27246a;
+    background-color: #3d3c45;
     border: 1px solid #e9eef6;
     border-radius: 12px;
     color: #fff;
@@ -293,7 +294,7 @@ a {
 }
 
 .payment_procedures .payment-list .item>.title {
-    color: #27246a;
+    color: #3d3c45;
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 10px;
@@ -319,7 +320,7 @@ a {
 }
 
 .payment_procedures #filter-box .main_title {
-    color: #27246a;
+    color: #3d3c45;
     font-size: 23px;
     font-weight: 300;
     margin-bottom: 30px;
@@ -364,7 +365,7 @@ a {
     background-color: #f7f7f7;
     border: 2px solid #fff;
     border-radius: 12px;
-    color: #27246a;
+    color: #3d3c45;
     font-family: dana;
     font-size: 15px;
     font-weight: 200;
@@ -405,7 +406,7 @@ a {
 }
 
 .payment_procedures .payment_action .link.back {
-    background-color: #676767;
+    background-color: #3d3c45;
 }
 
 
@@ -438,7 +439,7 @@ a {
 }
 
 .payment_procedures .payment-list .item>.title {
-    color: #27246a;
+    color: #3d3c45;
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 10px;
@@ -628,7 +629,7 @@ a {
 }
 
 .payment_procedures .cart-bill .submit {
-    background-color: #27246a;
+    background-color: #3d3c45;
     margin-top: 20px;
     padding-block: 18px;
     width: 100%;
@@ -733,7 +734,7 @@ a {
             font-weight: 300;
             font-size: 23px;
             margin-bottom: 30px;
-            color: #27246a;
+            color: #3d3c45;
         }
 
         #filter-menu {
@@ -797,7 +798,7 @@ a {
             }
 
             &.abb_product {
-                background-color: #27246a;
+                background-color: #3d3c45;
             }
 
             &.next_page {
@@ -874,7 +875,7 @@ a {
 
                 .title,
                 .icon {
-                    color: #27246a;
+                    color: #3d3c45;
                 }
             }
 
@@ -887,7 +888,7 @@ a {
 
                 .title,
                 .icon {
-                    color: #27246a;
+                    color: #3d3c45;
                 }
 
                 &::after {
@@ -895,7 +896,7 @@ a {
                     position: absolute;
                     bottom: 50%;
                     left: 50%;
-                    background-color: #27246a;
+                    background-color: #3d3c45;
                     width: 100%;
                     height: 2px;
                     z-index: 2;
@@ -932,7 +933,7 @@ a {
                     height: 5px;
                     right: 3px;
                     bottom: 3px;
-                    background-color: #27246a;
+                    background-color: #3d3c45;
                     border-radius: 50%;
                 }
             }
@@ -944,7 +945,7 @@ a {
         font-weight: 300;
         margin-bottom: 10px;
         padding-bottom: 10px;
-        color: #27246a;
+        color: #3d3c45;
 
         .icon {
             margin-left: 5px;
@@ -962,7 +963,7 @@ a {
                 font-weight: 300;
                 margin-bottom: 10px;
                 padding-bottom: 10px;
-                color: #27246a;
+                color: #3d3c45;
 
                 .icon {
                     font-weight: bold;
@@ -1173,7 +1174,7 @@ a {
         }
 
         .submit {
-            background-color: #27246a;
+            background-color: #3d3c45;
             width: 100%;
             padding-block: 18px;
             margin-top: 20px;

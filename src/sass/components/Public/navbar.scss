@@ -25,8 +25,7 @@
         align-items: center;
         justify-content: space-between;
 
-
-        .logo {
+        #logoNav1 {
             transform: scaleX(0);
             opacity: 0;
             transition: all 0.3s;
@@ -37,15 +36,28 @@
             }
         }
 
-        .logo.showLogo {
+        #logoNav1.logo.showLogo {
             transform: scaleX(1);
             opacity: 1;
             padding-left: 10px;
 
             img {
-                width: 30px;
+                width: 35px;
             }
         }
+
+        #logoNav2 {
+            display: none;
+            transform: scaleX(0);
+            opacity: 0;
+            transition: all 0.3s;
+
+            img {
+                width: 0;
+                transition: all 0.3s;
+            }
+        }
+
 
         ul.menu {
             list-style-type: none;
@@ -53,18 +65,29 @@
             padding: 0;
             display: flex;
             align-items: center;
-            justify-content: center;
-            overflow: auto;
+            justify-content: flex-start;
             margin-left: auto;
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 86%;
 
-
+            &::-webkit-scrollbar-track {
+                padding: 2px 0;
+                background-color: #f6f6f6;
+            }
+        
             &::-webkit-scrollbar {
-                width: 0px;
-                height: 0px;
+                width: 1px;
+                height: 3px;
+            }
+        
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                background-color: #c1c8d5;
             }
 
             li.itemMenu {
-                padding: 15px 0 15px 40px;
+                margin: 15px 0 15px 40px;
 
                 a.text-menu {
                     text-decoration: none;
@@ -218,7 +241,7 @@
             }
 
             &::-webkit-scrollbar-thumb {
-                background-color: #052964;
+                background-color: #3d3c45;
                 border-radius: 5px;
             }
 
@@ -239,17 +262,17 @@
 
                 &:hover {
                     span {
-                        color: #052964;
+                        color: #3d3c45;
                     }
                 }
 
                 &.active {
                     position: sticky;
                     top: 0;
-                    border-color: #052964;
+                    border-color: #3d3c45;
 
                     span {
-                        color: #052964;
+                        color: #3d3c45;
                     }
                 }
 
@@ -324,7 +347,7 @@
 
                     &::-webkit-scrollbar-thumb {
                         border-radius: 10px;
-                        background-color: #052964;
+                        background-color: #3d3c45;
                     }
 
                     .item {
@@ -532,10 +555,10 @@
                             }
 
                             .tag {
-                                color: #052964;
+                                color: #3d3c45;
                                 font-weight: 300;
                                 font-size: 7px;
-                                border: 1px solid #052964;
+                                border: 1px solid #3d3c45;
                                 border-radius: 30px;
                                 background-color: #ebeef2;
                                 padding: 1px 5px;
@@ -642,7 +665,7 @@
     position: fixed;
     right: 0;
     top: 70px;
-    transform: translateX(-775px);
+    transform: translateX(275px);
     transition: all .3s;
     z-index: 50;
     display: none;
@@ -652,7 +675,7 @@
     .box {
         height: 800px;
         overflow-y: auto;
-        direction: rtl;
+        direction: ltr;
 
         &::-webkit-scrollbar-track {
             padding: 2px 0;
@@ -695,10 +718,10 @@
             &.active {
                 position: sticky;
                 top: 0;
-                border-color: #27246a;
+                border-color: #3d3c45;
 
                 span {
-                    color: #27246a;
+                    color: #3d3c45;
                 }
             }
 
@@ -728,7 +751,7 @@
     &.active {
         // opacity: 1;
         // z-index: 50;
-        transform: translateX(-508px);
+        transform: translateX(0px);
     }
 }
 

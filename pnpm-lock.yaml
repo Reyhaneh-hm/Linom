@@ -8,9 +8,18 @@ importers:
 
   .:
     dependencies:
+      '@fancyapps/fancybox':
+        specifier: ^3.5.7
+        version: 3.5.7(jquery@3.7.1)
+      '@fancyapps/ui':
+        specifier: ^5.0.36
+        version: 5.0.36
       cssnano:
         specifier: ^7.0.4
         version: 7.0.5(postcss@8.4.40)
+      fancybox:
+        specifier: ^3.0.1
+        version: 3.0.1
       jquery:
         specifier: ^3.7.1
         version: 3.7.1
@@ -182,6 +191,14 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fancyapps/fancybox@3.5.7':
+    resolution: {integrity: sha512-rcEtu8t+WnmqIDV/Wfm1yvy/nDdwc7YV25j9HLxGC2/WOsUhk9rcWg2nB8g1BrjRt9zaoADdjHTU6ILYTJzBBg==}
+    peerDependencies:
+      jquery: '>=1.9.0'
+
+  '@fancyapps/ui@5.0.36':
+    resolution: {integrity: sha512-GMygQzp1MBTFNTT6AzpbL6pXTD6bTxwjmmpI1fe8Ozmmiseu8/g82Sudl1YhcbZmS4bJgaBOF5THDFGpXQ1fDw==}
 
   '@polka/url@1.0.0-next.25':
     resolution: {integrity: sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==}
@@ -433,6 +450,9 @@ packages:
 
   estree-walker@2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
+
+  fancybox@3.0.1:
+    resolution: {integrity: sha512-HZ57O6j5Zk4Uvusd5pNUgWi7CCjKx+HFlCzjMPeRJ//0bQWUK+xVpkn3EzXWJate4ZSKNFP9kU2l49MP1g+oow==}
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -908,6 +928,12 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
+  '@fancyapps/fancybox@3.5.7(jquery@3.7.1)':
+    dependencies:
+      jquery: 3.7.1
+
+  '@fancyapps/ui@5.0.36': {}
+
   '@polka/url@1.0.0-next.25': {}
 
   '@rollup/pluginutils@5.1.0(rollup@4.20.0)':
@@ -1169,6 +1195,8 @@ snapshots:
   escalade@3.2.0: {}
 
   estree-walker@2.0.2: {}
+
+  fancybox@3.0.1: {}
 
   fill-range@7.1.1:
     dependencies:

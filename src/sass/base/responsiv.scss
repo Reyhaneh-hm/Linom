@@ -570,8 +570,9 @@
     }
 
     #section-home>.container>.boxContent>#imageSlider {
-        max-width: 390px;
-        max-height: 427px;
+        max-width: 400px;
+        max-height: 435px;
+        margin-top: 100px;
     }
 
     #image1 {
@@ -851,7 +852,7 @@
 
     .comments .main_card .comment_item.reply {
         margin-right: 0;
-        margin: 0 40px;
+        margin: 0 40px 0 0;
     }
 
     .comments .comment_form {
@@ -888,10 +889,20 @@
         font-size: 23px;
     }
 
-    #boxImageIcones .boxImageIcone {
+    #boxImageIcones2 {
+        display: flex;
+        right: 62px;
+        top: 485px;
+    }
+
+    #boxImageIcones2 .boxImageIcone {
         padding: 12px;
         right: 0;
         position: relative;
+    }
+
+    #boxImageIcones {
+        display: none;
     }
 
     #hambergerMuno {
@@ -927,13 +938,18 @@
         display: none;
     }
 
-    #topHeader #top-menu .logo {
+    #topHeader #top-menu #logoNav1 {
+        display: none;
+    }
+
+    #topHeader #top-menu #logoNav2 {
+        display: block;
         opacity: 1;
         transform: scaleX(1);
     }
 
-    #topHeader #top-menu .logo img {
-        width: 30px;
+    #topHeader #top-menu #logoNav2 img {
+        width: 135px;
     }
 
     #topHeader #hambergerMuno {
@@ -979,11 +995,6 @@
         left: 170px;
         right: inherit;
         z-index: 10;
-    }
-
-    #boxImageIcones {
-        right: 0;
-        top: -50px;
     }
 
     .image2 {
@@ -1314,12 +1325,12 @@
 @media screen and (max-width: 425px) {
 
     #top-menu .filterProduct.active {
-        transform: translateX(-165px);
+        transform: translateX(0px);
     }
 
-    #top-menu .filterProduct {
-        transform: translateX(-435px);
-    }
+    // #top-menu .filterProduct {
+    //     transform: translateX(-435px);
+    // }
 
     #imageSlider2 .boxImage {
         width: 345px;
@@ -1562,20 +1573,19 @@
         margin: 0 30px 0 5px;
     }
 
-    #boxImageIcones {
-        right: 40px;
-        top: -35px;
-    }
+    #boxImageIcones2 {
+        right: 32px !important;
 
-    #boxImageIcones .boxImageIcone {
-        padding: 10px;
-        font-size: 13px;
-        font-weight: normal;
+        .boxImageIcone {
+            padding: 10px;
+            font-size: 13px;
+            font-weight: normal;
+        }
     }
 
     .icon-Arrow-Down-2 {
-        top: 67px;
-        left: 60px;
+        top: 68px;
+        left: 85px;
         padding: 10px;
         font-size: 16px;
         font-weight: bold;
@@ -1838,7 +1848,8 @@
 
     .comments .main_card .comment_item.reply {
         margin-right: 0;
-        margin: 0;
+        margin: 0 37px 0 0;
+        width: 90%;
     }
 
     .comments .main_card .comment_item .main_desc {
@@ -1911,12 +1922,8 @@
 }
 
 @media screen and (max-width: 375px) {
-    #top-menu .filterProduct.active {
-        transform: translateX(-115px);
-    }
-
-    #top-menu .filterProduct {
-        transform: translateX(-390px);
+    #boxImageIcones2 {
+        top: 385px;
     }
 
     #section-pageOne .container {
@@ -2428,13 +2435,7 @@
 }
 
 @media screen and (max-width: 320px) {
-    #top-menu .filterProduct.active {
-        transform: translateX(-60px);
-    }
 
-    #top-menu .filterProduct {
-        transform: translateX(-325px);
-    }
 
     #imageSlider2 .boxImage {
         width: 260px;
@@ -2548,10 +2549,6 @@
         min-width: 100px;
     }
 
-    #topHeader #top-menu .logo img {
-        width: 27px;
-    }
-
     .textAboutUs>p {
         font-size: 16px;
         height: 485px;
@@ -2560,13 +2557,6 @@
         position: relative;
     }
 
-    #topHeader #top-menu .logo.showLogo img {
-        width: 27px;
-    }
-
-    #topHeader #top-menu .logo.showLogo img {
-        width: 30px;
-    }
 
     #section-home>.container>.boxContent>#imageSlider .boxImage {
         position: relative;
@@ -2574,9 +2564,9 @@
         height: 325px;
     }
 
-    #boxImageIcones {
-        top: 0;
-        right: 30px;
+    #boxImageIcones2 {
+        top: 335px;
+        right: 22px;
     }
 
     #logo1 {
@@ -2721,4 +2711,9 @@
         margin: 150px 0 40px;
     }
 
+    .comments .main_card .comment_item.reply {
+        margin-right: 0;
+        margin: 0 25px 0 0;
+        width: 92%;
+    }
 }
