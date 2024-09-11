@@ -9,6 +9,9 @@
     list-style: none;
 }
 
+html,body{
+    scroll-behavior: smooth;
+}
 
 .fancybox__container *,
 .fancybox__container *::before,

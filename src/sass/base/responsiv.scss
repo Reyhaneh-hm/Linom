@@ -683,6 +683,86 @@
 
 
 @media screen and (max-width: 768px) {
+
+    a#go-to-top:link,
+    a#go-to-top:visited {
+        width: 50px;
+        height: 50px;
+        left: 25px;
+        bottom: 80px;
+
+        .icon-up {
+            font-size: 20px;
+        }
+    }
+
+    .center-circle {
+        width: 50px;
+        height: 50px;
+        left: 25px;
+        bottom: 145px;
+        display: flex;
+
+        .icon-social {
+            font-size: 20px;
+        }
+
+        .small-circle {
+            width: 40px;
+            height: 40px;
+
+            .icon-smallCircle {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .circle-Telegram {
+        transform: translate(-20px, -75px);
+
+        &:hover {
+            transform: translate(-20px, -75px) scale(1.12) !important;
+        }
+    }
+
+    .circle-Instagram {
+        transform: translate(30px, -80px);
+
+        &:hover {
+            transform: translate(30px, -80px) scale(1.12) !important;
+        }
+    }
+
+    .circle-Facebook {
+        transform: translate(71PX, -53PX);
+
+        &:hover {
+            transform: translate(71PX, -53PX) scale(1.12) !important;
+        }
+    }
+
+    .circle-Whatsapp {
+        transform: translate(84PX, -5px);
+
+        &:hover {
+            transform: translate(84PX, -5px) scale(1.12) !important;
+        }
+    }
+
+    .circle-Twitter {
+        transform: translate(70px, 44px);
+
+        &:hover {
+            transform: translate(70px, 44px) scale(1.12) !important;
+        }
+    }
+
+
+
+
+
+
+
     #section-pageTwo>.container>.boxContent>.boxText {
         width: 80%;
     }

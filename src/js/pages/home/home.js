@@ -1,4 +1,5 @@
 import "../../../sass/components/pages/home/index.scss";
+import "../../../sass/base/fonts.scss"
 import WaveSurfer from "wavesurfer.js";
 
 /*--------------slick slider---------------*/
@@ -98,10 +99,10 @@ window.addEventListener("load", () => {
                 var totalTime = wavesurfer.getDuration(),
                     currentTime = wavesurfer.getCurrentTime(),
                     remainingTime = totalTime - currentTime;
-                
+
                 // تبدیل زمان باقی‌مانده به فرمت مناسب
                 const formattedRemainingTime = formatTime(remainingTime);
-                
+
                 // نمایش زمان باقی‌مانده در عنصر HTML با ID "timeAudio"
                 document.getElementById("timeAudio").innerText = formattedRemainingTime;
 
@@ -197,27 +198,6 @@ window.addEventListener("load", () => {
     });
 });
 
-//     const prevButtons = document.querySelectorAll(".icon-Arrow-Left-2");
-//     const nextButtons = document.querySelectorAll(".icon-Arrow-Right-2");
-
-//     prevButtons.forEach((button) => {
-//         button.addEventListener("click", () => {
-//             const container = button.closest("[scroll_container]");
-//             console.log(container);
-//             container.scrollLeft -= container.offsetWidth;
-//         });
-//     });
-
-//     nextButtons.forEach((button) => {
-//         button.addEventListener("click", () => {
-//             const container = button.closest("[scroll_container]");
-//             container.scrollLeft += container.offsetWidth;
-//         });
-//     });
-
-// });
-
-
 
 /*-----------------Scrool bottom----------------*/
 
@@ -296,3 +276,48 @@ document.addEventListener("DOMContentLoaded", () => {
         if (slider3) slider3.scrollLeft += distance;
     }
 })
+
+
+/*-----------------Social Network---------------*/
+
+
+// Create small circles with icons and append to the center circle
+const icons = [ 'icon-smallCircle icon-Telegram', 'icon-smallCircle icon-Instagram', 'icon-smallCircle icon-Facebook', 'icon-smallCircle icon-Whatsapp', 'icon-smallCircle icon-Twitter'];
+const colors = [ 'Telegram', 'Instagram', 'Facebook', 'Whatsapp', 'Twitter'];
+const centerCircle = document.getElementById('centerCircle');
+
+colors.forEach((color, index) => {
+    const smallCircle = document.createElement('a');
+    smallCircle.href = '#';
+    smallCircle.classList.add('small-circle', `circle-${color}`);
+    smallCircle.innerHTML = `<i class="${icons[index]}"></i>`;
+    centerCircle.appendChild(smallCircle);
+});
+
+let isExpanded = false;
+const delay = 150; // Delay between each circle
+
+// Toggle visibility with sequential animation
+centerCircle.addEventListener('click', () => {
+    const smallCircles = document.querySelectorAll('.small-circle');
+
+    if (!isExpanded) {
+        smallCircles.forEach((circle, index) => {
+            setTimeout(() => {
+                circle.style.opacity = '1';
+                circle.style.zIndex = '61';
+            }, index * delay);
+        });
+        isExpanded = true;
+        centerCircle.style.background= "#cf5241";
+    } else {
+        smallCircles.forEach((circle, index) => {
+            setTimeout(() => {
+                circle.style.opacity = '0';
+                circle.style.zIndex = '60';
+            }, index * delay);
+        });
+        isExpanded = false;
+        centerCircle.style.background= "#3d3c45";
+    }
+});

@@ -149,17 +149,49 @@
     }
 }
 
-#section-blog #filterBtn {
-    background-color: #3d3c45;
-    border-radius: 5px;
-    color: #fff;
-    display: none;
-    font-size: 12px;
-    font-weight: 100;
-    // margin-block: 15px 35px;
-    padding: 15px 10px;
+#section-blog .filterBtn {
+    position: relative;
+    top: 30px;
+    right: 45px;
+    width: 160px;
+    height: 50px;
     text-align: center;
-    margin: 40px 0 -25px;
+    display: none;
+    cursor: pointer;
+    transform: translateX(30px);
+    transition: all 0.3s;
+
+    .shape {
+        stroke-dasharray: 100 300;
+        stroke-dashoffset: -297;
+        fill: transparent;
+        stroke: #3d3c45;
+        stroke-width: 5px;
+        transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+    }
+
+    .text {
+        font-size: 17px;
+        top: -42PX;
+        position: relative;
+        color: #000;
+    }
+
+    &:hover {
+        background-color: #3d3c45;
+        transition: 1s;
+        transform: translateX(20px);
+
+        .shape {
+            stroke-width: 2px;
+            stroke-dashoffset: 0;
+            stroke-dasharray: 760;
+        }
+
+        .text {
+            color: #fff;
+        }
+    }
 }
 
 #section-blog .modalFilter {
@@ -249,13 +281,11 @@
             }
         }
     }
+
     &.active {
         transform: translateX(0);
     }
 }
-
-
-
 
 .overlay {
     background: rgba(0, 0, 0, .55);
@@ -346,29 +376,89 @@
                     span {
                         color: #abb5c6;
                         transition: all 0.3s;
-    
+
                         &.title {
                             font-size: 15px;
                         }
-    
+
                         &.icon {
                             width: 20px;
                             font-size: 25px;
                         }
                     }
-    
+
                 }
             }
         }
     }
 
 }
-/*-------------------------------------------*/
 
+/*--------------------Responsive-----------------------*/
 
+@media screen and (max-width: 768px) {
+    #section-blog {
+        .filterBtn {
+            display: block;
 
+            .shape {
+                stroke-dasharray: 66 142;
+                stroke-dashoffset: 80;
+                width: 100%;
+            }
+        }
+    }
+}
 
+@media screen and (max-width: 425px) {
+    #section-blog {
+        .filterBtn {
+            right: -6px;
+            width: 85%;
+            transform: none !important;
 
+            svg {
+                width: 100%;
 
+                .shape {
+                    width: 100%;
+                    stroke-dasharray: 79 295;
+                    stroke-dashoffset: -285;
+                }
+            }
+        }
+    }
+}
 
+@media screen and (max-width: 375px) {
+    #section-blog {
+        .filterBtn {
+            right: 0;
+            width: 92%;
 
+            svg {
+                .shape {
+                    stroke-dasharray: 95 267;
+                    stroke-dashoffset: -260;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #section-blog {
+        .filterBtn {
+            right: 0;
+            width: 97%;
+
+            svg {
+                .shape {
+                    stroke-dasharray: 65 266;
+                    stroke-dashoffset: -247;
+                }
+            }
+        }
+
+    }
+}

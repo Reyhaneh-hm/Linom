@@ -2,7 +2,7 @@ import "../../../sass/components/pages/list-blog/index.scss";
 import "../../../sass/base/responsiv.scss"
 /*------------------------------------------------*/
 
-const filterBtn = document.querySelector("#filterBtn");
+const filterBtn = document.querySelector(".filterBtn");
 const modalFilter = document.querySelector(".modalFilter");
 const overlay = document.querySelector(".overlay");
 filterBtn.addEventListener("click", () => {

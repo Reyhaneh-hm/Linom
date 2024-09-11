@@ -11,6 +11,22 @@
 
 
 <body>
+
+
+  <!------------------Quick Access----------------------->
+
+  <!--go to top-->
+  <a href="#" id="go-to-top">
+    <i class="icon-up icon-Arrow-Up-2"></i>
+  </a>
+
+  <!--social network-->
+  <div class="center-circle" id="centerCircle">
+    <i class="icon-social icon-Calling"></i>
+  </div>
+
+  <!---------------------Header-------------------------->
+
   <div class="overlay"></div>
   <div class="overlay2"></div>
   <header id="topHeader">
@@ -702,12 +718,6 @@
             </div>
           </div>
 
-          <div class="burgger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-
         </li>
         <li class="itemMenu">
           <a href="./list-blog.html" class="text-menu linkBlog"> اخبار و مقالات </a>
@@ -721,7 +731,14 @@
         <a href="./contact-us.html"><i class="icon-header icon-Calling" id="call"></i></a>
         <a href="./payment.html"><i class="icon-header icon-Buy" id="buy"></i></a>
         <a href="./error.html"><i class="icon-header icon-Profile" id="user"></i></a>
-        <a id="hambergerMuno2"><i class="icon-header icon-menu"></i></a>
+        <a id="hambergerMuno2">
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox" class="toggle">
+            <div class="bars" id="bar1"></div>
+            <div class="bars" id="bar2"></div>
+            <div class="bars" id="bar3"></div>
+          </label>
+        </a>
         <div class="burgger">
           <div></div>
           <div></div>
@@ -868,8 +885,10 @@
       </div>
 
     </nav>
+
   </header>
 
+  <!---------------------------------------------------->
 
   <section id="section-home">
 
@@ -971,6 +990,7 @@
       </div>
     </div>
   </section>
+
   <section id="section-pageOne">
     <div class="container">
       <div class="tapContent">
@@ -1344,12 +1364,6 @@
       <span class="title">دسته بندی محصولات</span>
     </a>
   </div>
-
-
-  <script>
-
-
-  </script>
 
   <script type="module" src="./main.js"></script>
   <script type="module" src="./src/js/pages/home/home.js"></script>
