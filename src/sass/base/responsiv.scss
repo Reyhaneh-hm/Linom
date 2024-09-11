@@ -13,11 +13,16 @@
 }
 
 @media screen and (max-width: 1440px) {
+    .tapContent {
+        right: -3px;
+    }
 
-    #go-to-top:link, #go-to-top:visited {
+    #go-to-top:link,
+    #go-to-top:visited {
         width: 55px;
         height: 55px;
     }
+
     #imageSlider {
         display: flex;
     }
@@ -155,8 +160,8 @@
     }
 
     #section-pageOne .box-slider {
-        right: -143px;
-        width: 930px;
+        right: -140px;
+        width: 920px;
     }
 
     .boxTwo {
@@ -171,8 +176,8 @@
 
 
     #section-pageThree .box-slider {
-        padding-right: 422px;
-        left: -28px;
+        padding-right: 441px;
+        padding-left: 45px;
     }
 
     .image2 {
@@ -185,8 +190,8 @@
     }
 
     #section-pageTwo>.container>.boxContent>.boxText>.content {
-        width: 500px;
-        margin: 0;
+        width: 440px;
+        margin: 0 0 0 60px;
         top: -50px;
     }
 
@@ -300,12 +305,55 @@
         min-width: 1435px;
         padding: 15px 140px;
     }
+
+    #topHeader #top-menu ul.menu li.itemMenu a.text-menu {
+        font-size: 18px;
+    }
+
+    #topHeader #top-menu .icon-header {
+        font-size: 26px;
+    }
+
+    #topHeader #top-menu #boxIcon {
+        width: 185px;
+    }
+
+    #section-pageTwo>.container>.boxContent>.boxText {
+        top: -20px;
+        margin-right: 0;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
-    #go-to-top:link, #go-to-top:visited {
-        width: 45px;
-        height: 45px;
+    .boxText {
+        margin-right: 15px;
+    }
+
+    .tapContent>#boxTabContent>button,
+    .seeAll>a {
+        height: 53px;
+        font-size: 16px;
+        min-width: 128px;
+        margin: 0 0 0 6px;
+    }
+
+    .seeAll {
+        margin: 0 0 0 -6px;
+    }
+
+    #allCategories {
+        font-size: 15px;
+    }
+
+    #section-home>.container>.boxContent>#imageSlider .boxImage {
+        height: 440px;
+    }
+
+    #go-to-top:link,
+    #go-to-top:visited {
+        width: 50px;
+        height: 50px;
 
         .icon-up {
             font-size: 21px;
@@ -372,8 +420,12 @@
     }
 
     #section-pageThree #iconSlider {
-        top: 405px;
+        top: 515px;
         right: -13px;
+    }
+
+    #section-pageThree #iconSlider>i {
+        padding: 13px;
     }
 
     .post .content img {
@@ -432,7 +484,7 @@
     }
 
     .content {
-        width: 410px;
+        width: 430px;
         top: 55px;
         margin: 0;
     }
@@ -486,17 +538,17 @@
     }
 
     #section-pageOne {
-        margin-top: -110px;
+        margin-top: -175px;
     }
 
     .tapContent>#boxTabContent {
-        width: 430px;
+        width: 535px;
     }
 
     #section-pageOne .box-slider {
-        right: -356px;
+        right: -315px;
         width: 920px;
-        padding-left: 250px;
+        padding-left: 335px;
         padding-right: 240px;
     }
 
@@ -512,6 +564,16 @@
 
     #section-pageTwo>.container>.boxContent>.boxText>.content {
         width: 306px;
+        margin: 0;
+        top: -20px;
+    }
+
+    #section-pageTwo p#text-sectionTwo {
+        font-size: 15.5px;
+    }
+
+    #section-pageThree {
+        margin-top: -70px;
     }
 
     #arrowPage {
@@ -792,7 +854,7 @@
 
     #section-pageTwo,
     #section-pageFour {
-        margin-top: -475px;
+        margin-top: -530px;
     }
 
 
@@ -967,7 +1029,7 @@
     }
 
     .weblog img {
-        width: 340px;
+        width: 295px;
         margin-top: 7px;
     }
 
@@ -1116,7 +1178,7 @@
     }
 
     .content {
-        width: 605px;
+        width: 720px;
     }
 
     .content>#titrHome {
@@ -1181,7 +1243,7 @@
     }
 
     #section-pageTwo .boxImage {
-        top: 60px;
+        top: 75px;
         max-width: 600px;
         height: 715px;
         left: 10px;
@@ -1241,7 +1303,7 @@
     }
 
     #section-pageThree {
-        margin-top: -155px;
+        margin-top: -200px;
     }
 
     #section-pageThree #iconSlider {
@@ -1332,9 +1394,10 @@
 
     #boxWeblog {
         height: 40%;
-        width: 125%;
+        width: 101%;
         position: relative;
-        right: -77px;
+        right: -1px;
+        margin-top: -50px;
     }
 
     #section-blog #boxWeblog>.weblog {
@@ -1442,10 +1505,14 @@
     }
 
     #section-pageOne .box-slider {
-        padding-right: 485px;
-        right: -245px;
-        padding-left: 0;
+        // padding-right: 485px;
+        // right: -245px;
+        // padding-left: 0;
         margin: 0;
+        padding-right: 2px;
+        right: 0;
+        padding-left: 5px;
+        width: 112%;
     }
 
     #section-pageOne .items-tabContent .boxTwo {
@@ -1684,7 +1751,7 @@
 
     .icon-Arrow-Down-2 {
         top: 68px;
-        left: 85px;
+        left: 80px;
         padding: 10px;
         font-size: 16px;
         font-weight: bold;
@@ -1710,6 +1777,8 @@
 
     #boxCategories {
         width: 90%;
+        position: relative;
+        right: -7px;
     }
 
     .tapContent {
@@ -1821,13 +1890,13 @@
         left: -414px;
     }
 
-    // #section-pageThree .box-slider {
-    //     right: -170px;
-    //     width: 720px;
-    // }
     #section-pageThree .box-slider {
-        right: -571px;
-        width: 439px;
+        // right: -571px;
+        // width: 439px;
+        padding-right: 420px;
+        padding-left: 0;
+        left: 296px;
+        width: 145%;
     }
 
     #section-pageThree #iconSlider {
@@ -1851,18 +1920,19 @@
     }
 
     .weblog {
-        width: 345px;
+        width: 600px;
     }
 
     .weblog img {
-        width: 322px;
+        width: 375px;
     }
 
     #boxWeblog {
-        height: 550px;
-        right: -74px;
-        padding-right: 57px;
-        padding-left: 8px;
+        height: 600px;
+        right: 0;
+        /* padding-right: 57px; */
+        /* padding-left: 8px; */
+        margin: 22px 0;
     }
 
     .weblog>.textWeblog>p {
@@ -2025,12 +2095,21 @@
         top: 385px;
     }
 
+    #section-pageOne .items-tabContent {
+        margin-top: -65px;
+    }
+
+    .seeAll {
+        margin: 0 0 0 -10px;
+    }
+
     #section-pageOne .container {
         height: 1225px;
     }
 
     #boxCategories {
         width: 100%;
+        right: 0;
     }
 
     #imageSlider2 .boxImage {
@@ -2130,7 +2209,9 @@
     }
 
     .content {
-        width: 375px;
+        width: 373px;
+        position: relative;
+        right: -8px;
     }
 
     .content>#titrHome {
@@ -2167,12 +2248,13 @@
     }
 
     #section-pageTwo>.container>.boxContent>.boxText>.content {
-
+        width: 328px;
+        right: 0;
         top: 35px;
     }
 
     #section-pageTwo {
-        margin-top: -365px;
+        margin-top: -515px;
     }
 
     #section-pageThree .box-slider {
@@ -2289,8 +2371,8 @@
     }
 
     #section-pageThree .box-slider {
-        right: -64px;
-        padding-right: 310px;
+        right: -174px;
+        padding-right: 420px;
     }
 
     #section-pageThree .box-slider>.slider {
@@ -2377,7 +2459,12 @@
     }
 
     .icon-Arrow-Down-2 {
-        left: 100px;
+        left: 91px;
+        top: 67px;
+    }
+
+    #boxImageIcones2 .boxImageIcone {
+        margin: 0 5px;
     }
 
     .content>#textHome {
@@ -2387,6 +2474,7 @@
 
     #boxCategories>.categories {
         font-size: 15px;
+        min-width: 116px;
     }
 
     .icon-categories {
@@ -2411,11 +2499,7 @@
     }
 
     #section-pageOne .items-tabContent .boxTwo {
-        bottom: 468px;
-    }
-
-    #section-pageTwo>.container>.boxContent>.boxText>.content {
-        width: 328px;
+        bottom: 520px;
     }
 
     #section-pageTwo .boxImage {
@@ -2492,17 +2576,25 @@
 
     }
 
-    .weblog {
-        width: 340px;
-    }
-
     #section-blog #boxWeblog>.weblog>img {
         margin-top: 0;
     }
 
+    .weblog {
+        width: 370px;
+    }
+
+    .weblog img {
+        width: 317px;
+    }
+
     #boxWeblog {
-        padding-right: 80px;
-        padding-left: 33px;
+        right: 25px;
+        width: 86%;
+    }
+
+    #topHeader #top-menu #logoNav2 img {
+        width: 125px;
     }
 
     .mobile_footer .link .icon {
@@ -2666,6 +2758,7 @@
     #boxImageIcones2 {
         top: 335px;
         right: 22px;
+        z-index: 2;
     }
 
     #logo1 {
@@ -2735,6 +2828,7 @@
 
     #section-pageTwo>.container>.boxContent>.boxText>.content {
         width: 303px;
+        top: 50px;
     }
 
     #section-pageTwo .boxImage {
@@ -2773,8 +2867,8 @@
     }
 
     #section-pageThree .box-slider {
-        right: -119px;
-        padding-right: 439px;
+        right: -149px;
+        padding-right: 468px;
     }
 
     #section-pageThree #iconSlider {
@@ -2787,6 +2881,7 @@
 
     #topTitr {
         font-size: 13px;
+        padding: 10px;
     }
 
     #section-home {
@@ -2794,8 +2889,8 @@
     }
 
     #boxWeblog {
-        padding-left: 17px;
-        padding-right: 80px;
+        right: 10px;
+        width: 93%;
     }
 
     .weblog {
@@ -2803,7 +2898,7 @@
     }
 
     .weblog img {
-        width: 297px;
+        width: 290px;
     }
 
     #section-blog h2 {
@@ -2814,5 +2909,16 @@
         margin-right: 0;
         margin: 0 25px 0 0;
         width: 92%;
+    }
+
+    .icon-categories {
+        font-size: 28px;
+    }
+
+    #boxCategories>.categories {
+        font-size: 14px;
+        min-width: 100px;
+        right: -3px;
+        position: relative;
     }
 }

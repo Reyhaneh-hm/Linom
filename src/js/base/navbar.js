@@ -21,21 +21,18 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
-});
 
-
-/*--------------------------------------------*/
-
-window.addEventListener("DOMContentLoaded", () => {
+    /*-----------------------show filterProduct------------------------*/
 
     const hambergerMuno2 = document.querySelector("#hambergerMuno2");
     const filterProduct = document.querySelector(".filterProduct");
     const overlay = document.querySelector(".overlay");
+
     hambergerMuno2.addEventListener("click", () => {
-        [overlay, filterProduct].forEach((item) => item.classList.toggle("active"));
+        [overlay, filterProduct].forEach((item) => item.classList.add("active"));
     });
     overlay.addEventListener("click", () => {
         [overlay, filterProduct].forEach((item) => item.classList.remove("active"));
     });
 
-})
+});

@@ -155,6 +155,9 @@ img {
         &>.boxContent {
             &>.boxText {
                 width: 80%;
+                position: relative;
+                top: -80px;
+                margin-right: -197px;
 
                 &>.content {
                     width: 605px;
@@ -590,7 +593,6 @@ a>#arrowPage:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: auto;
     z-index: 50;
     position: relative;
     z-index: 1;
@@ -996,6 +998,7 @@ a>#arrowPage:hover {
                     content: "مشاهده";
                     bottom: 0;
                     position: relative;
+                    margin-left: 2px;
                     font-family: dana, sans-serif;
                     font-size: 13px;
                 }
@@ -1155,7 +1158,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 5px 0;
+    padding: 100px 0;
 
     &>span {
         display: flex;
@@ -1379,9 +1382,7 @@ a {
     transform: translate(0px, 0px);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
 
-    &:hover {
-
-    }
+    &:hover {}
 
     .icon-smallCircle {
         color: #fff;
