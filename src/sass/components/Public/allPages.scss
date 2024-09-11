@@ -9,7 +9,8 @@
     list-style: none;
 }
 
-html,body{
+html,
+body {
     scroll-behavior: smooth;
 }
 
@@ -18,7 +19,8 @@ html,body{
 .fancybox__container *::after {
     direction: ltr;
 }
-.fancybox__slide .fancybox__content{
+
+.fancybox__slide .fancybox__content {
     width: 500px;
     height: 500px;
     overflow: hidden;

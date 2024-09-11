@@ -13,6 +13,11 @@
 }
 
 @media screen and (max-width: 1440px) {
+
+    #go-to-top:link, #go-to-top:visited {
+        width: 55px;
+        height: 55px;
+    }
     #imageSlider {
         display: flex;
     }
@@ -133,7 +138,11 @@
     .content>#textHome {
         overflow: hidden;
         text-overflow: ellipsis;
-        height: 48px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
     }
 
     .content>#titrHome {
@@ -294,6 +303,16 @@
 }
 
 @media screen and (max-width: 1024px) {
+    #go-to-top:link, #go-to-top:visited {
+        width: 45px;
+        height: 45px;
+
+        .icon-up {
+            font-size: 21px;
+            color: #fff;
+        }
+    }
+
     #categories-weblog .boxWeblog {
         margin-right: 10px;
         grid-gap: 0px;
