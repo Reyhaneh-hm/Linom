@@ -49,31 +49,31 @@ window.addEventListener("load", () => {
 window.addEventListener("load", () => {
     const tabs = document.querySelectorAll("[tab_content_title]");
     const content = document.querySelectorAll("[tab_content_item]");
-    const overlay22 = document.querySelector(".overlay22");
+    const overlay2 = document.querySelector(".overlay2");
 
     if (tabs && content) {
         for (let tab of tabs) {
             tab.addEventListener("click", () => {
                 tabs.forEach((item) => {
                     item.classList.remove("active");
-                    overlay22.classList.remove("active");
+                    overlay2.classList.remove("active");
                 });
 
                 tab.classList.add("active");
-                overlay22.classList.add("active");
+                overlay2.classList.add("active");
 
                 const contentId = tab.getAttribute("tab_content_title");
 
                 content.forEach((item) => {
                     item.classList.remove("active");
-                    overlay22.classList.remove("active");
+                    overlay2.classList.remove("active");
                 });
 
                 const element = document.querySelector(
                     `[tab_content_item="${contentId}"]`
                 );
                 element.classList.add("active");
-                overlay22.classList.remove("active");
+                overlay2.classList.remove("active");
             });
         }
     }

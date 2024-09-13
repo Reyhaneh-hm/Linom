@@ -37,6 +37,137 @@ body {
     position: relative;
 }
 
+/*---------------------go to top-----------------------*/
+#go-to-top:link,
+#go-to-top:visited {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #3d3c45;
+    text-decoration: none;
+    position: fixed;
+    left: 55px;
+    bottom: 50px;
+    z-index: 61;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #cf5241;
+    }
+
+    .icon-up {
+        font-size: 25px;
+        color: #fff;
+    }
+
+}
+
+/*--------------------Social Network-------------------*/
+
+.center-circle {
+    width: 60px;
+    height: 60px;
+    background: #3d3c45;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    position: fixed;
+    left: 55px;
+    bottom: 125px;
+    z-index: 61;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
+    transition: all 0.3s;
+
+    &:hover {
+        background: #cf5241;
+    }
+
+    .icon-social {
+        font-size: 25px;
+        color: #fff;
+    }
+}
+
+.small-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 60;
+    transform: translate(0px, 0px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
+
+    &:hover {}
+
+    .icon-smallCircle {
+        color: #fff;
+        font-size: 25px;
+    }
+}
+
+.circle-Telegram {
+    transform: translate(-35px, -85px);
+    background: rgb(30, 140, 193);
+    background: linear-gradient(25deg, rgba(30, 140, 193, 1) 30%, rgba(58, 184, 234, 1) 70%);
+
+    &:hover {
+        transform: translate(-35px, -85px) scale(1.12) !important;
+    }
+}
+
+.circle-Instagram {
+    transform: translate(30px, -95px);
+    background: rgb(131, 58, 180);
+    background: linear-gradient(119deg, rgba(131, 58, 180, 1) 10%, rgba(253, 29, 29, 1) 53%, rgba(252, 176, 69, 1) 90%);
+
+    &:hover {
+        transform: translate(30px, -95px) scale(1.12) !important;
+    }
+}
+
+.circle-Facebook {
+    transform: translate(85PX, -60PX);
+    background: rgb(10, 98, 246);
+    background: linear-gradient(0deg, rgba(10, 98, 246, 1) 10%, rgba(37, 171, 234, 1) 90%);
+
+    &:hover {
+        transform: translate(85PX, -60PX) scale(1.12) !important;
+    }
+}
+
+.circle-Whatsapp {
+    transform: translate(99PX, 1px);
+    background: rgb(2, 255, 44);
+    background: linear-gradient(122deg, rgba(2, 255, 44, 1) 25%, rgba(0, 138, 18, 1) 75%);
+
+    &:hover {
+        transform: translate(99PX, 1px) scale(1.12) !important;
+    }
+}
+
+.circle-Twitter {
+    transform: translate(80px, 60px);
+    background: rgb(5, 154, 239);
+    background: linear-gradient(180deg, rgba(5, 154, 239, 1) 5%, rgba(4, 187, 240, 1) 51%, rgba(5, 154, 239, 1) 95%);
+
+    &:hover {
+        transform: translate(80px, 60px) scale(1.12) !important;
+    }
+}
+/*------------------------------------*/
 ::-moz-selection {
     background: #cf5241;
     color: #fff;
@@ -121,4 +252,104 @@ i,
 span,
 img {
     vertical-align: middle;
+}
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+    #go-to-top:link,
+    #go-to-top:visited {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #go-to-top:link,
+    #go-to-top:visited {
+        width: 50px;
+        height: 50px;
+
+        .icon-up {
+            font-size: 21px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    a#go-to-top:link,
+    a#go-to-top:visited {
+        width: 50px;
+        height: 50px;
+        left: 25px;
+        bottom: 80px;
+
+        .icon-up {
+            font-size: 20px;
+        }
+    }
+
+    .center-circle {
+        width: 50px;
+        height: 50px;
+        left: 25px;
+        bottom: 145px;
+        display: flex;
+
+        .icon-social {
+            font-size: 20px;
+        }
+
+        .small-circle {
+            width: 40px;
+            height: 40px;
+
+            .icon-smallCircle {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .circle-Telegram {
+        transform: translate(-20px, -75px);
+
+        &:hover {
+            transform: translate(-20px, -75px) scale(1.12) !important;
+        }
+    }
+
+    .circle-Instagram {
+        transform: translate(30px, -80px);
+
+        &:hover {
+            transform: translate(30px, -80px) scale(1.12) !important;
+        }
+    }
+
+    .circle-Facebook {
+        transform: translate(71PX, -53PX);
+
+        &:hover {
+            transform: translate(71PX, -53PX) scale(1.12) !important;
+        }
+    }
+
+    .circle-Whatsapp {
+        transform: translate(84PX, -5px);
+
+        &:hover {
+            transform: translate(84PX, -5px) scale(1.12) !important;
+        }
+    }
+
+    .circle-Twitter {
+        transform: translate(70px, 44px);
+
+        &:hover {
+            transform: translate(70px, 44px) scale(1.12) !important;
+        }
+    }
 }
