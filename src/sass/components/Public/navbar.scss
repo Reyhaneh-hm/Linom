@@ -705,8 +705,7 @@
     top: 70px;
     transform: translateX(275px);
     transition: all .3s;
-    z-index: 50;
-    display: none;
+    z-index: -50;
     opacity: 0;
 
     .box {
@@ -784,8 +783,8 @@
         }
     }
     &.active {
-        display: block;
         opacity: 1;
+        z-index: 50;
         transform: translateX(0px);
     }
 }
@@ -822,9 +821,14 @@
 @media screen and (max-width: 768px){
     #hambergerMuno2 {
         display: block !important;
+        // margin-right: 10px;
     }
 
     #user {
+        display: none;
+    }
+
+    #top-menu #boxIcon a:nth-child(3){
         display: none;
     }
 }

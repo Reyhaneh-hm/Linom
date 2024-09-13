@@ -329,6 +329,11 @@
     .boxText {
         margin-right: 15px;
     }
+    #page-aboutUs{
+        .container {
+            min-height: 800px;
+        }
+    }
 
     .tapContent>#boxTabContent>button,
     .seeAll>a {
@@ -1045,7 +1050,8 @@
         flex-direction: column;
     }
 
-    #topHeader .icon-header {
+    #topHeader .icon-header,
+    #topHeader  #hambergerMuno2{
         padding-right: 10px;
         font-size: 23px;
     }
@@ -1450,11 +1456,11 @@
         padding: 15px 80px;
     }
 
-    #section-blog {
-        #topHeader {
-            padding: 15px 53px;
-        }
-    }
+    // #section-blog {
+    //     #topHeader {
+    //         padding: 15px 53px;
+    //     }
+    // }
 
 
     #footer {
@@ -2920,5 +2926,10 @@
         min-width: 100px;
         right: -3px;
         position: relative;
+    }
+    #page-error{
+        #topHeader{
+            right: -6px;
+        }
     }
 }
