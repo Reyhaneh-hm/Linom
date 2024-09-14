@@ -40,10 +40,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 /*-----------------Social Network---------------*/
 
-
-// Create small circles with icons and append to the center circle
-const icons = [ 'icon-smallCircle icon-Telegram', 'icon-smallCircle icon-Instagram', 'icon-smallCircle icon-Facebook', 'icon-smallCircle icon-Whatsapp', 'icon-smallCircle icon-Twitter'];
-const colors = [ 'Telegram', 'Instagram', 'Facebook', 'Whatsapp', 'Twitter'];
+const icons = ['icon-smallCircle icon-Telegram', 'icon-smallCircle icon-Instagram', 'icon-smallCircle icon-Facebook', 'icon-smallCircle icon-Whatsapp', 'icon-smallCircle icon-Twitter'];
+const colors = ['Telegram', 'Instagram', 'Facebook', 'Whatsapp', 'Twitter'];
 const centerCircle = document.getElementById('centerCircle');
 
 colors.forEach((color, index) => {
@@ -55,21 +53,27 @@ colors.forEach((color, index) => {
 });
 
 let isExpanded = false;
-const delay = 150; // Delay between each circle
+const delay = 150;
 
-// Toggle visibility with sequential animation
 centerCircle.addEventListener('click', () => {
     const smallCircles = document.querySelectorAll('.small-circle');
+    // const circleTelegram = document.querySelector('.circle-Telegram');
+    // const circleInstagram = document.querySelector('.circle-Instagram');
+    // const circleFacebook = document.querySelector('.circle-Facebook');
+    // const circleWhatsapp = document.querySelector('.circle-Whatsapp');
+    // const circleTwitter = document.querySelector('.circle-Twitter');
 
     if (!isExpanded) {
         smallCircles.forEach((circle, index) => {
             setTimeout(() => {
                 circle.style.opacity = '1';
                 circle.style.zIndex = '61';
+                // circle.style.transform = 'translate(0px, 0px)';
+                // circleTelegram.style.transform = "translate(-20px,-75px)";
             }, index * delay);
         });
         isExpanded = true;
-        centerCircle.style.background= "#cf5241";
+        centerCircle.style.background = "#cf5241";
     } else {
         smallCircles.forEach((circle, index) => {
             setTimeout(() => {
@@ -78,6 +82,6 @@ centerCircle.addEventListener('click', () => {
             }, index * delay);
         });
         isExpanded = false;
-        centerCircle.style.background= "#3d3c45";
+        centerCircle.style.background = "#3d3c45";
     }
 });

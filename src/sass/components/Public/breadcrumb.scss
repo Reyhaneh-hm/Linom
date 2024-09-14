@@ -65,6 +65,7 @@ ul.breadcrumb {
 @media screen and (max-width: 1440px) {
   ul.breadcrumb {
     right: 150px !important;
+    width: 79%;
   }
 }
 
@@ -113,6 +114,12 @@ ul.breadcrumb {
       width: 86% !important;
     }
   }
+
+  #page-error {
+    ul.breadcrumb {
+      right: 25px !important;
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -124,5 +131,10 @@ ul.breadcrumb {
     ul.breadcrumb {
       right: 13px !important;
     }
+  }
+
+  #section-blog ul.breadcrumb {
+    right: 11px !important;
+    width: 92% !important;
   }
 }
