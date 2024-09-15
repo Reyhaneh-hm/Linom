@@ -21,24 +21,27 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+});
+/*-----------------------show filterProduct------------------------*/
 
-    /*-----------------------show filterProduct------------------------*/
-
-    const hambergerMuno2 = document.querySelector("#hambergerMuno2");
+window.addEventListener("DOMContentLoaded", () => {
+    const checkbox = document.querySelector("#checkbox");
     const filterProduct = document.querySelector(".filterProduct");
     const overlay = document.querySelector(".overlay");
-
-    hambergerMuno2.addEventListener("click", () => {
-        [overlay, filterProduct].forEach((item) => item.classList.add("active"));
+  
+    checkbox.addEventListener("change", () => {
+      filterProduct.classList.toggle("active");
+      overlay.classList.toggle("active");
     });
+  
     overlay.addEventListener("click", () => {
-        [overlay, filterProduct].forEach((item) => item.classList.remove("active"));
+      filterProduct.classList.remove("active");
+      overlay.classList.remove("active");
+      checkbox.checked = false;  // میاد وضعیت رو ریست میکنه
     });
+  });
 
-});
-
-
-/*-----------------Social Network---------------*/
+/*-------------------------Social Network-----------------------------*/
 
 const icons = ['icon-smallCircle icon-Telegram', 'icon-smallCircle icon-Instagram', 'icon-smallCircle icon-Facebook', 'icon-smallCircle icon-Whatsapp', 'icon-smallCircle icon-Twitter'];
 const colors = ['Telegram', 'Instagram', 'Facebook', 'Whatsapp', 'Twitter'];
@@ -54,22 +57,28 @@ colors.forEach((color, index) => {
 
 let isExpanded = false;
 const delay = 150;
+centerCircle.style.zIndex = '61';
+
 
 centerCircle.addEventListener('click', () => {
     const smallCircles = document.querySelectorAll('.small-circle');
-    // const circleTelegram = document.querySelector('.circle-Telegram');
-    // const circleInstagram = document.querySelector('.circle-Instagram');
-    // const circleFacebook = document.querySelector('.circle-Facebook');
-    // const circleWhatsapp = document.querySelector('.circle-Whatsapp');
-    // const circleTwitter = document.querySelector('.circle-Twitter');
+    const circleTelegram = document.querySelector('.circle-Telegram');
+    const circleInstagram = document.querySelector('.circle-Instagram');
+    const circleFacebook = document.querySelector('.circle-Facebook');
+    const circleWhatsapp = document.querySelector('.circle-Whatsapp');
+    const circleTwitter = document.querySelector('.circle-Twitter');
 
     if (!isExpanded) {
         smallCircles.forEach((circle, index) => {
             setTimeout(() => {
+                circleTelegram.style.transform = "translate(-20px,-75px)";
+                circleInstagram.style.transform = "translate(30px,-80px)";
+                circleFacebook.style.transform = "translate(71px,-53px)";
+                circleWhatsapp.style.transform = "translate(84px,-5px)";
+                circleTwitter.style.transform = "translate(70px,44px)";
+
                 circle.style.opacity = '1';
-                circle.style.zIndex = '61';
-                // circle.style.transform = 'translate(0px, 0px)';
-                // circleTelegram.style.transform = "translate(-20px,-75px)";
+                circle.style.zIndex = '-59';
             }, index * delay);
         });
         isExpanded = true;
@@ -78,7 +87,14 @@ centerCircle.addEventListener('click', () => {
         smallCircles.forEach((circle, index) => {
             setTimeout(() => {
                 circle.style.opacity = '0';
-                circle.style.zIndex = '60';
+                circle.style.zIndex = '-60';
+
+                circleTelegram.style.transform = "translate(0,0)";
+                circleInstagram.style.transform = "translate(0,0)";
+                circleFacebook.style.transform = "translate(0,0)";
+                circleWhatsapp.style.transform = "translate(0,0)";
+                circleTwitter.style.transform = "translate(0,0)";
+
             }, index * delay);
         });
         isExpanded = false;

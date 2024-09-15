@@ -118,66 +118,47 @@ body {
 
 
 .circle-Telegram {
-    // transform: translate(0px, 0px);
-    // z-index: 0;
-    // transition: all 0.5s;
     background: rgb(30, 140, 193);
     background: linear-gradient(25deg, rgba(30, 140, 193, 1) 30%, rgba(58, 184, 234, 1) 70%);
 
     &:hover {
-        // transform: translate(-35px, -85px) scale(1.12) !important;
+        transform:translate(-20px,-75px) scale(1.12) !important;
     }
 }
 
 .circle-Instagram {
-    // transform: translate(0px, 0px);
-    // z-index: 0;
-    // transition: all 0.5s;
-    transform: translate(30px, -95px);
     background: rgb(131, 58, 180);
     background: linear-gradient(119deg, rgba(131, 58, 180, 1) 10%, rgba(253, 29, 29, 1) 53%, rgba(252, 176, 69, 1) 90%);
 
     &:hover {
-        transform: translate(30px, -95px) scale(1.12) !important;
+        transform:translate(30px,-80px) scale(1.12) !important;
     }
 }
 
 .circle-Facebook {
-    // transform: translate(0px, 0px);
-    // z-index: 0;
-    // transition: all 0.5s;
-    transform: translate(85PX, -60PX);
     background: rgb(10, 98, 246);
     background: linear-gradient(0deg, rgba(10, 98, 246, 1) 10%, rgba(37, 171, 234, 1) 90%);
 
     &:hover {
-        transform: translate(85PX, -60PX) scale(1.12) !important;
+        transform:translate(71px,-53px) scale(1.12) !important;
     }
 }
 
 .circle-Whatsapp {
-    // transform: translate(0px, 0px);
-    // z-index: 0;
-    // transition: all 0.5s;
-    transform: translate(99PX, 1px);
     background: rgb(2, 255, 44);
     background: linear-gradient(122deg, rgba(2, 255, 44, 1) 25%, rgba(0, 138, 18, 1) 75%);
 
     &:hover {
-        transform: translate(99PX, 1px) scale(1.12) !important;
+        transform:translate(84px,-5px) scale(1.12) !important;
     }
 }
 
 .circle-Twitter {
-    // transform: translate(0px, 0px);
-    // z-index: 0;
-    // transition: all 0.5s;
-    transform: translate(80px, 60px);
     background: rgb(5, 154, 239);
     background: linear-gradient(180deg, rgba(5, 154, 239, 1) 5%, rgba(4, 187, 240, 1) 51%, rgba(5, 154, 239, 1) 95%);
 
     &:hover {
-        transform: translate(80px, 60px) scale(1.12) !important;
+        transform:translate(70px,44px) scale(1.12) !important;
     }
 }
 /*------------------------------------*/
@@ -326,43 +307,43 @@ img {
         }
     }
 
-    .circle-Telegram {
-        transform: translate(-20px, -75px);
+    // .circle-Telegram {
+    //     transform: translate(-20px, -75px);
 
-        &:hover {
-            transform: translate(-20px, -75px) scale(1.12) !important;
-        }
-    }
+    //     &:hover {
+    //         transform: scale(1.12) !important;
+    //     }
+    // }
 
-    .circle-Instagram {
-        transform: translate(30px, -80px);
+    // .circle-Instagram {
+    //     transform: translate(30px, -80px);
 
-        &:hover {
-            transform: translate(30px, -80px) scale(1.12) !important;
-        }
-    }
+    //     &:hover {
+    //         transform: cale(1.12) !important;
+    //     }
+    // }
 
-    .circle-Facebook {
-        transform: translate(71PX, -53PX);
+    // .circle-Facebook {
+    //     transform: translate(71PX, -53PX);
 
-        &:hover {
-            transform: translate(71PX, -53PX) scale(1.12) !important;
-        }
-    }
+    //     &:hover {
+    //         transform: cale(1.12) !important;
+    //     }
+    // }
 
-    .circle-Whatsapp {
-        transform: translate(84PX, -5px);
+    // .circle-Whatsapp {
+    //     transform: translate(84PX, -5px);
 
-        &:hover {
-            transform: translate(84PX, -5px) scale(1.12) !important;
-        }
-    }
+    //     &:hover {
+    //         transform: ale(1.12) !important;
+    //     }
+    // }
 
-    .circle-Twitter {
-        transform: translate(70px, 44px);
+    // .circle-Twitter {
+    //     transform: translate(70px, 44px);
 
-        &:hover {
-            transform: translate(70px, 44px) scale(1.12) !important;
-        }
-    }
+    //     &:hover {
+    //         transform: ale(1.12) !important;
+    //     }
+    // }
 }
