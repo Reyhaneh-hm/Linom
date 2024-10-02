@@ -1,0 +1,28 @@
+{
+  "name": "new-linom",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "@fancyapps/ui": "^5.0.36",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "fancybox": "^3.0.1",
+    "jquery": "^3.7.1",
+    "sass": "^1.79.4",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1",
+    "slick-slider": "^1.8.2",
+    "vite-plugin-inspect": "^0.8.7",
+    "wavesurfer.js": "^7.8.6"
+  }
+}

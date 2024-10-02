@@ -1,0 +1,57 @@
+@import "../../Public/index.scss";
+
+/*------------about Us Paage-------------*/
+
+#page-aboutUs {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f8fafd;
+    transition: all 0.5s;
+
+    h2 {
+        color: #283347;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin: 180px 0 45px;
+    }
+}
+
+.boxAboutUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgAboutUs {
+    background-image: url("../../../../../public/img/about-us/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 755px;
+    width: 100%;
+    min-width: 459px;
+    max-width: 740px;
+    height: 100%;
+    min-height: 690px;
+    max-height: 1000px;
+    border-radius: 100px 0;
+}
+
+.textAboutUs {
+    width: 90%;
+    padding: 82px 100px 82px 0;
+
+    &>p {
+        text-align: justify;
+        line-height: 2;
+        font-size: 20px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 11;
+    }
+}
