@@ -1,3 +1,4 @@
+@import '../../base/setting.scss';
 /*---------------Public----------------*/
 * {
     box-sizing: border-box;
@@ -27,17 +28,6 @@ body {
     overflow: hidden;
 }
 
-
-// .container {
-//     // width: 100%;
-//     // max-width: 1515px;
-//     // min-width: 1515px;
-//     width: 1515px;
-//     min-height: 880px;
-//     margin: 0 auto;
-//     position: relative;
-// }
-
 /*---------------------go to top-----------------------*/
 #go-to-top:link,
 #go-to-top:visited {
@@ -47,22 +37,22 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #3d3c45;
+    background-color: $main;
     text-decoration: none;
     position: fixed;
     left: 55px;
     bottom: 50px;
     z-index: 61;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
-    transition: all 0.3s;
+    transition: $transition1;
 
     &:hover {
-        background-color: #cf5241;
+        background-color: $main2;
     }
 
     .icon-up {
         font-size: 25px;
-        color: #fff;
+        color: $white;
     }
 
 }
@@ -72,7 +62,7 @@ body {
 .center-circle {
     width: 60px;
     height: 60px;
-    background: #3d3c45;
+    background: $main;
     border-radius: 50%;
     cursor: pointer;
     display: none;
@@ -86,12 +76,12 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
 
     &:hover {
-        background: #cf5241;
+        background: $main2;
     }
 
     .icon-social {
         font-size: 25px;
-        color: #fff;
+        color: $white;
     }
 }
 
@@ -111,7 +101,7 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
 
     .icon-smallCircle {
-        color: #fff;
+        color: $white;
         font-size: 25px;
     }
 }
@@ -143,13 +133,13 @@ body {
 
 /*------------------------------------*/
 ::-moz-selection {
-    background: #cf5241;
-    color: #fff;
+    background: $main2;
+    color: $white;
 }
 
 ::selection {
-    background: #cf5241;
-    color: #fff;
+    background: $main2;
+    color: $white;
 }
 
 ::placeholder {
@@ -218,7 +208,7 @@ select {
 }
 
 a {
-    color: #000;
+    color: $black;
     text-decoration: none;
 }
 
@@ -313,13 +303,13 @@ img {
 // }
 
 // ::-moz-selection {
-//     background: #cf5241;
-//     color: #fff;
+//     background: $main2;
+//     color: $white;
 // }
 
 // ::selection {
-//     background: #cf5241;
-//     color: #fff;
+//     background: $main2;
+//     color: $white;
 // }
 
 // ::placeholder {

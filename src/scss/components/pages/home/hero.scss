@@ -1,6 +1,8 @@
+@import '../../../base/setting.scss';
+
 section.hero {
     min-height: 100px;
-    
+
     .card {
         display: flex;
         justify-content: space-between;
@@ -45,20 +47,20 @@ section.hero {
                 justify-content: center;
 
                 .boxImageIcone {
-                    border: 2px solid #3d3c45;
+                    border: 2px solid $main;
                     padding: 15px;
                     display: block;
                     border-radius: 50%;
                     font-weight: bold;
-                    color: #fff;
-                    background: #3d3c45;
+                    color: $white;
+                    background: $main;
                     cursor: pointer;
-                    margin: 0 10px;
-                    transition: all 0.3s;
+                    margin-inline: 10px;
+                    transition: $transition1;
 
                     &:hover {
-                        border: 2px solid #53535a;
-                        background: #53535a;
+                        border: 2px solid $hover;
+                        background: $hover;
                     }
 
 
@@ -88,26 +90,26 @@ section.hero {
                 display: none;
                 align-items: center;
                 position: absolute;
-                right: 0;
-                top: 710px;
+                right: 32px;
+                top: 435px;
                 justify-content: space-between;
                 flex-direction: row-reverse;
 
                 .boxImageIcone {
-                    border: 2px solid #3d3c45;
+                    border: 2px solid $main;
                     padding: 15px;
                     display: block;
                     border-radius: 50%;
                     font-weight: bold;
-                    color: #fff;
-                    background: #3d3c45;
+                    color: $white;
+                    background: $main;
                     cursor: pointer;
                     margin: 0 10px;
-                    transition: all 0.3s;
+                    transition: $transition1;
 
                     &:hover {
-                        border: 2px solid #53535a;
-                        background: #53535a;
+                        border: 2px solid $hover;
+                        background: $hover;
                     }
                 }
             }
@@ -122,21 +124,21 @@ section.hero {
         }
 
         .goNextSection {
-            border: 2px solid #707070;
+            border: 2px solid $text;
             border-radius: 50%;
-            color: #707070;
+            color: $text;
             padding: 15px;
             font-size: 23px;
             position: absolute;
             top: 105px;
-            right: 575px;        
+            right: 575px;
             z-index: 1;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: $transition1;
 
             &:hover {
-                background: #707070;
-                color: #fff;
+                background: $text;
+                color: $white;
             }
         }
 
@@ -155,27 +157,27 @@ section.hero {
             z-index: 1;
 
             .icon-arrow {
-                border: 2px solid #757a83;
-                color: #757a83;
+                border: 2px solid $text;
+                color: $text;
                 border-radius: 50%;
                 padding: 5px;
                 font-weight: bold;
                 margin: 0 15px 10px 12px;
                 cursor: pointer;
-                transition: all 0.3s;
+                transition: $transition1;
                 z-index: 1;
                 position: relative;
 
                 &:hover {
-                    color: #cf5242;
-                    border: 2px solid #cf5242;
+                    color: $main2;
+                    border: 2px solid $main2;
                 }
             }
 
             &:hover {
                 .icon-arrow {
-                    color: #cf5242;
-                    border: 2px solid #cf5242;
+                    color: $main2;
+                    border: 2px solid $main2;
                 }
             }
 
@@ -188,7 +190,7 @@ section.hero {
                     margin: 10px 0;
                     font-size: 13px;
                     line-height: 1.5;
-                    color: #757a83;
+                    color: $text;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     width: 201px;
@@ -218,7 +220,7 @@ section.hero {
                 }
 
                 .titrHome {
-                    color: #283347;
+                    color: $main3;
                     text-align: center;
                     font-size: 29px;
                     display: -webkit-box;
@@ -238,7 +240,7 @@ section.hero {
                     overflow: hidden;
                     text-overflow: ellipsis;
                     -webkit-line-clamp: 2;
-                    color: #757a83;
+                    color: $text;
                     font-size: 17px;
                 }
 
@@ -250,8 +252,8 @@ section.hero {
                     overflow-x: auto;
                     white-space: nowrap;
                     padding-bottom: 10px;
-                    color: #757a83;
-                    transition: all 0.3s;
+                    color: $text;
+                    transition: $transition1;
 
                     &::-webkit-scrollbar-track {
                         padding: 2px 0;
@@ -269,7 +271,7 @@ section.hero {
                     }
 
                     .categories {
-                        border: 2px solid #757a83;
+                        border: 2px solid $text;
                         border-radius: 10px;
                         padding: 5px;
                         width: 100%;
@@ -282,13 +284,13 @@ section.hero {
                         justify-content: space-evenly;
                         margin-inline: 5px;
                         cursor: pointer;
-                        transition: all 0.3s;
-                        color: #757a83;
+                        transition: $transition1;
+                        color: $text;
 
 
                         &.addCategories {
-                            border: 2px solid #cf5242;
-                            color: #cf5242;
+                            border: 2px solid $main2;
+                            color: $main2;
                         }
 
                         .icon-categories {
@@ -297,11 +299,11 @@ section.hero {
                         }
 
                         &:hover {
-                            border: 2px solid #cf5242;
+                            border: 2px solid $main2;
 
                             i,
                             p {
-                                color: #cf5242;
+                                color: $main2;
                             }
                         }
                     }
@@ -310,24 +312,227 @@ section.hero {
                 .allCategories {
                     display: flex;
                     align-items: center;
-                    color: #757a83;
+                    color: $text;
                     margin-top: 10px;
-                    transition: all 0.3s;
+                    transition: $transition1;
 
                     &:hover {
 
                         p,
                         i {
-                            color: #cf5242;
+                            color: $main2;
                         }
                     }
 
                     p {
                         padding: 0 5px;
                         cursor: pointer;
-                        transition: all 0.3s;
+                        transition: $transition1;
                     }
                 }
+            }
+        }
+    }
+}
+
+
+
+/////////////////Responsive///////////////////
+
+@media screen and (max-width: 1440px) {
+    section.hero {
+        .card {
+            .heroSlider1 {
+                .boxSlider1 {
+                    max-width: 560px;
+                    max-height: 610px;
+
+                    .boxItemImg {
+                        .img {
+                            height: 610px;
+                        }
+                    }
+                }
+
+                .boxIconSlider1 {
+                    bottom: 55px;
+                }
+            }
+
+            .goNextSection {
+                right: 505px;
+            }
+
+            .image1 {
+                width: 320px;
+                right: 475px;
+            }
+
+            .image2 {
+                top: 575px;
+                right: 490px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section.hero {
+        .card {
+            .heroSlider1 {
+                .boxSlider1 {
+                    max-width: 435px;
+                    max-height: 473px;
+
+                    .boxItemImg {
+                        .img {
+                            height: 520px;
+                        }
+                    }
+                }
+
+                .boxIconSlider1 {
+                    bottom: 50px;
+                    width: 100px;
+
+                    .boxImageIcone {
+                        margin-inline: 3px;
+                        padding: 12px;
+                    }
+                }
+            }
+
+            .goNextSection {
+                right: 385px;
+                padding: 12px;
+            }
+
+            .image1 {
+                width: 260px;
+                right: 350px;
+            }
+
+            .image2 {
+                background-size: 240px;
+                height: 90px;
+                top: 490px;
+                right: 320px;
+                width: 232px;
+
+                .icon-arrow {
+                    margin-right: 10px;
+                }
+
+                .box-image2 {
+                    margin-bottom: 7px;
+
+                    .titr-image2 {
+                        font-size: 15px;
+                    }
+
+                    .text-image2 {
+                        font-size: 12px;
+                        margin-bottom: 0;
+                        width: 174px;
+                    }
+                }
+            }
+
+            .textBox {
+                .content {
+                    width: 95%;
+
+                    .titrHome {
+                        font-size: 26px;
+                    }
+
+                    .textHome {
+                        font-size: 15px;
+                    }
+
+                    .boxCategories {
+                        width: 495px;
+                        justify-content: flex-start;
+
+                        .categories {
+                            min-width: 115px;
+                            height: 110px;
+                        }
+
+                        .text-categories {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .allCategories {
+                        font-size: 15px;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section.hero {
+        .card {
+            flex-direction: column;
+
+            .heroSlider1 {
+                .boxSlider1 {
+                    display: none;
+                }
+            }
+
+            .heroSlider2 {
+                .boxSlider2 {
+                    display: flex;
+                    width: 768px;
+                    margin-top: 15px;
+                }
+
+                .boxIconSlider2 {
+                    display: flex;
+
+                    .boxImageIcone {
+                        margin-inline: 3px;
+                        padding: 12px;
+                    }
+                }
+            }
+
+            .textBox {
+                top: 120px;
+
+                .content {
+                    width: 100%;
+
+                    .logo1 {
+                        margin-right: -60px;
+                    }
+
+                    .boxCategories {
+                        width: 650px;
+                    }
+                }
+            }
+
+            .image2 {
+                top: 390px;
+                right: 400px;
+            }
+
+            .image1 {
+                right: 30px;
+                top: 420px;
+            }
+
+            .goNextSection {
+                right: 432px;
+                padding: 11px;
+                top: 535px;
             }
         }
     }

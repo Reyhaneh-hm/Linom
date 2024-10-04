@@ -694,6 +694,7 @@
     transition: all .3s;
     z-index: -50;
     opacity: 0;
+    display: none;
 
     .box {
         height: 800px;
@@ -769,6 +770,7 @@
             }
         }
     }
+
     &.active {
         opacity: 1;
         z-index: 50;
@@ -806,7 +808,19 @@
 /*----------------------------------------------*/
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+    .topHeader {
+        .top-menu {
+            ul.menu {
+                li.itemMenu {
+                    a.text-menu {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
     #hambergerMuno2 {
         display: block !important;
         // margin-right: 10px;
@@ -816,7 +830,7 @@
         display: none;
     }
 
-    .top-menu #boxIcon a:nth-child(3){
+    .top-menu #boxIcon a:nth-child(3) {
         display: none;
     }
 }
