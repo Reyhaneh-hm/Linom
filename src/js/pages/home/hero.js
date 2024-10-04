@@ -1,4 +1,4 @@
-import "../../../scss/components/pages/home/index.scss";
+// import "../../../scss/components/pages/home/index.scss";
 // import "../../../sass/base/fonts.scss";
 // import WaveSurfer from "wavesurfer.js";
 
@@ -35,5 +35,16 @@ $(document).ready(function () {
         arrows: true,
         prevArrow: $("#prevArrowHome2"),
         nextArrow: $("#nextArrowHome2"),
+    });
+});
+
+
+/*-----------------Scrool bottom----------------*/
+
+$(document).ready(function () {
+    $('.goNextSection').click(function () {
+        $('html, body').animate({
+            scrollTop: $(window).scrollTop() + $(window).height()
+        }, 'slow');
     });
 });

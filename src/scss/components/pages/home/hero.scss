@@ -1,16 +1,18 @@
 section.hero {
-
+    min-height: 100px;
+    
     .card {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 60px;
+        position: relative;
 
         .heroSlider1 {
             .boxSlider1 {
                 display: flex;
-                -webkit-mask-image: url("/public/img/home/hero/hero.svg");
-                mask-image: url("/public/img/home/hero/hero.svg");
+                -webkit-mask-image: url("img/home/hero/hero.svg");
+                mask-image: url("img/home/hero/hero.svg");
                 mask-size: 100%;
                 background-size: cover;
                 background-position: center;
@@ -35,11 +37,12 @@ section.hero {
             .boxIconSlider1 {
                 display: flex;
                 align-items: center;
-                position: absolute;
-                right: 136px;
-                top: 785px;
+                position: relative;
+                left: 10px;
+                bottom: 65px;
+                width: 140px;
                 flex-direction: row-reverse;
-                justify-content: space-between;
+                justify-content: center;
 
                 .boxImageIcone {
                     border: 2px solid #3d3c45;
@@ -113,20 +116,20 @@ section.hero {
         .image1 {
             width: 360px;
             position: absolute;
-            top: 35px;
-            right: 707px;
+            top: 0;
+            right: 580px;
             z-index: -1;
         }
 
-        .icon-Arrow-Down-2 {
+        .goNextSection {
             border: 2px solid #707070;
             border-radius: 50%;
             color: #707070;
             padding: 15px;
             font-size: 23px;
             position: absolute;
-            top: 165px;
-            right: 720px;
+            top: 105px;
+            right: 575px;        
             z-index: 1;
             cursor: pointer;
             transition: all 0.3s;
@@ -139,12 +142,12 @@ section.hero {
 
         .image2 {
             position: absolute;
-            background-image: url(/public/images/img2.png);
+            background-image: url(images/img2.png);
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: 280px;
-            top: 690px;
-            right: 655px;
+            top: 640px;
+            right: 535px;
             width: 270px;
             height: 100px;
             display: flex;
