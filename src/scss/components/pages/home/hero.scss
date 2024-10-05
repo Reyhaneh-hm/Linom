@@ -278,6 +278,7 @@ section.hero {
                         min-width: 120px;
                         max-width: 120px;
                         height: 120px;
+                        overflow: hidden;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -296,6 +297,16 @@ section.hero {
                         .icon-categories {
                             font-weight: normal;
                             font-size: 35px;
+                        }
+
+                        .text-categories {
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 100%;
+                            -webkit-line-clamp: 1;
+                            text-align: center;
                         }
 
                         &:hover {
@@ -484,13 +495,17 @@ section.hero {
                 .boxSlider1 {
                     display: none;
                 }
+
+                .boxIconSlider1 {
+                    display: none;
+                }
             }
 
             .heroSlider2 {
                 .boxSlider2 {
                     display: flex;
                     width: 768px;
-                    margin-top: 15px;
+                    margin-top: 60px;
                 }
 
                 .boxIconSlider2 {
@@ -533,6 +548,155 @@ section.hero {
                 right: 432px;
                 padding: 11px;
                 top: 535px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    section.hero {
+        .card {
+            .image2 {
+                display: none;
+            }
+
+            .image1 {
+                right: inherit;
+                top: 444px;
+                left: 222px;
+            }
+
+            .heroSlider2 {
+                .boxSlider2 {
+                    display: flex;
+                    width: 425px;
+                    // margin-top: 60px;
+
+                    .boxItemImg {
+                        .img {
+                            width: 343px;
+                            right: 112px;
+                        }
+                    }
+                }
+            }
+
+            .goNextSection {
+                right: 265px;
+            }
+
+            .textBox {
+                .content {
+                    .boxCategories {
+                        width: 375px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    section.hero {
+        .card {
+            .heroSlider2 {
+                .boxSlider2 {
+                    width: 375px;
+
+                    .boxItemImg {
+                        .img {
+                            width: 303px;
+                            height: 290px;
+                            right: 100px;
+                        }
+                    }
+                }
+
+                .boxIconSlider2 {
+                    top: 370px;
+                    right: 25px;
+
+                    .boxImageIcone {
+                        padding: 10px;
+                    }
+                }
+            }
+
+            .image1 {
+                top: 440px;
+                left: 140px;
+            }
+
+            .goNextSection {
+                right: 237px;
+                padding: 9px;
+                top: 465px;
+            }
+
+            .textBox {
+                .content {
+                    .logo1 {
+                        width: 163px;
+                        margin-right: -53px;
+                    }
+
+                    .titrHome {
+                        font-size: 23px;
+                        -webkit-line-clamp: 2;
+                        line-height: 1.5;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section.hero {
+        .card {
+            .heroSlider2 {
+                .boxSlider2 {
+                    width: 320px;
+
+                    .boxItemImg {
+                        .img {
+                            width: 262px;
+                            height: 260px;
+                            right: 83px;
+                        }
+                    }
+                }
+
+                .boxIconSlider2 {
+                    top: 335px;
+                    right: 15px;
+                }
+            }
+
+            .image1 {
+                top: 340px;
+                left: 135px;
+            }
+
+            .goNextSection {
+                right: 207px;
+                top: 435px;
+                padding: 8px;
+            }
+
+            .textBox {
+                .content {
+                    .boxCategories {
+                        width: 320px;
+
+                        .categories {
+                            min-width: 102.5px;
+                            height: 95px;
+                            margin-inline: 2px;
+                        }
+                    }
+                }
             }
         }
     }
