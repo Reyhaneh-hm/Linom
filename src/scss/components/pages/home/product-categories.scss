@@ -283,3 +283,230 @@
         }
     }
 }
+
+
+/////////////////Responsive///////////////////
+
+@media screen and (max-width: 1440px) {
+    .product-categories {
+        margin-top: 45px;
+
+        .card {
+            margin-top: 90px;
+
+            .boxTapContent {
+                .tapContent {
+                    width: 727px;
+
+                    .tabItem {
+                        margin-inline: 3px;
+                    }
+                }
+            }
+
+            .items-tabContent {
+                .not-product {
+                    padding-right: 80px !important;
+                }
+
+                .box-slider {
+                    padding-left: 0;
+                    padding-right: 686px;
+                    width: 1040px;
+                }
+
+                .boxDesc {
+                    margin-right: -55px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .product-categories {
+        .card {
+            .boxTapContent {
+                .tapContent {
+                    .tabItem {
+                        font-size: 17px;
+                    }
+                }
+
+                .seeAll {
+                    .link {
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            .items-tabContent {
+                flex-direction: column;
+
+                .box-slider {
+                    padding-left: 0;
+                    padding-right: 530px;
+                    width: 1025px;
+                    left: 0;
+                }
+
+                .boxDesc {
+                    margin-right: 0;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+
+                    .text-desc {
+                        font-size: 17px;
+                        display: none;
+                    }
+
+                    .boxIconeDesc {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-categories {
+        margin-top: 205px;
+        overflow: hidden;
+
+        .card {
+            .items-tabContent {
+                .box-slider {
+                    padding-right: 768px;
+                    width: 769px;
+                    left: 0;
+                }
+            }
+
+            .boxTapContent {
+                .tapContent {
+                    width: 420px;
+
+                    .tabItem {
+                        height: 52px;
+                        min-width: 135px;
+                        font-size: 16px;
+                    }
+                }
+
+                .seeAll {
+                    .link {
+                        font-size: 16px;
+                        height: 52px;
+                        min-width: 135px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .product-categories {
+        .card {
+            .items-tabContent {
+                .box-slider {
+                    padding-right: 1122px;
+                    width: 1010px;
+                    left: 0;
+                }
+            }
+
+            .boxTapContent {
+                .tapContent {
+                    width: 202px;
+
+                    .tabItem {
+                        height: 55px;
+                        min-width: 195px;
+                        font-size: 16px;
+                    }
+                }
+
+                .seeAll {
+                    .link {
+                        height: 55px;
+                        min-width: 195px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .product-categories {
+        .card {
+            .items-tabContent {
+                .box-slider {
+                    padding-right: 561px;
+                    width: 1010px;
+                    left: 0;
+                    right: 308px;
+                }
+            }
+
+            .boxTapContent {
+                .tapContent {
+                    width: 173px;
+
+                    .tabItem {
+                        min-width: 165px;
+                        font-size: 15px;
+                    }
+                }
+
+                .seeAll {
+                    .link {
+                        min-width: 165px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .product-categories {
+        .card {
+            .boxTapContent {
+                .tapContent {
+                    width: 142px;
+
+                    .tabItem {
+                        min-width: 135px;
+                    }
+                }
+
+                .seeAll {
+                    .link {
+                        min-width: 135px;
+                    }
+                }
+            }
+
+            .items-tabContent {
+                .box-slider {
+                    padding-right: 622px;
+                }
+
+                .boxDesc {
+                    .boxIconeDesc {
+                        .icon-Desc {
+                            margin-inline: 3px;
+                            padding: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
