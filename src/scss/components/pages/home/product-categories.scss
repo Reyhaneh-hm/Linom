@@ -1,9 +1,30 @@
 @import '../../../base/setting.scss';
 
 .product-categories {
+    overflow: hidden;
+
+    .pro-cat {
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 80px;
+            left: -160px;
+            width: 777px;
+            height: 690px;
+            z-index: 0;
+            border-radius: 20px 70px 0 0;
+            background: rgb(237, 240, 245);
+            background: linear-gradient(180deg, rgb(237, 240, 245) 35%, rgb(248, 250, 253) 100%);
+        }
+    }
 
     .card {
         margin-top: 150px;
+        position: relative;
+        z-index: 1;
 
         .boxTapContent {
 
@@ -291,6 +312,11 @@
     .product-categories {
         margin-top: 45px;
 
+        .pro-cat::after {
+            top: 55px;
+            width: 680px;
+        }
+
         .card {
             margin-top: 90px;
 
@@ -325,6 +351,11 @@
 
 @media screen and (max-width: 1024px) {
     .product-categories {
+
+        .pro-cat::after {
+            width: 520px;
+        }
+
         .card {
             .boxTapContent {
                 .tapContent {

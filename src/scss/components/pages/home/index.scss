@@ -2,6 +2,9 @@
 @import "./product-categories.scss";
 
 
-.product-categories{
+.product-categories,.about-linom{
     background: #f8fafd;
+}
+.card{
+    margin-block: 50px;
 }
