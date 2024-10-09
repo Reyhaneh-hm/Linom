@@ -1,10 +1,15 @@
 @import "./hero.scss";
 @import "./product-categories.scss";
+@import "./about-linom.scss";
+@import "./new-product.scss";
 
 
-.product-categories,.about-linom{
+.product-categories,
+.about-linom,
+.new-product {
     background: #f8fafd;
 }
-.card{
+
+.card {
     margin-block: 50px;
 }
