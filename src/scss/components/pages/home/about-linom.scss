@@ -1,6 +1,8 @@
 @import '../../../base/setting.scss';
 
 .about-linom {
+    overflow: hidden;
+
     .card {
         display: flex;
         align-items: center;
@@ -83,6 +85,13 @@
             }
 
             .other {
+
+                .imgCover {
+                    position: absolute;
+                    left: -407px;
+                    top: 135px;
+                    width: 505px;
+                }
 
                 .heart {
                     border-radius: 50%;
@@ -284,4 +293,333 @@
 
     }
 
+}
+
+
+
+/////////////////Responsive///////////////////
+
+@media screen and (max-width: 1440px) {
+
+    .about-linom {
+        .card {
+            .part-imgContent {
+                width: 59%;
+
+                .other {
+                    .about-link {
+                        left: 145px;
+                    }
+
+                    .heart2 {
+                        left: 115px;
+                    }
+
+                    .imgCover {
+                        top: 220px;
+                        width: 500px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about-linom {
+        .card {
+            .part-textContent {
+                .text-content {
+                    font-size: 16px;
+                }
+            }
+
+            .part-imgContent {
+                .img-content {
+                    min-width: 590px;
+                    height: 690px;
+                    margin-right: -25px;
+                }
+
+                .other {
+                    .imgCover {
+                        top: 160px;
+                        width: 430px;
+                    }
+
+                    .textLink1 {
+                        top: 140px;
+                    }
+
+                    .textLink2 {
+                        bottom: 100px;
+                    }
+
+                    .textLink1,
+                    .textLink2 {
+                        background-size: 240px;
+                        height: 90px;
+                        width: 232px;
+
+                        .icon-go {
+                            margin-right: 10px;
+                        }
+
+                        .text-box {
+                            margin-bottom: 7px;
+
+                            .titr {
+                                font-size: 15px;
+                            }
+
+                            .text {
+                                font-size: 12px;
+                                margin-bottom: 0;
+                                width: 174px;
+                            }
+                        }
+                    }
+
+                    .about-link {
+                        top: 65px;
+                        left: 50px;
+                        font-size: 15px;
+                        width: 110px;
+                        height: 47px;
+
+                        .text-aboutLink {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .contact-Link {
+                        font-size: 15px;
+                        width: 110px;
+                        height: 47px;
+                        bottom: 30px;
+                        right: 25px;
+
+                        .text-contentLink {
+                            font-size: 15px;
+                        }
+                    }
+
+                    .heart1 {
+                        top: 100px;
+                        right: 20px;
+                    }
+
+                    .heart2 {
+                        left: 45px;
+                        bottom: 140px;
+                    }
+
+                    .boxAudio {
+                        background-size: 272px;
+                        width: 290px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .about-linom {
+        .card {
+            flex-direction: column;
+
+            .part-textContent {
+                width: 100%;
+
+                .titr-content {
+                    .link {
+                        .icon-goToPage {
+                            padding: 12px;
+                        }
+                    }
+                }
+
+                .text-content {
+                    font-size: 16px;
+                    -webkit-line-clamp: 5;
+                }
+            }
+
+            .part-imgContent {
+                width: 100%;
+
+                .img-content {
+                    margin: 0 auto;
+                    max-width: 570px;
+                    min-width: 600px;
+                    height: 695px;
+                    display: block;
+                }
+
+                .other {
+                    .imgCover {
+                        left: -360px;
+                    }
+
+                    .about-link {
+                        top: 80px;
+                        left: 125px;
+                    }
+
+                    .textLink1 {
+                        top: 150px;
+                    }
+
+                    .heart1 {
+                        right: 85px;
+                    }
+
+                    .textLink2 {
+                        right: 0;
+                    }
+
+                    .contact-Link {
+                        bottom: 25px;
+                        right: 100px;
+                    }
+
+                    .heart2 {
+                        left: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-linom {
+        .card {
+            .part-imgContent {
+                .img-content {
+                    margin: 0 -25px;
+                    min-width: 460px;
+                    height: 535px;
+                }
+
+                .other {
+                    .imgCover {
+                        display: none;
+                    }
+
+                    .about-link {
+                        display: none;
+                    }
+
+                    .contact-Link {
+                        display: none;
+                    }
+
+                    .heart1 {
+                        right: 0;
+                        top: 75px;
+                    }
+
+                    .textLink1 {
+                        display: none;
+                    }
+
+                    .textLink2 {
+                        display: none;
+                    }
+
+                    .boxAudio {
+                        bottom: -50px;
+                        left: -15px;
+                    }
+
+                    .heart2 {
+                        left: 0;
+                        bottom: 70px;
+                    }
+
+                    .heart {
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .about-linom {
+        .card {
+            .part-imgContent {
+                .img-content {
+                    margin: 0 -20px;
+                    min-width: 400px;
+                    height: 465px;
+                }
+
+                .other {
+                    .heart {
+                        padding: 7px;
+                        font-size: 27px;
+                    }
+
+                    .heart1 {
+                        top: 70px;
+                    }
+
+                    .boxAudio {
+                        background-size: 80%;
+                        bottom: -35px;
+                        left: -40px;
+
+                        #textVoice {
+                            width: 70%;
+                            right: 40px;
+                            top: 22px;
+                        }
+
+                        .audio {
+                            #playBtn {
+                                left: 37px;
+                                top: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about-linom {
+        .card {
+            .part-textContent {
+                .text-content {
+                    font-size: 15px;
+                }
+            }
+
+            .part-imgContent {
+                .img-content {
+                    margin: 0 -47px;
+                }
+
+                .other {
+                    .heart1 {
+                        right: -10px;
+                    }
+
+                    .heart2 {
+                        left: -10px;
+                        bottom: 65px;
+                    }
+                }
+            }
+        }
+    }
 }
