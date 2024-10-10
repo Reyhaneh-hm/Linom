@@ -1,5 +1,5 @@
 /*-----------------Footer---------------*/
-#footer {
+.footer {
     height: 450px;
     background: #fff;
     height: 395px;
@@ -9,86 +9,89 @@
     margin: 0 auto;
     padding: 15px 20px;
     width: 100%;
-}
 
-#columns-box {
-    min-height: 100px;
-    display: flex;
-    flex-direction: column;
 
-    &>p {
-        font-size: 14px;
-        text-align: center;
-        margin: 30px 0;
-        color: #757a83;
-    }
-}
-
-#columns {
-    display: flex;
-    margin: 15px 10%;
-}
-
-.column {
-    min-height: 100px;
-    flex: 1;
-
-    &>a {
-        text-decoration: none;
-
-        img {
-            width: 150px;
-            margin: -15px 0;
-        }
-    }
-
-    &>h5 {
-        font-size: 20px;
-        margin-bottom: 25px;
-    }
-
-    &>.footer-list {
+    .columns-box {
+        min-height: 100px;
         display: flex;
         flex-direction: column;
 
-        h6 {
-            margin: 12px 0;
+        .social-network {
+            display: flex;
+            justify-content: center;
+            padding: 50px 0 30px;
 
-            &>a {
-                font-size: 16px;
+            a {
+                font-size: 28px;
                 text-decoration: none;
-                color: #757a83;
-                transition: all 0.3s;
-    
-                &:hover {
-                    color: #cf5242;
+                margin: 0 20px;
+
+                i {
+                    transition: all 0.3s;
+                    color: #757a83;
+
+                    &:hover {
+                        color: #cf5242;
+                    }
                 }
             }
         }
 
-    }
-}
+        .columns {
+            display: flex;
+            margin: 15px 10%;
 
-#social-network {
-    display: flex;
-    justify-content: center;
-    padding: 50px 0 30px;
 
-    &>a {
-        font-size: 28px;
-        text-decoration: none;
-        margin: 0 20px;
+            .column {
+                min-height: 100px;
+                flex: 1;
 
-        &>i {
-            transition: all 0.3s;
-            color: #757a83;
+                a {
+                    text-decoration: none;
 
-            &:hover {
-                color: #cf5242;
+                    img {
+                        width: 150px;
+                        margin: -15px 0;
+                    }
+                }
+
+                h5 {
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                }
+
+                .footer-list {
+                    display: flex;
+                    flex-direction: column;
+
+                    h6 {
+                        margin: 12px 0;
+
+                        a {
+                            font-size: 16px;
+                            text-decoration: none;
+                            color: #757a83;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                color: #cf5242;
+                            }
+                        }
+                    }
+
+                }
             }
+        }
+
+        p {
+            font-size: 14px;
+            text-align: center;
+            margin: 30px 0;
+            color: #757a83;
         }
     }
 }
+
 
 /*-----------------------------------*/
 
@@ -118,6 +121,62 @@
             color: #757a83;
             font-size: 13px;
             margin-top: 3px;
+        }
+    }
+}
+
+/////////////////Responsive///////////////////
+
+@media screen and (max-width: 1440px) {
+    .footer {
+        .columns-box {
+            .columns {
+                .column {
+                    a {
+                        img {
+                            width: 125px;
+                            margin: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        .columns-box {
+            .columns {
+                .column {
+                    a {
+                        img {
+                            margin-top: 30px;
+                            width: 96px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+
+    .mobile_footer {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .mobile_footer {
+        .link {
+            .title {
+                display: none;
+            }
         }
     }
 }
