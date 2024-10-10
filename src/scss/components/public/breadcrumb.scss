@@ -1,11 +1,8 @@
 ul.breadcrumb {
   width: 100%;
   position: relative;
-  top: 82px;
+  top: 100px;
   right: 0;
-  // z-index: 50;
-  padding-right: 0;
-  padding-left: 0;
   overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 10px;
@@ -26,23 +23,22 @@ ul.breadcrumb {
   }
 
   li {
-    display: inline;
-    font-size: 14px;
-    color: #cc3333;
+    display: inline-block;
+    font-size: 16px;
+    color: $main2;
 
     &+li:before {
       padding: 5px;
-      color: #c4c4c4;
+      color: #707070;
       content: "/\00a0";
     }
 
     a {
-      color: #fff;
-      text-decoration: none;
+      color: $main3;
       transition: all 0.3s;
 
       &:hover {
-        color: #dc6666;
+        color: #5a6d90;
       }
     }
   }
