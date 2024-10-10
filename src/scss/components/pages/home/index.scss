@@ -2,11 +2,13 @@
 @import "./product-categories.scss";
 @import "./about-linom.scss";
 @import "./new-product.scss";
+@import "./blog.scss";
 
 
 .product-categories,
 .about-linom,
-.new-product {
+.new-product,
+.blog {
     background: #f8fafd;
 }
 
