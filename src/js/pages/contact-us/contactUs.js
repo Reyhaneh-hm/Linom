@@ -1,3 +1,2 @@
-import "../../../sass/components/pages/contact-us/index.scss";
-import "../../../sass/base/responsiv.scss"
+import "../../../scss/components/pages/contact-us/index.scss";
 
