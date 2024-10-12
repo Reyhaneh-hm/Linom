@@ -171,3 +171,144 @@
         }
     }
 }
+
+
+
+
+/////////////////Responsive///////////////////
+
+@media screen and (max-width: 1024px) {
+    .contactUs {
+        .card {
+            margin-bottom: 40px !important;
+
+            .content-contactUs {
+                .comment_form {
+                    width: 33%;
+
+                    .submit {
+                        font-size: 15px;
+                    }
+                }
+
+                .main_info {
+                    width: 66%;
+
+                    .box {
+                        li {
+                            font-size: 15px;
+
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .social_media {
+                        align-items: center;
+
+                        .title {
+                            font-size: 15px;
+                        }
+
+                        .elem {
+                            .link {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactUs {
+        .card {
+            .content-contactUs {
+                flex-direction: column-reverse;
+
+                .comment_form {
+                    width: 80%;
+                    margin-top: 40px;
+                    margin-bottom: 80px;
+                    margin-inline: auto;
+
+                    .input_box {
+
+                        input,
+                        select,
+                        textarea {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .main_info {
+                    width: 100%;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contactUs {
+        .card {
+            .titr-contactUs {
+                font-size: 35px;
+            }
+
+            .content-contactUs {
+                .comment_form {
+                    width: 100%;
+                }
+
+                .main_info {
+                    .social_media {
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 50px;
+                        float: right;
+                        margin-top: 5px;
+                        margin-bottom: 25px;
+
+                        .title {
+                            margin-left: auto;
+                        }
+
+                        .elem {
+                            margin-left: auto;
+
+                            .link {
+                                margin-right: auto;
+                                margin-left: 18px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contactUs {
+        .card {
+            .content-contactUs {
+                .comment_form {}
+
+                .main_info {
+                    .location {
+                        iframe {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

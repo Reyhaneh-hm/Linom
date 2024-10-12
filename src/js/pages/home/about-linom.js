@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
         if (!item) return;
 
         const wavesurfer = WaveSurfer.create({
-
+            
             container: item,
 
             waveColor: "#DAEAFA",
