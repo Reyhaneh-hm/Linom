@@ -1,62 +1,58 @@
-@import "../../Public/index.scss";
-/*---------------------------------------*/
-
-// .top-menu2 {
-//     position: fixed;
-//     display: flex;
-//     opacity: 1;
-//     transform: translateY(0%);
-// }
+@import "../../../base/setting.scss";
 
 /*--------------------Error----------------*/
 
-#page-error {
+.error {
     width: 100%;
     height: 100%;
     background: #8b8b8b08;
     transition: all 0.5s;
 
-}
+    .card {
+        margin-block: 105px;
 
-.item {
-    min-height: 820px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+        .item {
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
 
-    .title {
-        font-size: 70px;
-        color: #283347;
-    }
-
-    &>p {
-        color: #757a83;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 21px 10px;
-    }
-
-    &>button {
-        border: 0;
-        border-radius: 10px;
-        padding: 15px;
-        background: transparent;
-        /* color: #fff; */
-        cursor: pointer;
-        margin-top: 50px;
-
-        a {
-            text-decoration: none;
-            transition: all 0.3s;
-
-            &:link,
-            &:visited {
+            .title {
+                font-size: 70px;
                 color: #283347;
             }
 
-            &:hover {
-                color: #cf5242;
+            p {
+                color: #707070;
+                font-size: 18px;
+                margin-block: 25px;
+            }
+
+            a {
+                border: 0;
+                background: transparent;
+                cursor: pointer;
+                margin-top: 40px;
+                color: #283347;
+
+                &:hover {
+                    color: #cf5242;
+                }
+            }
+        }
+    }
+}
+
+
+
+/////////////////Responsive///////////////////
+
+@media screen and (max-width: 768px) {
+    .error {
+        .card {
+            .item {
+                min-height: 565px;
             }
         }
     }
