@@ -262,7 +262,6 @@
 
                         .icon {
                             font-size: 18px;
-
                             margin-left: 5px;
                         }
                     }
@@ -271,7 +270,6 @@
                         .main_title {
                             color: $main;
                             font-size: 23px;
-
                             margin-bottom: 30px;
                             text-align: center;
                         }
@@ -281,7 +279,6 @@
                                 color: #767676;
                                 display: block;
                                 font-size: 15px;
-
                                 margin-bottom: 23px;
 
                                 a {
@@ -290,6 +287,11 @@
                             }
 
                             .col-md-4 {
+
+                                &:nth-child(7) {
+                                    width: 100%;
+                                }
+
                                 .input_box {
                                     margin-bottom: 15px;
                                     position: relative;
@@ -662,6 +664,338 @@
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/////////////////Responsive///////////////////
+
+@media screen and (max-width: 1024px) {
+    .payment_procedures {
+        .card {
+            .product_table {
+                width: 87%;
+
+                .payment-list {
+                    .row {
+                        .col-md-4 {
+                            &:nth-child(10) {
+                                width: 66.3%;
+                            }
+
+                            .cart-bill {
+                                .box {
+                                    li.discount {
+                                        .input_box {
+                                            form {
+                                                input {
+                                                    font-size: 14px;
+                                                }
+
+                                                .link {
+                                                    font-size: 14px;
+                                                    padding: 8px 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    li.payment_methods {
+                                        flex-direction: column;
+                                        align-items: stretch;
+                                        text-align: center;
+
+                                        .method {
+                                            &:nth-child(1) {
+                                                margin-bottom: 11px !important;
+                                            }
+
+                                            label {
+                                                padding-block: 8px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .payment_procedures {
+        .card {
+
+            .step_lists::after {
+                width: 100%;
+            }
+
+            .product_table {
+                width: 100%;
+
+                .stepContent {
+                    .payment_action {
+                        z-index: 2;
+
+                        .link.submit {
+                            font-size: 13px;
+                            padding: 14px 17px;
+                        }
+                    }
+                }
+
+                .payment-list {
+                    .item {
+                        #filter-box {
+                            .box {
+                                .payment_action {
+                                    z-index: 1;
+
+                                    .link {
+                                        font-size: 13px;
+                                        padding: 14px 17px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .row {
+                        .col-md-4 {
+                            .cart-bill {
+                                .box {
+                                    li {
+                                        span {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+
+                                form {
+                                    .submit {
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .payment_action {
+                    position: fixed;
+                    bottom: 70px;
+                    right: 0;
+                    background: #fff;
+                    height: 70px;
+                    width: 100%;
+                    padding: 0 77px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .payment_procedures {
+        .card {
+            .product_table {
+                .payment-list {
+                    .row {
+                        .col-md-4 {
+                            width: 100%;
+
+                            &:nth-child(10) {
+                                width: 100%;
+                            }
+                        }
+
+                        .col-md-8 {
+                            width: 100%;
+                        }
+                    }
+
+                    .nahaii {
+                        flex-direction: column-reverse;
+                    }
+
+                    .item {
+                        #filter-box {
+                            .box {
+                                .col-md-4 {
+                                    .input_box {
+                                        label {
+                                            font-size: 13px;
+                                        }
+
+                                        input,
+                                        select {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+
+                                .col-md-12 {
+                                    .input_box {
+                                        textarea {
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+
+                                .login {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .payment_action {
+                    padding: 0 5px;
+                }
+
+                .stepContent {
+                    .payment_action {
+                        .link.submit {
+                            font-size: 13px;
+                            padding: 14px 7px;
+                        }
+
+                        .total_cart {
+                            display: flex;
+                            font-size: 16px;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    a#go-to-top:link,
+    a#go-to-top:visited {
+        bottom: 145px;
+    }
+
+    .center-circle {
+        bottom: 205px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .payment_procedures {
+        .card {
+            .product_table {
+                .stepContent {
+                    #box-tablebuy {
+                        .TableOrder {
+                            thead {
+                                tr {
+                                    th {
+                                        padding-left: 20px;
+
+                                        h3 {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    td {
+                                        font-size: 14px;
+
+                                        h4.name {
+                                            font-size: 14px;
+                                        }
+
+                                        #numberSpinner {
+                                            input {
+                                                font-size: 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .payment-list {
+                    .row {
+                        .col-md-8 {
+                            .item {
+                                .box {
+                                    .text-center {
+                                        thead {
+                                            tr {
+                                                th {
+                                                    font-size: 12px;
+                                                    padding-left: 20px;
+                                                }
+                                            }
+                                        }
+
+                                        tbody {
+                                            tr {
+                                                td {
+                                                    font-size: 14px;
+
+                                                    h4.name {
+                                                        font-size: 14px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    ul {
+                                        li {
+                                            p {
+                                                span {
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .payment_procedures {
+        .card {
+            .product_table {
+                .stepContent {
+                    .payment_action {
+                        .total_cart {
+                            font-size: 14px;
+                        }
+
+                        .link.submit {
+                            font-size: 12px;
                         }
                     }
                 }
