@@ -1,4 +1,4 @@
-import "../../../sass/components/pages/productList/productList.scss";
+import "../../../scss/components/pages/productList/index.scss";
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
 import { Fancybox } from '@fancyapps/ui';
 
