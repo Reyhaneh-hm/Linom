@@ -1,3 +1,5 @@
+@import '../../../base/setting.scss';
+
 .products_list {
     .cardBox {
         margin-top: 150px;
@@ -16,13 +18,13 @@
                 display: none;
                 cursor: pointer;
                 transform: translateX(30px);
-                transition: all 0.3s;
+                transition: $transition1;
 
                 .shape {
                     stroke-dasharray: 100 300;
                     stroke-dashoffset: -297;
                     fill: transparent;
-                    stroke: #3d3c45;
+                    stroke: $main;
                     stroke-width: 5px;
                     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
                 }
@@ -31,11 +33,11 @@
                     font-size: 17px;
                     top: -42PX;
                     position: relative;
-                    color: #000;
+                    color: $black;
                 }
 
                 &:hover {
-                    background-color: #3d3c45;
+                    background-color: $main;
                     transition: 1s;
                     transform: translateX(0px);
 
@@ -46,7 +48,7 @@
                     }
 
                     .text {
-                        color: #fff;
+                        color: $white;
                     }
                 }
             }
@@ -61,19 +63,19 @@
                     top: 110px;
 
                     >.title {
-                        color: #3d3c45;
+                        color: $main;
                         font-size: 23px;
-                        font-weight: 300;
+                        
                         text-align: center;
-                        border-bottom: 2px solid #fff;
+                        border-bottom: 2px solid $white;
                         padding-block: 22px;
                     }
 
                     .items {
                         .item {
                             overflow: hidden;
-                            transition: all 0.3s;
-                            border-bottom: 2px solid #fff;
+                            transition: $transition1;
+                            border-bottom: 2px solid $white;
 
                             &.active {
                                 .head {
@@ -84,8 +86,8 @@
                             }
 
                             .head {
-                                color: #fff;
-                                background: #3d3c45;
+                                color: $white;
+                                background: $main;
                                 font-size: 20px;
                                 display: flex;
                                 align-items: center;
@@ -102,7 +104,7 @@
                                     position: absolute;
                                     width: 14px;
                                     height: 14px;
-                                    background: #3d3c45;
+                                    background: $main;
                                     right: 30px;
                                     bottom: -7px;
                                     transform: rotate(45deg);
@@ -116,7 +118,7 @@
                                 .icon {
                                     font-size: 23px;
                                     margin-right: auto;
-                                    transition: all 0.3s;
+                                    transition: $transition1;
                                 }
                             }
 
@@ -136,10 +138,10 @@
                                         width: 4px;
                                         height: 35px;
                                         position: absolute;
-                                        background: #cf5241;
+                                        background: $main2;
                                         right: -20px;
                                         top: -3px;
-                                        transition: all 0.3s;
+                                        transition: $transition1;
                                         opacity: 0;
                                     }
 
@@ -149,11 +151,11 @@
                                         }
 
                                         .title {
-                                            color: #cf5241;
+                                            color: $main2;
                                         }
 
                                         .checkBox {
-                                            box-shadow: 0px 0px 0px 2px #cf5241;
+                                            box-shadow: 0px 0px 0px 2px $main2;
                                         }
                                     }
 
@@ -163,11 +165,11 @@
                                         }
 
                                         .title {
-                                            color: #cf5241;
+                                            color: $main2;
                                         }
 
                                         .checkBox {
-                                            box-shadow: 0px 0px 0px 2px #cf5241;
+                                            box-shadow: 0px 0px 0px 2px $main2;
                                         }
                                     }
 
@@ -178,7 +180,7 @@
                                     }
 
                                     .title {
-                                        color: #3d3c45;
+                                        color: $main;
                                         font-size: 18px;
                                         flex: 1;
                                         cursor: default;
@@ -194,13 +196,13 @@
                                         position: relative;
                                         overflow: hidden;
                                         -webkit-appearance: none;
-                                        background-color: #fff;
+                                        background-color: $white;
                                         box-shadow: 0px 0px 0px 2px #e9eef6;
 
                                         .transition {
                                             width: 60px;
                                             height: 60px;
-                                            background-color: #cf5241;
+                                            background-color: $main2;
                                             top: -52px;
                                             left: -52px;
                                             position: absolute;
@@ -210,7 +212,7 @@
                                         }
 
                                         input[type=checkbox]:checked {
-                                            box-shadow: 0px 0px 0px 2px #cf5241;
+                                            box-shadow: 0px 0px 0px 2px $main2;
                                         }
 
                                         input[type=checkbox]:checked+.transition {
@@ -233,7 +235,7 @@
 
             .products {
                 flex: 1;
-                background-color: #fff;
+                background-color: $white;
 
                 .items {
                     display: grid;
@@ -268,7 +270,7 @@
                             left: 0;
                             border-radius: 18px;
                             transform: translateY(180px);
-                            transition: all 0.3s;
+                            transition: $transition1;
                             filter: contrast(0.5);
                         }
 
@@ -301,7 +303,7 @@
                                 bottom: 90px;
 
                                 .name {
-                                    color: #fff;
+                                    color: $white;
                                     display: -webkit-box;
                                     flex: 1;
                                     font-size: 18px;
@@ -333,7 +335,7 @@
 
                                 .right {
                                     padding: 12px;
-                                    background-color: #fff;
+                                    background-color: $white;
                                     border-radius: 10px;
                                     display: flex;
                                     width: 100%;
@@ -365,7 +367,7 @@
                                             span {
                                                 color: #9f9f9f;
                                                 font-size: 13px;
-                                                font-weight: 100;
+                                                
                                                 margin-right: 7px;
                                             }
                                         }
@@ -378,7 +380,7 @@
 
                                         .priceDiscount {
                                             font-size: 15px;
-                                            color: #cf5241;
+                                            color: $main2;
                                             display: flex;
 
                                             span {
@@ -393,9 +395,9 @@
                                     text-align: center;
                                     padding: 16px 12px;
                                     font-size: 12px;
-                                    background-color: #fff;
+                                    background-color: $white;
                                     border-radius: 10px;
-                                    transition: all .3s;
+                                    transition: $transition1;
                                 }
                             }
 
@@ -408,21 +410,21 @@
                                 width: 100%;
                                 color: #919098;
                                 transform: translateY(85px);
-                                transition: all 0.3s;
+                                transition: $transition1;
 
                                 .link {
                                     padding: 14px 12px;
                                     font-size: 16px;
-                                    background-color: #fff;
-                                    color: #cf5241;
-                                    border: 1px solid #cf5241;
+                                    background-color: $white;
+                                    color: $main2;
+                                    border: 1px solid $main2;
                                     border-radius: 10px;
                                     width: 100%;
                                     display: flex;
                                     justify-content: center;
                                     flex-direction: row-reverse;
                                     cursor: default;
-                                    transition: all 0.3s;
+                                    transition: $transition1;
 
                                     .icon-nonExistent {
                                         font-size: 16px;
@@ -441,7 +443,7 @@
                                 bottom: 90px;
 
                                 .name {
-                                    color: #fff;
+                                    color: $white;
                                     display: -webkit-box;
                                     flex: 1;
                                     font-size: 18px;
@@ -451,7 +453,7 @@
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     transform: translateY(80px);
-                                    transition: all 0.3s;
+                                    transition: $transition1;
                                 }
                             }
 
@@ -468,12 +470,12 @@
                                 z-index: 2;
                                 width: 100%;
                                 transform: translateY(85px);
-                                transition: all 0.3s;
+                                transition: $transition1;
 
                                 .right {
                                     padding: 15px 12px;
                                     align-items: center;
-                                    background-color: #fff;
+                                    background-color: $white;
                                     border-radius: 10px;
                                     display: flex;
                                     flex: 1;
@@ -489,12 +491,12 @@
                                             align-items: center;
                                             color: #3db178;
                                             display: flex;
-                                            font-weight: 200;
+                                            
 
                                             span {
                                                 color: #9f9f9f;
                                                 font-size: 13px;
-                                                font-weight: 100;
+                                                
                                                 margin-right: 7px;
                                             }
                                         }
@@ -504,10 +506,10 @@
                                 .link {
                                     padding: 16px 12px;
                                     font-size: 12px;
-                                    background-color: #fff;
+                                    background-color: $white;
                                     border-radius: 10px;
-                                    font-weight: 200;
-                                    transition: all .3s;
+                                    
+                                    transition: $transition1;
                                 }
                             }
                         }
@@ -541,8 +543,8 @@
                                     transform: translateY(5px);
 
                                     .link:hover {
-                                        background-color: #cf5241;
-                                        color: #fff;
+                                        background-color: $main2;
+                                        color: $white;
                                     }
                                 }
                             }
@@ -552,14 +554,14 @@
             }
 
             .modalFilter {
-                background: #fff;
+                background: $white;
                 height: 83%;
                 width: 290px;
                 position: fixed;
                 right: 0;
                 top: 70px;
                 transform: translateX(290px);
-                transition: all 0.3s;
+                transition: $transition1;
                 z-index: 3;
 
                 .box-filter {
@@ -570,19 +572,19 @@
 
 
                     >.title {
-                        color: #3d3c45;
+                        color: $main;
                         font-size: 23px;
-                        font-weight: 300;
+                        
                         text-align: right;
-                        border-bottom: 2px solid #fff;
+                        border-bottom: 2px solid $white;
                         padding: 10px 12px 22px;
                     }
 
                     .items {
                         .item {
                             overflow: hidden;
-                            transition: all 0.3s;
-                            border-bottom: 2px solid #fff;
+                            transition: $transition1;
+                            border-bottom: 2px solid $white;
 
                             &.active {
                                 .head {
@@ -593,8 +595,8 @@
                             }
 
                             .head {
-                                color: #fff;
-                                background: #3d3c45;
+                                color: $white;
+                                background: $main;
                                 font-size: 20px;
                                 display: flex;
                                 align-items: center;
@@ -611,7 +613,7 @@
                                     position: absolute;
                                     width: 14px;
                                     height: 14px;
-                                    background: #3d3c45;
+                                    background: $main;
                                     right: 30px;
                                     bottom: -7px;
                                     transform: rotate(45deg);
@@ -625,7 +627,7 @@
                                 .icon {
                                     font-size: 23px;
                                     margin-right: auto;
-                                    transition: all 0.3s;
+                                    transition: $transition1;
                                 }
                             }
 
@@ -645,10 +647,10 @@
                                         width: 4px;
                                         height: 35px;
                                         position: absolute;
-                                        background: #cf5241;
+                                        background: $main2;
                                         right: -20px;
                                         top: -3px;
-                                        transition: all 0.3s;
+                                        transition: $transition1;
                                         opacity: 0;
                                     }
 
@@ -658,11 +660,11 @@
                                         }
 
                                         .title {
-                                            color: #cf5241;
+                                            color: $main2;
                                         }
 
                                         .checkBox {
-                                            box-shadow: 0px 0px 0px 2px #cf5241;
+                                            box-shadow: 0px 0px 0px 2px $main2;
                                         }
                                     }
 
@@ -672,11 +674,11 @@
                                         }
 
                                         .title {
-                                            color: #cf5241;
+                                            color: $main2;
                                         }
 
                                         .checkBox {
-                                            box-shadow: 0px 0px 0px 2px #cf5241;
+                                            box-shadow: 0px 0px 0px 2px $main2;
                                         }
                                     }
 
@@ -687,7 +689,7 @@
                                     }
 
                                     .title {
-                                        color: #3d3c45;
+                                        color: $main;
                                         font-size: 18px;
                                         flex: 1;
                                         cursor: default;
@@ -703,13 +705,13 @@
                                         position: relative;
                                         overflow: hidden;
                                         -webkit-appearance: none;
-                                        background-color: #fff;
+                                        background-color: $white;
                                         box-shadow: 0px 0px 0px 2px #e9eef6;
 
                                         .transition {
                                             width: 60px;
                                             height: 60px;
-                                            background-color: #cf5241;
+                                            background-color: $main2;
                                             top: -52px;
                                             left: -52px;
                                             position: absolute;
@@ -719,7 +721,7 @@
                                         }
 
                                         input[type=checkbox]:checked {
-                                            box-shadow: 0px 0px 0px 2px #cf5241;
+                                            box-shadow: 0px 0px 0px 2px $main2;
                                         }
 
                                         input[type=checkbox]:checked+.transition {
@@ -756,7 +758,7 @@
                             justify-items: start;
 
                             .itemChoose {
-                                border: 1.9px dashed #cf5241;
+                                border: 1.9px dashed $main2;
                                 border-radius: 10px;
                                 margin-bottom: 10px;
                                 padding: 5px 10px;
@@ -765,7 +767,7 @@
 
                                 .icon-remove {
                                     margin-left: 5px;
-                                    color: #cf5241;
+                                    color: $main2;
                                     cursor: pointer;
 
                                     &:hover {
@@ -831,7 +833,7 @@
                 }
 
                 .itemChoose {
-                    border: 1.9px dashed #cf5241;
+                    border: 1.9px dashed $main2;
                     border-radius: 10px;
                     margin-left: 10px;
                     padding: 5px 10px;
@@ -841,7 +843,7 @@
 
                     .icon-remove {
                         margin-left: 5px;
-                        color: #cf5241;
+                        color: $main2;
                         cursor: pointer;
 
                         &:hover {
