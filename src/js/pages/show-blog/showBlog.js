@@ -1,2 +1,1 @@
-import "../../../sass/components/pages/show-blog/index.scss";
-import "../../../sass/base/responsiv.scss"
+import "../../../scss/components/pages/show-blog/index.scss";
