@@ -1,5 +1,5 @@
-import "../../../sass/components/pages/list-blog/index.scss";
-import "../../../sass/base/responsiv.scss"
+import "../../../scss/components/pages/list-blog/index.scss";
+
 /*------------------------------------------------*/
 
 const filterBtn = document.querySelector(".filterBtn");
