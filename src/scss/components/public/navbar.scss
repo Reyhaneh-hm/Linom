@@ -808,6 +808,28 @@
 /*----------------------------------------------*/
 
 
+@media screen and (max-width: 1440px) {
+    .topHeader {
+        .top-menu {
+            ul.menu {
+                li.itemMenu {
+                    a.text-menu {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            #boxIcon {
+                width: 215px;
+
+                .icon-header {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .topHeader {
         .top-menu {

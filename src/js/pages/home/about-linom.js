@@ -1,5 +1,5 @@
 import '../../../scss/components/pages/home/about-linom.scss';
-
+import WaveSurfer from 'wavesurfer.js';
 
 /*--------------audio---------------*/
 
@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
         if (!item) return;
 
         const wavesurfer = WaveSurfer.create({
-            
+
             container: item,
 
             waveColor: "#DAEAFA",
@@ -35,15 +35,14 @@ window.addEventListener("load", () => {
 
         });
 
-        // تابع کمکی برای تبدیل ثانیه به فرمت ساعت، دقیقه، ثانیه (در صورت وجود ساعت)
         function formatTime(seconds) {
             const h = Math.floor(seconds / 3600);
             const m = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
             const s = Math.floor(seconds % 60).toString().padStart(2, '0');
             if (h > 0) {
-                return `${h}:${m}:${s}`;  // نمایش ساعت، دقیقه و ثانیه
+                return `${h}:${m}:${s}`;
             } else {
-                return `${m}:${s}`;  // نمایش فقط دقیقه و ثانیه
+                return `${m}:${s}`;
             }
         }
 
@@ -62,10 +61,8 @@ window.addEventListener("load", () => {
                     currentTime = wavesurfer.getCurrentTime(),
                     remainingTime = totalTime - currentTime;
 
-                // تبدیل زمان باقی‌مانده به فرمت مناسب
                 const formattedRemainingTime = formatTime(remainingTime);
 
-                // نمایش زمان باقی‌مانده در عنصر HTML با ID "timeAudio"
                 document.getElementById("timeAudio").innerText = formattedRemainingTime;
 
             }
