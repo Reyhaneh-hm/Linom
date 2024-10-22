@@ -55,7 +55,6 @@
 
             .filter_card {
                 width: 385px;
-                // background: #eaedf252;
                 border-radius: 20px 0 0 20px;
 
                 .card {
@@ -747,7 +746,7 @@
                         flex-direction: column;
                         border-bottom: 2px dashed #cbcbcb;
 
-                        h6 {
+                        .titrFilter {
                             font-size: 17px;
                             margin-bottom: 20px;
                         }
@@ -805,7 +804,7 @@
             right: 405px;
             margin: 0 0 20px;
 
-            h6 {
+            .titrFilter {
                 font-size: 17px;
                 margin-left: 10px;
             }

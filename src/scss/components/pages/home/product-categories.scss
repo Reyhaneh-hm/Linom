@@ -173,7 +173,7 @@
                         left: -105px;
                         z-index: 1;
 
-                        i {
+                        .iconSlider {
                             border-radius: 50px;
                             padding: 15px;
                             width: 46px;
@@ -198,7 +198,7 @@
 
                     &:hover {
                         .icon-slider {
-                            i {
+                            .iconSlider {
                                 margin-left: 55px;
                                 width: 90px;
                                 justify-content: space-around;

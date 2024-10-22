@@ -94,14 +94,14 @@
             .content {
                 margin-top: 20px;
 
-                p {
+                .text {
                     line-height: 3.2;
                     font-size: 16px;
                     color: $text;
                     margin-bottom: 13px;
                     text-align: justify;
 
-                    a {
+                    .link {
                         color: $main2;
                     }
                 }
@@ -110,7 +110,7 @@
                     display: flex;
                     align-items: center;
 
-                    .col-md-4 {
+                    .boxImage {
                         width: 30%;
                         padding: 0;
                         height: 300px;
@@ -119,7 +119,7 @@
                         margin: 20px 10px;
                         overflow: hidden;
 
-                        img {
+                        .img {
                             width: 100%;
                             height: 100%;
                         }
@@ -342,7 +342,7 @@
 
                 .content {
                     .justify-content-center {
-                        .col-md-4 {
+                        .boxImage {
                             width: 47%;
                         }
                     }
@@ -358,7 +358,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .weblogs {
         .card {
             .post {
@@ -377,26 +377,11 @@
                     width: 100%;
                     margin-right: 0;
                 }
-            }
-        }
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .weblogs {
-        .card {
-            .post {
-                .head {
-                    .box-img {
-                        // height: 355px;
-                    }
-                }
-            }
-
-            .comments {
                 .comment_form {
                     margin-top: 20px;
                     width: 100%;
+                    overflow-x: hidden;
                 }
             }
         }
@@ -420,7 +405,7 @@
                 }
 
                 .content {
-                    p {
+                    .text {
                         line-height: 2.5;
                         font-size: 15px;
                     }
@@ -428,7 +413,7 @@
                     .justify-content-center {
                         flex-direction: column;
 
-                        .col-md-4 {
+                        .boxImage {
                             width: 100%;
                             height: 255px;
                         }
@@ -522,7 +507,7 @@
 
                 .content {
                     .justify-content-center {
-                        .col-md-4 {
+                        .boxImage {
                             height: 195px;
                         }
                     }

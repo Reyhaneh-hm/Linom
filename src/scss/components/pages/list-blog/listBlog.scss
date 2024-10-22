@@ -42,7 +42,7 @@
                         border-radius: 5px;
                     }
 
-                    li {
+                    .itemSlider {
                         display: flex;
                         justify-content: space-between;
                         padding-block: 23px;
@@ -59,8 +59,12 @@
                         }
 
                         &:hover {
-                            span {
-                                color: #283347;
+                            .link {
+
+                                .title,
+                                .icon {
+                                    color: #283347;
+                                }
                             }
                         }
 
@@ -69,30 +73,32 @@
                             top: 0;
                             border-color: #3d3c45;
 
-                            span {
-                                color: #3d3c45;
+                            .link {
+
+                                .title,
+                                .icon {
+                                    color: #3d3c45;
+                                }
                             }
                         }
 
-                        a {
+                        .link {
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
 
-                            span {
+                            .title {
                                 color: #abb5c6;
                                 transition: all 0.3s;
-
-                                &.title {
-                                    font-size: 16px;
-                                }
-
-                                &.icon {
-                                    width: 20px;
-                                    font-size: 25px;
-                                }
+                                font-size: 16px;
                             }
 
+                            .icon {
+                                color: #abb5c6;
+                                transition: all 0.3s;
+                                width: 20px;
+                                font-size: 25px;
+                            }
                         }
                     }
                 }
@@ -154,7 +160,7 @@
                             text-overflow: ellipsis;
                             -webkit-line-clamp: 1;
 
-                            span {
+                            .titr {
                                 transition: all 0.3s;
                                 color: $main3;
 
@@ -278,7 +284,7 @@
                         border-radius: 5px;
                     }
 
-                    li {
+                    .itemSlider {
                         display: flex;
                         justify-content: space-between;
                         padding-block: 23px;
@@ -295,8 +301,12 @@
                         }
 
                         &:hover {
-                            span {
-                                color: #283347;
+                            .link {
+
+                                .title,
+                                .icon {
+                                    color: #283347;
+                                }
                             }
                         }
 
@@ -305,30 +315,32 @@
                             top: 0;
                             border-color: #3d3c45;
 
-                            span {
-                                color: #3d3c45;
+                            .link {
+
+                                .title,
+                                .icon {
+                                    color: #3d3c45;
+                                }
                             }
                         }
 
-                        a {
+                        .link {
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
 
-                            span {
+                            .title {
                                 color: #abb5c6;
                                 transition: all 0.3s;
-
-                                &.title {
-                                    font-size: 15px;
-                                }
-
-                                &.icon {
-                                    width: 20px;
-                                    font-size: 25px;
-                                }
+                                font-size: 15px;
                             }
 
+                            .icon {
+                                color: #abb5c6;
+                                transition: all 0.3s;
+                                width: 20px;
+                                font-size: 25px;
+                            }
                         }
                     }
                 }

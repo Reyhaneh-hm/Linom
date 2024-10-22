@@ -29,7 +29,7 @@
                 }
             }
 
-            li {
+            .item {
                 cursor: pointer;
                 position: relative;
                 text-align: center;
@@ -117,11 +117,11 @@
                                     text-align: center;
                                     padding-left: 28px;
 
-                                    h3 {
+                                    .titr {
                                         font-size: 15px;
                                     }
 
-                                    span {
+                                    .underTitr {
                                         color: #757a83;
                                         font-size: 12px;
 
@@ -137,7 +137,7 @@
                                     padding: 15px 0;
                                     text-align: center;
 
-                                    img {
+                                    .img {
                                         height: 100px;
                                         margin: 5px;
                                         -o-object-fit: cover;
@@ -145,7 +145,7 @@
                                         border-radius: 5px;
                                     }
 
-                                    h4.name {
+                                    .name {
                                         margin-top: 5px;
                                     }
 
@@ -281,15 +281,15 @@
                                 font-size: 15px;
                                 margin-bottom: 23px;
 
-                                a {
+                                .link {
                                     color: $main2;
                                 }
                             }
 
-                            .row {
+                            .itemsBox {
                                 overflow-x: hidden;
 
-                                .col-md-4 {
+                                .item {
 
                                     &:nth-child(7) {
                                         width: 100%;
@@ -347,7 +347,7 @@
                                 }
                             }
 
-                            .col-md-12 {
+                            .itemCol12 {
                                 .input_box {
                                     margin-bottom: 15px;
                                     position: relative;
@@ -434,7 +434,7 @@
                 .nahaii {
                     display: flex;
 
-                    .col-md-4 {
+                    .item4 {
                         width: 33%;
 
                         .cart-bill {
@@ -577,7 +577,7 @@
                         }
                     }
 
-                    .col-md-8 {
+                    .item8 {
                         padding: 10px;
                         width: 67%;
 
@@ -642,14 +642,14 @@
                                                 text-align: center;
                                                 color: $main;
 
-                                                img {
+                                                .img {
                                                     height: 100px;
                                                     margin: 5px;
                                                     -o-object-fit: cover;
                                                     object-fit: cover;
                                                 }
 
-                                                h4.name {
+                                                .name {
                                                     margin-top: 5px;
                                                     overflow: hidden;
                                                     text-overflow: ellipsis;
@@ -914,7 +914,7 @@
                                     th {
                                         padding-left: 20px;
 
-                                        h3 {
+                                        .titr {
                                             font-size: 14px;
                                         }
                                     }
@@ -926,7 +926,7 @@
                                     td {
                                         font-size: 14px;
 
-                                        h4.name {
+                                        .name {
                                             font-size: 14px;
                                         }
 
@@ -962,7 +962,7 @@
                                                 td {
                                                     font-size: 14px;
 
-                                                    h4.name {
+                                                    .name {
                                                         font-size: 14px;
                                                     }
                                                 }

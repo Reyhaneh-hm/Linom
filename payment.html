@@ -907,22 +907,22 @@
                     <div class="card">
 
                         <ul class="step_lists">
-                            <li data-id="step1" class="">
+                            <li data-id="step1" class="item">
                                 <i class="icon icon-Buy"></i>
                                 <h2 class="title">سبد خرید</h2>
                                 <span class="dot"></span>
                             </li>
-                            <li data-id="step2">
+                            <li data-id="step2" class="item">
                                 <i class="icon icon-Profile"></i>
                                 <h2 class="title">مشخصات گیرنده</h2>
                                 <span class="dot"></span>
                             </li>
-                            <li data-id="step3">
+                            <li data-id="step3" class="item">
                                 <i class="icon icon-Box"></i>
                                 <h2 class="title">بازبینی سفارش</h2>
                                 <span class="dot"></span>
                             </li>
-                            <li>
+                            <li class="item">
                                 <i class="icon icon-Buy2"></i>
                                 <h4 class="title">نتیجه سفارش</h4>
                                 <span class="dot"></span>
@@ -939,34 +939,34 @@
                                         <thead>
                                             <tr>
                                                 <th scope="col">
-                                                    <h3>محصول انتخابی</h3>
+                                                    <h3 class="titr">محصول انتخابی</h3>
                                                 </th>
                                                 <th scope="col">
-                                                    <h3>تعداد</h3>
+                                                    <h3 class="titr">تعداد</h3>
                                                 </th>
                                                 <th scope="col">
-                                                    <h3>قیمت واحد</h3>
-                                                    <span>تومان</span>
+                                                    <h3 class="titr">قیمت واحد</h3>
+                                                    <span class="underTitr">تومان</span>
                                                 </th>
                                                 <th scope="col">
-                                                    <h3>قیمت کل</h3>
-                                                    <span>تومان</span>
+                                                    <h3 class="titr">قیمت کل</h3>
+                                                    <span class="underTitr">تومان</span>
                                                 </th>
                                                 <th scope="col">
-                                                    <h3>حذف</h3>
+                                                    <h3 class="titr">حذف</h3>
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td scope="row">
-                                                    <img src="/img/product-menu/1.jpg" alt="image">
+                                                    <img src="/img/product-menu/1.jpg" alt="image" class="img">
                                                     <h4 class="name">طرح گلاسه</h4>
                                                 </td>
                                                 <td>
                                                     <div id="numberSpinner" class="spinner">
                                                         <span class="icon icon-Plus increament"></span>
-                                                        <input step="1" min="1" max="10" type="number" value="1">
+                                                        <input class="inputNumber" step="1" min="1" max="10" type="number" value="1">
                                                         <span class="icon icon-Minus decreament"></span>
                                                     </div>
                                                 </td>
@@ -978,13 +978,13 @@
                                             </tr>
                                             <tr>
                                                 <td scope="row">
-                                                    <img src="/img/product-menu/1.jpg" alt="image">
+                                                    <img src="/img/product-menu/1.jpg" alt="image" class="img">
                                                     <h4 class="name">طرح گلاسه</h4>
                                                 </td>
                                                 <td>
                                                     <div id="numberSpinner" class="spinner">
                                                         <span class="icon icon-Plus increament"></span>
-                                                        <input step="2" min="2" max="10" type="number" value="1">
+                                                        <input class="inputNumber" step="2" min="2" max="10" type="number" value="1">
                                                         <span class="icon icon-Minus decreament"></span>
                                                     </div>
                                                 </td>
@@ -1000,7 +1000,7 @@
                                 <form class="payment_action">
                                     <button class="abb_product link submit">اضافه کردن محصول جدید</button>
                                     <p class="total_cart">
-                                        جمع سبد خرید:‌ <span>۳۰۰۰۰۰۰ تومان</span>
+                                        جمع سبد خرید:‌ <span class="money">۳۰۰۰۰۰۰ تومان</span>
                                     </p>
                                     <button type="submit" class="next_page link submit">مرحله بعد</button>
                                 </form>
@@ -1014,36 +1014,36 @@
                                         <h3 class="main_title">فرم ثبت اطلاعات</h3>
 
                                         <form class="box active">
-                                            <span class="login">از قبل اکانت دارید؟ <a href="#">وارد شوید</a></span>
-                                            <div class="row">
-                                                <div class="col-md-4">
+                                            <span class="login">از قبل اکانت دارید؟ <a href="#" class="link">وارد شوید</a></span>
+                                            <div class="row itemsBox">
+                                                <div class="col-md-4 item">
                                                     <div class="input_box">
-                                                        <label>نام و نام خانوادگی
+                                                        <label class="textLabel">نام و نام خانوادگی
                                                             <span class="star">*</span></label>
                                                         <input type="text" name="نام و نام خانوادگی">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 item">
                                                     <div class="input_box">
-                                                        <label>شماره موبایل <span class="star">*</span></label>
+                                                        <label class="textLabel">شماره موبایل <span class="star">*</span></label>
                                                         <input type="number" name="نام و نام خانوادگی">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 item">
                                                     <div class="input_box">
-                                                        <label>آدرس ایمیل</label>
+                                                        <label class="textLabel">آدرس ایمیل</label>
                                                         <input type="email" name="آدرس ایمیل">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 item">
                                                     <div class="input_box">
-                                                        <label>کد پستی <span class="star">*</span></label>
+                                                        <label class="textLabel">کد پستی <span class="star">*</span></label>
                                                         <input type="number" name="کد پستی">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 item">
                                                     <div class="input_box">
-                                                        <label>استان<span class="star">*</span></label>
+                                                        <label class="textLabel">استان<span class="star">*</span></label>
                                                         <select class="form-control" name="استان">
                                                             <option value="0" selected="" disabled="">
                                                                 لطفا انتخاب کنید...
@@ -1093,29 +1093,29 @@
                                                         <i class="arrow icon-Arrow-Down"></i>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 item">
                                                     <div class="input_box">
-                                                        <label>شهر <span class="star">*</span></label>
+                                                        <label class="textLabel">شهر <span class="star">*</span></label>
                                                         <input type="text" name="شهر">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 item">
                                                     <div class="input_box">
-                                                        <label>آدرس <span class="star">*</span></label>
+                                                        <label class="textLabel">آدرس <span class="star">*</span></label>
                                                         <input type="text" name="آدرس">
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
+                                                <div class="col-md-12 itemCol12">
                                                     <div class="input_box">
-                                                        <label>یادداشت برای فروشنده</label>
+                                                        <label class="textLabel">یادداشت برای فروشنده</label>
                                                         <textarea name="یادداشت برای فروشنده"
                                                             placeholder="در صورتی که توضیح خاصی دارید در این قسمت وارد کنید..."
                                                             id="" cols="30" rows="10"></textarea>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 item">
                                                     <div class="input_box">
-                                                        <label>نحوه آشنایی <span class="star">*</span></label>
+                                                        <label class="textLabel">نحوه آشنایی <span class="star">*</span></label>
                                                         <select class="form-control" name="نحوه آشنایی">
                                                             <option selected="" disabled="">لطفا انتخاب کنید</option>
                                                             <option value="برنامه تلویزیونی کارآگاه نجار">
@@ -1133,9 +1133,9 @@
                                                         <i class="arrow icon-Arrow-Down"></i>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-md-4 item">
                                                     <div class="input_box">
-                                                        <label>مراحل آماده سازی از طريق پيامك اطلاع رسانی شود؟
+                                                        <label class="textLabel">مراحل آماده سازی از طريق پيامك اطلاع رسانی شود؟
                                                             <span class="star">*</span></label>
                                                         <select name="مراحل آماده سازی از طريق پيامك اطلاع رسانی شود؟"
                                                             id="">
@@ -1159,7 +1159,7 @@
                                     </div>
                                 </div>
                                 <div class="row nahaii">
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 item4">
                                         <div id="stickyBox" class="cart-bill">
                                             <ul class="box">
                                                 <li>
@@ -1193,7 +1193,7 @@
                                                 <li class="payment_methods">
                                                     <div class="method">
                                                         <input id="mellat" type="radio" name="bank" checked="">
-                                                        <label for="mellat">
+                                                        <label for="mellat" class="textLabel">
                                                             <div class="box">
                                                                 <img src="./img/payment/4.png" alt="image"
                                                                     class="image">
@@ -1202,7 +1202,7 @@
                                                     </div>
                                                     <div class="method">
                                                         <input id="pasargad" type="radio" name="bank">
-                                                        <label for="pasargad">
+                                                        <label for="pasargad" class="textLabel">
                                                             <div class="box">
                                                                 <img style="width: 3rem" src="./img/payment/5.png"
                                                                     alt="image" class="image">
@@ -1218,7 +1218,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-8 item8">
                                         <div class="item stepContent">
                                             <h2 class="title">
                                                 <i class="icon icon-Box"></i> بازبینی سفارش
@@ -1228,23 +1228,25 @@
                                                     <thead>
                                                         <tr>
                                                             <th scope="col">
-                                                                <h3>محصول انتخابی</h3>
-                                                            </th>
-                                                            <th scope="col">تعداد</th>
-                                                            <th scope="col">
-                                                                <h3>قیمت واحد</h3>
-                                                                <span>تومان</span>
+                                                                <h3 class="titr">محصول انتخابی</h3>
                                                             </th>
                                                             <th scope="col">
-                                                                <h3>قیمت کل</h3>
-                                                                <span>تومان</span>
+                                                                <h3 class="titr">تعداد</h3>
+                                                            </th>
+                                                            <th scope="col">
+                                                                <h3 class="titr">قیمت واحد</h3>
+                                                                <span class="underTitr">تومان</span>
+                                                            </th>
+                                                            <th scope="col">
+                                                                <h3 class="titr">قیمت کل</h3>
+                                                                <span class="underTitr">تومان</span>
                                                             </th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <td scope="row">
-                                                                <img src="/img/product-menu/1.jpg" alt="image">
+                                                                <img src="/img/product-menu/1.jpg" alt="image" class="img">
                                                                 <h4 class="name">طرح گلاسه</h4>
                                                             </td>
                                                             <td>۲</td>
@@ -1253,7 +1255,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td scope="row">
-                                                                <img src="/img/product-menu/1.jpg" alt="image">
+                                                                <img src="/img/product-menu/1.jpg" alt="image" class="img">
                                                                 <h4 class="name">طرح گلاسه</h4>
                                                             </td>
                                                             <td>۵</td>
