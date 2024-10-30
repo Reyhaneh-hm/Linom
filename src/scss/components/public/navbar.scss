@@ -1,3 +1,5 @@
+@import'../../base/setting.scss';
+
 /*--------------topHeader---------------*/
 
 .topHeader {
@@ -719,8 +721,9 @@
             border-radius: 5px;
         }
 
-        li {
+        .item {
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             padding-block: 23px;
             align-items: center;
@@ -735,8 +738,12 @@
             }
 
             &:hover {
-                span {
-                    color: #283347;
+                .link {
+
+                    .title,
+                    .icon {
+                        color: #283347;
+                    }
                 }
             }
 
@@ -745,30 +752,55 @@
                 top: 0;
                 border-color: #3d3c45;
 
-                span {
-                    color: #3d3c45;
+                .link {
+
+                    .title,
+                    .icon {
+                        color: #3d3c45;
+                    }
                 }
             }
 
-            a {
+            .link {
                 width: 100%;
                 display: flex;
+                align-items: center;
                 justify-content: space-between;
 
-                span {
+                .title {
                     color: #abb5c6;
                     transition: all 0.3s;
-
-                    &.title {
-                        font-size: 15px;
-                    }
-
-                    &.icon {
-                        width: 20px;
-                        font-size: 25px;
-                    }
+                    font-size: 15px;
                 }
 
+                .icon {
+                    color: #abb5c6;
+                    transition: all 0.3s;
+                    width: 20px;
+                    font-size: 23px;
+                    transition: transform 0.3s ease;
+                }
+            }
+
+            .submenu {
+                overflow: hidden;
+                max-height: 0;
+                width: 100%;
+                text-align: center;
+                transition: max-height 0.3s ease;
+
+                .item-submenu {
+                    padding: 12px;
+                    background-color: #3d3c45;
+                    color: #fff;
+                    font-size: 13px;
+                    border-bottom: 2px solid;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: $hover;
+                    }
+                }
             }
         }
     }

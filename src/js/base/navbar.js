@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 /*-----------------------show filterProduct------------------------*/
 
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const checkbox = document.querySelector("#checkbox");
     const filterProduct = document.querySelector(".filterProduct");
     const overlay = document.querySelector(".overlay");
@@ -38,6 +38,42 @@ window.addEventListener("DOMContentLoaded", () => {
     overlay.addEventListener("click", () => {
         filterProduct.classList.remove("active");
         overlay.classList.remove("active");
-        checkbox.checked = false;  // میاد وضعیت رو ریست میکنه
+        checkbox.checked = false; // ریست کردن وضعیت چک‌باکس
+    });
+
+    document.querySelectorAll(".item").forEach((item) => {
+        item.addEventListener("click", (event) => {
+            event.stopPropagation();
+
+            const submenu = item.querySelector(".submenu");
+            const icon = item.querySelector(".icon");
+
+            if (item.classList.contains("active")) {
+                item.classList.remove("active");
+                if (submenu) {
+                    submenu.style.maxHeight = null;
+                    submenu.style.marginTop = "0px";
+                }
+                if (icon) {
+                    icon.style.transform = "rotate(0deg)";
+                }
+            } else {
+                document.querySelectorAll(".item").forEach((el) => el.classList.remove("active"));
+                document.querySelectorAll(".submenu").forEach((el) => {
+                    el.style.maxHeight = null;
+                    el.style.marginTop = "0px";
+                });
+                document.querySelectorAll(".icon").forEach((ic) => ic.style.transform = "rotate(0deg)");
+
+                item.classList.add("active");
+                if (submenu) {
+                    submenu.style.maxHeight = submenu.scrollHeight + "px";
+                    submenu.style.marginTop = "15px";
+                }
+                if (icon) {
+                    icon.style.transform = "rotate(-90deg)";
+                }
+            }
+        });
     });
 });
