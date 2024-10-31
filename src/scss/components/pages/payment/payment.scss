@@ -544,6 +544,7 @@
                                             height: 63px;
                                             width: 77%;
                                             margin-block: 7px;
+                                            transition: background-color 0.3s;
 
                                             input {
                                                 opacity: 0;
@@ -553,10 +554,7 @@
                                                 top: 0;
                                                 right: 0;
                                                 cursor: pointer;
-                                            }
-
-                                            input:checked~.method {
-                                                background-color: #ccc;
+                                                z-index: 1;
                                             }
 
                                             img {
@@ -564,6 +562,11 @@
                                                 width: 3.5rem;
                                             }
                                         }
+
+                                        .method:has(input:checked) {
+                                            background-color: #ccc;
+                                        }
+
                                     }
                                 }
                             }
