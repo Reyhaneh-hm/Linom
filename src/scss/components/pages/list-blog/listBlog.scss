@@ -261,6 +261,7 @@
                 transform: translateX(30rem);
                 transition: all 0.3s;
                 z-index: 51;
+                overflow: hidden;
 
                 .box {
                     height: 800px;
@@ -286,6 +287,7 @@
 
                     .itemSlider {
                         display: flex;
+                        flex-direction: column;
                         justify-content: space-between;
                         padding-block: 23px;
                         align-items: center;
@@ -328,6 +330,7 @@
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
+                            align-items: center;
 
                             .title {
                                 color: #abb5c6;
@@ -339,7 +342,28 @@
                                 color: #abb5c6;
                                 transition: all 0.3s;
                                 width: 20px;
-                                font-size: 25px;
+                                font-size: 23px;
+                            }
+                        }
+
+                        .submenu {
+                            overflow: hidden;
+                            max-height: 0;
+                            width: 100%;
+                            text-align: center;
+                            transition: max-height 0.3s ease;
+
+                            .item-submenu {
+                                padding: 12px;
+                                background-color: #3d3c45;
+                                color: #fff;
+                                font-size: 13px;
+                                border-bottom: 2px solid;
+                                border-radius: 5px;
+
+                                &:hover {
+                                    background-color: $hover;
+                                }
                             }
                         }
                     }
@@ -354,6 +378,20 @@
 }
 
 .overlay {
+    background: rgba(0, 0, 0, .55);
+    inset: 0;
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    z-index: 50;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.overlay2 {
     background: rgba(0, 0, 0, .55);
     inset: 0;
     opacity: 0;
