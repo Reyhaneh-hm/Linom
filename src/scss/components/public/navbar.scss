@@ -255,6 +255,18 @@
             height: 350px;
             overflow-y: auto;
             direction: ltr;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 29%;
+                height: 15px;
+                position: fixed;
+                bottom: 165px;
+                z-index: 1;
+                background: linear-gradient(0deg, rgba(245, 247, 250, 1) 25%, rgba(245, 247, 250, 0) 75%);
+            }
 
             &::-webkit-scrollbar-track {
                 padding: 2px 0;
