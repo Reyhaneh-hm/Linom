@@ -2,19 +2,19 @@ import "../../../scss/components/pages/list-blog/index.scss";
 
 /*------------------------------------------------*/
 
-// const filterBtn = document.querySelector(".filterBtn");
-// const modalFilter = document.querySelector(".modalFilter");
-// const overlay2 = document.querySelector(".overlay2");
-// filterBtn.addEventListener("click", () => {
-//     [overlay2, modalFilter].forEach((item) => item.classList.add("active"));
-// });
-// overlay2.addEventListener("click", () => {
-//     [overlay2, modalFilter].forEach((item) => item.classList.remove("active"));
-// });
+const filterBtn = document.querySelector(".filterBtn");
+const modalFilter = document.querySelector(".modalFilter");
+const overlay = document.querySelector(".overlay");
+filterBtn.addEventListener("click", () => {
+    [overlay, modalFilter].forEach((item) => item.classList.add("active"));
+});
+overlay.addEventListener("click", () => {
+    [overlay, modalFilter].forEach((item) => item.classList.remove("active"));
+});
 
 
 /*-----------------------show modalFilter------------------------*/
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     const filterBtn = document.querySelector(".filterBtn");
     const modalFilter = document.querySelector(".modalFilter");
     const overlay2 = document.querySelector(".overlay2");
@@ -65,4 +65,4 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-});
+});*/

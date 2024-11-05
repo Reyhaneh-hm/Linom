@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         checkbox.checked = false; // ریست کردن وضعیت چک‌باکس
     });
 
-    document.querySelectorAll(".item").forEach((item) => {
+    /*document.querySelectorAll(".item").forEach((item) => {
         item.addEventListener("click", (event) => {
             event.stopPropagation();
 
@@ -75,5 +75,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
         });
-    });
+    });*/
 });

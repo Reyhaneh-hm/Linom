@@ -5,34 +5,35 @@ import { Fancybox } from '@fancyapps/ui';
 
 /*-----------------Fancybox--------------------*/
 
-    //FancyBox
-    Fancybox.bind('[data-fancybox]', {
-        infinite: true,
-        keyboard: true,
-        loop: true,
+//FancyBox
+Fancybox.bind('[data-fancybox]', {
+    infinite: true,
+    keyboard: true,
+    loop: true,
 
-        buttons: [
-            'zoom',
-            'slideShow',
-            'fullScreen',
-            'download',
-            'thumbs',
-            'close'
-        ],
-        animationEffect: "zoom",
-        transitionEffect: "slide",
-        thumbs: {
-            autoStart: true
-        },
-        keyboard: true,
-        touch: true,
-        protect: true,
-        idleTime: false,
-        smallBtn: true,
-        toolbar: true,
-        animationDuration: 500,
-        transitionDuration: 600,
-    });
+    buttons: [
+        'zoom',
+        'slideShow',
+        'fullScreen',
+        'download',
+        'thumbs',
+        'close'
+    ],
+    animationEffect: "zoom",
+    transitionEffect: "slide",
+    thumbs: {
+        autoStart: true
+    },
+    keyboard: true,
+    touch: true,
+    protect: true,
+    idleTime: false,
+    smallBtn: true,
+    toolbar: true,
+    animationDuration: 500,
+    transitionDuration: 600,
+});
+
 /*-----------------accordion menu--------------------*/
 window.addEventListener("load", () => {
     const filterItem = document.querySelectorAll("[filte_item]");
@@ -73,14 +74,14 @@ filterItems.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
         const box = checkbox.closest('.box');
         const group = box.querySelectorAll('input[type="checkbox"]');
-        
+
         group.forEach(item => {
             if (item !== checkbox) {
                 item.checked = false;
                 item.closest('li').classList.remove('checked');
             }
         });
-        
+
         if (checkbox.checked) {
             checkbox.closest('li').classList.add('checked');
         } else {

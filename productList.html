@@ -2,28 +2,28 @@
 <html lang="fa">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="/img/main-page/logo/logoMain.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-    <title> لیست محصولات </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="/img/main-page/logo/logoMain.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <title> لیست محصولات </title>
 </head>
 
 
 <body>
 
-    <!------------------Quick Access----------------------->
+  <!------------------Quick Access----------------------->
 
-    <!--go to top-->
-    <a href="#" id="go-to-top">
-        <i class="icon-up icon-Arrow-Up-2"></i>
-    </a>
+  <!--go to top-->
+  <a href="#" id="go-to-top">
+    <i class="icon-up icon-Arrow-Up-2"></i>
+  </a>
 
-    <!--social network-->
-    <div class="center-circle" id="centerCircle">
-        <i class="icon-social icon-Calling"></i>
-    </div>
+  <!--social network-->
+  <div class="center-circle" id="centerCircle">
+    <i class="icon-social icon-Calling"></i>
+  </div>
 
 
   <!---------------------Header-------------------------->
@@ -917,545 +917,544 @@
   <!---------------------------------------------------->
 
 
-    <section class="products_list">
+  <section class="products_list">
 
 
-        <ul class="breadcrumb container">
-            <li><a href="./index.html">صفحه اصلی</a></li>
-            <li>لیست محصولات</li>
-        </ul>
+    <ul class="breadcrumb container">
+      <li><a href="./index.html">صفحه اصلی</a></li>
+      <li>لیست محصولات</li>
+    </ul>
 
-        <div class="cardBox">
+    <div class="cardBox">
+      <div class="chooseItemFilter">
+        <h1 class="titrFilter">فیلتر بر اساس : </h1>
+        <div class="boxItemChoose">
+          <span class="itemChoose">
+            <i class="icon-remove icon-close"></i>
+            گلاسه
+          </span>
+          <span class="itemChoose">
+            <i class="icon-remove icon-close"></i>
+            2×8
+          </span>
+          <span class="itemChoose">
+            <i class="icon-remove icon-close"></i>
+            مشکی
+          </span>
+        </div>
+      </div>
+
+      <div class="main_card">
+        <div class="filterBtn">
+          <svg height="50" width="160" xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape" height="50" width="190"></rect>
+          </svg>
+          <h2 class="text">مشاهده فیلتر</h2>
+        </div>
+
+        <div id="filterCard" class="filter_card">
+          <div class="card">
+            <h4 class="title">فیلتر ها</h4>
+
+            <form class="items">
+              <div filte_item class="item active">
+                <h4 class="head">
+                  <i class="icon-first icon-Dresser"></i>
+                  جنس <span class="icon icon-Arrow-Down"></span>
+                </h4>
+
+                <ul class="box">
+                  <li>
+                    <span class="title">گلاسه</span>
+                    <label class="checkBox" for="1">
+                      <input id="1" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="title">ام دی اف</span>
+                    <label class="checkBox" for="2">
+                      <input id="2" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="title">پلاستیکی</span>
+                    <label class="checkBox" for="3">
+                      <input id="3" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div filte_item class="item">
+                <h4 class="head">
+                  <i class="icon-first icon-ruler"></i>
+                  ابعاد <span class="icon icon-Arrow-Down"></span>
+                </h4>
+
+                <ul class="box">
+                  <li>
+                    <span class="title">8 × 2</span>
+                    <label class="checkBox" for="4">
+                      <input id="4" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="title">5 × 5</span>
+                    <label class="checkBox" for="5">
+                      <input id="5" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="title">12 × 20</span>
+                    <label class="checkBox" for="6">
+                      <input id="6" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div filte_item class="item">
+                <h4 class="head">
+                  <i class="icon-first icon-palette"></i>
+                  رنگ ها <span class="icon icon-Arrow-Down"></span>
+                </h4>
+
+                <ul class="box">
+                  <li>
+                    <div class="showColor" style="background: red;"></div>
+                    <span class="title">قرمز</span>
+                    <label class="checkBox" for="7">
+                      <input id="7" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <div class="showColor" style="background: rgb(255, 204, 0)000;"></div>
+                    <span class="title">طلایی</span>
+                    <label class="checkBox" for="8">
+                      <input id="8" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <div class="showColor" style="background: #fff;"></div>
+                    <span class="title">سفید</span>
+                    <label class="checkBox" for="9">
+                      <input id="9" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <div class="showColor" style="background: #0800ff;"></div>
+                    <span class="title">آبی</span>
+                    <label class="checkBox" for="11">
+                      <input id="11" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <div class="showColor" style="background: #000;"></div>
+                    <span class="title">مشکی</span>
+                    <label class="checkBox" for="10">
+                      <input id="10" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="products">
+          <div class="items">
+            <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
+              <div class="main_image">
+                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
+              </div>
+              <div class="main_info">
+                <div class="topDiscount">
+                  <h3 class="name">عنوان محصول فیلتر شده</h3>
+                </div>
+
+                <div class="bottomDiscount">
+                  <div class="right">
+                    <span class="titel">
+                      <p class="titleMain">قیمت اصلی : </p>
+                      <p class="titleDiscount">قیمت با تخفیف : </p>
+                    </span>
+                    <span class="price">
+                      <p class="priceMain"><del> 2,500,000 </del> <span>تومان</span></p>
+                      <p class="priceDiscount">1,500,000 <span>تومان</span></p>
+                    </span>
+                  </div>
+                  <p href="#" class="link">مشاهده محصول</p>
+                </div>
+              </div>
+            </a>
+            <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
+              <div class="main_image">
+                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
+              </div>
+              <div class="main_info">
+                <div class="top">
+                  <h3 class="name">عنوان محصول فیلتر شده</h3>
+                </div>
+
+                <div class="bottom_nonExistent">
+                  <p class="link">ناموجود
+                    <i class="icon-nonExistent icon-close"></i>
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
+              <div class="main_image">
+                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
+              </div>
+              <div class="main_info">
+                <div class="top">
+                  <h3 class="name">عنوان محصول فیلتر شده</h3>
+                </div>
+
+                <div class="bottom">
+                  <div class="right">
+                    <p class="title">قیمت</p>
+                    <p class="price">2,500,000 <span>تومان</span></p>
+                  </div>
+                  <p href="#" class="link">مشاهده محصول</p>
+                </div>
+              </div>
+            </a>
+            <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
+              <div class="main_image">
+                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
+              </div>
+              <div class="main_info">
+                <div class="top">
+                  <h3 class="name">عنوان محصول فیلتر شده</h3>
+                </div>
+
+                <div class="bottom">
+                  <div class="right">
+                    <p class="title">قیمت</p>
+                    <p class="price">2,500,000 <span>تومان</span></p>
+                  </div>
+                  <p href="#" class="link">مشاهده محصول</p>
+                </div>
+              </div>
+            </a>
+            <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
+              <div class="main_image">
+                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
+              </div>
+              <div class="main_info">
+                <div class="top">
+                  <h3 class="name">عنوان محصول فیلتر شده</h3>
+                </div>
+
+                <div class="bottom">
+                  <div class="right">
+                    <p class="title">قیمت</p>
+                    <p class="price">2,500,000 <span>تومان</span></p>
+                  </div>
+                  <p href="#" class="link">مشاهده محصول</p>
+                </div>
+              </div>
+            </a>
+            <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
+              <div class="main_image">
+                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
+              </div>
+              <div class="main_info">
+                <div class="top">
+                  <h3 class="name">عنوان محصول فیلتر شده</h3>
+                </div>
+
+                <div class="bottom">
+                  <div class="right">
+                    <p class="title">قیمت</p>
+                    <p class="price">2,500,000 <span>تومان</span></p>
+                  </div>
+                  <p href="#" class="link">مشاهده محصول</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="modalFilter">
+          <ul class="box-filter">
+
             <div class="chooseItemFilter">
-                <h1 class="titrFilter">فیلتر بر اساس : </h1>
-                <div class="boxItemChoose">
-                    <span class="itemChoose">
-                        <i class="icon-remove icon-close"></i>
-                        گلاسه
-                    </span>
-                    <span class="itemChoose">
-                        <i class="icon-remove icon-close"></i>
-                        2×8
-                    </span>
-                    <span class="itemChoose">
-                        <i class="icon-remove icon-close"></i>
-                        مشکی
-                    </span>
-                </div>
+              <h6 class="titrFilter">فیلتر بر اساس : </h6>
+              <div class="boxItemChoose">
+                <span class="itemChoose">
+                  <i class="icon-remove icon-close"></i>
+                  ام دی اف
+                </span>
+                <span class="itemChoose">
+                  <i class="icon-remove icon-close"></i>
+                  2×8
+                </span>
+                <span class="itemChoose">
+                  <i class="icon-remove icon-close"></i>
+                  گلاسه
+                </span>
+                <span class="itemChoose">
+                  <i class="icon-remove icon-close"></i>
+                  طلایی
+                </span>
+                <span class="itemChoose">
+                  <i class="icon-remove icon-close"></i>
+                  5×5
+                </span>
+              </div>
             </div>
 
-            <div class="main_card">
-                <div class="filterBtn">
-                    <svg height="50" width="160" xmlns="http://www.w3.org/2000/svg">
-                        <rect class="shape" height="50" width="190"></rect>
-                    </svg>
-                    <h2 class="text">مشاهده فیلتر</h2>
-                </div>
+            <h4 class="title">فیلتر ها</h4>
 
-                <div id="filterCard" class="filter_card">
-                    <div class="card">
-                        <h4 class="title">فیلتر ها</h4>
+            <form class="items">
+              <div filte_item class="item">
+                <h4 class="head">
+                  <i class="icon-first icon-Dresser"></i>
+                  جنس <span class="icon icon-Arrow-Down"></span>
+                </h4>
 
-                        <form class="items">
-                            <div filte_item class="item active">
-                                <h4 class="head">
-                                    <i class="icon-first icon-Dresser"></i>
-                                    جنس <span class="icon icon-Arrow-Down"></span>
-                                </h4>
+                <ul class="box">
+                  <li>
+                    <span class="title">گلاسه</span>
+                    <label class="checkBox" for="01">
+                      <input id="01" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="title">ام دی اف</span>
+                    <label class="checkBox" for="02">
+                      <input id="02" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="title">پلاستیکی</span>
+                    <label class="checkBox" for="03">
+                      <input id="03" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div filte_item class="item">
+                <h4 class="head">
+                  <i class="icon-first icon-ruler"></i>
+                  ابعاد <span class="icon icon-Arrow-Down"></span>
+                </h4>
 
-                                <ul class="box">
-                                    <li>
-                                        <span class="title">گلاسه</span>
-                                        <label class="checkBox" for="1">
-                                            <input id="1" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <span class="title">ام دی اف</span>
-                                        <label class="checkBox" for="2">
-                                            <input id="2" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <span class="title">پلاستیکی</span>
-                                        <label class="checkBox" for="3">
-                                            <input id="3" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div filte_item class="item">
-                                <h4 class="head">
-                                    <i class="icon-first icon-ruler"></i>
-                                    ابعاد <span class="icon icon-Arrow-Down"></span>
-                                </h4>
+                <ul class="box">
+                  <li>
+                    <span class="title">8 × 2</span>
+                    <label class="checkBox" for="04">
+                      <input id="04" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="title">5 × 5</span>
+                    <label class="checkBox" for="05">
+                      <input id="05" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <span class="title">12 × 20</span>
+                    <label class="checkBox" for="06">
+                      <input id="06" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div filte_item class="item">
+                <h4 class="head">
+                  <i class="icon-first icon-palette"></i>
+                  رنگ ها <span class="icon icon-Arrow-Down"></span>
+                </h4>
 
-                                <ul class="box">
-                                    <li>
-                                        <span class="title">8 × 2</span>
-                                        <label class="checkBox" for="4">
-                                            <input id="4" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <span class="title">5 × 5</span>
-                                        <label class="checkBox" for="5">
-                                            <input id="5" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <span class="title">12 × 20</span>
-                                        <label class="checkBox" for="6">
-                                            <input id="6" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div filte_item class="item">
-                                <h4 class="head">
-                                    <i class="icon-first icon-palette"></i>
-                                    رنگ ها <span class="icon icon-Arrow-Down"></span>
-                                </h4>
-
-                                <ul class="box">
-                                    <li>
-                                        <div class="showColor" style="background: red;"></div>
-                                        <span class="title">قرمز</span>
-                                        <label class="checkBox" for="7">
-                                            <input id="7" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <div class="showColor" style="background: rgb(255, 204, 0)000;"></div>
-                                        <span class="title">طلایی</span>
-                                        <label class="checkBox" for="8">
-                                            <input id="8" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <div class="showColor" style="background: #fff;"></div>
-                                        <span class="title">سفید</span>
-                                        <label class="checkBox" for="9">
-                                            <input id="9" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <div class="showColor" style="background: #0800ff;"></div>
-                                        <span class="title">آبی</span>
-                                        <label class="checkBox" for="11">
-                                            <input id="11" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <div class="showColor" style="background: #000;"></div>
-                                        <span class="title">مشکی</span>
-                                        <label class="checkBox" for="10">
-                                            <input id="10" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="products">
-                    <div class="items">
-                        <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
-                            <div class="main_image">
-                                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
-                            </div>
-                            <div class="main_info">
-                                <div class="topDiscount">
-                                    <h3 class="name">عنوان محصول فیلتر شده</h3>
-                                </div>
-
-                                <div class="bottomDiscount">
-                                    <div class="right">
-                                        <span class="titel">
-                                            <p class="titleMain">قیمت اصلی : </p>
-                                            <p class="titleDiscount">قیمت با تخفیف : </p>
-                                        </span>
-                                        <span class="price">
-                                            <p class="priceMain"><del> 2,500,000 </del> <span>تومان</span></p>
-                                            <p class="priceDiscount">1,500,000 <span>تومان</span></p>
-                                        </span>
-                                    </div>
-                                    <p href="#" class="link">مشاهده محصول</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
-                            <div class="main_image">
-                                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
-                            </div>
-                            <div class="main_info">
-                                <div class="top">
-                                    <h3 class="name">عنوان محصول فیلتر شده</h3>
-                                </div>
-
-                                <div class="bottom_nonExistent">
-                                    <p class="link">ناموجود
-                                        <i class="icon-nonExistent icon-close"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
-                            <div class="main_image">
-                                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
-                            </div>
-                            <div class="main_info">
-                                <div class="top">
-                                    <h3 class="name">عنوان محصول فیلتر شده</h3>
-                                </div>
-
-                                <div class="bottom">
-                                    <div class="right">
-                                        <p class="title">قیمت</p>
-                                        <p class="price">2,500,000 <span>تومان</span></p>
-                                    </div>
-                                    <p href="#" class="link">مشاهده محصول</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
-                            <div class="main_image">
-                                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
-                            </div>
-                            <div class="main_info">
-                                <div class="top">
-                                    <h3 class="name">عنوان محصول فیلتر شده</h3>
-                                </div>
-
-                                <div class="bottom">
-                                    <div class="right">
-                                        <p class="title">قیمت</p>
-                                        <p class="price">2,500,000 <span>تومان</span></p>
-                                    </div>
-                                    <p href="#" class="link">مشاهده محصول</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
-                            <div class="main_image">
-                                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
-                            </div>
-                            <div class="main_info">
-                                <div class="top">
-                                    <h3 class="name">عنوان محصول فیلتر شده</h3>
-                                </div>
-
-                                <div class="bottom">
-                                    <div class="right">
-                                        <p class="title">قیمت</p>
-                                        <p class="price">2,500,000 <span>تومان</span></p>
-                                    </div>
-                                    <p href="#" class="link">مشاهده محصول</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="./public/img/product-menu/1.jpg" data-fancybox="product" class="item">
-                            <div class="main_image">
-                                <img src="./public/img/product-menu/1.jpg" alt="عکس محصول بارگزاری نشد!" />
-                            </div>
-                            <div class="main_info">
-                                <div class="top">
-                                    <h3 class="name">عنوان محصول فیلتر شده</h3>
-                                </div>
-
-                                <div class="bottom">
-                                    <div class="right">
-                                        <p class="title">قیمت</p>
-                                        <p class="price">2,500,000 <span>تومان</span></p>
-                                    </div>
-                                    <p href="#" class="link">مشاهده محصول</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="modalFilter">
-                    <ul class="box-filter">
-
-                        <div class="chooseItemFilter">
-                            <h6 class="titrFilter">فیلتر بر اساس : </h6>
-                            <div class="boxItemChoose">
-                                <span class="itemChoose">
-                                    <i class="icon-remove icon-close"></i>
-                                    ام دی اف
-                                </span>
-                                <span class="itemChoose">
-                                    <i class="icon-remove icon-close"></i>
-                                    2×8
-                                </span>
-                                <span class="itemChoose">
-                                    <i class="icon-remove icon-close"></i>
-                                    گلاسه
-                                </span>
-                                <span class="itemChoose">
-                                    <i class="icon-remove icon-close"></i>
-                                    طلایی
-                                </span>
-                                <span class="itemChoose">
-                                    <i class="icon-remove icon-close"></i>
-                                    5×5
-                                </span>
-                            </div>
-                        </div>
-
-                        <h4 class="title">فیلتر ها</h4>
-
-                        <form class="items">
-                            <div filte_item class="item">
-                                <h4 class="head">
-                                    <i class="icon-first icon-Dresser"></i>
-                                    جنس <span class="icon icon-Arrow-Down"></span>
-                                </h4>
-
-                                <ul class="box">
-                                    <li>
-                                        <span class="title">گلاسه</span>
-                                        <label class="checkBox" for="01">
-                                            <input id="01" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <span class="title">ام دی اف</span>
-                                        <label class="checkBox" for="02">
-                                            <input id="02" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <span class="title">پلاستیکی</span>
-                                        <label class="checkBox" for="03">
-                                            <input id="03" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div filte_item class="item">
-                                <h4 class="head">
-                                    <i class="icon-first icon-ruler"></i>
-                                    ابعاد <span class="icon icon-Arrow-Down"></span>
-                                </h4>
-
-                                <ul class="box">
-                                    <li>
-                                        <span class="title">8 × 2</span>
-                                        <label class="checkBox" for="04">
-                                            <input id="04" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <span class="title">5 × 5</span>
-                                        <label class="checkBox" for="05">
-                                            <input id="05" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <span class="title">12 × 20</span>
-                                        <label class="checkBox" for="06">
-                                            <input id="06" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div filte_item class="item">
-                                <h4 class="head">
-                                    <i class="icon-first icon-palette"></i>
-                                    رنگ ها <span class="icon icon-Arrow-Down"></span>
-                                </h4>
-
-                                <ul class="box">
-                                    <li>
-                                        <div class="showColor" style="background: red;"></div>
-                                        <span class="title">قرمز</span>
-                                        <label class="checkBox" for="07">
-                                            <input id="07" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <div class="showColor" style="background: rgb(255, 204, 0)000;"></div>
-                                        <span class="title">طلایی</span>
-                                        <label class="checkBox" for="08">
-                                            <input id="08" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <div class="showColor" style="background: #fff;"></div>
-                                        <span class="title">سفید</span>
-                                        <label class="checkBox" for="09">
-                                            <input id="09" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <div class="showColor" style="background: #0800ff;"></div>
-                                        <span class="title">آبی</span>
-                                        <label class="checkBox" for="010">
-                                            <input id="010" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <div class="showColor" style="background: #000;"></div>
-                                        <span class="title">مشکی</span>
-                                        <label class="checkBox" for="011">
-                                            <input id="011" type="checkbox">
-                                            <div class="transition"></div>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </form>
-                    </ul>
-                </div>
-            </div>
+                <ul class="box">
+                  <li>
+                    <div class="showColor" style="background: red;"></div>
+                    <span class="title">قرمز</span>
+                    <label class="checkBox" for="07">
+                      <input id="07" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <div class="showColor" style="background: rgb(255, 204, 0)000;"></div>
+                    <span class="title">طلایی</span>
+                    <label class="checkBox" for="08">
+                      <input id="08" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <div class="showColor" style="background: #fff;"></div>
+                    <span class="title">سفید</span>
+                    <label class="checkBox" for="09">
+                      <input id="09" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <div class="showColor" style="background: #0800ff;"></div>
+                    <span class="title">آبی</span>
+                    <label class="checkBox" for="010">
+                      <input id="010" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                  <li>
+                    <div class="showColor" style="background: #000;"></div>
+                    <span class="title">مشکی</span>
+                    <label class="checkBox" for="011">
+                      <input id="011" type="checkbox">
+                      <div class="transition"></div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </ul>
         </div>
-
-        <!---------------------pagination-------------------------->
-
-        <ul class="pagination">
-            <li>
-                <a href="#" class="link arrow prev">قبلی <i class="icon icon-Arrow-Right"></i></a>
-            </li>
-            <li><a href="#" class="link">2</a></li>
-            <li class="active"><a href="#" class="link">3</a></li>
-            <li><a href="#" class="link">4</a></li>
-            <li><a href="#" class="link">5</a></li>
-            <li><a href="#" class="link">...</a></li>
-            <li><a href="#" class="link">15</a></li>
-            <li>
-                <a href="#" class="link arrow next"><i class="icon icon-Arrow-Left"></i> بعدی</a>
-            </li>
-        </ul>
-
-        <ul class="pagination-small">
-            <li>
-                <a href="#" class="link arrow prev">قبلی <i class="icon icon-Arrow-Right"></i></a>
-            </li>
-            <li><a href="#" class="link">2</a></li>
-            <li class="active"><a href="#" class="link">3</a></li>
-            <li><a href="#" class="link">...</a></li>
-            <li><a href="#" class="link">15</a></li>
-            <li>
-                <a href="#" class="link arrow next"><i class="icon icon-Arrow-Left"></i> بعدی</a>
-            </li>
-        </ul>
-
-    </section>
-
-
-    <!-----------------------footer------------------------->
-
-    <footer class="footer">
-        <div class="columns-box">
-          <div class="social-network">
-            <a href="#" class="link">
-              <i class="icon-Telegram"></i>
-            </a>
-            <a href="#" class="link">
-              <i class="icon-Whatsapp"></i>
-            </a>
-            <a href="#" class="link">
-              <i class="icon-Instagram"></i>
-            </a>
-    
-            <a href="#" class="link">
-              <i class="icon-Twitter"></i>
-            </a>
-    
-            <a href="#" class="link">
-              <i class="icon-Facebook"></i>
-            </a>
-          </div>
-          <div class="columns">
-            <div class="column">
-              <h5 class="text-column">خدمات الکترونیکی</h5>
-    
-              <div class="footer-list">
-                <h6 class="text-footerList"><a href="#" class="link">خرید آنلاین</a></h6>
-    
-                <h6 class="text-footerList"><a href="#" class="link">پرداخت آنلاین اقساط</a></h6>
-    
-                <h6 class="text-footerList"><a href="#" class="link">پیگیری خرید</a></h6>
-              </div>
-            </div>
-            <div class="column">
-              <h5 class="text-colum">چند رسانه ای</h5>
-    
-              <div class="footer-list">
-                <h6 class="text-footerList"><a href="#" class="link">مجله لینوم</a></h6>
-    
-                <h6 class="text-footerList"><a href="#" class="link">ویدئو های لینوم</a></h6>
-    
-                <h6 class="text-footerList"><a href="#" class="link">گالری تصاویر لینوم</a></h6>
-              </div>
-            </div>
-            <div class="column">
-              <h5 class="text-colum">شعب و نمایندگی</h5>
-    
-              <div class="footer-list">
-                <h6 class="text-footerList"><a href="#" class="link">مستندات نمایندگان</a></h6>
-    
-                <h6 class="text-footerList"><a href="#" class="link">شعب ، باجه و مراکز</a></h6>
-    
-                <h6 class="text-footerList"><a href="#" class="link">اتوماسیون اداری</a></h6>
-              </div>
-            </div>
-            <div class="column">
-              <a href="#" class="link"><img src="/img/footer/1.png" alt="image"></a>
-              <a href="#" class="link"><img src="/img/footer/2.png" alt="image"></a>
-            </div>
-          </div>
-          <p>تمامی حقوق محفوض و متعلق به وبسایت لینوم میباشد</p>
-    
-        </div>
-      </footer>
-    
-    <div class="mobile_footer">
-        <a href="./error.html" class="link">
-            <span class="icon icon-Profile"></span>
-            <span class="title">پروفایل</span>
-        </a>
-        <a href="./about-us.html" class="link">
-            <span class="icon icon-Building"></span>
-            <span class="title">درباره ما</span>
-        </a>
-        <a href="./list-blog.html" class="link">
-            <span class="icon icon-Book"></span>
-            <span class="title">اخبار و مقالات</span>
-        </a>
-        <a href="./productList.html" class="link">
-            <span class="icon icon-basket"></span>
-            <span class="title">دسته بندی محصولات</span>
-        </a>
+      </div>
     </div>
 
+    <!---------------------pagination-------------------------->
 
-    <script type="module" src="/main.js"></script>
-    <script type="module" src="/src/js/pages/productList/productList.js"></script>
+    <ul class="pagination">
+      <li>
+        <a href="#" class="link arrow prev">قبلی <i class="icon icon-Arrow-Right"></i></a>
+      </li>
+      <li><a href="#" class="link">2</a></li>
+      <li class="active"><a href="#" class="link">3</a></li>
+      <li><a href="#" class="link">4</a></li>
+      <li><a href="#" class="link">5</a></li>
+      <li><a href="#" class="link">...</a></li>
+      <li><a href="#" class="link">15</a></li>
+      <li>
+        <a href="#" class="link arrow next"><i class="icon icon-Arrow-Left"></i> بعدی</a>
+      </li>
+    </ul>
+
+    <ul class="pagination-small">
+      <li>
+        <a href="#" class="link arrow prev">قبلی <i class="icon icon-Arrow-Right"></i></a>
+      </li>
+      <li><a href="#" class="link">2</a></li>
+      <li class="active"><a href="#" class="link">3</a></li>
+      <li><a href="#" class="link">...</a></li>
+      <li><a href="#" class="link">15</a></li>
+      <li>
+        <a href="#" class="link arrow next"><i class="icon icon-Arrow-Left"></i> بعدی</a>
+      </li>
+    </ul>
+
+  </section>
+
+
+  <!-----------------------footer------------------------->
+
+  <footer class="footer">
+    <div class="columns-box">
+      <div class="social-network">
+        <a href="#" class="link">
+          <i class="icon-Telegram"></i>
+        </a>
+        <a href="#" class="link">
+          <i class="icon-Whatsapp"></i>
+        </a>
+        <a href="#" class="link">
+          <i class="icon-Instagram"></i>
+        </a>
+
+        <a href="#" class="link">
+          <i class="icon-Twitter"></i>
+        </a>
+
+        <a href="#" class="link">
+          <i class="icon-Facebook"></i>
+        </a>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <h5 class="text-column">خدمات الکترونیکی</h5>
+
+          <div class="footer-list">
+            <h6 class="text-footerList"><a href="#" class="link">خرید آنلاین</a></h6>
+
+            <h6 class="text-footerList"><a href="#" class="link">پرداخت آنلاین اقساط</a></h6>
+
+            <h6 class="text-footerList"><a href="#" class="link">پیگیری خرید</a></h6>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="text-colum">چند رسانه ای</h5>
+
+          <div class="footer-list">
+            <h6 class="text-footerList"><a href="#" class="link">مجله لینوم</a></h6>
+
+            <h6 class="text-footerList"><a href="#" class="link">ویدئو های لینوم</a></h6>
+
+            <h6 class="text-footerList"><a href="#" class="link">گالری تصاویر لینوم</a></h6>
+          </div>
+        </div>
+        <div class="column">
+          <h5 class="text-colum">شعب و نمایندگی</h5>
+
+          <div class="footer-list">
+            <h6 class="text-footerList"><a href="#" class="link">مستندات نمایندگان</a></h6>
+
+            <h6 class="text-footerList"><a href="#" class="link">شعب ، باجه و مراکز</a></h6>
+
+            <h6 class="text-footerList"><a href="#" class="link">اتوماسیون اداری</a></h6>
+          </div>
+        </div>
+        <div class="column">
+          <a href="#" class="link"><img src="/img/footer/1.png" alt="image"></a>
+          <a href="#" class="link"><img src="/img/footer/2.png" alt="image"></a>
+        </div>
+      </div>
+      <p>تمامی حقوق محفوض و متعلق به وبسایت لینوم میباشد</p>
+
+    </div>
+  </footer>
+
+  <div class="mobile_footer">
+    <a href="./error.html" class="link">
+      <span class="icon icon-Profile"></span>
+      <span class="title">پروفایل</span>
+    </a>
+    <a href="./about-us.html" class="link">
+      <span class="icon icon-Building"></span>
+      <span class="title">درباره ما</span>
+    </a>
+    <a href="./list-blog.html" class="link">
+      <span class="icon icon-Book"></span>
+      <span class="title">اخبار و مقالات</span>
+    </a>
+    <a href="./productList.html" class="link">
+      <span class="icon icon-basket"></span>
+      <span class="title">دسته بندی محصولات</span>
+    </a>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="/src/js/pages/productList/productList.js"></script>
 </body>
 
 </html>
