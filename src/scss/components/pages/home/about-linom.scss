@@ -4,21 +4,22 @@
     overflow: hidden;
 
     .card {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
 
         .part-textContent {
-            display: flex;
-            flex-direction: column;
-            width: 41%;
+            // display: flex;
+            // flex-direction: column;
+            // width: 41%;
 
             .titr-content {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 100%;
-                margin: 35px 0;
+                /* width: 100%; */
+                margin-block: 35px;
+                // margin: clamp(20px, 3vw, 35px) 0;
 
                 .box-textTitr {
                     display: flex;
@@ -31,21 +32,23 @@
 
                     .sarTitr {
                         color: $main;
-                        font-size: 23px;
+                        font-size: 21px;
+                        // font-size: 23px;
+                        // font-size: clamp(1rem, 2vw, 2rem);
                     }
                 }
 
                 .link {
 
                     .icon-goToPage {
-                        border: 2px solid $text;
+                        border: 2px solid;
                         border-radius: 50%;
                         color: $text;
-                        padding: 15px;
-                        font-size: 20px;
-                        cursor: pointer;
+                        // padding: 15px;
+                        // font-size: 20px;
+                        padding: 11px;
+                        font-size: 17px;                        cursor: pointer;
                         transition: all 0.3s;
-                        color: $text;
                         font-weight: bold;
 
                         &:hover {
@@ -59,8 +62,9 @@
 
             .text-content {
                 text-align: justify;
-                line-height: 2.1;
-                font-size: 17px;
+                line-height: 2.5;
+                font-size: 16px;
+                // font-size: 17px;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
@@ -71,7 +75,7 @@
 
         .part-imgContent {
             position: relative;
-            width: 50%;
+            // width: 50%;
 
             .img-content {
                 -webkit-mask-image: url("/img/home/about-linom/hero2.svg");
@@ -88,7 +92,8 @@
 
                 .imgCover {
                     position: absolute;
-                    left: -407px;
+                    // left: -407px;
+                    right: 670px;
                     top: 135px;
                     width: 505px;
                 }
@@ -304,7 +309,7 @@
     .about-linom {
         .card {
             .part-imgContent {
-                width: 59%;
+                // width: 59%;
 
                 .other {
                     .about-link {
@@ -332,7 +337,7 @@
         .card {
             .part-textContent {
                 .text-content {
-                    font-size: 16px;
+                    // font-size: 16px;
                 }
             }
 
@@ -371,11 +376,11 @@
                             margin-bottom: 7px;
 
                             .titr {
-                                font-size: 15px;
+                                // font-size: 15px;
                             }
 
                             .text {
-                                font-size: 12px;
+                                // font-size: 12px;
                                 margin-bottom: 0;
                                 width: 174px;
                             }
@@ -385,24 +390,24 @@
                     .about-link {
                         top: 65px;
                         left: 50px;
-                        font-size: 15px;
+                        // font-size: 15px;
                         width: 110px;
                         height: 47px;
 
                         .text-aboutLink {
-                            font-size: 15px;
+                            // font-size: 15px;
                         }
                     }
 
                     .contact-Link {
-                        font-size: 15px;
+                        // font-size: 15px;
                         width: 110px;
                         height: 47px;
                         bottom: 30px;
                         right: 25px;
 
                         .text-contentLink {
-                            font-size: 15px;
+                            // font-size: 15px;
                         }
                     }
 
@@ -430,15 +435,15 @@
 @media screen and (max-width: 768px) {
     .about-linom {
         .card {
-            flex-direction: column;
+            // flex-direction: column;
 
             .part-textContent {
-                width: 100%;
+                // width: 100%;
 
                 .titr-content {
                     .link {
                         .icon-goToPage {
-                            padding: 12px;
+                            // padding: 12px;
                         }
                     }
                 }
@@ -450,7 +455,7 @@
             }
 
             .part-imgContent {
-                width: 100%;
+                // width: 100%;
 
                 .img-content {
                     margin: 0 auto;
@@ -564,7 +569,7 @@
                 .other {
                     .heart {
                         padding: 7px;
-                        font-size: 27px;
+                        // font-size: 27px;
                     }
 
                     .heart1 {
@@ -600,7 +605,7 @@
         .card {
             .part-textContent {
                 .text-content {
-                    font-size: 15px;
+                    // font-size: 15px;
                 }
             }
 

@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('.boxSlider1').slick({
         rtl: true,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         // dots: true,
@@ -28,15 +28,19 @@ $(document).ready(function () {
     $('.boxSlider2').slick({
         rtl: true,
         autoplay: true,
-        autoplaySpeed: 4000,
-        slidesToShow: 1.2,
+        autoplaySpeed: 3000,
+        slidesToShow: 1,
+        focusOnSelect: true,
         slidesToScroll: 1,
+        centerMode:true,
+        centerPadding: '7%',
         // dots: true,
         arrows: true,
         prevArrow: $("#prevArrowHome2"),
         nextArrow: $("#nextArrowHome2"),
     });
 });
+
 
 
 /*-----------------Scrool bottom----------------*/

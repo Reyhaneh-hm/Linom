@@ -3,237 +3,207 @@
 section.hero {
     min-height: 100px;
 
-    .card {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 60px;
-        position: relative;
+    .MobileSlider {
 
-        .heroSlider1 {
-            .boxSlider1 {
-                display: flex;
-                -webkit-mask-image: url("img/home/hero/hero.svg");
-                mask-image: url("img/home/hero/hero.svg");
-                mask-size: 100%;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                width: 100%;
-                min-width: 100px;
-                max-width: 630px;
-                height: 100%;
-                min-height: 100px;
-                max-height: 700px;
-                flex-shrink: 0;
-                margin-top: 90px;
+        .boxSlider2 {
+            width: 100%;
+            overflow: hidden;
+            display: none;
+            flex-shrink: 0;
+            margin-top: 110px;
+            position: relative;
 
-                .boxItemImg {
-                    .img {
-                        height: 700px;
-                        width: 100%;
-                    }
-                }
-            }
+            .boxItemImg {
+                margin-inline: 5px;
 
-            .boxIconSlider1 {
-                display: flex;
-                align-items: center;
-                position: relative;
-                left: 10px;
-                bottom: 65px;
-                width: 140px;
-                flex-direction: row-reverse;
-                justify-content: center;
-
-                .boxImageIcone {
-                    border: 2px solid $main;
-                    padding: 15px;
-                    display: block;
-                    border-radius: 50%;
-                    font-weight: bold;
-                    color: $white;
-                    background: $main;
-                    cursor: pointer;
-                    margin-inline: 10px;
-                    transition: $transition1;
-
-                    &:hover {
-                        border: 2px solid $hover;
-                        background: $hover;
+                .img {
+                    @media screen and (max-width: 425px) {
+                        height: 230px;
                     }
 
-
+                    width: 100%;
+                    height: 360px;
+                    object-fit: cover;
+                    border-radius: 17px;
+                    position: relative;
                 }
             }
         }
 
-        .heroSlider2 {
-            .boxSlider2 {
-                display: none;
-                flex-shrink: 0;
-                margin-top: 110px;
-
-                .boxItemImg {
-                    .img {
-                        width: 630px;
-                        height: 360px;
-                        object-fit: cover;
-                        border-radius: 17px;
-                        position: relative;
-                        right: 199px;
-                    }
-                }
-            }
-
-            .boxIconSlider2 {
-                display: none;
-                align-items: center;
-                position: absolute;
+        .boxIconSlider2 {
+            @media screen and (max-width: 425px) {
                 right: 32px;
-                top: 435px;
-                justify-content: space-between;
-                flex-direction: row-reverse;
-
-                .boxImageIcone {
-                    border: 2px solid $main;
-                    padding: 15px;
-                    display: block;
-                    border-radius: 50%;
-                    font-weight: bold;
-                    color: $white;
-                    background: $main;
-                    cursor: pointer;
-                    margin: 0 10px;
-                    transition: $transition1;
-
-                    &:hover {
-                        border: 2px solid $hover;
-                        background: $hover;
-                    }
-                }
+                top: 355px;
             }
-        }
 
-        .image1 {
-            width: 360px;
-            position: absolute;
-            top: 0;
-            right: 580px;
-            z-index: -1;
-        }
-
-        .goNextSection {
-            border: 2px solid $text;
-            border-radius: 50%;
-            color: $text;
-            padding: 15px;
-            font-size: 23px;
-            position: absolute;
-            top: 105px;
-            right: 575px;
-            z-index: 1;
-            cursor: pointer;
-            transition: $transition1;
-
-            &:hover {
-                background: $text;
-                color: $white;
+            @media screen and (max-width: 375px) {
+                gap: 5px;
             }
-        }
 
-        .image2 {
-            position: absolute;
-            background-image: url(images/img2.png);
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            background-size: 280px;
-            top: 640px;
-            right: 535px;
-            width: 270px;
-            height: 100px;
-            display: flex;
+            display: none;
             align-items: center;
-            z-index: 1;
+            position: absolute;
+            right: 60px;
+            gap: 10px;
+            top: 485px;
+            justify-content: space-between;
+            flex-direction: row-reverse;
 
-            .icon-arrow {
-                border: 2px solid $text;
-                color: $text;
+            .boxImageIcone {
+                @media screen and (max-width: 768px) {
+                    margin-inline: 3px;
+                    padding: 12px;
+                }
+
+                border: 2px solid $main;
+                padding: 15px;
+                display: block;
                 border-radius: 50%;
-                padding: 5px;
                 font-weight: bold;
-                margin: 0 15px 10px 12px;
+                color: $white;
+                background: $main;
                 cursor: pointer;
                 transition: $transition1;
-                z-index: 1;
-                position: relative;
 
                 &:hover {
-                    color: $main2;
-                    border: 2px solid $main2;
+                    border: 2px solid $hover;
+                    background: $hover;
                 }
             }
+        }
+    }
 
-            &:hover {
-                .icon-arrow {
-                    color: $main2;
-                    border: 2px solid $main2;
+    .card {
+        .sliders {
+            .heroSlider1 {
+                .boxSlider1 {
+                    @media screen and (max-width: 1440px) {
+                        max-width: 525px;
+                        max-height: 610px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        max-width: 465px;
+                        max-height: 515px;
+                    }
+
+                    display: flex;
+                    -webkit-mask-image: url("img/home/hero/hero.svg");
+                    mask-image: url("img/home/hero/hero.svg");
+                    mask-size: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    min-width: 100px;
+                    max-width: 630px;
+                    height: 100%;
+                    min-height: 100px;
+                    max-height: 700px;
+                    flex-shrink: 0;
+                    margin-top: 90px;
+
+                    .boxItemImg {
+                        .img {
+                            object-fit: cover;
+                            width: 100%;
+                            aspect-ratio: 1 / 1.1;
+                        }
+                    }
                 }
-            }
 
-            .box-image2 {
-                .titr-image2 {
-                    margin: 0;
-                }
+                .boxIconSlider1 {
+                    @media screen and (max-width: 1440px) {
+                        bottom: 55px;
+                    }
 
-                .text-image2 {
-                    margin: 10px 0;
-                    font-size: 13px;
-                    line-height: 1.5;
-                    color: $text;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    width: 201px;
-                    text-wrap: nowrap;
+                    @media screen and (max-width: 1024px) {
+                        bottom: 45px;
+                        width: 90px;
+                        gap: 7px;
+                    }
+
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    gap: 17px;
+                    bottom: 65px;
+                    width: 117px;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+
+                    .boxImageIcone {
+                        @media screen and (max-width: 1024px) {
+                            padding: 11px;
+                        }
+
+                        border: 2px solid $main;
+                        padding: 15px;
+                        display: block;
+                        border-radius: 50%;
+                        font-weight: bold;
+                        color: $white;
+                        background: $main;
+                        cursor: pointer;
+                        transition: $transition1;
+
+                        &:hover {
+                            border: 2px solid $hover;
+                            background: $hover;
+                        }
+                    }
                 }
             }
         }
 
         .textBox {
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            width: 100%;
-            position: relative;
-            top: 17px;
 
             .content {
-                width: 85%;
+                @media screen and (max-width: 1440px) {
+                    margin-top: 55px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    margin-top: 70px;
+                }
+
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
 
                 .logo1 {
+                    @media screen and (max-width: 425px) {
+                        margin-right: -35px;
+                    }
+
                     width: 175px;
                     margin-bottom: 40px;
                 }
 
                 .titrHome {
+                    @media screen and (max-width: 375px) {
+                        -webkit-line-clamp: 2;
+                        line-height: 1.5;
+                        margin: 0;
+                    }
+
                     color: $main3;
                     text-align: center;
-                    font-size: 29px;
+                    font-size: 23px;
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     -webkit-line-clamp: 1;
-                    margin: 15px 0;
+                    margin-block: 15px;
                 }
 
                 .textHome {
                     text-align: justify;
-                    line-height: 1.8;
+                    line-height: 2.2;
                     margin-block: 15px;
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
@@ -241,14 +211,34 @@ section.hero {
                     text-overflow: ellipsis;
                     -webkit-line-clamp: 2;
                     color: $text;
-                    font-size: 17px;
+                    font-size: 16px;
                 }
 
                 .boxCategories {
+                    @media screen and (max-width: 1024px) {
+                        width: 450px;
+                        justify-content: flex-start;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        width: 100%;
+                        justify-content: center;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        width: 106%;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        width: 108%;
+                    }
+
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    column-gap: 10px;
                     margin-block: 10px;
+                    width: 101%;
                     overflow-x: auto;
                     white-space: nowrap;
                     padding-bottom: 10px;
@@ -271,19 +261,27 @@ section.hero {
                     }
 
                     .categories {
+                        @media screen and (max-width: 1024px) {
+                            min-width: 105px;
+                            height: 95px;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            height: 100px;
+                        }
+
                         border: 2px solid $text;
                         border-radius: 10px;
                         padding: 5px;
                         width: 100%;
                         min-width: 120px;
                         max-width: 120px;
-                        height: 120px;
+                        height: 115px;
                         overflow: hidden;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: space-evenly;
-                        margin-inline: 5px;
                         cursor: pointer;
                         transition: $transition1;
                         color: $text;
@@ -343,358 +341,154 @@ section.hero {
                 }
             }
         }
-    }
-}
 
+        .other {
+            position: relative;
+            padding: 0;
 
-
-/////////////////Responsive///////////////////
-
-@media screen and (max-width: 1440px) {
-    section.hero {
-        .card {
-            .heroSlider1 {
-                .boxSlider1 {
-                    max-width: 560px;
-                    max-height: 610px;
-
-                    .boxItemImg {
-                        .img {
-                            height: 610px;
-                        }
-                    }
+            .image1 {
+                @media screen and (max-width: 1024px) {
+                    width: 240px;
+                    right: -40px;
+                    top: 20px;
                 }
 
-                .boxIconSlider1 {
-                    bottom: 55px;
+                @media screen and (max-width: 375px) {
+                    width: 170px;
+                    top: 0;
                 }
+
+                width: 345px;
+                position: absolute;
+                top: 0;
+                z-index: -1;
             }
 
             .goNextSection {
-                right: 505px;
-            }
+                @media screen and (max-width: 1440px) {
+                    left: 110px;
+                }
 
-            .image1 {
-                width: 320px;
-                right: 475px;
+                @media screen and (max-width: 1024px) {
+                    left: 0;
+                    font-size: 18px;
+                    top: 100px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    left: 215px;
+                    top: 64px;
+                }
+
+                @media screen and (max-width: 425px) {
+                    right: 285px;
+                    left: inherit;
+                    padding: 15px;
+                }
+
+                @media screen and (max-width: 375px) {
+                    right: 260px;
+                    padding: 13px;
+                }
+
+                @media screen and (max-width: 320px) {
+                    right: 230px;
+                }
+
+                border: 2px solid $text;
+                border-radius: 50%;
+                color: $text;
+                padding: 15px;
+                font-size: 21px;
+                font-weight: bold;
+                position: absolute;
+                top: 105px;
+                left: 170px;
+                cursor: pointer;
+                transition: $transition1;
+
+                &:hover {
+                    background: $text;
+                    color: $white;
+                }
             }
 
             .image2 {
-                top: 575px;
-                right: 490px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    section.hero {
-        .card {
-            .heroSlider1 {
-                .boxSlider1 {
-                    max-width: 435px;
-                    max-height: 473px;
-
-                    .boxItemImg {
-                        .img {
-                            height: 520px;
-                        }
-                    }
+                @media screen and (max-width: 1440px) {
+                    top: 550px;
                 }
 
-                .boxIconSlider1 {
-                    bottom: 50px;
-                    width: 100px;
-
-                    .boxImageIcone {
-                        margin-inline: 3px;
-                        padding: 12px;
-                    }
+                @media screen and (max-width: 1024px) {
+                    background-size: 240px;
+                    height: 90px;
+                    top: 525px;
+                    left: -75px;
+                    width: 232px;
                 }
-            }
 
-            .goNextSection {
-                right: 385px;
-                padding: 12px;
-            }
+                @media screen and (max-width: 768px) {
+                    left: 65px;
+                    top: -80px;
+                }
 
-            .image1 {
-                width: 260px;
-                right: 350px;
-            }
-
-            .image2 {
-                background-size: 240px;
-                height: 90px;
-                top: 490px;
-                right: 320px;
-                width: 232px;
+                position: absolute;
+                background-image: url(images/img2.png);
+                background-repeat: no-repeat;
+                background-position: center bottom;
+                background-size: 280px;
+                top: 640px;
+                left: 0;
+                width: 270px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                z-index: 1;
 
                 .icon-arrow {
-                    margin-right: 10px;
+                    border: 2px solid $text;
+                    color: $text;
+                    border-radius: 50%;
+                    padding: 5px;
+                    font-weight: bold;
+                    margin: 0 15px 10px 12px;
+                    cursor: pointer;
+                    transition: $transition1;
+                    z-index: 1;
+                    position: relative;
+
+                    &:hover {
+                        color: $main2;
+                        border: 2px solid $main2;
+                    }
+                }
+
+                &:hover {
+                    .icon-arrow {
+                        color: $main2;
+                        border: 2px solid $main2;
+                    }
                 }
 
                 .box-image2 {
-                    margin-bottom: 7px;
-
                     .titr-image2 {
+                        margin: 0;
                         font-size: 15px;
                     }
 
                     .text-image2 {
+                        @media screen and (max-width: 1024px) {
+                            margin-bottom: 0;
+                            width: 174px;
+                        }
+
+                        margin-block: 10px;
                         font-size: 12px;
-                        margin-bottom: 0;
-                        width: 174px;
-                    }
-                }
-            }
-
-            .textBox {
-                .content {
-                    width: 95%;
-
-                    .titrHome {
-                        font-size: 26px;
-                    }
-
-                    .textHome {
-                        font-size: 15px;
-                    }
-
-                    .boxCategories {
-                        width: 495px;
-                        justify-content: flex-start;
-
-                        .categories {
-                            min-width: 115px;
-                            height: 110px;
-                        }
-
-                        .text-categories {
-                            font-size: 15px;
-                        }
-                    }
-
-                    .allCategories {
-                        font-size: 15px;
-                    }
-                }
-
-            }
-
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    section.hero {
-        .card {
-            flex-direction: column;
-
-            .heroSlider1 {
-                .boxSlider1 {
-                    display: none;
-                }
-
-                .boxIconSlider1 {
-                    display: none;
-                }
-            }
-
-            .heroSlider2 {
-                .boxSlider2 {
-                    display: flex;
-                    width: 768px;
-                    margin-top: 60px;
-                }
-
-                .boxIconSlider2 {
-                    display: flex;
-
-                    .boxImageIcone {
-                        margin-inline: 3px;
-                        padding: 12px;
-                    }
-                }
-            }
-
-            .textBox {
-                top: 120px;
-
-                .content {
-                    width: 100%;
-
-                    .logo1 {
-                        margin-right: -60px;
-                    }
-
-                    .boxCategories {
-                        width: 650px;
-                    }
-                }
-            }
-
-            .image2 {
-                top: 390px;
-                right: 400px;
-            }
-
-            .image1 {
-                right: 30px;
-                top: 420px;
-            }
-
-            .goNextSection {
-                right: 432px;
-                padding: 11px;
-                top: 535px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 425px) {
-    section.hero {
-        .card {
-            .image2 {
-                display: none;
-            }
-
-            .image1 {
-                right: inherit;
-                top: 444px;
-                left: 222px;
-            }
-
-            .heroSlider2 {
-                .boxSlider2 {
-                    display: flex;
-                    width: 425px;
-                    // margin-top: 60px;
-
-                    .boxItemImg {
-                        .img {
-                            width: 343px;
-                            right: 112px;
-                        }
-                    }
-                }
-            }
-
-            .goNextSection {
-                right: 265px;
-            }
-
-            .textBox {
-                .content {
-                    .boxCategories {
-                        width: 375px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 375px) {
-    section.hero {
-        .card {
-            .heroSlider2 {
-                .boxSlider2 {
-                    width: 375px;
-
-                    .boxItemImg {
-                        .img {
-                            width: 303px;
-                            height: 290px;
-                            right: 100px;
-                        }
-                    }
-                }
-
-                .boxIconSlider2 {
-                    top: 370px;
-                    right: 25px;
-
-                    .boxImageIcone {
-                        padding: 10px;
-                    }
-                }
-            }
-
-            .image1 {
-                top: 440px;
-                left: 140px;
-            }
-
-            .goNextSection {
-                right: 237px;
-                padding: 9px;
-                top: 465px;
-            }
-
-            .textBox {
-                .content {
-                    .logo1 {
-                        width: 163px;
-                        margin-right: -53px;
-                    }
-
-                    .titrHome {
-                        font-size: 23px;
-                        -webkit-line-clamp: 2;
                         line-height: 1.5;
-                        margin: 0;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 320px) {
-    section.hero {
-        .card {
-            .heroSlider2 {
-                .boxSlider2 {
-                    width: 320px;
-
-                    .boxItemImg {
-                        .img {
-                            width: 262px;
-                            height: 260px;
-                            right: 83px;
-                        }
-                    }
-                }
-
-                .boxIconSlider2 {
-                    top: 335px;
-                    right: 15px;
-                }
-            }
-
-            .image1 {
-                top: 340px;
-                left: 135px;
-            }
-
-            .goNextSection {
-                right: 207px;
-                top: 435px;
-                padding: 8px;
-            }
-
-            .textBox {
-                .content {
-                    .boxCategories {
-                        width: 320px;
-
-                        .categories {
-                            min-width: 102.5px;
-                            height: 95px;
-                            margin-inline: 2px;
-                        }
+                        color: $text;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        width: 201px;
+                        text-wrap: nowrap;
                     }
                 }
             }

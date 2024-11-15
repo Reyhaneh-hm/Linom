@@ -15,6 +15,7 @@
     "@fancyapps/fancybox": "^3.5.7",
     "@fancyapps/ui": "^5.0.36",
     "autoprefixer": "^10.4.20",
+    "bootstrap": "5.3.3",
     "cssnano": "^7.0.6",
     "fancybox": "^3.0.1",
     "jquery": "^3.7.1",

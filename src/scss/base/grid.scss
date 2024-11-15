@@ -221,6 +221,20 @@
   width: 100%;
 }
 
+@media (max-width: 425px) {
+  .d-sm-none {
+    display: none !important;
+  }
+
+  .d-sm-block {
+    display: block !important;
+  }
+
+  .d-sm-flex {
+    display: flex !important;
+  }
+}
+
 @media (min-width: 576px) {
   .col-sm-auto {
     flex: 0 0 auto;
@@ -288,7 +302,22 @@
   }
 }
 
+@media (max-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+
+  .d-md-block {
+    display: block !important;
+  }
+
+  .d-md-flex {
+    display: flex !important;
+  }
+}
+
 @media (min-width: 768px) {
+
   .col-md-auto {
     flex: 0 0 auto;
     width: auto;
