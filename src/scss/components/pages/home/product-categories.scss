@@ -3,23 +3,24 @@
 .product-categories {
     overflow: hidden;
 
-    .pro-cat {
-        position: relative;
+    // .pro-cat {
+    position: relative;
 
-        &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 80px;
-            left: -160px;
-            width: 777px;
-            height: 690px;
-            z-index: 0;
-            border-radius: 20px 70px 0 0;
-            background: rgb(237, 240, 245);
-            background: linear-gradient(180deg, rgb(237, 240, 245) 35%, rgb(248, 250, 253) 100%);
-        }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: -160px;
+        width: 777px;
+        height: 690px;
+        z-index: 0;
+        border-radius: 20px 70px 0 0;
+        background: rgb(237, 240, 245);
+        background: linear-gradient(180deg, rgb(237, 240, 245) 35%, rgb(248, 250, 253) 100%);
     }
+
+    // }
 
     .card {
         margin-top: 150px;
@@ -33,14 +34,13 @@
             justify-content: space-between;
 
             .tapContent {
-                width: 800px;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: flex-start;
+                gap: 8px;
                 overflow-x: auto;
                 white-space: nowrap;
                 padding-bottom: 10px;
-
 
                 &::-webkit-scrollbar-track {
                     padding: 2px 0;
@@ -59,19 +59,21 @@
 
                 .tabItem {
                     height: 55px;
-                    border: 1px solid $main3;
+                    border: 1px solid;
                     color: $main3;
                     background: transparent;
                     border-radius: 50px;
-                    font-size: 18px;
+                    font-size: 16px;
                     transition: $transition1;
-                    width: 96%;
+                    width: 100%;
                     min-width: 140px;
-                    max-width: 150px;
+                    max-width: 140px;
                     cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    text-align: center;
+                    padding-inline: 10px;
+                    overflow: clip;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 1;
 
                     &:hover {
                         background: $main3;
@@ -86,26 +88,29 @@
             }
 
             .seeAll {
+                display: flex;
+                flex-direction: row-reverse;
+                padding-bottom: 12px;
                 cursor: pointer;
-                position: relative;
-                z-index: 5;
-                padding-bottom: 10px;
 
                 .link {
-                    border: 1px solid $text;
+                    border: 1px solid;
                     color: $text;
-                    height: 55px;
-                    background: transparent;
+                    background: #edf0f5;
                     border-radius: 50px;
-                    font-size: 18px;
+                    font-size: 16px;
                     transition: $transition1;
-                    width: 96%;
+                    width: 100%;
                     min-width: 140px;
-                    max-width: 150px;
+                    max-width: 140px;
+                    height: 55px;
+                    padding-inline: 10px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 1;
                     display: flex;
-                    cursor: pointer;
-                    align-items: center;
                     justify-content: center;
+                    align-items: center;
 
                     &:hover {
                         border: 1px solid $main2;
@@ -132,12 +137,16 @@
             justify-content: space-between;
             align-items: center;
 
+            @media screen and (max-width: 990px) {
+                display: block;
+            }
+
             .box-slider {
                 display: none;
                 justify-content: center;
                 align-items: center;
                 margin-block: 60px;
-                width: 1280px;
+                // width: 1280px;
                 scroll-behavior: smooth;
                 overflow-x: scroll;
                 padding-left: 5px;
@@ -146,6 +155,27 @@
                 scrollbar-width: none;
                 position: relative;
                 left: 138px;
+
+                @media screen and (max-width: 990px) {
+                    padding-left: 0;
+                    padding-right: 530px;
+                    width: 100vw;
+                    left: 140px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    // padding-right: 768px;
+                    left: 36px;
+                }
+
+                @media screen and (max-width: 425px) {
+                    padding-right: 800px;
+                }
+
+                @media screen and (max-width: 375px) {
+                    padding-right: 775px;
+                    left: 12px;
+                }
 
                 &.active {
                     display: flex;
@@ -171,7 +201,7 @@
                     .icon-slider {
                         position: relative;
                         top: 300px;
-                        left: -105px;
+                        right: 105px;
                         z-index: 1;
 
                         .iconSlider {
@@ -180,7 +210,6 @@
                             width: 46px;
                             background: rgba(0, 0, 0, 0.278);
                             color: $white;
-                            font-weight: normal;
                             display: flex;
                             cursor: pointer;
                             vertical-align: middle;
@@ -194,6 +223,8 @@
                                 align-items: center;
                                 background: $main3;
                             }
+
+
                         }
                     }
 
@@ -245,6 +276,17 @@
                 font-size: 20px;
                 height: 435px;
                 overflow: hidden;
+                padding: 0;
+
+                @media screen and (max-width: 768px) {
+                    left: 0;
+                    width: inherit !important;
+                    padding: 0 !important;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    left: 0;
+                }
 
                 .icon-close {
                     position: relative;
@@ -263,10 +305,10 @@
             .boxDesc {
                 position: relative;
                 bottom: 0;
-                width: 400px;
+                // width: 400px;
                 text-align: justify;
-                line-height: 1.8;
-                font-size: 20px;
+                line-height: 2.1;
+                font-size: 16px;
                 color: $text;
 
                 .text-desc {
@@ -275,6 +317,11 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     -webkit-line-clamp: 6;
+                    font-size: 16px;
+
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
                 }
 
                 .boxIconeDesc {
@@ -285,6 +332,11 @@
                     margin-top: 50px;
 
                     .icon-Desc {
+                        @media screen and (max-width: 320px) {
+                            margin-inline: 3px;
+                            padding: 12px;
+                        }
+
                         border: 2px solid $main;
                         padding: 14px;
                         border-radius: 50%;
@@ -298,243 +350,6 @@
                         &:hover {
                             border: 2px solid $hover;
                             background: $hover;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-/////////////////Responsive///////////////////
-
-@media screen and (max-width: 1440px) {
-    .product-categories {
-        margin-top: 45px;
-
-        .pro-cat::after {
-            top: 55px;
-            width: 680px;
-        }
-
-        .card {
-            margin-top: 90px;
-
-            .boxTapContent {
-                .tapContent {
-                    width: 727px;
-
-                    .tabItem {
-                        margin-inline: 3px;
-                    }
-                }
-            }
-
-            .items-tabContent {
-                .not-product {
-                    padding-right: 80px !important;
-                }
-
-                .box-slider {
-                    padding-left: 0;
-                    padding-right: 686px;
-                    width: 1040px;
-                }
-
-                .boxDesc {
-                    margin-right: -55px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .product-categories {
-
-        .pro-cat::after {
-            width: 520px;
-        }
-
-        .card {
-            .boxTapContent {
-                .tapContent {
-                    .tabItem {
-                        font-size: 17px;
-                    }
-                }
-
-                .seeAll {
-                    .link {
-                        font-size: 17px;
-                    }
-                }
-            }
-
-            .items-tabContent {
-                flex-direction: column;
-
-                .box-slider {
-                    padding-left: 0;
-                    padding-right: 530px;
-                    width: 1025px;
-                    left: 0;
-                }
-
-                .boxDesc {
-                    margin-right: 0;
-                    display: flex;
-                    flex-direction: column-reverse;
-                    align-items: center;
-
-                    .text-desc {
-                        font-size: 17px;
-                        display: none;
-                    }
-
-                    .boxIconeDesc {
-                        margin-top: 0;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .product-categories {
-        margin-top: 205px;
-        overflow: hidden;
-
-        .card {
-            .items-tabContent {
-                .box-slider {
-                    padding-right: 768px;
-                    width: 769px;
-                    left: 0;
-                }
-            }
-
-            .boxTapContent {
-                .tapContent {
-                    width: 420px;
-
-                    .tabItem {
-                        height: 52px;
-                        min-width: 135px;
-                        font-size: 16px;
-                    }
-                }
-
-                .seeAll {
-                    .link {
-                        font-size: 16px;
-                        height: 52px;
-                        min-width: 135px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .product-categories {
-        .card {
-            .items-tabContent {
-                .box-slider {
-                    padding-right: 1122px;
-                    width: 1010px;
-                    left: 0;
-                }
-            }
-
-            .boxTapContent {
-                .tapContent {
-                    width: 202px;
-
-                    .tabItem {
-                        height: 55px;
-                        min-width: 195px;
-                        font-size: 16px;
-                    }
-                }
-
-                .seeAll {
-                    .link {
-                        height: 55px;
-                        min-width: 195px;
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .product-categories {
-        .card {
-            .items-tabContent {
-                .box-slider {
-                    padding-right: 561px;
-                    width: 1010px;
-                    left: 0;
-                    right: 308px;
-                }
-            }
-
-            .boxTapContent {
-                .tapContent {
-                    width: 173px;
-
-                    .tabItem {
-                        min-width: 165px;
-                        font-size: 15px;
-                    }
-                }
-
-                .seeAll {
-                    .link {
-                        min-width: 165px;
-                        font-size: 15px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .product-categories {
-        .card {
-            .boxTapContent {
-                .tapContent {
-                    width: 142px;
-
-                    .tabItem {
-                        min-width: 135px;
-                    }
-                }
-
-                .seeAll {
-                    .link {
-                        min-width: 135px;
-                    }
-                }
-            }
-
-            .items-tabContent {
-                .box-slider {
-                    padding-right: 622px;
-                }
-
-                .boxDesc {
-                    .boxIconeDesc {
-                        .icon-Desc {
-                            margin-inline: 3px;
-                            padding: 12px;
                         }
                     }
                 }
