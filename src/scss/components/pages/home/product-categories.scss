@@ -2,8 +2,6 @@
 
 .product-categories {
     overflow: hidden;
-
-    // .pro-cat {
     position: relative;
 
     &::after {
@@ -19,8 +17,6 @@
         background: rgb(237, 240, 245);
         background: linear-gradient(180deg, rgb(237, 240, 245) 35%, rgb(248, 250, 253) 100%);
     }
-
-    // }
 
     .card {
         margin-top: 150px;
@@ -146,7 +142,6 @@
                 justify-content: center;
                 align-items: center;
                 margin-block: 60px;
-                // width: 1280px;
                 scroll-behavior: smooth;
                 overflow-x: scroll;
                 padding-left: 5px;
@@ -164,7 +159,6 @@
                 }
 
                 @media screen and (max-width: 768px) {
-                    // padding-right: 768px;
                     left: 36px;
                 }
 
@@ -305,7 +299,6 @@
             .boxDesc {
                 position: relative;
                 bottom: 0;
-                // width: 400px;
                 text-align: justify;
                 line-height: 2.1;
                 font-size: 16px;

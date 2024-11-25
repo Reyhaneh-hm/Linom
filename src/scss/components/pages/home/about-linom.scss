@@ -4,22 +4,12 @@
     overflow: hidden;
 
     .card {
-        // display: flex;
-        // align-items: center;
-        // justify-content: space-between;
-
         .part-textContent {
-            // display: flex;
-            // flex-direction: column;
-            // width: 41%;
-
             .titr-content {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                /* width: 100%; */
                 margin-block: 35px;
-                // margin: clamp(20px, 3vw, 35px) 0;
 
                 .box-textTitr {
                     display: flex;
@@ -33,21 +23,17 @@
                     .sarTitr {
                         color: $main;
                         font-size: 21px;
-                        // font-size: 23px;
-                        // font-size: clamp(1rem, 2vw, 2rem);
                     }
                 }
 
                 .link {
-
                     .icon-goToPage {
                         border: 2px solid;
                         border-radius: 50%;
                         color: $text;
-                        // padding: 15px;
-                        // font-size: 20px;
                         padding: 11px;
-                        font-size: 17px;                        cursor: pointer;
+                        font-size: 17px;
+                        cursor: pointer;
                         transition: all 0.3s;
                         font-weight: bold;
 
@@ -56,7 +42,6 @@
                             color: $white;
                         }
                     }
-
                 }
             }
 
@@ -64,7 +49,6 @@
                 text-align: justify;
                 line-height: 2.5;
                 font-size: 16px;
-                // font-size: 17px;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
@@ -75,9 +59,38 @@
 
         .part-imgContent {
             position: relative;
-            // width: 50%;
 
             .img-content {
+                @media screen and (max-width: 1024px) {
+                    min-width: 590px;
+                    height: 690px;
+                    margin-right: -50px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    margin: 0 auto;
+                    max-width: 570px;
+                    min-width: 600px;
+                    height: 695px;
+                    display: block;
+                }
+
+                @media screen and (max-width: 425px) {
+                    min-width: 460px;
+                    height: 535px;
+                    position: relative;
+                    left: 25px;
+                }
+
+                @media screen and (max-width: 375px) {
+                    min-width: 400px;
+                    height: 465px;
+                }
+
+                @media screen and (max-width: 320px) {
+                    left: 47px;
+                }
+
                 -webkit-mask-image: url("/img/home/about-linom/hero2.svg");
                 mask-image: url("/img/home/about-linom/hero2.svg");
                 mask-size: 100%;
@@ -91,14 +104,34 @@
             .other {
 
                 .imgCover {
+                    @media screen and (max-width: 1440px) {
+                        top: 220px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        display: none;
+                    }
+
                     position: absolute;
-                    // left: -407px;
                     right: 670px;
                     top: 135px;
                     width: 505px;
                 }
 
                 .heart {
+                    @media screen and (max-width: 1024px) {
+                        top: 100px;
+                        right: 5px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        padding: 8px;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        padding: 6px;
+                    }
+
                     border-radius: 50%;
                     font-size: 30px;
                     padding: 10px;
@@ -108,7 +141,7 @@
                     background: $white;
                     position: absolute;
                     top: 120px;
-                    right: 50px;
+                    right: 65px;
                     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.169);
                     transform: rotate(21deg);
 
@@ -117,26 +150,94 @@
                     }
                 }
 
+                .heart1 {
+                    @media screen and (max-width: 768px) {
+                        right: 100px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        right: 15px;
+                        top: 75px;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        right: 2px;
+                    }
+                }
+
                 .heart2 {
+                    @media screen and (max-width: 1024px) {
+                        right: 455px;
+                        bottom: 140px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        right: 555px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        right: 355px;
+                        bottom: 70px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        right: 315px;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        right: 275px;
+                    }
+
                     top: inherit;
-                    right: inherit;
-                    left: 160px;
+                    right: 615px;
                     bottom: 155px;
                     transform: rotate(345deg);
                 }
 
                 .textLink1 {
+                    @media screen and (max-width: 1440px) {
+                        right: 445px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        top: 130px;
+                        right: 270px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        top: 150px;
+                        right: 490px;
+                    }
+
                     top: 200px;
-                    left: 0;
+                    right: 530px;
                 }
 
                 .textLink2 {
+                    @media screen and (max-width: 1024px) {
+                        bottom: 90px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        right: 0;
+                    }
+
                     bottom: 120px;
                     right: -100px;
                 }
 
                 .textLink1,
                 .textLink2 {
+                    @media screen and (max-width: 1024px) {
+                        background-size: 240px;
+                        height: 90px;
+                        width: 232px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        display: none;
+                    }
+
                     position: absolute;
                     background-image: url("/images/img2.png");
                     background-repeat: no-repeat;
@@ -148,6 +249,11 @@
                     align-items: center;
 
                     .icon-go {
+
+                        @media screen and (max-width: 1024px) {
+                            margin-right: 10px;
+                        }
+
                         border: 2px solid $text;
                         color: $text;
                         border-radius: 50%;
@@ -167,12 +273,22 @@
                     }
 
                     .text-box {
+                        @media screen and (max-width: 1024px) {
+                            margin-bottom: 5px;
+                        }
+
                         .titr {
                             margin: 0;
                             color: $main;
                         }
 
                         .text {
+                            @media screen and (max-width: 1024px) {
+                                margin-bottom: 0;
+                                width: 170px;
+                            }
+
+                            width: 170px;
                             margin: 10px 0;
                             font-size: 13px;
                             line-height: 1.5;
@@ -186,6 +302,36 @@
                 }
 
                 .boxAudio {
+                    @media screen and (max-width: 1440px) {
+                        right: 430px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        background-size: 272px;
+                        width: 290px;
+                        right: 230px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        right: 445px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        right: 140px;
+                        bottom: -40px;
+                    }
+
+                    @media screen and (max-width: 375px) {
+                        background-size: 100%;
+                        width: 240px;
+                        bottom: -35px;
+                        right: 130px;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        right: 80px;
+                    }
+
                     position: absolute;
                     background-image: url("/images/img2.png");
                     background-repeat: no-repeat;
@@ -195,10 +341,17 @@
                     display: flex;
                     justify-content: space-between;
                     bottom: 20px;
-                    left: 0;
+                    // left: 0;
+                    right: 530px;
                     width: 300px;
 
                     #textVoice {
+                        @media screen and (max-width: 375px) {
+                            width: 85%;
+                            right: 15px;
+                            top: 22px;
+                        }
+
                         width: 77%;
                         display: flex;
                         align-items: center;
@@ -219,10 +372,20 @@
                     }
 
                     .audio {
-                        width: 190px;
+                        @media screen and (max-width: 375px) {
+                            width: 65%;
+                            margin: 13px 20px 0 0;
+                        }
+
+                        width: 62%;
                         margin-right: 27px;
 
                         #playBtn {
+                            @media screen and (max-width: 375px) {
+                                left: 13px;
+                                top: 34px;
+                            }
+
                             color: $main2;
                             position: absolute;
                             left: 30px;
@@ -238,12 +401,32 @@
                 }
 
                 .about-link {
+                    @media screen and (max-width: 1024px) {
+                        right: 380px;
+                        top: 65px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        top: 75px;
+                        right: 480px;
+                    }
+
                     top: 90px;
-                    left: 190px;
+                    right: 520px;
                     box-shadow: -3px 3px 4px 0px rgba(209, 209, 209, 0.639);
                 }
 
                 .contact-Link {
+                    @media screen and (max-width: 1024px) {
+                        bottom: 30px;
+                        right: 25px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        bottom: 25px;
+                        right: 100px;
+                    }
+
                     bottom: 40px;
                     right: 70px;
                     box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.169);
@@ -251,6 +434,15 @@
 
                 .about-link,
                 .contact-Link {
+                    @media screen and (max-width: 1024px) {
+                        width: 110px;
+                        height: 47px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        display: none;
+                    }
+
                     position: absolute;
                     width: 120px;
                     height: 50px;
@@ -298,333 +490,4 @@
 
     }
 
-}
-
-
-
-/////////////////Responsive///////////////////
-
-@media screen and (max-width: 1440px) {
-
-    .about-linom {
-        .card {
-            .part-imgContent {
-                // width: 59%;
-
-                .other {
-                    .about-link {
-                        left: 145px;
-                    }
-
-                    .heart2 {
-                        left: 115px;
-                    }
-
-                    .imgCover {
-                        top: 220px;
-                        width: 500px;
-                    }
-                }
-            }
-        }
-    }
-
-}
-
-@media screen and (max-width: 1024px) {
-
-    .about-linom {
-        .card {
-            .part-textContent {
-                .text-content {
-                    // font-size: 16px;
-                }
-            }
-
-            .part-imgContent {
-                .img-content {
-                    min-width: 590px;
-                    height: 690px;
-                    margin-right: -25px;
-                }
-
-                .other {
-                    .imgCover {
-                        top: 160px;
-                        width: 430px;
-                    }
-
-                    .textLink1 {
-                        top: 140px;
-                    }
-
-                    .textLink2 {
-                        bottom: 100px;
-                    }
-
-                    .textLink1,
-                    .textLink2 {
-                        background-size: 240px;
-                        height: 90px;
-                        width: 232px;
-
-                        .icon-go {
-                            margin-right: 10px;
-                        }
-
-                        .text-box {
-                            margin-bottom: 7px;
-
-                            .titr {
-                                // font-size: 15px;
-                            }
-
-                            .text {
-                                // font-size: 12px;
-                                margin-bottom: 0;
-                                width: 174px;
-                            }
-                        }
-                    }
-
-                    .about-link {
-                        top: 65px;
-                        left: 50px;
-                        // font-size: 15px;
-                        width: 110px;
-                        height: 47px;
-
-                        .text-aboutLink {
-                            // font-size: 15px;
-                        }
-                    }
-
-                    .contact-Link {
-                        // font-size: 15px;
-                        width: 110px;
-                        height: 47px;
-                        bottom: 30px;
-                        right: 25px;
-
-                        .text-contentLink {
-                            // font-size: 15px;
-                        }
-                    }
-
-                    .heart1 {
-                        top: 100px;
-                        right: 20px;
-                    }
-
-                    .heart2 {
-                        left: 45px;
-                        bottom: 140px;
-                    }
-
-                    .boxAudio {
-                        background-size: 272px;
-                        width: 290px;
-                    }
-                }
-            }
-        }
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .about-linom {
-        .card {
-            // flex-direction: column;
-
-            .part-textContent {
-                // width: 100%;
-
-                .titr-content {
-                    .link {
-                        .icon-goToPage {
-                            // padding: 12px;
-                        }
-                    }
-                }
-
-                .text-content {
-                    font-size: 16px;
-                    -webkit-line-clamp: 5;
-                }
-            }
-
-            .part-imgContent {
-                // width: 100%;
-
-                .img-content {
-                    margin: 0 auto;
-                    max-width: 570px;
-                    min-width: 600px;
-                    height: 695px;
-                    display: block;
-                }
-
-                .other {
-                    .imgCover {
-                        left: -360px;
-                    }
-
-                    .about-link {
-                        top: 80px;
-                        left: 125px;
-                    }
-
-                    .textLink1 {
-                        top: 150px;
-                    }
-
-                    .heart1 {
-                        right: 85px;
-                    }
-
-                    .textLink2 {
-                        right: 0;
-                    }
-
-                    .contact-Link {
-                        bottom: 25px;
-                        right: 100px;
-                    }
-
-                    .heart2 {
-                        left: 100px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .about-linom {
-        .card {
-            .part-imgContent {
-                .img-content {
-                    margin: 0 -25px;
-                    min-width: 460px;
-                    height: 535px;
-                }
-
-                .other {
-                    .imgCover {
-                        display: none;
-                    }
-
-                    .about-link {
-                        display: none;
-                    }
-
-                    .contact-Link {
-                        display: none;
-                    }
-
-                    .heart1 {
-                        right: 0;
-                        top: 75px;
-                    }
-
-                    .textLink1 {
-                        display: none;
-                    }
-
-                    .textLink2 {
-                        display: none;
-                    }
-
-                    .boxAudio {
-                        bottom: -50px;
-                        left: -15px;
-                    }
-
-                    .heart2 {
-                        left: 0;
-                        bottom: 70px;
-                    }
-
-                    .heart {
-                        padding: 8px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .about-linom {
-        .card {
-            .part-imgContent {
-                .img-content {
-                    margin: 0 -20px;
-                    min-width: 400px;
-                    height: 465px;
-                }
-
-                .other {
-                    .heart {
-                        padding: 7px;
-                        // font-size: 27px;
-                    }
-
-                    .heart1 {
-                        top: 70px;
-                    }
-
-                    .boxAudio {
-                        background-size: 80%;
-                        bottom: -35px;
-                        left: -40px;
-
-                        #textVoice {
-                            width: 70%;
-                            right: 40px;
-                            top: 22px;
-                        }
-
-                        .audio {
-                            #playBtn {
-                                left: 37px;
-                                top: 35px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .about-linom {
-        .card {
-            .part-textContent {
-                .text-content {
-                    // font-size: 15px;
-                }
-            }
-
-            .part-imgContent {
-                .img-content {
-                    margin: 0 -47px;
-                }
-
-                .other {
-                    .heart1 {
-                        right: -10px;
-                    }
-
-                    .heart2 {
-                        left: -10px;
-                        bottom: 65px;
-                    }
-                }
-            }
-        }
-    }
 }
