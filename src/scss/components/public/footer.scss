@@ -2,31 +2,19 @@
 
 /*-----------------Footer---------------*/
 .footer {
-    height: 450px;
     background: #fff;
-    height: 395px;
-    background: #fff;
-    max-width: 1910px;
-    // min-width: 1515px;
-    margin: 0 auto;
-    padding: 15px 20px;
-    width: 100%;
-
+    min-height: 300px;
 
     .columns-box {
-        min-height: 100px;
-        display: flex;
-        flex-direction: column;
+        margin-top: 50px;
 
         .social-network {
-            display: flex;
-            justify-content: center;
-            padding: 50px 0 30px;
+            margin: 10px 0 50px;
+            gap: 40px;
 
             .link {
                 font-size: 28px;
                 text-decoration: none;
-                margin: 0 20px;
 
                 i {
                     transition: all 0.3s;
@@ -41,19 +29,18 @@
 
         .columns {
             display: flex;
-            margin: 15px 10%;
-
 
             .column {
-                min-height: 100px;
-                flex: 1;
-
                 .link {
-                    text-decoration: none;
+                    // text-decoration: none;
 
                     img {
+                        @media screen and (max-width: 1024px) {
+                            margin-top: 10px;
+                            width: 115px;
+                        }
+
                         width: 150px;
-                        margin: -15px 0;
                     }
                 }
 
@@ -63,15 +50,12 @@
                 }
 
                 .footer-list {
-                    display: flex;
-                    flex-direction: column;
-
                     .text-footerList {
-                        margin: 12px 0;
+                        margin-bottom: 20px;
 
                         .link {
                             font-size: 16px;
-                            text-decoration: none;
+                            // text-decoration: none;
                             color: #757a83;
                             transition: all 0.3s;
 
@@ -85,9 +69,8 @@
             }
         }
 
-        p {
+        .copyrighter {
             font-size: 14px;
-            text-align: center;
             margin: 30px 0;
             color: #757a83;
         }
@@ -95,7 +78,7 @@
 }
 
 
-/*-----------------------------------*/
+/*-----------------mobile footer------------------*/
 
 .mobile_footer {
     justify-content: space-around;
@@ -110,74 +93,26 @@
     display: none;
     box-shadow: 0 -4px 20px #00000026;
 
-    .link {
-        text-align: center;
-        width: 130px;
+    .box {
+        justify-content: space-between;
 
-        .icon {
-            font-size: 25px;
-        }
-
-        .title {
-            display: block;
-            color: #757a83;
-            font-size: 13px;
-            margin-top: 3px;
-        }
-    }
-}
-
-/////////////////Responsive///////////////////
-
-@media screen and (max-width: 1440px) {
-    .footer {
-        .columns-box {
-            .columns {
-                .column {
-                    .link {
-                        img {
-                            width: 125px;
-                            margin: 10px 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .footer {
-        .columns-box {
-            .columns {
-                .column {
-                    .link {
-                        img {
-                            margin-top: 30px;
-                            width: 96px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .footer {
-        display: none;
-    }
-
-    .mobile_footer {
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .mobile_footer {
         .link {
+            text-align: center;
+            width: 20%;
+
+            .icon {
+                font-size: 25px;
+            }
+
             .title {
-                display: none;
+                @media screen and (max-width: 425px) {
+                    display: none;
+                }
+
+                display: block;
+                color: #757a83;
+                font-size: 12px;
+                margin-top: 3px;
             }
         }
     }

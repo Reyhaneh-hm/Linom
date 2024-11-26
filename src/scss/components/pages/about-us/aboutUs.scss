@@ -3,28 +3,45 @@
 /*------------about Us Paage-------------*/
 
 .aboutUs {
-
     .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin-block: 135px;
 
         .titr-aboutUs {
             color: $main3;
             font-size: 40px;
-            margin: 0 auto;
         }
 
-
         .box-aboutUs {
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 40px;
 
             .imgBox-aboutUs {
-                width: 700px;
+                @media screen and (max-width: 1440px) {
+                    height: 580px;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    height: 470px;
+                }
+
+                @media screen and (max-width: 425px) {
+                    height: 425px;
+                }
+
+                @media screen and (max-width: 375px) {
+                    height: 375px;
+                }
+
+                @media screen and (max-width: 320px) {
+                    height: 320px;
+                }
+
                 height: 700px;
                 border-radius: 100px 0 100px 0;
                 overflow: hidden;
@@ -36,110 +53,23 @@
             }
 
             .text-aboutUs {
+                @media screen and (max-width: 768px) {
+                    margin-top: 50px;
+                }
+
+                @media screen and (max-width: 375px) {
+                    font-size: 16px;
+                }
+
                 text-align: justify;
-                line-height: 2.2;
-                font-size: 19px;
+                line-height: 2.5;
+                font-size: 17px;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                -webkit-line-clamp: 9;
-                width: 47%;
+                -webkit-line-clamp: 10;
                 color: $main;
-            }
-        }
-    }
-}
-
-/////////////////Responsive///////////////////
-
-@media screen and (max-width: 1440px) {
-    .aboutUs {
-        .card {
-            .box-aboutUs {
-                .imgBox-aboutUs {
-                    width: 620px;
-                    height: 620px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .aboutUs {
-        .card {
-            .box-aboutUs {
-                .imgBox-aboutUs {
-                    width: 465px;
-                    height: 465px;
-                }
-
-                .text-aboutUs {
-                    font-size: 18px;
-                    -webkit-line-clamp: 8;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:768px) {
-    .aboutUs {
-        .card {
-            .box-aboutUs {
-                flex-direction: column;
-            }
-
-            .imgBox-aboutUs {
-                width: 100% !important;
-                height: 475px !important;
-            }
-
-            .text-aboutUs {
-                font-size: 18px !important;
-                -webkit-line-clamp: 9 !important;
-                width: 100% !important;
-                margin-top: 50px !important;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .aboutUs {
-        .card {
-            .imgBox-aboutUs {
-                height: 425px !important;
-            }
-        }
-    }
-}
-@media screen and (max-width: 375px) {
-    .aboutUs {
-        .card {
-            .titr-aboutUs {
-                font-size: 38px;
-            }
-            .imgBox-aboutUs {
-                height: 375px !important;
-            }
-
-            .text-aboutUs {
-                font-size: 17px !important;
-            }
-        }
-    }
-}
-@media screen and (max-width: 320px) {
-    .aboutUs {
-        .card {
-            .imgBox-aboutUs {
-                height: 320px !important;
-            }
-
-            .text-aboutUs {
-                font-size: 16px !important;
             }
         }
     }
