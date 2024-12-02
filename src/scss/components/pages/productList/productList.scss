@@ -1,8 +1,11 @@
 @import '../../../base/setting.scss';
 
 .products_list {
+    overflow: hidden;
+
     .cardBox {
         margin-top: 150px;
+        width: 100%;
 
         .main_card {
             display: flex;
@@ -64,7 +67,7 @@
                     >.title {
                         color: $main;
                         font-size: 23px;
-                        
+
                         text-align: center;
                         border-bottom: 2px solid $white;
                         padding-block: 22px;
@@ -235,19 +238,28 @@
             .products {
                 flex: 1;
                 background-color: $white;
+                width: 100%;
 
                 .items {
+                    // display: grid;
+                    // grid-template-columns: repeat(4, 1fr);
+                    // position: relative;
+                    // justify-items: center;
+                    // gap: 25px;
                     display: grid;
-                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); // هماهنگی با min-width در .item
                     position: relative;
                     justify-items: center;
+                    gap: 25px;
 
                     .item {
                         width: 100%;
-                        min-width: 350px;
-                        max-width: 290px;
+                        // min-width: 350px;
+                        // max-width: 290px;
+                        min-width: 290px; // تنظیم حداقل اندازه برای هماهنگی
+                        max-width: 350px; // حفظ مقدار حداکثر
                         height: 420px;
-                        margin: 10px;
+                        // margin: 10px;
                         position: relative;
                         min-height: 455px;
                         border-radius: 18px;
@@ -366,7 +378,7 @@
                                             span {
                                                 color: #9f9f9f;
                                                 font-size: 13px;
-                                                
+
                                                 margin-right: 7px;
                                             }
                                         }
@@ -490,12 +502,12 @@
                                             align-items: center;
                                             color: #3db178;
                                             display: flex;
-                                            
+
 
                                             span {
                                                 color: #9f9f9f;
                                                 font-size: 13px;
-                                                
+
                                                 margin-right: 7px;
                                             }
                                         }
@@ -507,7 +519,7 @@
                                     font-size: 12px;
                                     background-color: $white;
                                     border-radius: 10px;
-                                    
+
                                     transition: $transition1;
                                 }
                             }
@@ -573,7 +585,7 @@
                     >.title {
                         color: $main;
                         font-size: 23px;
-                        
+
                         text-align: right;
                         border-bottom: 2px solid $white;
                         padding: 10px 12px 22px;
@@ -871,16 +883,6 @@
 
 
 /////////////////Responsive///////////////////
-
-// @media screen and (max-width: 2560px) {
-//     .products_list {
-//         .cardBox {
-//             .chooseItemFilter {
-//                 right: 470px;
-//             }
-//         }
-//     }
-// }
 
 @media screen and (max-width: 1440px) {
     .products_list {

@@ -73,45 +73,36 @@
 
             .box-slider {
                 @media screen and (max-width: 1440px) {
-                    padding-left: 70px;
-                    padding-right: 538px;
+                    right: 72px;
                 }
 
                 @media screen and (max-width: 1024px) {
-                    padding-left: 100px;
-                    padding-right: 780px;
+                    right: 44px;
                 }
 
                 @media screen and (max-width: 768px) {
-                    padding-left: 525px;
-                    padding-right: 1020px;
-                }
-
-                @media screen and (max-width: 425px) {
-                    padding-left: 875px;
-                    padding-right: 1720px;
-                }
-
-                @media screen and (max-width: 375px) {
-                    padding-right: 1770px;
+                    right: 0;
+                    width: 100vw;
                 }
 
                 @media screen and (max-width: 320px) {
-                    padding-right: 1835px;
+                    padding: 0 15px;
                 }
 
                 display: flex;
-                justify-content: center;
                 align-items: center;
                 margin-block: 60px;
                 scroll-behavior: smooth;
-                overflow-x: scroll;
-                padding-left: 5px;
-                padding-right: 320px;
+                padding-left: 10px;
+                padding-right: 8px;
                 white-space: normal;
                 scrollbar-width: none;
                 position: relative;
                 right: 140px;
+                gap: 15px;
+                flex-direction: row;
+                overflow-x: scroll;
+                height: 425px;
 
                 .slider {
                     user-select: none;
@@ -123,8 +114,7 @@
                     min-width: 290px;
                     max-width: 290px;
                     height: 415px;
-                    margin: 10px;
-                    background: $white;
+                    background: #fff;
                     border-radius: 15px;
                     overflow: hidden;
                     box-shadow: 3px 2px 15px -10px #000;
@@ -185,14 +175,14 @@
                         width: 290px;
                         height: 360px;
                         position: absolute;
-                        top: 10px;
+                        top: 0;
                         border-radius: 15px 15px 0 0;
                     }
 
                     .textSlider {
                         color: $main3;
                         font-size: 16px;
-                        margin-bottom: 17px;
+                        margin-bottom: 20px;
                         padding-inline: 10px;
                         display: -webkit-box;
                         -webkit-box-orient: vertical;
@@ -205,7 +195,7 @@
 
             .box-iconSlider {
                 @media screen and (max-width: 1024px) {
-                    right: 100px;
+                    // right: 100px;
                 }
 
                 @media screen and (max-width: 768px) {

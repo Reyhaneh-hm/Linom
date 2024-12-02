@@ -1,8 +1,12 @@
 import Inspect from "vite-plugin-inspect";
 import { resolve } from "path";
 
-
 export default {
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+  },
+
   plugins: [Inspect()],
   // base: "/linom/v2",
   css: {

@@ -1,0 +1,242 @@
+@import '../../../base/setting.scss';
+
+.FAQ {
+    .card {
+        margin-block: 120px;
+        overflow: hidden;
+
+        .faq-header {
+            background-color: #f5f7fa;
+            min-height: 330px;
+            border-radius: 10px;
+
+            .titr-search {
+                @media screen and (max-width: 425px) {
+                    font-size: 20px;
+                }
+
+                color: $main;
+                font-size: 25px;
+            }
+
+            .input-wrapper {
+                background-color: $white;
+                min-height: 50px;
+                border-radius: 10px;
+                margin: 40px 0 25px;
+                padding: 15px 20px;
+                border: 2px solid $white;
+                box-shadow: 0 0 15px -15px #000;
+                transition: all 0.3s;
+
+                .box-icon {
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 15px;
+
+                    .icon {
+                        font-size: 18px;
+                        color: $text;
+                    }
+                }
+
+                .input-search {
+                    color: $text;
+                    width: 100%;
+                    height: 100%;
+                    border: 0;
+                    outline: none;
+                    flex: 1;
+                    font-size: 14px;
+                }
+
+                &:focus-within {
+                    border: 2px solid #464550;
+                }
+            }
+
+            .text-search {
+                color: $main;
+                font-size: 16px;
+                text-align: center;
+                line-height: 1.5;
+            }
+        }
+
+        .faq-body {
+            margin-block: 50px;
+
+            .content-faq {
+                @media screen and (max-width: 425px) {
+                    flex-direction: column;
+                }
+
+                .categories {
+                    margin-left: 20px;
+                    margin-bottom: 45px;
+
+                    .nav {
+                        min-height: 100px;
+                        width: 100%;
+
+                        .item {
+                            width: 100%;
+
+                            .nav-link {
+                                width: 100%;
+                                border-radius: 10px;
+                                border: 0;
+                                background: transparent;
+                                padding: 12px 15px;
+                                text-align: right;
+                                cursor: pointer;
+                                color: $main;
+                                transition: all 0.3s;
+
+                                .icon {
+                                    font-size: 20px;
+                                }
+
+                                .text-navItem {
+                                    font-size: 15px;
+                                }
+
+                                &.active {
+                                    box-shadow: 0 0.125rem 0.25rem rgba(147, 158, 170, 0.4);
+                                    background: $main2;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .questions {
+                .item {
+                    display: none;
+                    transition: all 0.3s;
+
+                    .titr-payment,
+                    .titr-delivery,
+                    .titr-cancellation,
+                    .titr-orders,
+                    .titr-product {
+                        gap: 20px;
+
+                        .box-icon {
+                            background: #f5f7fa;
+                            color: $main2;
+                            border-radius: 10px;
+                            width: 50px;
+                            height: 50px;
+
+                            .icon {
+                                font-size: 23px;
+                            }
+                        }
+
+                        .payment-info,
+                        .delivery-info,
+                        .cancellation-info,
+                        .orders-info,
+                        .product-info {
+
+                            .payment-title,
+                            .delivery-title,
+                            .cancellation-title,
+                            .orders-title,
+                            .product-title {
+                                font-size: 18px;
+                                color: $main;
+                            }
+
+                            .payment-desc,
+                            .delivery-desc,
+                            .cancellation-desc,
+                            .orders-desc,
+                            .product-desc {
+                                font-size: 15px;
+                                color: $text;
+                            }
+                        }
+                    }
+
+                    .accordion-payment,
+                    .accordion-delivery,
+                    .accordion-cancellation,
+                    .accordion-orders,
+                    .accordion-product {
+                        margin-top: 20px;
+
+                        .accordion-item {
+                            box-shadow: 0 0.25rem 1rem rgba(147, 158, 170, 0.45);
+                            background: #fff;
+                            margin-bottom: 10px;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            transition: all 0.3s;
+
+                            .accordion-header {
+
+                                .accordion-button {
+                                    color: $main;
+                                    padding: 20px;
+                                    text-align: right;
+                                    cursor: pointer;
+                                    background: transparent;
+                                    width: 100%;
+                                    height: 100%;
+                                    font-size: 16px;
+                                    line-height: 1.5;
+                                    border: 0;
+                                    transition: all 0.3s;
+
+                                    .icon {
+                                        font-size: 17px;
+                                        font-weight: bold;
+                                        color: $main;
+                                        transition: all 0.3s;
+                                    }
+                                }
+                            }
+
+                            .accordion-collapse {
+                                .accordion-body {
+                                    padding: 15px;
+                                    padding-top: 0;
+                                    line-height: 2;
+                                    font-size: 15px;
+                                    color: $text;
+                                    transition: all 0.3s;
+
+                                    a {
+                                        color: $main2;
+                                    }
+                                }
+                            }
+
+                            &.active {
+                                .accordion-header {
+                                    .accordion-button {
+                                        color: $main2;
+
+                                        .icon {
+                                            color: $main2;
+                                            transform: rotate(180deg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

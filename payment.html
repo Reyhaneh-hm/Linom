@@ -915,404 +915,402 @@
   <!---------------------------------------------------->
 
   <section class="payment_procedures">
+
+    <ul class="breadcrumb container">
+      <li>
+        <a href="./index.html">صفحه اصلی</a>
+      </li>
+      <li>سبد خرید</li>
+    </ul>
+
     <div class="container">
-      <div class="row">
-        <div class="col-12">
+      <div class="row card">
 
-          <ul class="breadcrumb">
-            <li>
-              <a href="./index.html">صفحه اصلی</a>
-            </li>
-            <li>سبد خرید</li>
-          </ul>
+        <ul class="step_lists col-12">
+          <li data-id="step1" class="item">
+            <i class="icon icon-Buy"></i>
+            <h2 class="title">سبد خرید</h2>
+            <span class="dot"></span>
+          </li>
+          <li data-id="step2" class="item">
+            <i class="icon icon-Profile"></i>
+            <h2 class="title">مشخصات گیرنده</h2>
+            <span class="dot"></span>
+          </li>
+          <li data-id="step3" class="item">
+            <i class="icon icon-Box"></i>
+            <h2 class="title">بازبینی سفارش</h2>
+            <span class="dot"></span>
+          </li>
+          <li class="item">
+            <i class="icon icon-Buy2"></i>
+            <h4 class="title">نتیجه سفارش</h4>
+            <span class="dot"></span>
+          </li>
+        </ul>
 
-          <div class="card">
+        <div class="product_table col-lg-10 col-md-12 col-12">
+          <div class="stepContent active" style="/*overflow-x: scroll*/">
+            <h1 class="sec-head">
+              <i class="icon icon-Buy"></i> سبد خرید (۲ کالا)
+            </h1>
+            <div id="box-tablebuy">
+              <table id="tablebuy" class="table TableOrder text-cente col-12">
+                <thead class="thead">
+                  <tr class="tr">
+                    <th scope="col" class="th">
+                      <h3 class="titr">محصول انتخابی</h3>
+                    </th>
+                    <th scope="col" class="th">
+                      <h3 class="titr">تعداد</h3>
+                    </th>
+                    <th scope="col" class="th">
+                      <h3 class="titr">قیمت واحد</h3>
+                      <span class="underTitr">تومان</span>
+                    </th>
+                    <th scope="col" class="th">
+                      <h3 class="titr">قیمت کل</h3>
+                      <span class="underTitr">تومان</span>
+                    </th>
+                    <th scope="col" class="th">
+                      <h3 class="titr">حذف</h3>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="tbody">
+                  <tr class="tr">
+                    <td scope="row" class="td">
+                      <img src="/img/product-menu/1.jpg" alt="image" class="img">
+                      <h4 class="name">طرح گلاسه</h4>
+                    </td>
+                    <td class="td">
+                      <div id="numberSpinner" class="spinner">
+                        <span class="icon icon-Plus increament"></span>
+                        <input class="inputNumber" step="1" min="1" max="10" type="number" value="1">
+                        <span class="icon icon-Minus decreament"></span>
+                      </div>
+                    </td>
+                    <td class="td">۳۲۰</td>
+                    <td class="td">۴۰۰</td>
+                    <td class="td">
+                      <a href="#" class="delete"><i class="icon icon-Delete"></i></a>
+                    </td>
+                  </tr>
+                  <tr class="tr">
+                    <td scope="row" class="td">
+                      <img src="/img/product-menu/1.jpg" alt="image" class="img">
+                      <h4 class="name">طرح گلاسه</h4>
+                    </td>
+                    <td class="td">
+                      <div id="numberSpinner" class="spinner">
+                        <span class="icon icon-Plus increament"></span>
+                        <input class="inputNumber" step="2" min="2" max="10" type="number" value="1">
+                        <span class="icon icon-Minus decreament"></span>
+                      </div>
+                    </td>
+                    <td class="td">۵۱۰</td>
+                    <td class="td">۵۵۰</td>
+                    <td class="td">
+                      <a href="#" class="delete"><i class="icon icon-Delete"></i></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <form class="container-md payment_action">
+              <button class="abb_product link submit">اضافه کردن محصول جدید</button>
+              <p class="total_cart">
+                جمع سبد خرید:‌ <span class="money">۳۰۰۰۰۰۰ تومان</span>
+              </p>
+              <button type="submit" class="next_page link submit">مرحله بعد
+                <i class="icon icon-Arrow-Left"></i>
+              </button>
+            </form>
+          </div>
+          <div class="payment-list">
+            <div class="item">
+              <h2 class="title">
+                <i class="icon icon-Box"></i> مشخصات گیرنده
+              </h2>
+              <div id="filter-box">
+                <h3 class="main_title">فرم ثبت اطلاعات</h3>
 
-            <ul class="step_lists">
-              <li data-id="step1" class="item">
-                <i class="icon icon-Buy"></i>
-                <h2 class="title">سبد خرید</h2>
-                <span class="dot"></span>
-              </li>
-              <li data-id="step2" class="item">
-                <i class="icon icon-Profile"></i>
-                <h2 class="title">مشخصات گیرنده</h2>
-                <span class="dot"></span>
-              </li>
-              <li data-id="step3" class="item">
-                <i class="icon icon-Box"></i>
-                <h2 class="title">بازبینی سفارش</h2>
-                <span class="dot"></span>
-              </li>
-              <li class="item">
-                <i class="icon icon-Buy2"></i>
-                <h4 class="title">نتیجه سفارش</h4>
-                <span class="dot"></span>
-              </li>
-            </ul>
-
-            <div class="product_table">
-              <div class="stepContent active" style="/*overflow-x: scroll*/">
-                <h1 class="sec-head">
-                  <i class="icon icon-Buy"></i> سبد خرید (۲ کالا)
-                </h1>
-                <div id="box-tablebuy">
-                  <table id="tablebuy" class="table TableOrder text-center">
-                    <thead>
-                      <tr>
-                        <th scope="col">
-                          <h3 class="titr">محصول انتخابی</h3>
-                        </th>
-                        <th scope="col">
-                          <h3 class="titr">تعداد</h3>
-                        </th>
-                        <th scope="col">
-                          <h3 class="titr">قیمت واحد</h3>
-                          <span class="underTitr">تومان</span>
-                        </th>
-                        <th scope="col">
-                          <h3 class="titr">قیمت کل</h3>
-                          <span class="underTitr">تومان</span>
-                        </th>
-                        <th scope="col">
-                          <h3 class="titr">حذف</h3>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row">
-                          <img src="/img/product-menu/1.jpg" alt="image" class="img">
-                          <h4 class="name">طرح گلاسه</h4>
-                        </td>
-                        <td>
-                          <div id="numberSpinner" class="spinner">
-                            <span class="icon icon-Plus increament"></span>
-                            <input class="inputNumber" step="1" min="1" max="10" type="number" value="1">
-                            <span class="icon icon-Minus decreament"></span>
-                          </div>
-                        </td>
-                        <td>۳۲۰</td>
-                        <td>۴۰۰</td>
-                        <td>
-                          <a href="#" class="delete"><i class="icon icon-Delete"></i></a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">
-                          <img src="/img/product-menu/1.jpg" alt="image" class="img">
-                          <h4 class="name">طرح گلاسه</h4>
-                        </td>
-                        <td>
-                          <div id="numberSpinner" class="spinner">
-                            <span class="icon icon-Plus increament"></span>
-                            <input class="inputNumber" step="2" min="2" max="10" type="number" value="1">
-                            <span class="icon icon-Minus decreament"></span>
-                          </div>
-                        </td>
-                        <td>۵۱۰</td>
-                        <td>۵۵۰</td>
-                        <td>
-                          <a href="#" class="delete"><i class="icon icon-Delete"></i></a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <form class="payment_action">
-                  <button class="abb_product link submit">اضافه کردن محصول جدید</button>
-                  <p class="total_cart">
-                    جمع سبد خرید:‌ <span class="money">۳۰۰۰۰۰۰ تومان</span>
-                  </p>
-                  <button type="submit" class="next_page link submit">مرحله بعد</button>
+                <form class="box active">
+                  <span class="login">از قبل اکانت دارید؟ <a href="#" class="link">وارد شوید</a></span>
+                  <div class="row itemsBox">
+                    <div class="col-lg-4 col-md-6 col-12 item">
+                      <div class="input_box">
+                        <label class="textLabel">نام و نام خانوادگی
+                          <span class="star">*</span></label>
+                        <input type="text" name="نام و نام خانوادگی">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 item">
+                      <div class="input_box">
+                        <label class="textLabel">شماره موبایل <span class="star">*</span></label>
+                        <input type="number" name="نام و نام خانوادگی">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 item">
+                      <div class="input_box">
+                        <label class="textLabel">آدرس ایمیل</label>
+                        <input type="email" name="آدرس ایمیل">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 item">
+                      <div class="input_box">
+                        <label class="textLabel">کد پستی <span class="star">*</span></label>
+                        <input type="number" name="کد پستی">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 item">
+                      <div class="input_box">
+                        <label class="textLabel">استان<span class="star">*</span></label>
+                        <select class="form-control" name="استان">
+                          <option value="0" selected="" disabled="">
+                            لطفا انتخاب کنید...
+                          </option>
+                          <option value="آذربایجان شرقی">
+                            آذربایجان شرقی
+                          </option>
+                          <option value="آذربایجان غربی">
+                            آذربایجان غربی
+                          </option>
+                          <option value="اردبیل">اردبیل</option>
+                          <option value="اصفهان">اصفهان</option>
+                          <option value="البرز">البرز</option>
+                          <option value="ایلام">ایلام</option>
+                          <option value="بوشهر">بوشهر</option>
+                          <option value="تهران">تهران</option>
+                          <option value="چهارمحال و بختیاری">
+                            چهارمحال و بختیاری
+                          </option>
+                          <option value="خراسان جنوبی">خراسان جنوبی</option>
+                          <option value="خراسان رضوی">خراسان رضوی</option>
+                          <option value="خراسان شمالی">خراسان شمالی</option>
+                          <option value="خوزستان">خوزستان</option>
+                          <option value="زنجان">زنجان</option>
+                          <option value="سمنان">سمنان</option>
+                          <option value="سیستان و بلوچستان">
+                            سیستان و بلوچستان
+                          </option>
+                          <option value="فارس">فارس</option>
+                          <option value="قزوین">قزوین</option>
+                          <option value="قم">قم</option>
+                          <option value="کردستان">کردستان</option>
+                          <option value="کرمان">کرمان</option>
+                          <option value="کرمانشاه">کرمانشاه</option>
+                          <option value="کهگیلویه و بویراحمد">
+                            کهگیلویه و بویراحمد
+                          </option>
+                          <option value="گلستان">گلستان</option>
+                          <option value="گیلان">گیلان</option>
+                          <option value="لرستان">لرستان</option>
+                          <option value="مازندران">مازندران</option>
+                          <option value="مرکزی">مرکزی</option>
+                          <option value="هرمزگان">هرمزگان</option>
+                          <option value="همدان">همدان</option>
+                          <option value="یزد">یزد</option>
+                        </select>
+                        <i class="arrow icon-Arrow-Down"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 item">
+                      <div class="input_box">
+                        <label class="textLabel">شهر <span class="star">*</span></label>
+                        <input type="text" name="شهر">
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 item">
+                      <div class="input_box">
+                        <label class="textLabel">آدرس <span class="star">*</span></label>
+                        <input type="text" name="آدرس">
+                      </div>
+                    </div>
+                    <div class="col-lg-12 itemCol12">
+                      <div class="input_box">
+                        <label class="textLabel">یادداشت برای فروشنده</label>
+                        <textarea name="یادداشت برای فروشنده"
+                          placeholder="در صورتی که توضیح خاصی دارید در این قسمت وارد کنید..." id="" cols="30"
+                          rows="10"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 item">
+                      <div class="input_box">
+                        <label class="textLabel">نحوه آشنایی <span class="star">*</span></label>
+                        <select class="form-control" name="نحوه آشنایی">
+                          <option selected="" disabled="">لطفا انتخاب کنید</option>
+                          <option value="برنامه تلویزیونی کارآگاه نجار">
+                            برنامه تلویزیونی کارآگاه نجار
+                          </option>
+                          <option value="نمایشگاه">نمایشگاه</option>
+                          <option value="جستجوی اینترنتی">
+                            جستجوی اینترنتی
+                          </option>
+                          <option value="تلگرام">تلگرام</option>
+                          <option value="اینستاگرام">اینستاگرام</option>
+                          <option value="جستجوی گوگل">جستجوی گوگل</option>
+                          <option value="سایر">سایر</option>
+                        </select>
+                        <i class="arrow icon-Arrow-Down"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 item">
+                      <div class="input_box">
+                        <label class="textLabel">مراحل آماده سازی از طريق پيامك اطلاع رسانی شود؟
+                          <span class="star">*</span></label>
+                        <select name="مراحل آماده سازی از طريق پيامك اطلاع رسانی شود؟" id="">
+                          <option selected="" disabled="">لطفا انتخاب کنید</option>
+                          <option>بله</option>
+                          <option>خیر</option>
+                        </select>
+                        <i class="arrow icon-Arrow-Down"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container-md payment_action">
+                    <a href="#" class="back link"><i class="icon icon-Arrow-Right"></i>
+                      مرحله
+                      قبل</a>
+                    <button class="next_page submit link">
+                      ثبت و ادامه <i class="icon icon-Arrow-Left"></i>
+                    </button>
+                  </div>
                 </form>
               </div>
-              <div class="payment-list">
-                <div class="item">
-                  <h2 class="title">
-                    <i class="icon icon-Box"></i> مشخصات گیرنده
-                  </h2>
-                  <div id="filter-box">
-                    <h3 class="main_title">فرم ثبت اطلاعات</h3>
+            </div>
+            <div class="row nahaii align-items-center-md">
+              <div class="col-lg-4 col-md-8 col-12 item4">
+                <div id="stickyBox" class="cart-bill">
+                  <ul class="box">
+                    <li>
+                      <span>هزینه ارسال</span>
+                      <span>۱۳,۰۰۰ تومان</span>
+                    </li>
+                    <li>
+                      <span>مالیات ارزش افزوده</span>
+                      <span>۲۵۰,۰۰۰ تومان</span>
+                    </li>
+                    <li class="line discount">
+                      <div class="top">
+                        <span>میزان تخفیف</span>
+                        <span class="distinct">۰ تومان</span>
+                      </div>
 
-                    <form class="box active">
-                      <span class="login">از قبل اکانت دارید؟ <a href="#" class="link">وارد شوید</a></span>
-                      <div class="row itemsBox">
-                        <div class="col-md-4 item">
-                          <div class="input_box">
-                            <label class="textLabel">نام و نام خانوادگی
-                              <span class="star">*</span></label>
-                            <input type="text" name="نام و نام خانوادگی">
-                          </div>
-                        </div>
-                        <div class="col-md-4 item">
-                          <div class="input_box">
-                            <label class="textLabel">شماره موبایل <span class="star">*</span></label>
-                            <input type="number" name="نام و نام خانوادگی">
-                          </div>
-                        </div>
-                        <div class="col-md-4 item">
-                          <div class="input_box">
-                            <label class="textLabel">آدرس ایمیل</label>
-                            <input type="email" name="آدرس ایمیل">
-                          </div>
-                        </div>
-                        <div class="col-md-4 item">
-                          <div class="input_box">
-                            <label class="textLabel">کد پستی <span class="star">*</span></label>
-                            <input type="number" name="کد پستی">
-                          </div>
-                        </div>
-                        <div class="col-md-4 item">
-                          <div class="input_box">
-                            <label class="textLabel">استان<span class="star">*</span></label>
-                            <select class="form-control" name="استان">
-                              <option value="0" selected="" disabled="">
-                                لطفا انتخاب کنید...
-                              </option>
-                              <option value="آذربایجان شرقی">
-                                آذربایجان شرقی
-                              </option>
-                              <option value="آذربایجان غربی">
-                                آذربایجان غربی
-                              </option>
-                              <option value="اردبیل">اردبیل</option>
-                              <option value="اصفهان">اصفهان</option>
-                              <option value="البرز">البرز</option>
-                              <option value="ایلام">ایلام</option>
-                              <option value="بوشهر">بوشهر</option>
-                              <option value="تهران">تهران</option>
-                              <option value="چهارمحال و بختیاری">
-                                چهارمحال و بختیاری
-                              </option>
-                              <option value="خراسان جنوبی">خراسان جنوبی</option>
-                              <option value="خراسان رضوی">خراسان رضوی</option>
-                              <option value="خراسان شمالی">خراسان شمالی</option>
-                              <option value="خوزستان">خوزستان</option>
-                              <option value="زنجان">زنجان</option>
-                              <option value="سمنان">سمنان</option>
-                              <option value="سیستان و بلوچستان">
-                                سیستان و بلوچستان
-                              </option>
-                              <option value="فارس">فارس</option>
-                              <option value="قزوین">قزوین</option>
-                              <option value="قم">قم</option>
-                              <option value="کردستان">کردستان</option>
-                              <option value="کرمان">کرمان</option>
-                              <option value="کرمانشاه">کرمانشاه</option>
-                              <option value="کهگیلویه و بویراحمد">
-                                کهگیلویه و بویراحمد
-                              </option>
-                              <option value="گلستان">گلستان</option>
-                              <option value="گیلان">گیلان</option>
-                              <option value="لرستان">لرستان</option>
-                              <option value="مازندران">مازندران</option>
-                              <option value="مرکزی">مرکزی</option>
-                              <option value="هرمزگان">هرمزگان</option>
-                              <option value="همدان">همدان</option>
-                              <option value="یزد">یزد</option>
-                            </select>
-                            <i class="arrow icon-Arrow-Down"></i>
-                          </div>
-                        </div>
-                        <div class="col-md-4 item">
-                          <div class="input_box">
-                            <label class="textLabel">شهر <span class="star">*</span></label>
-                            <input type="text" name="شهر">
-                          </div>
-                        </div>
-                        <div class="col-md-4 item">
-                          <div class="input_box">
-                            <label class="textLabel">آدرس <span class="star">*</span></label>
-                            <input type="text" name="آدرس">
-                          </div>
-                        </div>
-                        <div class="col-md-12 itemCol12">
-                          <div class="input_box">
-                            <label class="textLabel">یادداشت برای فروشنده</label>
-                            <textarea name="یادداشت برای فروشنده"
-                              placeholder="در صورتی که توضیح خاصی دارید در این قسمت وارد کنید..." id="" cols="30"
-                              rows="10"></textarea>
-                          </div>
-                        </div>
-                        <div class="col-md-4 item">
-                          <div class="input_box">
-                            <label class="textLabel">نحوه آشنایی <span class="star">*</span></label>
-                            <select class="form-control" name="نحوه آشنایی">
-                              <option selected="" disabled="">لطفا انتخاب کنید</option>
-                              <option value="برنامه تلویزیونی کارآگاه نجار">
-                                برنامه تلویزیونی کارآگاه نجار
-                              </option>
-                              <option value="نمایشگاه">نمایشگاه</option>
-                              <option value="جستجوی اینترنتی">
-                                جستجوی اینترنتی
-                              </option>
-                              <option value="تلگرام">تلگرام</option>
-                              <option value="اینستاگرام">اینستاگرام</option>
-                              <option value="جستجوی گوگل">جستجوی گوگل</option>
-                              <option value="سایر">سایر</option>
-                            </select>
-                            <i class="arrow icon-Arrow-Down"></i>
-                          </div>
-                        </div>
-                        <div class="col-md-4 item">
-                          <div class="input_box">
-                            <label class="textLabel">مراحل آماده سازی از طريق پيامك اطلاع رسانی شود؟
-                              <span class="star">*</span></label>
-                            <select name="مراحل آماده سازی از طريق پيامك اطلاع رسانی شود؟" id="">
-                              <option selected="" disabled="">لطفا انتخاب کنید</option>
-                              <option>بله</option>
-                              <option>خیر</option>
-                            </select>
-                            <i class="arrow icon-Arrow-Down"></i>
-                          </div>
-                        </div>
+                      <div class="input_box">
+                        <form>
+                          <input type="number" placeholder="کد تخفیف">
+                          <button class="link">ثبت</button>
+                        </form>
                       </div>
-                      <div class="payment_action">
-                        <a href="#" class="back link"><i class="icon icon-Arrow-Right"></i>
-                          مرحله
-                          قبل</a>
-                        <button class="next_page submit link">
-                          ثبت و ادامه <i class="icon icon-Arrow-Left"></i>
-                        </button>
+                    </li>
+                    <li class="bold line">
+                      <span>مبلغ قابل پرداخت</span>
+                      <span>۹,۴۰۰ تومان</span>
+                    </li>
+                    <li class="bold">
+                      <span>نحوه پرداخت</span>
+                    </li>
+                    <li class="payment_methods">
+                      <div class="method">
+                        <input id="mellat" type="radio" name="bank" checked="">
+                        <img src="./img/payment/4.png" alt="image" class="image">
                       </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="row nahaii">
-                  <div class="col-md-4 item4">
-                    <div id="stickyBox" class="cart-bill">
-                      <ul class="box">
-                        <li>
-                          <span>هزینه ارسال</span>
-                          <span>۱۳,۰۰۰ تومان</span>
-                        </li>
-                        <li>
-                          <span>مالیات ارزش افزوده</span>
-                          <span>۲۵۰,۰۰۰ تومان</span>
-                        </li>
-                        <li class="line discount">
-                          <div class="top">
-                            <span>میزان تخفیف</span>
-                            <span class="distinct">۰ تومان</span>
-                          </div>
-
-                          <div class="input_box">
-                            <form>
-                              <input type="number" placeholder="کد تخفیف">
-                              <button class="link">ثبت</button>
-                            </form>
-                          </div>
-                        </li>
-                        <li class="bold line">
-                          <span>مبلغ قابل پرداخت</span>
-                          <span>۹,۴۰۰ تومان</span>
-                        </li>
-                        <li class="bold">
-                          <span>نحوه پرداخت</span>
-                        </li>
-                        <li class="payment_methods">
-                          <div class="method">
-                            <input id="mellat" type="radio" name="bank" checked="">
-                            <img src="./img/payment/4.png" alt="image" class="image">
-                          </div>
-                          <div class="method">
-                            <input id="pasargad" type="radio" name="bank">
-                            <img src="./img/payment/5.png" alt="image" class="image">
-                          </div>
-                        </li>
-                      </ul>
-                      <form>
-                        <button type="submit" id="stepPaymentBtn" class="link submit">
-                          پرداخت آنلاین
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-8 item8">
-                    <div class="item stepContent">
-                      <h2 class="title">
-                        <i class="icon icon-Box"></i> بازبینی سفارش
-                      </h2>
-                      <div class="box" style="/*overflow-x: scroll*/">
-                        <table id="tablebuy" class="table TableOrder text-center">
-                          <thead>
-                            <tr>
-                              <th scope="col">
-                                <h3 class="titr">محصول انتخابی</h3>
-                              </th>
-                              <th scope="col">
-                                <h3 class="titr">تعداد</h3>
-                              </th>
-                              <th scope="col">
-                                <h3 class="titr">قیمت واحد</h3>
-                                <span class="underTitr">تومان</span>
-                              </th>
-                              <th scope="col">
-                                <h3 class="titr">قیمت کل</h3>
-                                <span class="underTitr">تومان</span>
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td scope="row">
-                                <img src="/img/product-menu/1.jpg" alt="image" class="img">
-                                <h4 class="name">طرح گلاسه</h4>
-                              </td>
-                              <td>۲</td>
-                              <td>۳۲۰</td>
-                              <td>۴۰۰</td>
-                            </tr>
-                            <tr>
-                              <td scope="row">
-                                <img src="/img/product-menu/1.jpg" alt="image" class="img">
-                                <h4 class="name">طرح گلاسه</h4>
-                              </td>
-                              <td>۵</td>
-                              <td>۵۱۰</td>
-                              <td>۵۵۰</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <div class="method">
+                        <input id="pasargad" type="radio" name="bank">
+                        <img src="./img/payment/5.png" alt="image" class="image">
                       </div>
-                      <h2 class="title">
-                        <i class="icon icon-Box"></i> جزئیات گیرنده
-                      </h2>
-                      <div class="box review_info">
-                        <ul>
-                          <li>
-                            <p>نام: <span>ارسلان شاهزاد</span></p>
-                          </li>
-                          <li>
-                            <p>موبایل <span>۰۹۹۲۲۴۲۱۷۷۰</span></p>
-                          </li>
-                          <li>
-                            <p>کدپستی:‌ <span>۱۲۳۴۵۶</span></p>
-                          </li>
-                          <li>
-                            <p>ایمیل <span>linom@gmail.com</span></p>
-                          </li>
-                          <li>
-                            <p>آدرس:‌ <span>تهران</span></p>
-                          </li>
-                          <li>
-                            <p>سایر: <span>سایر توضیحات</span></p>
-                          </li>
-                          <li>
-                            <p>نحوه ارسال: <span>سفارش پستی</span></p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
+                    </li>
+                  </ul>
+                  <form>
+                    <button type="submit" id="stepPaymentBtn" class="link submit">
+                      پرداخت آنلاین
+                    </button>
+                  </form>
                 </div>
               </div>
-            </div>
+              <div class="col-lg-8 col-md-12 col-12 item8">
+                <div class="item stepContent">
+                  <h2 class="title">
+                    <i class="icon icon-Box"></i> بازبینی سفارش
+                  </h2>
+                  <div class="box" style="/*overflow-x: scroll*/">
+                    <table id="tablebuy" class="table TableOrder text-center">
+                      <thead class="thead">
+                        <tr class="tr">
+                          <th scope="col" class="th">
+                            <h3 class="titr">محصول انتخابی</h3>
+                          </th>
+                          <th scope="col" class="th">
+                            <h3 class="titr">تعداد</h3>
+                          </th>
+                          <th scope="col" class="th">
+                            <h3 class="titr">قیمت واحد</h3>
+                            <span class="underTitr">تومان</span>
+                          </th>
+                          <th scope="col" class="th">
+                            <h3 class="titr">قیمت کل</h3>
+                            <span class="underTitr">تومان</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="tbody">
+                        <tr class="tr">
+                          <td scope="row" class="td">
+                            <img src="/img/product-menu/1.jpg" alt="image" class="img">
+                            <h4 class="name">طرح گلاسه</h4>
+                          </td>
+                          <td class="td">۲</td>
+                          <td class="td">۳۲۰</td>
+                          <td class="td">۴۰۰</td>
+                        </tr>
+                        <tr class="tr">
+                          <td scope="row" class="td">
+                            <img src="/img/product-menu/1.jpg" alt="image" class="img">
+                            <h4 class="name">طرح گلاسه</h4>
+                          </td>
+                          <td class="td">۵</td>
+                          <td class="td">۵۱۰</td>
+                          <td class="td">۵۵۰</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <h2 class="title">
+                    <i class="icon icon-Box"></i> جزئیات گیرنده
+                  </h2>
+                  <div class="box review_info">
+                    <ul class="box-item">
+                      <li class="itemInfo">
+                        <p class="text">نام: <span class="desc">ارسلان شاهزاد</span></p>
+                      </li>
+                      <li class="itemInfo">
+                        <p class="text">موبایل: <span class="desc">۰۹۹۲۲۴۲۱۷۷۰</span></p>
+                      </li>
+                      <li class="itemInfo">
+                        <p class="text">کدپستی:‌ <span class="desc">۱۲۳۴۵۶</span></p>
+                      </li>
+                      <li class="itemInfo">
+                        <p class="text">ایمیل: <span class="desc">linom@gmail.com</span></p>
+                      </li>
+                      <li class="itemInfo">
+                        <p class="text">آدرس:‌ <span class="desc">تهران</span></p>
+                      </li>
+                      <li class="itemInfo">
+                        <p class="text">سایر: <span class="desc">سایر توضیحات</span></p>
+                      </li>
+                      <li class="itemInfo">
+                        <p class="text">نحوه ارسال: <span class="desc">سفارش پستی</span></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>

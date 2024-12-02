@@ -315,6 +315,18 @@
   .m-md-none {
     margin: 0;
   }
+
+  .p-md-0 {
+    padding: 0 !important;
+  }
+
+  .flex-column-reverse-md {
+    flex-direction: column-reverse !important;
+  }
+
+  .align-items-center-md {
+    align-items: center !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -655,4 +667,32 @@
 
 .mb-100 {
   margin-bottom: 100px;
+}
+
+.gx-left-10 {
+  margin-left: 10px;
+}
+
+.gx-right-10 {
+  margin-right: 10px;
+}
+
+.gx-10 {
+  margin-inline: 10px;
+}
+
+.gy-top-10 {
+  margin-top: 10px;
+}
+
+.gy-bottom-10 {
+  margin-bottom: 10px;
+}
+
+.gy-10 {
+  margin-block: 10px;
+}
+
+.p-inline {
+  padding-inline: 40px;
 }

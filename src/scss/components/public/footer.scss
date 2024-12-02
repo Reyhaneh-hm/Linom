@@ -32,7 +32,8 @@
 
             .column {
                 .link {
-                    // text-decoration: none;
+                    position: relative;
+                    bottom: 15px;
 
                     img {
                         @media screen and (max-width: 1024px) {
@@ -46,7 +47,7 @@
 
                 .text-colum {
                     font-size: 20px;
-                    margin-bottom: 25px;
+                    margin-bottom: 40px;
                 }
 
                 .footer-list {
@@ -55,7 +56,6 @@
 
                         .link {
                             font-size: 16px;
-                            // text-decoration: none;
                             color: #757a83;
                             transition: all 0.3s;
 

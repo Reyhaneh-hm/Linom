@@ -84,7 +84,7 @@
                 a.text-menu {
                     text-decoration: none;
                     color: #3d3c45;
-                    font-size: 20px;
+                    font-size: 19px;
                     transition: all 0.3s;
 
                     &:hover {
@@ -102,7 +102,7 @@
                     cursor: pointer;
 
                     #hambergerMuno {
-                        font-size: 29px;
+                        font-size: 27px;
                         transition: all 0.3s;
 
                         &::before {
@@ -196,7 +196,7 @@
         }
 
         .icon-header {
-            font-size: 29px;
+            font-size: 27px;
             transition: all 0.3s;
 
             &::before {
@@ -321,12 +321,12 @@
                     transition: all 0.3s;
 
                     &.title {
-                        font-size: 12px;
+                        font-size: 13px;
                     }
 
                     &.icon {
-                        width: 20px;
-                        font-size: 25px;
+                        // width: 20px;
+                        font-size: 20px;
                     }
                 }
             }

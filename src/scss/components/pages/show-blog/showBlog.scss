@@ -12,6 +12,26 @@
             .head {
 
                 .box-img {
+                    @media screen and (max-width: 1024px) {
+                        height: 395px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        height: 355px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        height: 240px;
+                    }
+
+                    @media screen and (max-width: 375px) {
+                        height: 200px;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        height: 165px;
+                    }
+
                     width: 100%;
                     height: 550px;
                     object-fit: cover;
@@ -25,26 +45,61 @@
                     }
                 }
 
-                .grouping {
-                    transition: all 0.3s;
-                    color: $text;
-                    padding: 3px 10px;
-                    border-radius: 5px;
-                    background-color: #ebebeb;
-                    font-size: 10px;
-                    margin-bottom: 10px;
-                    display: inline-block;
+                .linkGrouping {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    width: 100%;
+                    overflow-x: auto;
+                    white-space: nowrap;
+                    padding-bottom: 10px;
+
+                    &::-webkit-scrollbar-track {
+                        padding: 2px 0;
+                        background-color: #f6f6f6;
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: 1px;
+                        height: 3px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        border-radius: 10px;
+                        background-color: #c1c8d5;
+                    }
+
+                    .grouping {
+                        transition: all 0.3s;
+                        color: #707070;
+                        padding: 3px 10px;
+                        border-radius: 5px;
+                        background-color: #ebebeb;
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
                 }
 
                 .info {
                     margin-bottom: 35px;
 
                     .title {
+                        @media screen and (max-width: 425px) {
+                            font-size: 19px;
+                        }
+
                         color: $main;
+                        font-size: 30px;
                     }
                 }
 
                 .post-info {
+                    @media screen and (max-width: 425px) {
+                        display: block;
+                    }
+
+                    display: flex;
+                    align-items: center;
 
                     .avatarBox {
                         width: 30px;
@@ -66,6 +121,11 @@
                     }
 
                     span {
+                        @media screen and (max-width: 425px) {
+                            display: block;
+                            margin: 13px 15px;
+                        }
+
                         color: $text;
                         font-size: 13px;
                         position: relative;
@@ -95,8 +155,12 @@
                 margin-top: 20px;
 
                 .text {
+                    @media screen and (max-width: 425px) {
+                        line-height: 2.5;
+                    }
+
                     line-height: 3.2;
-                    font-size: 16px;
+                    font-size: 15px;
                     color: $text;
                     margin-bottom: 13px;
                     text-align: justify;
@@ -107,16 +171,29 @@
                 }
 
                 .justify-content-center {
+                    @media screen and (max-width: 768px) {
+                        flex-direction: column;
+                    }
+
                     display: flex;
                     align-items: center;
+                    gap: 25px;
+                    margin-block: 20px;
 
                     .boxImage {
-                        width: 30%;
-                        padding: 0;
-                        height: 300px;
+                        @media screen and (max-width: 425px) {
+                            height: 255px;
+                            width: 100%;
+                        }
+
+                        @media screen and (max-width: 320px) {
+                            height: 195px;
+                        }
+
+                        width: 410px;
+                        height: 315px;
                         object-fit: cover;
                         border-radius: 10px;
-                        margin: 20px 10px;
                         overflow: hidden;
 
                         .img {
@@ -129,414 +206,190 @@
         }
 
         .comments {
-            width: 100%;
             margin-top: 150px;
-            position: relative;
             display: flex;
             justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
 
             .sec_title {
-                position: absolute;
-                top: -60px;
-                width: 100%;
                 color: $main;
-                text-align: center;
+                margin-bottom: 50px;
 
                 .title {
                     font-size: 23px;
                 }
             }
 
-            .comment_form {
-                width: 30%;
-                height: 425px;
-                position: sticky;
-                top: 120px;
-                background-color: #f5f7fa;
-                padding: 15px;
-                border-radius: 10px;
-
-                .input_box {
-                    margin-bottom: 15px;
-
-                    input:focus-visible,
-                    textarea:focus-visible {
-                        border: 2px solid $main;
-                    }
-
-                    input,
-                    select,
-                    textarea {
-                        width: 100%;
-                        color: $main;
-                        font-size: 15px;
-                        border: 2px solid $white;
-                        transition: all 0.3s;
-                        padding: 15px 12px;
-                        border-radius: 10px;
-                    }
-
-                    textarea {
-                        resize: none;
-                        height: 120px;
-                    }
-
-                    &.bottom {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: $white;
-                        border-radius: 10px;
-                        width: max-content;
-                        margin-inline: auto;
-                        padding-right: 5px;
-
-                        .code {
-                            padding-left: 5px;
-                            mix-blend-mode: multiply;
-                            width: 60px;
-                            border-left: 1px dashed $main;
-                        }
-
-                        input {
-                            width: 150px;
-                            padding-block: 13px;
-                            font-size: 13px;
-                            padding-inline: 0;
-                            text-align: center;
-                            margin-right: 2px;
-                        }
-                    }
+            .box-comments {
+                @media screen and (max-width: 768px) {
+                    flex-direction: column-reverse;
                 }
 
-                .submit {
-                    width: 100%;
-                    padding-block: 19px;
-                    cursor: pointer;
-                    background-color: $main;
-                    border: 0;
-                    color: $white;
-                    font-size: 16px;
-                    border-radius: 10px;
-                    transition: all 0.3s;
+                display: flex;
+                justify-content: space-between;
 
-                    &:hover {
-                        background-color: $hover2;
+                .comment_form {
+                    @media screen and (max-width: 768px) {
+                        margin-top: 50px;
                     }
-                }
 
-            }
-
-            .main_card {
-                width: 70%;
-                margin-right: 10px;
-
-                .comment_item {
+                    height: 425px;
+                    position: sticky;
+                    top: 120px;
                     background-color: #f5f7fa;
+                    padding: 15px;
                     border-radius: 10px;
-                    padding: 20px;
-                    margin-bottom: 30px;
 
-                    .head {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        margin-bottom: 20px;
-
-                        .name {
-                            display: flex;
-                            align-items: center;
-                            gap: 12px;
-
-
-                            .box-userImage {
-                                border-radius: 50%;
-                                width: 40px;
-                                height: 40px;
-
-                                .user_image {
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            }
-
-                            .title {
-                                font-size: 18px;
-                                color: $main;
-                            }
-                        }
-
-                        .date {
-                            font-size: 13px;
-                            color: $text;
-                        }
-                    }
-
-                    .main_desc {
-                        font-size: 15px;
-                        color: $text;
-                        padding-inline: 15px;
-                        line-height: 2.3;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        -webkit-line-clamp: 3;
-                    }
-
-                    .actions {
-                        display: flex;
-                        align-items: center;
-                        justify-content: end;
-                        gap: 13px;
-                        margin-top: 12px;
-
-                        li {
-                            display: flex;
-                            gap: 5px;
-                            align-items: center;
-                            color: $text;
-                            transition: all 0.3s;
-                            cursor: pointer;
-
-                            &:hover {
-                                color: $main2;
-                            }
-
-                            span.num {
-                                font-size: 16px;
-                            }
-
-                            span.icon {
-                                font-size: 20px;
-                            }
-                        }
-                    }
-
-
-                    &.reply {
-                        margin-bottom: 0;
-                        margin-right: 70px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-
-
-/////////////////Responsive///////////////////
-
-@media screen and (max-width: 1024px) {
-    .weblogs {
-        .card {
-            .post {
-                .head {
-                    .box-img {
-                        height: 395px;
-                    }
-                }
-
-                .content {
-                    .justify-content-center {
-                        .boxImage {
-                            width: 47%;
-                        }
-                    }
-                }
-            }
-
-            .comments {
-                .comment_form {
-                    width: 33%;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .weblogs {
-        .card {
-            .post {
-                .head {
-                    .box-img {
-                        height: 355px;
-                    }
-                }
-            }
-
-            .comments {
-                flex-direction: column-reverse;
-                align-items: center;
-
-                .main_card {
-                    width: 100%;
-                    margin-right: 0;
-                }
-
-                .comment_form {
-                    margin-top: 20px;
-                    width: 100%;
-                    overflow-x: hidden;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .weblogs {
-        .card {
-            .post {
-                .head {
-                    .box-img {
-                        height: 240px;
-                    }
-
-                    .info {
-                        .title {
-                            font-size: 22px;
-                        }
-                    }
-                }
-
-                .content {
-                    .text {
-                        line-height: 2.5;
-                        font-size: 15px;
-                    }
-
-                    .justify-content-center {
-                        flex-direction: column;
-
-                        .boxImage {
-                            width: 100%;
-                            height: 255px;
-                        }
-                    }
-
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .weblogs {
-        .card {
-            .post {
-                .head {
-                    .box-img {
-                        height: 200px;
-                    }
-                }
-
-                .post-info {
-                    span {
-                        display: block;
-                        margin: 13px 0;
-                    }
-                }
-            }
-
-            .comments {
-                .main_card {
-                    .comment_item {
-                        .head {
-                            .date {
-                                font-size: 11px;
-                            }
-
-                            .name {
-                                .title {
-                                    font-size: 16px;
-                                }
-                            }
-                        }
-
-                        .main_desc {
-                            font-size: 14px;
-                        }
-                    }
-
-                    .comment_item.reply {
-                        margin-right: 30px;
-                    }
-                }
-
-                .comment_form {
                     .input_box {
+                        margin-bottom: 15px;
+
+                        input:focus-visible,
+                        textarea:focus-visible {
+                            border: 2px solid $main;
+                        }
 
                         input,
                         select,
                         textarea {
                             width: 100%;
-                            color: #3d3c45;
+                            color: $main;
                             font-size: 14px;
+                            border: 2px solid $white;
+                            transition: all 0.3s;
+                            padding: 15px 12px;
+                            border-radius: 10px;
+                        }
+
+                        textarea {
+                            resize: none;
+                            height: 120px;
+                        }
+
+                        &.bottom {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $white;
+                            border-radius: 10px;
+                            width: max-content;
+                            margin-inline: auto;
+
+                            .code {
+                                padding-left: 5px;
+                                mix-blend-mode: multiply;
+                                width: 60px;
+                                border-left: 1px dashed $main;
+                            }
+
+                            input {
+                                width: 140px;
+                                padding-block: 13px;
+                                font-size: 13px;
+                                padding-inline: 0;
+                                text-align: center;
+                                margin-right: 2px;
+                            }
                         }
                     }
 
                     .submit {
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-    }
-}
+                        width: 100%;
+                        padding-block: 19px;
+                        cursor: pointer;
+                        background-color: $main;
+                        border: 0;
+                        color: $white;
+                        font-size: 15px;
+                        border-radius: 10px;
+                        transition: all 0.3s;
 
-@media screen and (max-width: 320px) {
-    .weblogs {
-        .card {
-            .post {
-                .head {
-                    .box-img {
-                        height: 165px;
-                    }
-
-                    .info {
-                        .title {
-                            font-size: 18px;
+                        &:hover {
+                            background-color: $hover2;
                         }
                     }
-                }
 
-                .content {
-                    .justify-content-center {
-                        .boxImage {
-                            height: 195px;
-                        }
-                    }
-                }
-            }
-
-            .comments {
-                .sec_title {
-                    .title {
-                        font-size: 20px;
-                    }
                 }
 
                 .main_card {
+                    @media screen and (max-width: 768px) {
+                        margin-right: 0;
+                    }
+
+                    margin-right: 10px;
+
                     .comment_item {
+                        background-color: #f5f7fa;
+                        border-radius: 10px;
+                        padding: 20px;
+                        margin-bottom: 30px;
+
                         .head {
-                            .date {
-                                font-size: 10px;
-                            }
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 20px;
 
                             .name {
-                                .title {
-                                    font-size: 14px;
+                                display: flex;
+                                align-items: center;
+                                gap: 12px;
+
+
+                                .box-userImage {
+                                    border-radius: 50%;
+                                    width: 30px;
+                                    height: 30px;
+
+                                    .user_image {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
                                 }
+
+                                .title {
+                                    font-size: 16px;
+                                    color: $main;
+                                }
+                            }
+
+                            .date {
+                                font-size: 12px;
+                                color: $text;
                             }
                         }
 
+                        .main_desc {
+                            font-size: 14px;
+                            color: $text;
+                            padding-inline: 15px;
+                            line-height: 2.3;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 3;
+                        }
+
                         .actions {
+                            display: flex;
+                            align-items: center;
+                            justify-content: end;
+                            gap: 13px;
+                            margin-top: 12px;
+
                             li {
+                                display: flex;
+                                gap: 5px;
+                                align-items: center;
+                                color: $text;
+                                transition: all 0.3s;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: $main2;
+                                }
+
                                 span.num {
                                     font-size: 14px;
                                 }
@@ -545,6 +398,15 @@
                                     font-size: 18px;
                                 }
                             }
+                        }
+
+
+                        &.reply {
+                            @media screen and (max-width: 768px) {
+                                margin-right: 25px;
+                            }
+
+                            margin: 30px 70px 0 0;
                         }
                     }
                 }

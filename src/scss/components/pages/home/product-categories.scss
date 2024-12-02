@@ -138,38 +138,43 @@
             }
 
             .box-slider {
-                display: none;
-                justify-content: center;
-                align-items: center;
-                margin-block: 60px;
-                scroll-behavior: smooth;
-                overflow-x: scroll;
-                padding-left: 5px;
-                padding-right: 320px;
-                white-space: normal;
-                scrollbar-width: none;
-                position: relative;
-                left: 138px;
+                @media screen and (max-width: 1440px) {
+                    left: 72px;
+                }
 
-                @media screen and (max-width: 990px) {
-                    padding-left: 0;
-                    padding-right: 530px;
-                    width: 100vw;
-                    left: 140px;
+                @media screen and (max-width: 1024px) {
+                    left: 45px;
                 }
 
                 @media screen and (max-width: 768px) {
                     left: 36px;
+                    width: 100vw;
                 }
 
                 @media screen and (max-width: 425px) {
-                    padding-right: 800px;
+                    left: 12px;
                 }
 
                 @media screen and (max-width: 375px) {
-                    padding-right: 775px;
+                    padding-right: 15px;
                     left: 12px;
+                    padding-left: 15px;
                 }
+
+                display: none;
+                align-items: center;
+                margin-block: 60px;
+                scroll-behavior: smooth;
+                padding-left: 10px;
+                padding-right: 10px;
+                white-space: normal;
+                scrollbar-width: none;
+                position: relative;
+                left: 138px;
+                gap: 15px;
+                flex-direction: row-reverse;
+                overflow-x: scroll;
+                height: 425px;
 
                 &.active {
                     display: flex;
@@ -185,7 +190,6 @@
                     min-width: 290px;
                     max-width: 290px;
                     height: 415px;
-                    margin: 10px;
                     background: $white;
                     border-radius: 15px;
                     overflow: hidden;
@@ -248,14 +252,15 @@
                         width: 290px;
                         height: 360px;
                         position: absolute;
-                        top: 10px;
+                        // top: 10px;
+                        top: 0;
                         border-radius: 15px 15px 0 0;
                     }
 
                     .textSlider {
                         color: $main3;
                         font-size: 16px;
-                        margin-bottom: 17px;
+                        margin-bottom: 20px;
                         padding-inline: 10px;
                         display: -webkit-box;
                         -webkit-box-orient: vertical;
@@ -271,6 +276,9 @@
                 height: 435px;
                 overflow: hidden;
                 padding: 0;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
 
                 @media screen and (max-width: 768px) {
                     left: 0;
@@ -311,10 +319,6 @@
                     text-overflow: ellipsis;
                     -webkit-line-clamp: 6;
                     font-size: 16px;
-
-                    @media screen and (max-width: 768px) {
-                        display: none;
-                    }
                 }
 
                 .boxIconeDesc {
