@@ -1,36 +1,6 @@
 import '../../../scss/components/pages/FAQ/FAQ.scss';
 
 /*-----------------Tab Content-----------------*/
-// window.addEventListener("load", () => {
-//   const tabs = document.querySelectorAll("[data-target]");
-//   const content = document.querySelectorAll("[item]");
-
-//   if (tabs && content) {
-
-//     for (let i = 0; i < tabs.length; i++) {
-//       tabs[0].click()
-//       tabs[0].classList.add('active')
-
-//       tabs[i].addEventListener("click", () => {
-//         tabs.forEach((item) => {
-//           item.classList.remove("active");
-//         });
-//         tabs[i].classList.add("active");
-
-//         const contentId = tabs[i].getAttribute("data-target");
-
-//         content.forEach((item) => {
-//           item.classList.remove("active");
-//         });
-
-//         const element = document.querySelector(
-//           `[item="${contentId}"]`
-//         );
-//         element.classList.add("active");
-//       });
-//     }
-//   }
-// });
 document.querySelector(".nav").addEventListener("click", (e) => {
   const tab = e.target.closest(".nav-link");
   if (!tab) return;
