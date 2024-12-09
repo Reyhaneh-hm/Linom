@@ -51,7 +51,7 @@
                 }
 
                 &:focus-within {
-                    border: 2px solid #464550;
+                    border: 2px solid $main2;
                 }
             }
 
@@ -79,108 +79,79 @@
                         min-height: 100px;
                         width: 100%;
 
-                        .item {
+                        .nav-link {
                             width: 100%;
+                            border-radius: 10px;
+                            border: 0;
+                            background: transparent;
+                            padding: 15px;
+                            text-align: right;
+                            cursor: pointer;
+                            color: $main;
+                            transition: all 0.3s;
 
-                            .nav-link {
-                                width: 100%;
-                                border-radius: 10px;
-                                border: 0;
-                                background: transparent;
-                                padding: 12px 15px;
-                                text-align: right;
-                                cursor: pointer;
-                                color: $main;
-                                transition: all 0.3s;
+                            .icon {
+                                font-size: 20px;
+                            }
 
-                                .icon {
-                                    font-size: 20px;
-                                }
+                            .text-navItem {
+                                font-size: 15px;
+                            }
 
-                                .text-navItem {
-                                    font-size: 15px;
-                                }
-
-                                &.active {
-                                    box-shadow: 0 0.125rem 0.25rem rgba(147, 158, 170, 0.4);
-                                    background: $main2;
-                                    color: $white;
-                                }
+                            &.active {
+                                box-shadow: 0 0.125rem 0.25rem rgba(147, 158, 170, 0.4);
+                                background: $main2;
+                                color: $white;
                             }
                         }
                     }
                 }
 
-            }
+                .questions {
+                    .item {
+                        display: none;
+                        transition: all 0.3s;
 
-            .questions {
-                .item {
-                    display: none;
-                    transition: all 0.3s;
+                        .titr {
+                            gap: 20px;
 
-                    .titr-payment,
-                    .titr-delivery,
-                    .titr-cancellation,
-                    .titr-orders,
-                    .titr-product {
-                        gap: 20px;
+                            .box-icon {
+                                background: #f5f7fa;
+                                color: $main2;
+                                border-radius: 10px;
+                                width: 50px;
+                                height: 50px;
 
-                        .box-icon {
-                            background: #f5f7fa;
-                            color: $main2;
-                            border-radius: 10px;
-                            width: 50px;
-                            height: 50px;
+                                .icon {
+                                    font-size: 23px;
+                                }
+                            }
 
-                            .icon {
-                                font-size: 23px;
+                            .info {
+
+                                .title {
+                                    font-size: 18px;
+                                    color: $main;
+                                }
+
+                                .desc {
+                                    font-size: 15px;
+                                    color: $text;
+                                }
                             }
                         }
 
-                        .payment-info,
-                        .delivery-info,
-                        .cancellation-info,
-                        .orders-info,
-                        .product-info {
+                        .accordion {
+                            margin-top: 20px;
 
-                            .payment-title,
-                            .delivery-title,
-                            .cancellation-title,
-                            .orders-title,
-                            .product-title {
-                                font-size: 18px;
-                                color: $main;
-                            }
+                            .accordion-item {
+                                box-shadow: 0 0.25rem 1rem rgba(147, 158, 170, 0.45);
+                                background: #fff;
+                                margin-bottom: 10px;
+                                border-radius: 10px;
+                                transition: all 0.3s;
 
-                            .payment-desc,
-                            .delivery-desc,
-                            .cancellation-desc,
-                            .orders-desc,
-                            .product-desc {
-                                font-size: 15px;
-                                color: $text;
-                            }
-                        }
-                    }
-
-                    .accordion-payment,
-                    .accordion-delivery,
-                    .accordion-cancellation,
-                    .accordion-orders,
-                    .accordion-product {
-                        margin-top: 20px;
-
-                        .accordion-item {
-                            box-shadow: 0 0.25rem 1rem rgba(147, 158, 170, 0.45);
-                            background: #fff;
-                            margin-bottom: 10px;
-                            border-radius: 10px;
-                            overflow: hidden;
-                            transition: all 0.3s;
-
-                            .accordion-header {
-
-                                .accordion-button {
+                                .accordion-header {
                                     color: $main;
                                     padding: 20px;
                                     text-align: right;
@@ -191,6 +162,7 @@
                                     font-size: 16px;
                                     line-height: 1.5;
                                     border: 0;
+                                    border: none;
                                     transition: all 0.3s;
 
                                     .icon {
@@ -199,27 +171,8 @@
                                         color: $main;
                                         transition: all 0.3s;
                                     }
-                                }
-                            }
 
-                            .accordion-collapse {
-                                .accordion-body {
-                                    padding: 15px;
-                                    padding-top: 0;
-                                    line-height: 2;
-                                    font-size: 15px;
-                                    color: $text;
-                                    transition: all 0.3s;
-
-                                    a {
-                                        color: $main2;
-                                    }
-                                }
-                            }
-
-                            &.active {
-                                .accordion-header {
-                                    .accordion-button {
+                                    &.active {
                                         color: $main2;
 
                                         .icon {
@@ -228,12 +181,33 @@
                                         }
                                     }
                                 }
+
+
+                                .accordion-body {
+                                    padding: 0 15px;
+                                    line-height: 2;
+                                    font-size: 15px;
+                                    color: $text;
+                                    overflow: hidden;
+                                    background: transparent;
+                                    border: 0;
+                                    transition: all 0.3s;
+                                    max-height: 0;
+
+                                    a {
+                                        color: $main2;
+                                    }
+
+                                    &.active {
+                                        padding: 0 15px 15px;
+                                    }
+                                }
                             }
                         }
-                    }
 
-                    &.active {
-                        display: block;
+                        &.active {
+                            display: block;
+                        }
                     }
                 }
             }
