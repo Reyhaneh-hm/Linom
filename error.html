@@ -2,26 +2,26 @@
 <html lang="fa">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="/images/logoMain.png" />
-    <title> ارور </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="/images/logoMain.png" />
+  <title> ارور </title>
 </head>
 
 <body>
 
-    <!------------------Quick Access----------------------->
+  <!------------------Quick Access----------------------->
 
-    <!--go to top-->
-    <a href="#" id="go-to-top">
-        <i class="icon-up icon-Arrow-Up-2"></i>
-    </a>
+  <!--go to top-->
+  <a href="#" id="go-to-top">
+    <i class="icon-up icon-Arrow-Up-2"></i>
+  </a>
 
-    <!--social network-->
-    <div class="center-circle" id="centerCircle">
-        <i class="icon-social icon-Calling"></i>
-    </div>
+  <!--social network-->
+  <div class="center-circle" id="centerCircle">
+    <i class="icon-social icon-Calling"></i>
+  </div>
 
   <!---------------------Header-------------------------->
 
@@ -29,13 +29,13 @@
   <div class="overlay2"></div>
   <header class="topHeader">
     <nav class="top-menu container">
-      <a href="./index.html" class="logo" id="logoNav1">
+      <a href="./index.html" class="logo d-md-none" id="logoNav1">
         <img src="images/logoMain.png" alt="image">
       </a>
-      <a href="./index.html" class="logo" id="logoNav2">
+      <a href="./index.html" class="logo d-md-block" id="logoNav2">
         <img src="images/logo.png" alt="image">
       </a>
-      <ul class="menu">
+      <ul class="menu d-md-none">
         <li class="itemMenu" id="item-manuCategories">
           <a href="#" class="text-menu">
             <i class="icon-header icon-menu" id="hambergerMuno"></i>
@@ -731,8 +731,8 @@
       <div id="boxIcon">
         <a href="./contact-us.html"><i class="icon-header icon-Calling" id="call"></i></a>
         <a href="./payment.html"><i class="icon-header icon-Buy" id="buy"></i></a>
-        <a href="./error.html"><i class="icon-header icon-Profile" id="user"></i></a>
-        <span id="hambergerMuno2">
+        <a href="./error.html" class="d-md-none"><i class="icon-header icon-Profile" id="user"></i></a>
+        <span id="hambergerMuno2" class="d-md-block">
           <input type="checkbox" id="checkbox">
           <label for="checkbox" class="toggle">
             <div class="bars" id="bar1"></div>
@@ -747,7 +747,7 @@
         </div>
       </div>
 
-      <div class="filterProduct">
+      <div class="filterProduct d-md-block">
         <ul class="box">
           <li class="item active">
             <a href="#" class="link">
@@ -913,32 +913,29 @@
 
   <!---------------------------------------------------->
 
-    <section class="error">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
+  <section class="error">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
 
-                    <ul class="breadcrumb">
-                        <li><a href="./index.html">صفحه اصلی</a></li>
-                        <li> ارور ۴۰۴ </li>
-                    </ul>
+          <ul class="breadcrumb">
+            <li><a href="./index.html">صفحه اصلی</a></li>
+            <li> ارور ۴۰۴ </li>
+          </ul>
 
-                    <div class="card">
+          <div class="card">
 
-                        <div class="item">
-                            <h1 class="title">۴۰۴</h1>
-                            <p class="text">متاسفانه صفحه مورد نظر شما پیدا نشد!</p>
-                            <a href="./index.html" class="link">بازگشت به صفحه اصلی</a>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="item">
+              <h1 class="title">۴۰۴</h1>
+              <p class="text">متاسفانه صفحه مورد نظر شما پیدا نشد!</p>
+              <a href="./index.html" class="link">بازگشت به صفحه اصلی</a>
             </div>
+
+          </div>
         </div>
-    </section>
-
-
-
+      </div>
+    </div>
+  </section>
 
   <!-----------------------footer------------------------->
 
@@ -1030,8 +1027,8 @@
   </div>
 
 
-    <script type="module" src="/main.js"></script>
-    <script type="module" src="/src/js/pages/error404/error404.js"></script>
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="/src/js/pages/error404/error404.js"></script>
 </body>
 
 </html>

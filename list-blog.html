@@ -29,13 +29,13 @@
   <div class="overlay2"></div>
   <header class="topHeader">
     <nav class="top-menu container">
-      <a href="./index.html" class="logo" id="logoNav1">
+      <a href="./index.html" class="logo d-md-none" id="logoNav1">
         <img src="images/logoMain.png" alt="image">
       </a>
-      <a href="./index.html" class="logo" id="logoNav2">
+      <a href="./index.html" class="logo d-md-block" id="logoNav2">
         <img src="images/logo.png" alt="image">
       </a>
-      <ul class="menu">
+      <ul class="menu d-md-none">
         <li class="itemMenu" id="item-manuCategories">
           <a href="#" class="text-menu">
             <i class="icon-header icon-menu" id="hambergerMuno"></i>
@@ -724,15 +724,15 @@
           <a href="./about-us.html" class="text-menu linkAboutUs"> درباره ما </a>
         </li>
         <li class="itemMenu">
-          <a href="./index.html" class="text-menu linkAboutUs"> صفحه اصلی </a>
+          <a href="./index.html" class="text-menu linkIndex"> صفحه اصلی </a>
         </li>
       </ul>
 
       <div id="boxIcon">
         <a href="./contact-us.html"><i class="icon-header icon-Calling" id="call"></i></a>
         <a href="./payment.html"><i class="icon-header icon-Buy" id="buy"></i></a>
-        <a href="./error.html"><i class="icon-header icon-Profile" id="user"></i></a>
-        <span id="hambergerMuno2">
+        <a href="./error.html" class="d-md-none"><i class="icon-header icon-Profile" id="user"></i></a>
+        <span id="hambergerMuno2" class="d-md-block">
           <input type="checkbox" id="checkbox">
           <label for="checkbox" class="toggle">
             <div class="bars" id="bar1"></div>
@@ -747,23 +747,23 @@
         </div>
       </div>
 
-      <div class="filterProduct">
+      <div class="filterProduct d-md-block">
         <ul class="box">
           <li class="item active">
-            <span href="#" class="link">
+            <a href="#" class="link">
               <span class="title">کابینت روشویی</span>
               <i class="icon icon-Arrow-Left"></i>
-            </span>
+            </a>
             <ul class="submenu">
               <li class="item-submenu">نمونه یک</li>
               <li class="item-submenu">نمونه دو</li>
             </ul>
           </li>
           <li class="item">
-            <span href="#" class="link">
+            <a href="#" class="link">
               <span class="title">توالت فرنگی</span>
               <i class="icon icon-Arrow-Left"></i>
-            </span>
+            </a>
             <ul class="submenu">
               <li class="item-submenu">نمونه یک</li>
               <li class="item-submenu">نمونه دو</li>
@@ -906,7 +906,6 @@
 
         </ul>
       </div>
-
 
     </nav>
 

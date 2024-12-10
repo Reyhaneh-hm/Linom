@@ -84,7 +84,7 @@
                 a.text-menu {
                     text-decoration: none;
                     color: #3d3c45;
-                    font-size: 19px;
+                    font-size: 18px;
                     transition: all 0.3s;
 
                     &:hover {
@@ -103,6 +103,7 @@
 
                     #hambergerMuno {
                         font-size: 27px;
+                        margin-right: 0;
                         transition: all 0.3s;
 
                         &::before {
@@ -122,7 +123,11 @@
         }
 
         #boxIcon {
-            width: 225px;
+            @media screen and (max-width: 768px) {
+                gap: 30px;
+            }
+
+            gap: 70px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -196,7 +201,7 @@
         }
 
         .icon-header {
-            font-size: 27px;
+            font-size: 25px;
             transition: all 0.3s;
 
             &::before {
@@ -855,37 +860,15 @@
 /*----------------------------------------------*/
 
 
-@media screen and (max-width: 1440px) {
-    .topHeader {
-        .top-menu {
-            ul.menu {
-                li.itemMenu {
-                    a.text-menu {
-                        font-size: 18px;
-                    }
-                }
-            }
-
-            #boxIcon {
-                width: 215px;
-
-                .icon-header {
-                    font-size: 26px;
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 768px) {
     .topHeader {
         .top-menu {
             #logoNav1 {
-                display: none;
+                // display: none;
             }
 
             #logoNav2 {
-                display: block;
+                // display: block;
                 opacity: 1;
                 transform: scaleX(1);
 
@@ -895,48 +878,38 @@
             }
 
             ul.menu {
-                display: none;
+                // display: none;
 
                 li.itemMenu {
                     a.text-menu {
-                        font-size: 17px;
+                        // font-size: 17px;
                     }
                 }
             }
 
             #boxIcon {
-                width: 135px;
+                // gap: 30px;
 
                 a:nth-child(3) {
-                    display: none;
+                    // display: none;
                 }
             }
 
             #hambergerMuno2 {
-                display: block;
+                // display: block;
             }
         }
     }
 
     #hambergerMuno2 {
-        display: block !important;
+        // display: block !important;
     }
 
     #user {
-        display: none;
+        // display: none;
     }
 
     .filterProduct {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .topHeader {
-        .top-menu {
-            #boxIcon {
-                width: 110px;
-            }
-        }
+        // display: block;
     }
 }
