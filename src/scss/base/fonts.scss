@@ -11,13 +11,14 @@
 }
 
 /*---------------Icomoon----------------*/
+
 @font-face {
   font-family: 'icomoon';
-  src: url('/fonts/icons/icomoon.eot?p4q6v0');
-  src: url('/fonts/icons/icomoon.eot?p4q6v0#iefix') format('embedded-opentype'),
-    url('/fonts/icons/icomoon.ttf?p4q6v0') format('truetype'),
-    url('/fonts/icons/icomoon.woff?p4q6v0') format('woff'),
-    url('/fonts/icons/icomoon.svg?p4q6v0#icomoon') format('svg');
+  src: url('/fonts/icons/icomoon.eot?534zxw');
+  src: url('/fonts/icons/icomoon.eot?534zxw#iefix') format('embedded-opentype'),
+    url('/fonts/icons/icomoon.ttf?534zxw') format('truetype'),
+    url('/fonts/icons/icomoon.woff?534zxw') format('woff'),
+    url('/fonts/icons/icomoon.svg?534zxw#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -37,6 +38,18 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "\e921";
+}
+
+.icon-icon-arrow-rotary2:before {
+  content: "\e91b";
+}
+
+.icon-card:before {
+  content: "\e92e";
 }
 
 .icon-Box:before {
@@ -209,14 +222,6 @@
 
 .icon-Shower:before {
   content: "\e911";
-}
-
-.icon-icon-arrow-rotary2:before {
-  content: "\e91b";
-}
-
-.icon-card:before {
-  content: "\e92e";
 }
 
 .icon-close:before {

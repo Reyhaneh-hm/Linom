@@ -863,12 +863,8 @@
 @media screen and (max-width: 768px) {
     .topHeader {
         .top-menu {
-            #logoNav1 {
-                // display: none;
-            }
 
             #logoNav2 {
-                // display: block;
                 opacity: 1;
                 transform: scaleX(1);
 
@@ -876,40 +872,6 @@
                     width: 135px;
                 }
             }
-
-            ul.menu {
-                // display: none;
-
-                li.itemMenu {
-                    a.text-menu {
-                        // font-size: 17px;
-                    }
-                }
-            }
-
-            #boxIcon {
-                // gap: 30px;
-
-                a:nth-child(3) {
-                    // display: none;
-                }
-            }
-
-            #hambergerMuno2 {
-                // display: block;
-            }
         }
-    }
-
-    #hambergerMuno2 {
-        // display: block !important;
-    }
-
-    #user {
-        // display: none;
-    }
-
-    .filterProduct {
-        // display: block;
     }
 }
