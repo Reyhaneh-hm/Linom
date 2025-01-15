@@ -1,10 +1,5 @@
 @import '../../../base/setting.scss';
 
-body {
-    // background: red;
-    // overflow-x: auto;
-}
-
 .product-header {
     background: transparent !important;
     box-shadow: none;
@@ -42,12 +37,13 @@ body {
         margin-top: 50px;
 
         .image-product {
+            @media screen and (max-width: 1440px) {
+                left: 10px;
+            }
+
             position: relative;
             left: 125px;
             bottom: 40px;
-            display: flex;
-            // align-items: center;
-            justify-content: center;
             height: fit-content;
 
             .img {
@@ -59,26 +55,25 @@ body {
                 min-width: 320px;
                 max-width: 740px;
                 height: auto;
-                // position: sticky;
-                // top: 20px;
-                position: fixed;
-                top: 10px;
+                position: relative;
+                top: 0;
+                // position: fixed;
+                // top: 10px;
             }
 
             .bg-images {
+                @media screen and (max-width: 1440px) {
+                    right: 400px;
+                }
+
                 width: 200px;
                 height: 70px;
-                // position: absolute;
-                // left: 100px;
-                // bottom: 30px;
-                position: fixed;
+                // position: fixed;
+                position: absolute;
                 right: 525px;
-                bottom: 45px;
+                bottom: 35px;
                 border-radius: 50px;
                 background: #ffffff3d;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 gap: 2px;
 
                 .box-img {
@@ -98,25 +93,26 @@ body {
                         min-width: 60px;
                         max-width: 60px;
                         height: 60px;
-                        top: 88%;
+                        // top: 88%;
                     }
                 }
             }
         }
 
-        .contact-product {
-            // border: 1px solid blue;
-
+        .product-details {
             .content-top {
-                // width: 100%;
-                width: 42%;
+                @media screen and (max-width: 1024px) {
+                    display: flex !important;
+                    flex-direction: column !important;
+                    align-items: normal !important;
+                    justify-content: normal !important;
+                }
+
+                // width: 42%;
                 min-height: auto;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
                 margin-block: 50px;
-                // position: relative;
-                position: fixed;
+                // position: fixed;
+                // z-index: 1;
 
                 &::after {
                     content: "";
@@ -154,7 +150,6 @@ body {
                         }
 
                         .item {
-                            display: inline-block;
                             font-size: 16px;
                             color: $main2;
 
@@ -178,9 +173,6 @@ body {
 
                     .nameProduct {
                         width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-start;
                         gap: 15px;
 
                         .name {
@@ -196,9 +188,6 @@ body {
 
                         .score {
                             color: $main3;
-                            display: flex;
-                            justify-content: center;
-                            align-items: flex-start;
                             gap: 5px;
                             margin-top: 4px;
 
@@ -216,18 +205,12 @@ body {
 
                 .left {
                     width: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
                     gap: 50px;
 
                     .add-product {
                         border: 2px solid $main2;
                         border-radius: 50px;
                         padding: 5px 10px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
 
                         .icon {
                             color: $main2;
@@ -243,7 +226,6 @@ body {
                         .inputNumber {
                             border: unset;
                             font-size: 16px;
-                            text-align: center;
                             color: $main2;
                             background: transparent;
                         }
@@ -285,19 +267,14 @@ body {
             }
 
             .content-center {
-                // margin-block: 100px;
+                @media screen and (max-width: 1440px) {
+                    margin-top: 90px;
+                }
+
                 margin-top: 205px;
 
                 .top {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-
                     .title-setProduct {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
                         .icon {
                             width: 15px;
                             margin-left: 5px;
@@ -334,11 +311,13 @@ body {
                     left: 0;
 
                     .set-prodact {
+                        @media screen and (max-width: 1440px) {
+                            padding-right: 630px;
+                        }
+
                         padding-block: 10px;
                         padding-left: 25px;
                         padding-right: 750px;
-                        display: flex;
-                        flex-direction: column;
                         gap: 20px;
                         overflow-x: auto;
 
@@ -347,7 +326,6 @@ body {
                         }
 
                         .row-setProduct {
-                            display: flex;
                             gap: 20px;
                             scroll-snap-align: start;
                             flex-shrink: 0;
@@ -360,12 +338,8 @@ body {
                                 height: 150px;
                                 width: 535px;
                                 flex-shrink: 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
                                 gap: 10px;
                                 padding: 10px;
-                                // box-shadow: 0px 0px 10px 0px rgb(119 119 119 / 18%);
 
                                 .image {
 
@@ -401,17 +375,11 @@ body {
                                     }
 
                                     .box-price {
-                                        display: flex;
-                                        justify-content: space-between;
-                                        align-items: center;
                                         margin-block: 10px;
 
                                         .price {
                                             color: $main2;
                                             font-size: 16px;
-                                            display: flex;
-                                            align-items: center;
-                                            justify-content: center;
 
                                             .toman {
                                                 color: $text;
@@ -422,7 +390,6 @@ body {
 
                                         .score {
                                             color: $main3;
-                                            display: flex;
                                             font-size: 14px;
                                             gap: 5px;
 
@@ -454,9 +421,6 @@ body {
                 top: 435px;
 
                 .title-description {
-                    display: flex;
-                    align-items: center;
-                    // justify-content: center;
                     margin-block: 25px;
 
                     .icon {
@@ -525,23 +489,29 @@ body {
             z-index: -1;
 
             .red {
+                @media screen and (max-width: 1440px) {
+                    right: 600px;
+                }
+
                 width: 95%;
                 height: 75%;
                 position: absolute;
                 right: 765px;
                 top: 15px;
-                // border: 1px solid red;
                 transform: rotate(170deg);
                 background: radial-gradient(circle, rgba(214, 66, 66, 0.06766456582633051) 0%, rgba(249, 250, 254, 0) 50%, rgba(255, 255, 255, 0) 100%);
             }
 
             .blue {
+                @media screen and (max-width: 1440px) {
+                    top: 0;
+                }
+
                 width: 95%;
                 height: 75%;
                 position: absolute;
                 left: 40px;
                 top: 70px;
-                // border: 1px solid blue;
                 transform: rotate(170deg);
                 background: radial-gradient(circle, rgba(71, 66, 214, 0.0844712885154062) 0%, rgba(249, 250, 254, 0) 50%, rgba(255, 255, 255, 0) 100%);
             }
