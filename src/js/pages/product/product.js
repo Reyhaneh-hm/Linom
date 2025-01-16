@@ -1,5 +1,28 @@
 import '../../../scss/components/pages/product/index.scss';
+import '../home/new-product';
+import $ from "jquery";
+import "slick-carousel/slick/slick.min.js";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
+/*------------------slider mainImg------------------*/
+$(document).ready(function () {
+    $('.main-img').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        rtl: true,
+        slidesToShow: 1,
+        asNavFor: '.navSlider'
+    });
+
+    $('.navSlider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.main-img',
+        focusOnSelect: true
+    });
+});
 /*-------------------Slider Product-------------------*/
 window.addEventListener("load", () => {
     document.querySelectorAll("[scroll_container]").forEach(t => {
@@ -45,30 +68,6 @@ window.addEventListener("load", () => {
 });
 
 /*-----------------number Spinner-------------------*/
-// const numberSpinner = document.querySelectorAll(".add-product");
-// numberSpinner.forEach((item) => {
-//     const increament = item.querySelector(".increament");
-//     const decreament = item.querySelector(".decreament");
-//     const input = item.querySelector("input");
-//     const minValue = input.getAttribute("min");
-//     const maxValue = input.getAttribute("max");
-//     const stepValue = input.getAttribute("step");
-
-//     input.value = minValue;
-
-//     increament.addEventListener("click", () => {
-//         if (+input.value < +maxValue) {
-//             input.value = +input.value + +stepValue;
-//         }
-//     });
-
-//     decreament.addEventListener("click", () => {
-//         if (+input.value > +minValue) {
-//             input.value = +input.value - +stepValue;
-//         }
-//     });
-// });
-
 const numberSpinner = document.querySelectorAll(".add-product");
 numberSpinner.forEach((item) => {
     const increament = item.querySelector(".increament");
@@ -78,26 +77,20 @@ numberSpinner.forEach((item) => {
     const maxValue = +input.getAttribute("max");
     const stepValue = +input.getAttribute("step");
 
-    // Set initial value
     input.value = minValue;
 
-    // Function to update the decrement icon
     const updateDecrementIcon = () => {
         if (+input.value === minValue) {
-            // decreament.textContent = "🗑️"; // Trash icon
             decreament.classList.add("icon-Delete");
             decreament.classList.remove("icon-Minus");
         } else {
-            // decreament.textContent = "➖"; // Minus icon
             decreament.classList.add("icon-Minus");
             decreament.classList.remove("icon-Delete");
         }
     };
 
-    // Initialize the decrement icon
     updateDecrementIcon();
 
-    // Increment button
     increament.addEventListener("click", () => {
         if (+input.value < maxValue) {
             input.value = +input.value + stepValue;
@@ -105,7 +98,6 @@ numberSpinner.forEach((item) => {
         }
     });
 
-    // Decrement button
     decreament.addEventListener("click", () => {
         if (+input.value > minValue) {
             input.value = +input.value - stepValue;
@@ -113,3 +105,4 @@ numberSpinner.forEach((item) => {
         }
     });
 });
+
