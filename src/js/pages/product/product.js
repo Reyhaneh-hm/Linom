@@ -1,5 +1,6 @@
 import '../../../scss/components/pages/product/index.scss';
 import '../home/new-product';
+
 import $ from "jquery";
 import "slick-carousel/slick/slick.min.js";
 import "slick-carousel/slick/slick.css";
@@ -13,7 +14,21 @@ $(document).ready(function () {
         arrows: false,
         rtl: true,
         slidesToShow: 1,
-        asNavFor: '.navSlider'
+        asNavFor: '.navSlider',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    focusOnSelect: true,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                },
+                breakpoint: 425,
+                settings: {
+                    centerPadding: '20%',
+                }
+            }
+        ]
     });
 
     $('.navSlider').slick({

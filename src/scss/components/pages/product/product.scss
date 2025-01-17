@@ -2,10 +2,19 @@
 @import '../home/new-product.scss';
 
 .product-header {
+    @media screen and (max-width: 1024px) {
+        background: $white !important;
+        box-shadow: 0 0 20px -15px #000 !important;
+    }
+
     background: transparent !important;
-    box-shadow: none;
+    box-shadow: none !important;
 
     a.text-menu {
+        @media screen and (max-width: 1024px) {
+            color: $main !important;
+        }
+
         color: $white !important;
 
         &:hover {
@@ -25,8 +34,22 @@
         }
 
         #hambergerMuno::before {
+            @media screen and (max-width: 1024px) {
+                color: $main !important;
+            }
+
             color: $white !important;
         }
+    }
+}
+
+.text-newProduct {
+    .logo-titr {
+        width: 15px !important;
+    }
+
+    .sarTitr {
+        font-size: 17px !important;
     }
 }
 
@@ -35,31 +58,106 @@
     position: relative;
 
     .shadow {
+        @media screen and (max-width: 1024px) {
+            display: none;
+        }
+
         width: 100%;
-        height: 140px;
-        position: absolute;
+        height: 80px;
+        position: fixed;
         top: 0;
         right: 0;
-        // background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.18531162464985995) 100%);
+        z-index: 9;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.00043767507002800965) 0%, rgba(0, 0, 0, 0.196516106442577) 90%);
     }
 
     .card {
         margin-top: 50px;
+
+        @media screen and (max-width: 1024px) {
+            margin-top: 74px;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-top: 50px;
+        }
 
         .image-product {
             @media screen and (max-width: 1440px) {
                 left: 10px;
             }
 
+            @media screen and (max-width: 1024px) {
+                top: 30px;
+            }
+
+            @media screen and (max-width: 768px) {
+                top: 0;
+            }
+
+            @media screen and (max-width: 425px) {
+                height: 67vh;
+                left: 0;
+            }
+
+            @media screen and (max-width: 375px) {
+                height: 60vh;
+            }
+
+            @media screen and (max-width: 320px) {
+                height: 50vh;
+            }
+
             position: relative;
             left: 125px;
             bottom: 40px;
             height: fit-content;
+            overflow: hidden;
 
             .main-img {
                 width: 100%;
 
                 .img {
+                    @media screen and (max-width: 1440px) {
+                        min-width: 630px;
+                        height: 96vh;
+                        margin-inline: 3px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        min-width: 452px;
+                        height: 67vh;
+                        margin-inline: 2px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        min-width: 545px;
+                        max-width: 320px;
+                        height: 89.2vh;
+                        margin-inline: 75px;
+                        top: 30px;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        min-width: 394px;
+                        height: 59vh;
+                        margin-inline: 4px;
+                        right: 4px;
+                    }
+
+                    @media screen and (max-width: 375px) {
+                        min-width: 344px;
+                        height: 51vh;
+                        right: 5px;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        min-width: 295px;
+                        height: 44vh;
+                        right: 5px;
+                        margin-inline: 1px;
+                    }
+
                     -webkit-mask-image: url("/img/product/Asset.svg");
                     mask-image: url("/img/product/Asset.svg");
                     mask-size: 100%;
@@ -74,17 +172,39 @@
                     position: relative;
                     top: 0;
                     opacity: 1;
-                    transition: opacity 0.3s; // اضافه کردن انیمیشن به تصویر اصلی
-
-                    &.fade-out {
-                        opacity: 0;
-                    }
+                    transition: all 0.3s;
                 }
             }
 
             .bg-images {
                 @media screen and (max-width: 1440px) {
                     right: 400px;
+                    bottom: 60px;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    right: 30px;
+                    bottom: 460px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    right: 110px;
+                    bottom: 60px;
+                }
+
+                @media screen and (max-width: 425px) {
+                    width: 165px;
+                    height: 60px;
+                    right: 130px;
+                }
+
+                @media screen and (max-width: 375px) {
+                    right: 110px;
+                }
+
+                @media screen and (max-width: 320px) {
+                    right: 80px;
+                    bottom: 35px;
                 }
 
                 width: 200px;
@@ -97,6 +217,12 @@
                 gap: 2px;
 
                 .box-img {
+                    @media screen and (max-width: 425px) {
+                        width: 50px;
+                        height: 50px;
+                        margin-right: 2px;
+                    }
+
                     width: 60px;
                     height: 60px;
                     border-radius: 50%;
@@ -105,6 +231,12 @@
                     cursor: pointer;
 
                     .img {
+                        @media screen and (max-width: 425px) {
+                            min-width: 50px;
+                            max-width: 50px;
+                            height: 50px;
+                        }
+
                         width: 100%;
                         min-width: 60px;
                         max-width: 60px;
@@ -121,13 +253,27 @@
                     flex-direction: column !important;
                     align-items: normal !important;
                     justify-content: normal !important;
+                    gap: 25px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: row !important;
+                    justify-content: space-between !important;
+                }
+
+                @media screen and (max-width: 425px) {
+                    flex-direction: column !important;
+                    margin-top: 0;
                 }
 
                 min-height: auto;
                 margin-block: 50px;
+                gap: 20px;
+                position: relative;
 
                 &::after {
                     content: "";
+                    // background: #ff0000;
                     background: #f5f9ff;
                     width: 100%;
                     height: 2px;
@@ -135,11 +281,10 @@
                     display: block;
                     position: absolute;
                     bottom: -25px;
+                    z-index: 2;
                 }
 
                 .right {
-                    width: 50%;
-
                     .breadcrumb-product {
                         width: 100%;
                         overflow-x: auto;
@@ -216,8 +361,20 @@
                 }
 
                 .left {
-                    width: 50%;
                     gap: 50px;
+
+                    @media screen and (max-width: 1024px) {
+                        justify-content: flex-start !important;
+                    }
+
+                    @media screen and (max-width: 425px) {
+                        justify-content: flex-end !important;
+                        flex-direction: row-reverse !important;
+                    }
+
+                    @media screen and (max-width: 375px) {
+                        justify-content: space-between !important;
+                    }
 
                     .add-product {
                         border: 2px solid $main2;
@@ -245,8 +402,13 @@
 
                     .box-price {
                         position: relative;
+                        width: max-content;
 
                         &::before {
+                            @media screen and (max-width: 425px) {
+                                right: 125px;
+                            }
+
                             content: "";
                             background: #f5f9ff;
                             width: 2px;
@@ -255,6 +417,7 @@
                             display: block;
                             position: absolute;
                             right: -25px;
+                            z-index: 2;
                         }
 
                         .text {
@@ -283,9 +446,20 @@
                     margin-top: 90px;
                 }
 
+                @media screen and (max-width: 425px) {
+                    margin-top: 70px;
+                }
+
                 margin-top: 120px;
 
                 .top {
+                    @media screen and (max-width: 425px) {
+                        flex-direction: column !important;
+                        align-items: flex-start !important;
+                    }
+
+                    gap: 10px;
+
                     .title-setProduct {
                         .icon {
                             width: 15px;
@@ -295,6 +469,11 @@
                         .title {
                             font-size: 16px;
                             color: $main;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 1;
                         }
                     }
 
@@ -306,7 +485,7 @@
                             .number {
                                 color: $main3;
                                 font-size: 18px;
-                                margin-right: 15px;
+                                margin-right: 10px;
                             }
 
                             .toman {
@@ -317,6 +496,10 @@
                 }
 
                 .bottom {
+                    @media screen and (max-width: 1024px) {
+                        margin-block: 20px;
+                    }
+
                     margin-block: 40px;
                     width: 100%;
                     position: absolute;
@@ -325,6 +508,19 @@
                     .set-prodact {
                         @media screen and (max-width: 1440px) {
                             padding-right: 630px;
+                        }
+
+                        @media screen and (max-width: 1024px) {
+                            gap: 5px;
+                            padding-right: 430px;
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            padding-right: 35px;
+                        }
+
+                        @media screen and (max-width: 375px) {
+                            padding-right: 10px;
                         }
 
                         padding-block: 10px;
@@ -338,12 +534,21 @@
                         }
 
                         .row-setProduct {
+                            @media screen and (max-width: 1024px) {
+                                gap: 10px;
+                            }
+
                             gap: 20px;
                             scroll-snap-align: start;
                             flex-shrink: 0;
 
                             .item {
-                                background-image: url(/public/img/product/box.png);
+                                @media screen and (max-width: 1024px) {
+                                    background-size: 500px;
+                                    width: 505px;
+                                }
+
+                                background-image: url(/img/product/box.png);
                                 background-repeat: no-repeat;
                                 background-position: center;
                                 background-size: 530px;
@@ -356,8 +561,8 @@
                                 .image {
 
                                     .img {
-                                        -webkit-mask-image: url(/public/img/product/imgBox.svg);
-                                        mask-image: url(/public/img/product/imgBox.svg);
+                                        -webkit-mask-image: url(/img/product/imgBox.svg);
+                                        mask-image: url(/img/product/imgBox.svg);
                                         mask-size: 100%;
                                         object-fit: cover;
                                         width: 100%;
@@ -373,6 +578,11 @@
                                         color: $main3;
                                         margin-block: 10px;
                                         font-size: 16px;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        -webkit-line-clamp: 1;
                                     }
 
                                     .desc {
@@ -429,8 +639,21 @@
             }
 
             .content-bottom {
+                @media screen and (max-width: 1024px) {
+                    top: 350px;
+                    left: 480px;
+                    width: 91vw;
+                }
+
+                @media screen and (max-width: 768px) {
+                    left: 0;
+                    width: 100%;
+                }
+
+
                 position: relative;
                 top: 435px;
+                margin-bottom: 435px;
 
                 .title-description {
                     margin-block: 25px;
@@ -443,6 +666,11 @@
                     .title {
                         font-size: 16px;
                         color: $main;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 1;
                     }
                 }
 
@@ -505,6 +733,26 @@
                     right: 600px;
                 }
 
+                @media screen and (max-width: 1024px) {
+                    right: 290px;
+                    top: 95px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    right: 290px;
+                    top: 435px;
+                }
+
+                @media screen and (max-width: 425px) {
+                    right: 0;
+                    top: 200px;
+                    width: 200%;
+                }
+
+                @media screen and (max-width: 375px) {
+                    top: 140px;
+                }
+
                 width: 95%;
                 height: 75%;
                 position: absolute;
@@ -517,6 +765,26 @@
             .blue {
                 @media screen and (max-width: 1440px) {
                     top: 0;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    top: 130px;
+                    left: 300px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    top: 440px;
+                    left: 270px;
+                }
+
+                @media screen and (max-width: 425px) {
+                    width: 200%;
+                    top: 380px;
+                    left: 0;
+                }
+
+                @media screen and (max-width: 375px) {
+                    top: 280px;
                 }
 
                 width: 95%;
