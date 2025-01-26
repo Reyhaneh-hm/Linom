@@ -11,10 +11,12 @@ $(document).ready(function () {
     $('.main-img').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
         rtl: true,
         slidesToShow: 1,
         asNavFor: '.navSlider',
+        arrows: true,
+        prevArrow: $("#icon_right"),
+        nextArrow: $("#icon_left"),
         responsive: [
             {
                 breakpoint: 768,
@@ -33,6 +35,7 @@ $(document).ready(function () {
 
     $('.navSlider').slick({
         slidesToShow: 3,
+        arrows: false,
         slidesToScroll: 1,
         asNavFor: '.main-img',
         focusOnSelect: true
@@ -83,14 +86,14 @@ window.addEventListener("load", () => {
 });
 
 /*-----------------number Spinner-------------------*/
-const numberSpinner = document.querySelectorAll(".add-product");
+const numberSpinner = document.querySelectorAll("#numberSpinner");
 numberSpinner.forEach((item) => {
     const increament = item.querySelector(".increament");
     const decreament = item.querySelector(".decreament");
     const input = item.querySelector("input");
-    const minValue = +input.getAttribute("min");
-    const maxValue = +input.getAttribute("max");
-    const stepValue = +input.getAttribute("step");
+    const minValue = +input.getAttribute("min") || 1;
+    const maxValue = +input.getAttribute("max") || 10;
+    const stepValue = +input.getAttribute("step") || 1;
 
     input.value = minValue;
 
@@ -120,4 +123,43 @@ numberSpinner.forEach((item) => {
         }
     });
 });
+
+/*-------------------btn add product----------------------*/
+document.addEventListener("DOMContentLoaded", function () {
+    const addProductBtn = document.querySelector(".add-product");
+    const productCount = document.querySelector(".product-count");
+    const iconDelete = document.querySelector(".icon-Delete");
+
+    addProductBtn.addEventListener("click", function () {
+        addProductBtn.classList.toggle("d-flex");
+        addProductBtn.classList.toggle("d-none");
+
+        productCount.classList.toggle("d-none");
+        productCount.classList.toggle("d-flex");
+    });
+
+    iconDelete.addEventListener("click", function () {
+        productCount.classList.toggle("d-flex");
+        productCount.classList.toggle("d-none");
+
+        addProductBtn.classList.toggle("d-none");
+        addProductBtn.classList.toggle("d-flex");
+    });
+});
+
+/*-------------------opasity set product--------------------*/
+document.addEventListener("scroll", function () {
+    const setProduct = document.querySelector(".set-prodact");
+    const scrollTop = window.scrollY;
+
+    if (scrollTop >= 100 && scrollTop <= 200) {
+        let opacityValue = 1 - (scrollTop - 100) / 100;
+        setProduct.style.opacity = opacityValue.toString();
+    } else if (scrollTop > 200) {
+        setProduct.style.opacity = "0";
+    } else {
+        setProduct.style.opacity = "1";
+    }
+});
+
 

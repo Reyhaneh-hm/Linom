@@ -733,6 +733,11 @@
             </ul>
 
             <div id="boxIcon">
+                <a href="#" class="flag">
+                    <img src="/images/iran-flag.webp" alt="flagFa" class="icon-header lang" id="lang_fa">
+                    <img src="/images/england-flag.png" alt="flagEn" class="icon-header lang" id="lang_en">
+                </a>
+                <a href="#"><i class="icon-header icon-search" id="search"></i></a>
                 <a href="./contact-us.html"><i class="icon-header icon-Calling" id="call"></i></a>
                 <a href="./payment.html"><i class="icon-header icon-Buy" id="buy"></i></a>
                 <a href="./error.html" class="d-md-none"><i class="icon-header icon-Profile" id="user"></i></a>
@@ -928,15 +933,21 @@
                         <img src="img/product/main-product1.png" class="img image-slider" alt="img-product">
                         <img src="img/home/hero/2.jpg" class="img image-slider" alt="img-product">
                     </div>
-                    <div class="bg-images navSlider d-flex align-items-center justify-content-center">
-                        <div class="box-img">
-                            <img src="img/product/main-product1.png" class="img" alt="img">
+                    <div class="access-items">
+                        <div class="bg-images navSlider d-flex align-items-center justify-content-center">
+                            <div class="box-img">
+                                <img src="img/product/main-product1.png" class="img" alt="img">
+                            </div>
+                            <div class="box-img">
+                                <img src="img/home/hero/1.jpg" class="img" alt="img">
+                            </div>
+                            <div class="box-img">
+                                <img src="img/home/hero/2.jpg" class="img" alt="img">
+                            </div>
                         </div>
-                        <div class="box-img">
-                            <img src="img/home/hero/1.jpg" class="img" alt="img">
-                        </div>
-                        <div class="box-img">
-                            <img src="img/home/hero/2.jpg" class="img" alt="img">
+                        <div class="button">
+                            <span class="iconRight icon-Arrow-Right-2" id="icon_right"></span>
+                            <span class="iconLeft icon-Arrow-Left-2" id="icon_left"></span>
                         </div>
                     </div>
                 </div>
@@ -958,12 +969,14 @@
                             </div>
                         </div>
                         <div class="left d-flex align-items-center justify-content-end">
-                            <div class="add-product d-flex align-items-center justify-content-center">
+                            <div class="product-count d-none align-items-center justify-content-center"
+                                id="numberSpinner">
                                 <span class="icon icon-Plus increament"></span>
                                 <input class="inputNumber text-center" step="1" min="1" max="10" type="number"
                                     value="1">
                                 <span class="icon icon-Delete decreament"></span>
                             </div>
+                            <div class="add-product d-flex">افزودن به سبد خرید</div>
                             <div class="box-price">
                                 <p class="text">قیمت محصول</p>
                                 <p class="price">۱,۹۴۰,۰۰۰ <samp class="toman">تومان</samp></p>
@@ -973,7 +986,7 @@
                     <div class="content-center">
                         <div class="top d-flex align-items-center justify-content-between">
                             <div class="title-setProduct d-flex align-items-center justify-content-center">
-                                <img src="/img/product/icon-titr.png" class="icon" alt="icon-titr">
+                                <img src="/img/product/icon-titr.svg" class="icon" alt="icon-titr">
                                 <p class="title">ست های شیرتوکار مدل گلوریس</p>
                             </div>
                             <div class="price">
@@ -984,120 +997,94 @@
                         <div class="bottom">
                             <div scroll_container class="set-prodact d-flex flex-column">
                                 <div class="row-setProduct d-flex">
-                                    <a href="#" class="item d-flex align-items-center justify-content-between">
+                                    <a href="#"
+                                        class="item d-flex align-items-center justify-content-center flex-column">
                                         <div class="image">
                                             <img src="/img/product/product1.png" class="img" alt="">
                                         </div>
-                                        <div class="content">
+                                        <div class="content d-flex flex-column align-items-start">
                                             <h3 class="title">شیر آشپزخانه مات مشکی</h3>
-                                            <p class="desc">طراحی مدرن با رنگ مشکی مات، ضد خش و مقاوم در برابر لکه‌های
-                                                آب.
-                                            </p>
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <p class="score d-flex">۴.۵<i class="icon icon-star"></i></p>
+                                                <span class="add d-flex align-items-center justify-content-center"><i
+                                                        class="icon icon-Plus"></i></span>
                                             </div>
                                         </div>
-                                        <div class="go-to-page">
-                                            <i class="icon icon-Arrow-Left"></i>
-                                        </div>
                                     </a>
-                                    <a href="#" class="item d-flex align-items-center justify-content-between">
+                                    <a href="#"
+                                        class="item d-flex align-items-center justify-content-center flex-column">
                                         <div class="image">
                                             <img src="/img/product/product2.png" class="img" alt="">
                                         </div>
-                                        <div class="content">
+                                        <div class="content d-flex flex-column align-items-start">
                                             <h3 class="title">شیر آشپزخانه مات مشکی</h3>
-                                            <p class="desc">طراحی مدرن با رنگ مشکی مات، ضد خش و مقاوم در برابر لکه‌های
-                                                آب.
-                                            </p>
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <p class="score d-flex">۴.۵<i class="icon icon-star"></i></p>
+                                                <span class="add d-flex align-items-center justify-content-center"><i
+                                                        class="icon icon-Plus"></i></span>
                                             </div>
                                         </div>
-                                        <div class="go-to-page">
-                                            <i class="icon icon-Arrow-Left"></i>
-                                        </div>
                                     </a>
-                                    <a href="#" class="item d-flex align-items-center justify-content-between">
+                                    <a href="#"
+                                        class="item d-flex align-items-center justify-content-center flex-column">
                                         <div class="image">
                                             <img src="/img/product/product3.png" class="img" alt="">
                                         </div>
-                                        <div class="content">
+                                        <div class="content d-flex flex-column align-items-start">
                                             <h3 class="title">شیر آشپزخانه مات مشکی</h3>
-                                            <p class="desc">طراحی مدرن با رنگ مشکی مات، ضد خش و مقاوم در برابر لکه‌های
-                                                آب.
-                                            </p>
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <p class="score d-flex">۴.۵<i class="icon icon-star"></i></p>
+                                                <span class="add d-flex align-items-center justify-content-center"><i
+                                                        class="icon icon-Plus"></i></span>
                                             </div>
                                         </div>
-                                        <div class="go-to-page">
-                                            <i class="icon icon-Arrow-Left"></i>
-                                        </div>
                                     </a>
-                                </div>
-                                <div class="row-setProduct d-flex">
-                                    <a href="#" class="item d-flex align-items-center justify-content-between">
+                                    <a href="#"
+                                        class="item d-flex align-items-center justify-content-center flex-column">
                                         <div class="image">
                                             <img src="/img/product/product3.png" class="img" alt="">
                                         </div>
-                                        <div class="content">
+                                        <div class="content d-flex flex-column align-items-start">
                                             <h3 class="title">شیر آشپزخانه مات مشکی</h3>
-                                            <p class="desc">طراحی مدرن با رنگ مشکی مات، ضد خش و مقاوم در برابر لکه‌های
-                                                آب.
-                                            </p>
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <p class="score d-flex">۴.۵<i class="icon icon-star"></i></p>
+                                                <span class="add d-flex align-items-center justify-content-center"><i
+                                                        class="icon icon-Plus"></i></span>
                                             </div>
                                         </div>
-                                        <div class="go-to-page">
-                                            <i class="icon icon-Arrow-Left"></i>
-                                        </div>
                                     </a>
-                                    <a href="#" class="item d-flex align-items-center justify-content-between">
+                                    <a href="#"
+                                        class="item d-flex align-items-center justify-content-center flex-column">
                                         <div class="image">
                                             <img src="/img/product/product1.png" class="img" alt="">
                                         </div>
-                                        <div class="content">
+                                        <div class="content d-flex flex-column align-items-start">
                                             <h3 class="title">شیر آشپزخانه مات مشکی</h3>
-                                            <p class="desc">طراحی مدرن با رنگ مشکی مات، ضد خش و مقاوم در برابر لکه‌های
-                                                آب.
-                                            </p>
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <p class="score d-flex">۴.۵<i class="icon icon-star"></i></p>
+                                                <span class="add d-flex align-items-center justify-content-center"><i
+                                                        class="icon icon-Plus"></i></span>
                                             </div>
                                         </div>
-                                        <div class="go-to-page">
-                                            <i class="icon icon-Arrow-Left"></i>
-                                        </div>
                                     </a>
-                                    <a href="#" class="item d-flex align-items-center justify-content-between">
+                                    <a href="#"
+                                        class="item d-flex align-items-center justify-content-center flex-column">
                                         <div class="image">
                                             <img src="/img/product/product2.png" class="img" alt="">
                                         </div>
-                                        <div class="content">
+                                        <div class="content d-flex flex-column align-items-start">
                                             <h3 class="title">شیر آشپزخانه مات مشکی</h3>
-                                            <p class="desc">طراحی مدرن با رنگ مشکی مات، ضد خش و مقاوم در برابر لکه‌های
-                                                آب.
-                                            </p>
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <p class="score d-flex">۴.۵<i class="icon icon-star"></i></p>
+                                                <span class="add d-flex align-items-center justify-content-center"><i
+                                                        class="icon icon-Plus"></i></span>
                                             </div>
-                                        </div>
-                                        <div class="go-to-page">
-                                            <i class="icon icon-Arrow-Left"></i>
                                         </div>
                                     </a>
                                 </div>
@@ -1106,7 +1093,7 @@
                     </div>
                     <div class="content-bottom">
                         <div class="title-description d-flex align-items-center">
-                            <img src="/img/product/icon-titr.png" class="icon" alt="icon-titr">
+                            <img src="/img/product/icon-titr.svg" class="icon" alt="icon-titr">
                             <p class="title">توضیحات محصول</p>
                         </div>
                         <div class="desc">
@@ -1145,7 +1132,7 @@
                 <div class="titr-newProduct col-12">
                     <img src="/images/img3.png" class="imgCover2" alt="image">
                     <span class="text-newProduct">
-                        <img src="/img/product/icon-titr.png" class="logo-titr" id="logo2" alt="image">
+                        <img src="/img/product/icon-titr.svg" class="logo-titr" id="logo2" alt="image">
                         <h2 class="sarTitr">محصولات مرتبط</h2>
                     </span>
                     <a href="./about-us.html" class="link">

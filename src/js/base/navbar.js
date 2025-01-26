@@ -77,3 +77,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });*/
 });
+/*-------------------ghange lang------------------*/
+
+document.addEventListener("DOMContentLoaded", function () {
+    const flag = document.querySelector(".flag");
+    const langFa = document.getElementById("lang_fa");
+    const langEn = document.getElementById("lang_en");
+
+    flag.addEventListener("click", function () {
+        if (langFa.style.display === "block" || langFa.style.display === "") {
+            langFa.style.display = "none";
+            langEn.style.display = "block";
+        } else {
+            langFa.style.display = "block";
+            langEn.style.display = "none";
+        }
+    });
+});
