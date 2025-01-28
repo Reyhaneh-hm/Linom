@@ -1,48 +1,6 @@
 @import '../../../base/setting.scss';
 @import '../home/new-product.scss';
 
-// .product-header {
-//     @media screen and (max-width: 1024px) {
-//         background: $white !important;
-//         box-shadow: 0 0 20px -15px #000 !important;
-//     }
-
-//     background: transparent !important;
-//     box-shadow: none !important;
-
-//     a.text-menu {
-//         @media screen and (max-width: 1024px) {
-//             color: $main !important;
-//         }
-
-//         color: $white !important;
-
-//         &:hover {
-//             color: $main2 !important;
-
-//             #hambergerMuno::before {
-//                 color: $main2 !important;
-//             }
-//         }
-
-//         &.active {
-//             color: $main2 !important;
-
-//             #hambergerMuno::before {
-//                 color: $main2 !important;
-//             }
-//         }
-
-//         #hambergerMuno::before {
-//             @media screen and (max-width: 1024px) {
-//                 color: $main !important;
-//             }
-
-//             color: $white !important;
-//         }
-//     }
-// }
-
 .topHeader {
     #boxIcon {
         gap: 60px !important;
@@ -50,7 +8,6 @@
         .flag {
             width: 35px;
             height: 25px;
-            // border: 1px solid red;
             border-radius: 50px;
             overflow: hidden;
             display: flex;
@@ -60,7 +17,6 @@
             transition: all 0.5s;
 
             &:hover {
-                // border: 1px solid red;
                 box-shadow: 0px 0px 7px -2px #0000004a;
 
                 .lang {
@@ -84,13 +40,36 @@
     }
 }
 
-.text-newProduct {
-    .logo-titr {
-        width: 15px !important;
+.new-product {
+    overflow: hidden;
+    background: #fff;
+    z-index: 2;
+    position: relative;
+
+    .text-newProduct {
+        .logo-titr {
+            width: 15px !important;
+        }
+
+        .sarTitr {
+            font-size: 17px !important;
+        }
     }
 
-    .sarTitr {
-        font-size: 17px !important;
+    .part-slider {
+        margin-bottom: 60px;
+    }
+}
+
+.footer {
+    position: relative;
+    margin-top: -80px;
+
+    .columns-box {
+        .social-network {
+            margin: 70px 0 50px;
+            gap: 40px;
+        }
     }
 }
 
@@ -162,14 +141,11 @@
 
             position: relative;
             left: 125px;
-            // bottom: 40px;
             bottom: 20px;
-            // height: fit-content;
             height: 90vh;
             overflow: hidden;
 
             .main-img {
-                // width: 100%;
                 position: fixed;
                 width: 42%;
 
@@ -216,16 +192,14 @@
 
                     -webkit-mask-image: url("/img/product/Asset.svg");
                     mask-image: url("/img/product/Asset.svg");
-                    // mask-size: 100%;
                     mask-size: 92%;
                     mask-repeat: no-repeat;
                     object-fit: cover;
-                    aspect-ratio: 1 / 1.2;
+                    aspect-ratio: 1 / 1.3;
                     width: 100%;
                     min-width: 320px;
                     max-width: 740px;
-                    // height: auto;
-                    height: 90vh;
+                    height: auto;
                     margin-inline: 30px;
                     position: relative;
                     top: 0;
@@ -244,10 +218,6 @@
                 align-items: center;
                 justify-content: space-between;
                 flex-direction: row-reverse;
-                // position: absolute;
-                // bottom: 45px;
-                // left: 45px;
-                // width: 80%;
                 position: fixed;
                 bottom: 52px;
                 right: 105px;
@@ -287,9 +257,6 @@
 
                     width: 200px;
                     height: 70px;
-                    // position: absolute;
-                    // right: 525px;
-                    // bottom: 35px;
                     border-radius: 50px;
                     background: #ffffff3d;
                     gap: 2px;
@@ -333,7 +300,6 @@
                     align-items: center;
                     justify-content: center;
                     gap: 10px;
-                    // width: 500px;
                     opacity: 0;
                     visibility: hidden;
                     transition: all 0.3s;
@@ -394,7 +360,6 @@
 
                 &::after {
                     content: "";
-                    // background: #ff0000;
                     background: #f5f9ff;
                     width: 100%;
                     height: 2px;
@@ -438,12 +403,12 @@
                             }
 
                             a {
-                                color: $main3;
+                                color: $text;
                                 transition: all 0.3s;
                                 cursor: pointer;
 
                                 &:hover {
-                                    color: #495771;
+                                    color: #9b9b9b;
                                 }
                             }
                         }
@@ -456,7 +421,6 @@
                         .name {
                             color: $main3;
                             line-height: 1.5;
-                            // font-size: 20px;
                             font-size: 25px;
                             display: -webkit-box;
                             -webkit-box-orient: vertical;
@@ -502,7 +466,6 @@
                         border: 2px solid $main2;
                         border-radius: 50px;
                         padding: 5px 10px;
-                        // display: none;
 
                         .icon {
                             color: $main2;
@@ -530,7 +493,6 @@
                         padding: 13px 15px;
                         font-size: 12px;
                         cursor: pointer;
-                        // display: block;
                         transition: all 0.3s;
 
                         &:hover {
@@ -710,7 +672,6 @@
                                         min-width: 110px;
                                         max-width: 110px;
                                         height: 110px;
-                                        // margin-top: 10px;
                                     }
                                 }
 
@@ -721,7 +682,6 @@
 
                                     .title {
                                         color: $main3;
-                                        // margin-block: 10px;
                                         font-size: 15px;
                                         display: -webkit-box;
                                         -webkit-box-orient: vertical;
@@ -731,7 +691,6 @@
                                     }
 
                                     .box-price {
-                                        // margin-block: 10px;
                                         width: 100%;
 
                                         .price {
@@ -863,11 +822,6 @@
         }
 
         .blurred-bg {
-            // position: absolute;
-            // top: 0;
-            // left: 0;
-            // width: 100%;
-            // height: 100%;
             z-index: -1;
 
             .blue,
@@ -876,7 +830,6 @@
                 height: 85%;
                 position: fixed;
                 top: 200px;
-                // transform: rotate(170deg);
             }
 
             .red {
@@ -903,12 +856,6 @@
                 @media screen and (max-width: 375px) {
                     top: 140px;
                 }
-
-                // width: 95%;
-                // height: 75%;
-                // position: absolute;
-                // right: 765px;
-                // top: 15px;
 
                 right: 930px;
                 background: radial-gradient(circle, rgba(214, 66, 66, 0.06766456582633051) 0%, rgba(249, 250, 254, 0) 50%, rgba(255, 255, 255, 0) 100%);
@@ -939,11 +886,6 @@
                     top: 280px;
                 }
 
-                // width: 95%;
-                // height: 75%;
-                // position: absolute;
-                // left: 40px;
-                // top: 70px;
                 left: 130px;
                 background: radial-gradient(circle, rgba(71, 66, 214, 0.0844712885154062) 0%, rgba(249, 250, 254, 0) 50%, rgba(255, 255, 255, 0) 100%);
             }

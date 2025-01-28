@@ -133,10 +133,13 @@
             justify-content: space-between;
             color: #707070;
 
+            #search {
+                font-size: 22px;
+            }
+
             .flag {
-                width: 35px;
+                width: 26px;
                 height: 25px;
-                // border: 1px solid red;
                 border-radius: 50px;
                 overflow: hidden;
                 display: flex;
@@ -146,7 +149,6 @@
                 transition: all 0.5s;
 
                 &:hover {
-                    // border: 1px solid red;
                     box-shadow: 0px 0px 7px -2px #0000004a;
 
                     .lang {

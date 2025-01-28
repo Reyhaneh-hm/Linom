@@ -85,65 +85,65 @@ window.addEventListener("load", () => {
     })
 });
 
-/*-----------------number Spinner-------------------*/
-const numberSpinner = document.querySelectorAll("#numberSpinner");
-numberSpinner.forEach((item) => {
-    const increament = item.querySelector(".increament");
-    const decreament = item.querySelector(".decreament");
-    const input = item.querySelector("input");
-    const minValue = +input.getAttribute("min") || 1;
-    const maxValue = +input.getAttribute("max") || 10;
-    const stepValue = +input.getAttribute("step") || 1;
+/*------------number Spinner & btn add product---------------*/
 
-    input.value = minValue;
-
-    const updateDecrementIcon = () => {
-        if (+input.value === minValue) {
-            decreament.classList.add("icon-Delete");
-            decreament.classList.remove("icon-Minus");
-        } else {
-            decreament.classList.add("icon-Minus");
-            decreament.classList.remove("icon-Delete");
-        }
-    };
-
-    updateDecrementIcon();
-
-    increament.addEventListener("click", () => {
-        if (+input.value < maxValue) {
-            input.value = +input.value + stepValue;
-            updateDecrementIcon();
-        }
-    });
-
-    decreament.addEventListener("click", () => {
-        if (+input.value > minValue) {
-            input.value = +input.value - stepValue;
-            updateDecrementIcon();
-        }
-    });
-});
-
-/*-------------------btn add product----------------------*/
 document.addEventListener("DOMContentLoaded", function () {
     const addProductBtn = document.querySelector(".add-product");
     const productCount = document.querySelector(".product-count");
-    const iconDelete = document.querySelector(".icon-Delete");
+    const numberSpinner = document.querySelectorAll("#numberSpinner");
 
-    addProductBtn.addEventListener("click", function () {
-        addProductBtn.classList.toggle("d-flex");
-        addProductBtn.classList.toggle("d-none");
+    numberSpinner.forEach((item) => {
+        const increament = item.querySelector(".increament");
+        const decreament = item.querySelector(".decreament");
+        const input = item.querySelector("input");
+        const minValue = +input.getAttribute("min") || 1;
+        const maxValue = +input.getAttribute("max") || 10;
+        const stepValue = +input.getAttribute("step") || 1;
 
-        productCount.classList.toggle("d-none");
-        productCount.classList.toggle("d-flex");
+        input.value = minValue;
+
+        const updateDecrementIcon = () => {
+            if (+input.value === minValue) {
+                decreament.classList.add("icon-Delete");
+                decreament.classList.remove("icon-Minus");
+            } else {
+                decreament.classList.add("icon-Minus");
+                decreament.classList.remove("icon-Delete");
+            }
+        };
+
+        updateDecrementIcon();
+
+        increament.addEventListener("click", () => {
+            if (+input.value < maxValue) {
+                input.value = +input.value + stepValue;
+                updateDecrementIcon();
+            }
+        });
+
+        decreament.addEventListener("click", () => {
+            if (decreament.classList.contains("icon-Minus")) {
+                input.value = +input.value - stepValue;
+                updateDecrementIcon();
+            } else {
+                productCount.classList.remove("d-flex");
+                productCount.classList.add("d-none");
+
+                addProductBtn.classList.remove("d-none");
+                addProductBtn.classList.add("d-flex");
+
+                input.value = minValue;
+                updateDecrementIcon();
+            }
+        });
     });
 
-    iconDelete.addEventListener("click", function () {
-        productCount.classList.toggle("d-flex");
-        productCount.classList.toggle("d-none");
+    addProductBtn.addEventListener("click", function () {
+        addProductBtn.classList.remove("d-flex");
+        addProductBtn.classList.add("d-none");
 
-        addProductBtn.classList.toggle("d-none");
-        addProductBtn.classList.toggle("d-flex");
+        productCount.classList.remove("d-none");
+        productCount.classList.add("d-flex");
     });
 });
 
@@ -161,5 +161,3 @@ document.addEventListener("scroll", function () {
         setProduct.style.opacity = "1";
     }
 });
-
-
