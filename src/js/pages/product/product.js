@@ -148,8 +148,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*-------------------opasity set product--------------------*/
-document.addEventListener("scroll", function () {
+function handleScroll() {
     const setProduct = document.querySelector(".set-prodact");
+    if (!setProduct) return;
+
     const scrollTop = window.scrollY;
 
     if (scrollTop >= 100 && scrollTop <= 200) {
@@ -160,4 +162,21 @@ document.addEventListener("scroll", function () {
     } else {
         setProduct.style.opacity = "1";
     }
-});
+}
+
+function applyResponsiveStyle() {
+    const setProduct = document.querySelector(".set-prodact");
+    if (!setProduct) return;
+
+    const mediaQuery = window.matchMedia("(max-width: 1024px)");
+    if (mediaQuery.matches) {
+        setProduct.style.setProperty("opacity", "1", "important");
+        window.removeEventListener("scroll", handleScroll);
+    } else {
+        window.addEventListener("scroll", handleScroll);
+    }
+}
+
+window.addEventListener("resize", applyResponsiveStyle);
+window.addEventListener("load", applyResponsiveStyle);
+
