@@ -127,14 +127,40 @@
                 gap: 30px;
             }
 
-            gap: 60px;
+            gap: 50px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             color: #707070;
 
-            #search {
-                font-size: 22px;
+            .item-search {
+                position: relative;
+
+                #search {
+                    font-size: 22px;
+                }
+
+                .search-box {
+                    position: absolute;
+                    top: 35px;
+                    left: -45px;
+                    width: 235px;
+                    padding: 12px 8px;
+                    font-size: 13px;
+                    color: $main;
+                    border: 1px solid $main;
+                    border-radius: 10px;
+                    visibility: hidden;
+                    opacity: 0;
+                    box-shadow: 0 0 20px -15px #000;
+                    transition: all 0.3s;
+
+                    &.active {
+                        top: 45px;
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
             }
 
             .flag {

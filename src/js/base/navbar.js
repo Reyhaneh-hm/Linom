@@ -58,3 +58,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+/*-----------------------show search-box------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+    const searchIcon = document.getElementById("search");
+    const searchBox = document.querySelector(".search-box");
+    const overlay2 = document.querySelector(".overlay2");
+
+    const toggleSearchBox = () => {
+        searchBox.classList.toggle("active");
+        overlay2.classList.toggle("active");
+        searchBox.value = "";
+    };
+
+    searchIcon?.addEventListener("click", toggleSearchBox);
+
+    overlay2?.addEventListener("click", () => {
+        if (searchBox.classList.contains("active")) {
+            toggleSearchBox();
+        }
+    });
+});
