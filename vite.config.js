@@ -20,10 +20,13 @@ export default {
         aboutUs: resolve(__dirname, "./about-us.html"),
         contactUs: resolve(__dirname, "./contact-us.html"),
         error: resolve(__dirname, "./error.html"),
+        FAQ: resolve(__dirname, "./FAQ.html"),
         index: resolve(__dirname, "./index.html"),
         listBlog: resolve(__dirname, "./list-blog.html"),
-        showBlog: resolve(__dirname, "./show-blog.html"),
         payment: resolve(__dirname, "./payment.html"),
+        product: resolve(__dirname, "./product.html"),
+        productList: resolve(__dirname, "./productList.html"),
+        showBlog: resolve(__dirname, "./show-blog.html")
       },
       output: {
         assetFileNames: (assetInfo) => {
