@@ -57,8 +57,9 @@
             }
 
             .filter_card {
-                width: 385px;
+                width: 330px;
                 border-radius: 20px 0 0 20px;
+                margin-inline: 15px;
 
                 .card {
                     position: sticky;
@@ -66,7 +67,7 @@
 
                     >.title {
                         color: $main;
-                        font-size: 23px;
+                        font-size: 17px;
 
                         text-align: center;
                         border-bottom: 2px solid $white;
@@ -90,12 +91,12 @@
                             .head {
                                 color: $white;
                                 background: $main;
-                                font-size: 20px;
+                                font-size: 16px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: flex-start;
-                                padding-block: 20px;
-                                padding-inline: 25px;
+                                padding-block: 15px;
+                                padding-inline: 20px;
                                 cursor: pointer;
                                 border-radius: 10px 0 0 10px;
                                 border-bottom: 2px solid #eaeaea;
@@ -183,7 +184,7 @@
 
                                     .title {
                                         color: $main;
-                                        font-size: 18px;
+                                        font-size: 16px;
                                         flex: 1;
                                         cursor: default;
                                     }
@@ -241,27 +242,23 @@
                 width: 100%;
 
                 .items {
-                    // display: grid;
-                    // grid-template-columns: repeat(4, 1fr);
-                    // position: relative;
-                    // justify-items: center;
-                    // gap: 25px;
+                    grid-template-columns: repeat(5, 1fr);
+                    // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // هماهنگی با min-width در .item
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); // هماهنگی با min-width در .item
                     position: relative;
                     justify-items: center;
-                    gap: 25px;
+                    gap: 35px;
 
                     .item {
                         width: 100%;
                         // min-width: 350px;
                         // max-width: 290px;
-                        min-width: 290px; // تنظیم حداقل اندازه برای هماهنگی
-                        max-width: 350px; // حفظ مقدار حداکثر
+                        // min-width: 290px; // تنظیم حداقل اندازه برای هماهنگی
+                        // max-width: 350px; // حفظ مقدار حداکثر
                         height: 420px;
                         // margin: 10px;
                         position: relative;
-                        min-height: 455px;
+                        // min-height: 455px;
                         border-radius: 18px;
                         border: 2px solid #f3f7fe;
                         overflow: hidden;
@@ -365,7 +362,7 @@
                                         }
 
                                         .titleDiscount {
-                                            font-size: 14px;
+                                            font-size: 12px;
                                         }
                                     }
 
@@ -390,12 +387,12 @@
                                         }
 
                                         .priceDiscount {
-                                            font-size: 15px;
+                                            font-size: 13px;
                                             color: $main2;
                                             display: flex;
 
                                             span {
-                                                font-size: 14px;
+                                                font-size: 12px;
                                             }
                                         }
                                     }
@@ -457,7 +454,7 @@
                                     color: $white;
                                     display: -webkit-box;
                                     flex: 1;
-                                    font-size: 18px;
+                                    font-size: 14px;
                                     z-index: 2;
                                     -webkit-line-clamp: 1;
                                     -webkit-box-orient: vertical;
@@ -495,6 +492,7 @@
                                     p {
                                         &.title {
                                             font-size: 12px;
+                                            margin-left: 5px;
                                         }
 
                                         &.price {
@@ -533,14 +531,14 @@
                             .main_info {
                                 .top {
                                     .name {
-                                        font-size: 20px;
+                                        font-size: 17px;
                                         transform: translateY(10px);
                                     }
                                 }
 
                                 .topDiscount {
                                     .name {
-                                        font-size: 20px;
+                                        font-size: 17px;
                                         transform: translateY(-60px);
                                     }
                                 }
@@ -817,7 +815,7 @@
             margin: 0 0 20px;
 
             .titrFilter {
-                font-size: 17px;
+                font-size: 15px;
                 margin-left: 10px;
             }
 
@@ -850,6 +848,7 @@
                     padding: 5px 10px;
                     background: #eaedf252;
                     display: flex;
+                    font-size: 13px;
 
 
                     .icon-remove {

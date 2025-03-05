@@ -317,7 +317,8 @@
                     }
 
                     @media screen and (max-width: 425px) {
-                        right: 140px;
+                        // right: 140px;
+                        right: 10%;
                         bottom: -40px;
                     }
 
@@ -325,11 +326,13 @@
                         background-size: 100%;
                         width: 240px;
                         bottom: -35px;
-                        right: 130px;
+                        // right: 130px;
+                        right: 10%;
                     }
 
                     @media screen and (max-width: 320px) {
-                        right: 80px;
+                        // right: 80px;
+                        right: 10%;
                     }
 
                     position: absolute;

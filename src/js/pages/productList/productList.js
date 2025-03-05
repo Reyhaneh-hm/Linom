@@ -36,27 +36,27 @@ window.addEventListener("load", () => {
 
 });
 /*----------------------Checkbox----------------------*/
-const filterItems = document.querySelectorAll('.item .box input[type="checkbox"]');
+// const filterItems = document.querySelectorAll('.item .box input[type="checkbox"]');
 
-filterItems.forEach(checkbox => {
-    checkbox.addEventListener('change', () => {
-        const box = checkbox.closest('.box');
-        const group = box.querySelectorAll('input[type="checkbox"]');
+// filterItems.forEach(checkbox => {
+//     checkbox.addEventListener('change', () => {
+//         const box = checkbox.closest('.box');
+//         const group = box.querySelectorAll('input[type="checkbox"]');
 
-        group.forEach(item => {
-            if (item !== checkbox) {
-                item.checked = false;
-                item.closest('li').classList.remove('checked');
-            }
-        });
+//         group.forEach(item => {
+//             if (item !== checkbox) {
+//                 item.checked = false;
+//                 item.closest('li').classList.remove('checked');
+//             }
+//         });
 
-        if (checkbox.checked) {
-            checkbox.closest('li').classList.add('checked');
-        } else {
-            checkbox.closest('li').classList.remove('checked');
-        }
-    });
-});
+//         if (checkbox.checked) {
+//             checkbox.closest('li').classList.add('checked');
+//         } else {
+//             checkbox.closest('li').classList.remove('checked');
+//         }
+//     });
+// });
 
 /*------------------Modal Filter-----------------*/
 
