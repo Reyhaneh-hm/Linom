@@ -1,4 +1,5 @@
 @import '../../base/setting.scss';
+
 /*---------------Public----------------*/
 * {
     box-sizing: border-box;
@@ -15,8 +16,9 @@ html,
 body {
     scroll-behavior: smooth;
 }
-body {
 
+body {
+    font-feature-settings: "ss02";
 }
 
 /*-------------------fancybox-------------------*/
