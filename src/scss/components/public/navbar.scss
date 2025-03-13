@@ -132,6 +132,7 @@
             align-items: center;
             justify-content: space-between;
             color: #707070;
+            position: relative;
 
             .item-search {
                 position: relative;
@@ -139,27 +140,50 @@
                 #search {
                     font-size: 22px;
                 }
+            }
+
+            .form {
+                position: absolute;
+                top: 35px;
+                left: 40px;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.3s;
 
                 .search-box {
-                    position: absolute;
-                    top: 35px;
-                    left: -45px;
                     width: 235px;
-                    padding: 12px 8px;
+                    padding: 12px 8px 12px 35px;
                     font-size: 13px;
                     color: $main;
                     border: 1px solid $main;
                     border-radius: 10px;
-                    visibility: hidden;
-                    opacity: 0;
                     box-shadow: 0 0 20px -15px #000;
-                    transition: all 0.3s;
+                }
 
-                    &.active {
-                        top: 45px;
-                        visibility: visible;
-                        opacity: 1;
+                .btn {
+                    border: 0;
+                    background: transparent;
+                    position: absolute;
+                    top: 10px;
+                    left: 12px;
+
+                    .icon {
+                        color: $main;
+                        font-size: 16px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: $main2;
+                        }
                     }
+                }
+
+                &.active {
+                    top: 45px;
+                    visibility: visible;
+                    opacity: 1;
                 }
             }
 
@@ -188,11 +212,11 @@
                 }
 
                 #lang_fa {
-                    display: block;
+                    display: none;
                 }
 
                 #lang_en {
-                    display: none;
+                    display: block;
                 }
             }
         }
@@ -851,14 +875,14 @@
                 .title {
                     color: #abb5c6;
                     transition: all 0.3s;
-                    font-size: 15px;
+                    font-size: 14px;
                 }
 
                 .icon {
                     color: #abb5c6;
                     transition: all 0.3s;
                     width: 20px;
-                    font-size: 23px;
+                    font-size: 19px;
                     transition: transform 0.3s ease;
                 }
             }

@@ -8,7 +8,7 @@ export default {
   },
 
   plugins: [Inspect()],
-  // base: "/linom/v2",
+  base: "./",
   css: {
     devSourcemap: true,
     postcss: "./postcss.config.js",

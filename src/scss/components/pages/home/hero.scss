@@ -31,12 +31,14 @@ section.hero {
 
         .boxIconSlider2 {
             @media screen and (max-width: 425px) {
-                right: 32px;
+                width: 70%;
                 top: 355px;
+                gap: 5px;
+                justify-content: center;
             }
 
             @media screen and (max-width: 375px) {
-                gap: 5px;
+                width: 66%;
             }
 
             display: none;
