@@ -931,6 +931,12 @@
   <!---------------------------------------------------->
 
     <section class="product">
+      <ul class="breadcrumb container">
+        <li><a href="./index.html">صفحه اصلی</a></li>
+        <li><a href="./index.html">دسته بندی محصول</a></li>
+        <li>عنوان محصول</li>
+      </ul>
+
         <div class="container">
             <div class="row card">
                 <div class="image-product col-lg-6 col-md-12 d-flex justify-content-center">
@@ -960,12 +966,12 @@
                 <div class="product-details col-lg-6 col-md-12">
                     <div class="content-top d-flex align-items-center justify-content-between">
                         <div class="right">
-                            <ul class="breadcrumb-product">
+                            <!-- <ul class="breadcrumb-product">
                                 <li class="item d-inline-block">
                                     <a href="./productList.html">لیست محصولات</a>
                                 </li>
                                 <li class="item d-inline-block">توکار</li>
-                            </ul>
+                            </ul> -->
                             <div class="nameProduct d-flex align-items-center justify-content-start">
                                 <h2 class="name">شیر توکار مدل گلوریس</h2>
                                 <div class="score d-flex justify-content-center align-items-start">
@@ -973,8 +979,16 @@
                                     <i class="icon icon-star"></i>
                                 </div>
                             </div>
+                            <div class="other-color">
+                              <span class="Title"> سایر رنگ‌ها: </span>
+                              <div class="items">
+                                <a href="#" title="مشکی" class="color" style="background-color: #000;"></a>
+                                <a href="#" title="مشکی" class="color" style="background-color: #000;"></a>
+                                <a href="#" title="مشکی" class="color" style="background-color: #000;"></a>
+                              </div>
+                            </div>
                         </div>
-                        <div class="left d-flex align-items-center justify-content-end">
+                        <form class="left d-flex align-items-center justify-content-end">
                             <div class="product-count d-none align-items-center justify-content-center"
                                 id="numberSpinner">
                                 <span class="icon icon-Plus increament"></span>
@@ -982,12 +996,13 @@
                                     value="1">
                                 <span class="icon icon-Delete decreament"></span>
                             </div>
-                            <div class="add-product d-flex">افزودن به سبد خرید</div>
+                            <button type="submit" value="1" name="submit" class="add-product d-flex">افزودن به سبد خرید</button>
                             <div class="box-price">
                                 <p class="text">قیمت محصول</p>
                                 <p class="price">۱,۹۴۰,۰۰۰ <samp class="toman">تومان</samp></p>
+                                <p class="priceDiscount">۱,۵۰۰,۰۰۰ <span class="toman">تومان</span></p>
                             </div>
-                        </div>
+                        </form>
                     </div>
                     <div class="content-center">
                         <div class="top d-flex align-items-center justify-content-between">
@@ -1013,8 +1028,9 @@
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <span class="add d-flex align-items-center justify-content-center"><i
-                                                        class="icon icon-Plus"></i></span>
+                                                <form>
+                                                  <button class="add d-flex align-items-center justify-content-center"><i class="icon icon-Plus"></i></button>
+                                                </form>
                                             </div>
                                         </div>
                                     </a>
@@ -1028,8 +1044,9 @@
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <span class="add d-flex align-items-center justify-content-center"><i
-                                                        class="icon icon-Plus"></i></span>
+                                                <form>
+                                                  <button class="add d-flex align-items-center justify-content-center"><i class="icon icon-Plus"></i></button>
+                                                </form>
                                             </div>
                                         </div>
                                     </a>
@@ -1043,8 +1060,9 @@
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <span class="add d-flex align-items-center justify-content-center"><i
-                                                        class="icon icon-Plus"></i></span>
+                                                <form>
+                                                  <button class="add d-flex align-items-center justify-content-center"><i class="icon icon-Plus"></i></button>
+                                                </form>
                                             </div>
                                         </div>
                                     </a>
@@ -1058,8 +1076,9 @@
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <span class="add d-flex align-items-center justify-content-center"><i
-                                                        class="icon icon-Plus"></i></span>
+                                                <form>
+                                                  <button class="add d-flex align-items-center justify-content-center"><i class="icon icon-Plus"></i></button>
+                                                </form>
                                             </div>
                                         </div>
                                     </a>
@@ -1073,8 +1092,9 @@
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <span class="add d-flex align-items-center justify-content-center"><i
-                                                        class="icon icon-Plus"></i></span>
+                                                <form>
+                                                  <button class="add d-flex align-items-center justify-content-center"><i class="icon icon-Plus"></i></button>
+                                                </form>
                                             </div>
                                         </div>
                                     </a>
@@ -1088,8 +1108,9 @@
                                             <div class="box-price d-flex align-items-center justify-content-between">
                                                 <p class="price d-flex align-items-center justify-content-center">
                                                     ۱,۸۰۰,۰۰۰<span class="toman">تومان</span></p>
-                                                <span class="add d-flex align-items-center justify-content-center"><i
-                                                        class="icon icon-Plus"></i></span>
+                                                <form>
+                                                  <button class="add d-flex align-items-center justify-content-center"><i class="icon icon-Plus"></i></button>
+                                                </form>
                                             </div>
                                         </div>
                                     </a>
@@ -1098,36 +1119,48 @@
                         </div>
                     </div>
                     <div class="content-bottom">
-                        <div class="title-description d-flex align-items-center">
-                            <img src="/img/product/icon-titr.svg" class="icon" alt="icon-titr">
-                            <p class="title">توضیحات محصول</p>
+                      <div class="title-description d-flex align-items-center">
+                        <img src="/img/product/icon-titr.svg" class="icon" alt="icon-titr">
+                        <p class="title">توضیحات محصول</p>
+                    </div>
+                    <div class="desc">
+                        <p class="text">
+                            شیر توکار <strong>مدل گلوریس</strong> یک انتخاب ایده‌آل برای افرادی است که به دنبال
+                            طراحی مدرن و مینیمال
+                            در فضای حمام یا سرویس بهداشتی خود هستند. این محصول با نصب توکار، فضای اضافی را اشغال
+                            نمی‌کند و جلوه‌ای یکپارچه و زیبا به محیط می‌بخشد. بدنه اصلی شیر از آلیاژ برنج باکیفیت
+                            ساخته شده و با پوشش کروم <a href="#" class="link-textContent">براق یا مات</a> (بسته به
+                            انتخاب) ارائه می‌شود که علاوه بر زیبایی،
+                            مقاومت بالایی در برابر خوردگی و زنگ‌زدگی دارد. این شیر با استفاده از کارتریج سرامیکی
+                            بادوام، عملکردی بی‌صدا و بدون نشتی را تضمین می‌کند
+                        </p>
+                        <p class="text">
+                            مدل گلوریس با طراحی ساده و کاربردی، به راحتی با دکوراسیون‌های مدرن و کلاسیک هماهنگ
+                            می‌شود. قابلیت تنظیم دمای آب و فشار خروجی، این محصول را به گزینه‌ای ایده‌آل برای استفاده
+                            روزمره تبدیل کرده است. نصب توکار آن باعث کاهش شلوغی در فضا شده و تمیزکاری را آسان‌تر
+                            می‌کند. این شیر در کنار کیفیت بالا، با طراحی جذاب و مهندسی دقیق، انتخابی مناسب برای
+                            خانه‌های مدرن و لوکس.
+                        </p>
+                        <p class="text">
+                            مدل گلوریس با طراحی ساده و کاربردی، به راحتی با دکوراسیون‌های مدرن و کلاسیک هماهنگ
+                            می‌شود. قابلیت تنظیم دمای آب و فشار خروجی، این محصول را به گزینه‌ای ایده‌آل برای استفاده
+                            روزمره تبدیل کرده است. نصب توکار آن باعث کاهش شلوغی در فضا شده و تمیزکاری را آسان‌تر
+                            می‌کند. این شیر در کنار کیفیت بالا، با طراحی جذاب و مهندسی دقیق، انتخابی مناسب برای
+                            خانه‌های مدرن و لوکس.
+                        </p>
+
+                        <div class="property">
+                          <h4>مشخصات:</h4>
+                          <ul>
+                            <li>
+                              <span class="key">رنگ</span>
+                              <span class="value-color" style="background-color: #000;"></span>
+                              <span class="value">مشکی</span></li>
+                            <li><span class="key">برند</span><span class="value-color"></span><span class="value">ساترینا</span></li>
+                            <li><span class="key">نوع نصب</span><span class="value-color"></span><span class="value">دیواری</span></li>
+                          </ul>
                         </div>
-                        <div class="desc">
-                            <p class="text">
-                                شیر توکار <strong>مدل گلوریس</strong> یک انتخاب ایده‌آل برای افرادی است که به دنبال
-                                طراحی مدرن و مینیمال
-                                در فضای حمام یا سرویس بهداشتی خود هستند. این محصول با نصب توکار، فضای اضافی را اشغال
-                                نمی‌کند و جلوه‌ای یکپارچه و زیبا به محیط می‌بخشد. بدنه اصلی شیر از آلیاژ برنج باکیفیت
-                                ساخته شده و با پوشش کروم <a href="#" class="link-textContent">براق یا مات</a> (بسته به
-                                انتخاب) ارائه می‌شود که علاوه بر زیبایی،
-                                مقاومت بالایی در برابر خوردگی و زنگ‌زدگی دارد. این شیر با استفاده از کارتریج سرامیکی
-                                بادوام، عملکردی بی‌صدا و بدون نشتی را تضمین می‌کند
-                            </p>
-                            <p class="text">
-                                مدل گلوریس با طراحی ساده و کاربردی، به راحتی با دکوراسیون‌های مدرن و کلاسیک هماهنگ
-                                می‌شود. قابلیت تنظیم دمای آب و فشار خروجی، این محصول را به گزینه‌ای ایده‌آل برای استفاده
-                                روزمره تبدیل کرده است. نصب توکار آن باعث کاهش شلوغی در فضا شده و تمیزکاری را آسان‌تر
-                                می‌کند. این شیر در کنار کیفیت بالا، با طراحی جذاب و مهندسی دقیق، انتخابی مناسب برای
-                                خانه‌های مدرن و لوکس.
-                            </p>
-                            <p class="text">
-                                مدل گلوریس با طراحی ساده و کاربردی، به راحتی با دکوراسیون‌های مدرن و کلاسیک هماهنگ
-                                می‌شود. قابلیت تنظیم دمای آب و فشار خروجی، این محصول را به گزینه‌ای ایده‌آل برای استفاده
-                                روزمره تبدیل کرده است. نصب توکار آن باعث کاهش شلوغی در فضا شده و تمیزکاری را آسان‌تر
-                                می‌کند. این شیر در کنار کیفیت بالا، با طراحی جذاب و مهندسی دقیق، انتخابی مناسب برای
-                                خانه‌های مدرن و لوکس.
-                            </p>
-                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="blurred-bg">

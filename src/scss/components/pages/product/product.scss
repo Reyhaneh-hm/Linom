@@ -84,7 +84,7 @@
     position: relative;
 
     .card {
-        margin-top: 100px;
+        margin-top: 150px;
 
         .image-product {
             @media screen and (max-width: 1440px) {
@@ -287,6 +287,11 @@
         }
 
         .product-details {
+            &:not(:has(.content-center)){
+                .content-bottom{
+                    top: 0 !important;
+                }
+            }
             .content-top {
                 @media screen and (max-width: 1024px) {
                     flex-direction: column !important;
@@ -305,7 +310,7 @@
                 background: #fff;
                 gap: 20px;
                 top: 70px;
-                padding-block: 50px;
+                padding: 50px 10px;
                 position: sticky;
                 z-index: 1;
                 width: 100%;
@@ -405,6 +410,31 @@
                             }
                         }
                     }
+
+                    .other-color {
+                        margin-top: 20px;
+                        color: $text;
+                        display: flex;
+                        align-items: center;
+                        font-size: 15px;
+                        gap: 8px;
+                  
+                        >.items{
+                            display: flex;
+                            align-items: center;
+                            .color {
+                                width: 28px;
+                                aspect-ratio: 1;
+                                border-radius: 25px;
+                                border: 1px solid #fff;
+                                margin-left: -8px;
+                                position: relative;
+                                &:hover{
+                                    z-index: 1;
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .left {
@@ -452,6 +482,7 @@
                         font-size: 12px;
                         cursor: pointer;
                         transition: all 0.3s;
+                        border: none;
 
                         &:hover {
                             background: #de5c4b;
@@ -489,6 +520,27 @@
                                 font-size: 12px;
                                 margin-right: 2px;
                                 font-family: dana, sans-serif;
+                            }
+                        }
+                        .priceDiscount {
+                            color: #3d3d44;
+                            font-size: 17px;
+                            margin-top: 10px;
+
+                            .toman {
+                                color: #495771;
+                                font-size: 12px;
+                                margin-right: 2px;
+                                font-family: dana, sans-serif;
+                            }
+                            ::after {
+                                content: "";
+                                width: 100%;
+                                height: 1px;
+                                background: black;
+                                position: absolute;
+                                bottom: 9px;
+                                left: 7px;
                             }
                         }
                     }
@@ -637,6 +689,8 @@
                                             border: 1px solid $main2;
                                             border-radius: 50px;
                                             transition: all 0.3s;
+                                            cursor: pointer;
+                                            background: transparent;
 
                                             .icon {
                                                 color: $main2;
@@ -748,6 +802,53 @@
                     h6 {
                         font-size: 14px;
                         margin-bottom: 5px;
+                    }
+                    
+                    ul {
+                        font-size: 15px;
+                        color: #707070;
+                        line-height: 2.7;
+                        text-align: justify;
+                        margin-bottom: 20px;
+                        margin-right: 50px;
+
+                        li {
+                            list-style: initial;
+                        }
+                    }
+                    
+                    .property {
+                        h4 {
+                            margin: 20px 20px;
+                            border-bottom: 2px solid #cf5241;
+                            padding: 10px;
+                            display: inline-block;
+                        }
+                        ul {
+                            li {
+                                padding: 5px;
+                                margin: 10px;
+                                list-style: none;
+                                border-bottom: 1px solid #3d3d4421;
+
+                                .key {
+                                    width: 30%;
+                                    display: inline-block;
+                                }
+
+                                .value-color {
+                                    width: 20px;
+                                    height: 20px;
+                                    display: inline-block;
+                                    border-radius: 25px;
+                                    margin-inline: 10px 3px;
+                                }
+
+                                .value {
+                                    width: 70%;
+                                }
+                            }
+                        }
                     }
                 }
             }
