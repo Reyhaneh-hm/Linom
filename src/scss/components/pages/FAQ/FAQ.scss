@@ -212,5 +212,54 @@
                 }
             }
         }
+
+        .comment_form {
+            margin: 80px auto;
+
+            .title {
+                font-size: 18px;
+                color: $main;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+
+            .input_box {
+                position: relative;
+                margin-bottom: 20px;
+
+                textarea {
+                    width: 90%;
+                    color: $main;
+                    font-size: 16px;
+                    border: 2px solid #fff;
+                    transition: .3s ease-in-out;
+                    padding: 13px 10px;
+                    border-radius: 10px;
+                    resize: none;
+                    height: 180px;
+                    display: block;
+                    margin: 0 auto;
+                    box-shadow: 0 0.25rem 1rem rgba(147, 158, 170, 0.45);
+                }
+            }
+
+            .submit {
+                border: unset;
+                cursor: pointer;
+                font-size: 14px;
+                width: 90%;
+                margin: 0 auto;
+                display: block;
+                background: $main;
+                color: $white;
+                border-radius: 10px;
+                padding: 17px 0;
+                transition: all 0.3s;
+
+                &:hover {
+                    background: $main2;
+                }
+            }
+        }
     }
 }

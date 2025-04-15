@@ -196,7 +196,7 @@
 
                 .textLink1 {
                     @media screen and (max-width: 1440px) {
-                        right: 445px;
+                        right: 435px;
                     }
 
                     @media screen and (max-width: 1024px) {
@@ -212,6 +212,7 @@
                     top: 200px;
                     right: 530px;
                 }
+
 
                 .textLink2 {
                     @media screen and (max-width: 1024px) {
@@ -303,13 +304,13 @@
 
                 .boxAudio {
                     @media screen and (max-width: 1440px) {
-                        right: 430px;
+                        right: 420px;
                     }
 
                     @media screen and (max-width: 1024px) {
                         background-size: 272px;
                         width: 290px;
-                        right: 230px;
+                        right: 225px;
                     }
 
                     @media screen and (max-width: 768px) {
@@ -317,8 +318,7 @@
                     }
 
                     @media screen and (max-width: 425px) {
-                        // right: 140px;
-                        right: 10%;
+                        right: 135px;
                         bottom: -40px;
                     }
 
@@ -326,13 +326,11 @@
                         background-size: 100%;
                         width: 240px;
                         bottom: -35px;
-                        // right: 130px;
-                        right: 10%;
+                        right: 125px;
                     }
 
                     @media screen and (max-width: 320px) {
-                        // right: 80px;
-                        right: 10%;
+                        right: 77px;
                     }
 
                     position: absolute;

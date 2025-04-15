@@ -780,6 +780,33 @@
                 }
             }
         }
+
+        .no-product {
+            display: none !important;
+            width: 100%;
+
+            .image {
+                height: 400px;
+            }
+
+            .title {
+                font-size: 18px;
+                margin-bottom: 50px;
+            }
+
+            .link {
+                background-color: $main;
+                font-size: 16px;
+                padding: 15px 20px;
+                border-radius: 12px;
+                color: $white;
+                transition: all 0.3s;
+
+                &:hover {
+                    background: $main2;
+                }
+            }
+        }
     }
 }
 
